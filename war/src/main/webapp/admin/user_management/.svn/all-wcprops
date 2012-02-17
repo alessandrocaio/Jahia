@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/jahia/!svn/ver/39811/trunk/war/src/main/webapp/admin/user_management
+END
+user_management.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/jahia/!svn/ver/38177/trunk/war/src/main/webapp/admin/user_management/user_management.jsp
+END
+user_remove.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/jahia/!svn/ver/38177/trunk/war/src/main/webapp/admin/user_management/user_remove.jsp
+END
+user_view.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/jahia/!svn/ver/38177/trunk/war/src/main/webapp/admin/user_management/user_view.jsp
+END
+user_search.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/jahia/!svn/ver/39811/trunk/war/src/main/webapp/admin/user_management/user_search.jsp
+END
+user_edit.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/jahia/!svn/ver/39811/trunk/war/src/main/webapp/admin/user_management/user_edit.jsp
+END
+user_create.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/jahia/!svn/ver/38177/trunk/war/src/main/webapp/admin/user_management/user_create.jsp
+END
+site_existant_user.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/jahia/!svn/ver/38177/trunk/war/src/main/webapp/admin/user_management/site_existant_user.jsp
+END
+user_batchcreate.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/jahia/!svn/ver/38177/trunk/war/src/main/webapp/admin/user_management/user_batchcreate.jsp
+END

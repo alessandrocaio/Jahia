@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/applications/pluto
+END
+JahiaPortalServletRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/applications/pluto/JahiaPortalServletRequest.java
+END
+JahiaPortletPreferencesServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/applications/pluto/JahiaPortletPreferencesServiceImpl.java
+END
+JahiaPortletPreference.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/applications/pluto/JahiaPortletPreference.java
+END
+PortletWindowConfig.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/applications/pluto/PortletWindowConfig.java
+END
+ApplicationsManagerPlutoProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/applications/pluto/ApplicationsManagerPlutoProvider.java
+END
+JahiaPortalURLParserImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/applications/pluto/JahiaPortalURLParserImpl.java
+END
+JahiaContextRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/applications/pluto/JahiaContextRequest.java
+END
+JahiaUserRequestWrapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/applications/pluto/JahiaUserRequestWrapper.java
+END
+PlutoDispatchingProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/applications/pluto/PlutoDispatchingProvider.java
+END
+JahiaRenderConfigServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/applications/pluto/JahiaRenderConfigServiceImpl.java
+END
+JahiaPortletUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/applications/pluto/JahiaPortletUtil.java
+END
+JahiaPortalServletResponse.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/applications/pluto/JahiaPortalServletResponse.java
+END

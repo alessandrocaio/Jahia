@@ -1,0 +1,242 @@
+var $intern_6177 = '<br/>...', $intern_6186 = '<br/>.<br/>.<br/>.', $intern_6176 = '<br/><br/>', $intern_6187 = '<br/><span style="font-style:bold;color:red;">Warning: this will erase the content definitively from the repository<br/>So it will not be displayed anymore anywere<\/span>', $intern_6183 = '<br/><span style="font-style:italic;">', $intern_6188 = 'AsyncLoader5', $intern_6189 = 'DeleteActionItem$1$1', $intern_6190 = 'DeleteActionItem$1$1$1', $intern_6191 = 'DeleteActionItem$1$1$1$1', $intern_6174 = 'Do you really want to remove the selected PAGE {0}?', $intern_6172 = 'Do you really want to remove the {0} selected resources?', $intern_6169 = 'JahiaContentManagementService_Proxy.markForDeletion', $intern_6181 = 'This node is still used by:', $intern_6179 = 'Those nodes are still used in:', $intern_6175 = 'ext-mb-delete-page', $intern_6185 = 'is using this node in page(s)', $intern_6184 = 'label.remove.used', $intern_6170 = 'markForDeletion', $intern_6171 = 'message.remove.multiple.confirm', $intern_6178 = 'message.remove.multiple.usage', $intern_6173 = 'message.remove.single.page.confirm', $intern_6180 = 'message.remove.single.usage', $intern_6182 = 'nodeName', $intern_6168 = 'runCallbacks5';
+function com_extjs_gxt_ui_client_widget_MessageBox_$addCallback__Lcom_extjs_gxt_ui_client_widget_MessageBox_2Lcom_extjs_gxt_ui_client_event_Listener_2V(this$static, listener){
+  if (!this$static.com_extjs_gxt_ui_client_widget_MessageBox_dialog) {
+    !this$static.com_extjs_gxt_ui_client_widget_MessageBox_listeners && (this$static.com_extjs_gxt_ui_client_widget_MessageBox_listeners = new java_util_HashMap_HashMap__V);
+    this$static.com_extjs_gxt_ui_client_widget_MessageBox_listeners.put__Ljava_lang_Object_2Ljava_lang_Object_2Ljava_lang_Object_2((com_extjs_gxt_ui_client_event_Events_$clinit__V() , com_extjs_gxt_ui_client_event_Events_Hide), listener);
+  }
+   else {
+    com_extjs_gxt_ui_client_widget_Component_$addListener__Lcom_extjs_gxt_ui_client_widget_Component_2Lcom_extjs_gxt_ui_client_event_EventType_2Lcom_extjs_gxt_ui_client_event_Listener_2V(this$static.com_extjs_gxt_ui_client_widget_MessageBox_dialog, (com_extjs_gxt_ui_client_event_Events_$clinit__V() , com_extjs_gxt_ui_client_event_Events_Hide), listener);
+  }
+}
+
+function com_google_gwt_lang_asyncloaders_AsyncLoader5_$runCallbacks__Lcom_google_gwt_lang_asyncloaders_AsyncLoader5_2V(){
+  var next;
+  while (com_google_gwt_lang_asyncloaders_AsyncLoader5_callbacksHead) {
+    next = com_google_gwt_lang_asyncloaders_AsyncLoader5_callbacksHead;
+    com_google_gwt_lang_asyncloaders_AsyncLoader5_callbacksHead = com_google_gwt_lang_asyncloaders_AsyncLoader5_callbacksHead.com_google_gwt_lang_asyncloaders_AsyncLoader5_1_1Callback_next;
+    !com_google_gwt_lang_asyncloaders_AsyncLoader5_callbacksHead && (com_google_gwt_lang_asyncloaders_AsyncLoader5_callbacksTail = null);
+    org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1_$onSuccess__Lorg_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1_2V(next.com_google_gwt_lang_asyncloaders_AsyncLoader5_1_1Callback_callback);
+  }
+}
+
+function com_google_gwt_lang_asyncloaders_AsyncLoader5_AsyncLoader5__V(){
+}
+
+function com_google_gwt_lang_asyncloaders_AsyncLoader5_onLoad__V(){
+  com_google_gwt_lang_asyncloaders_AsyncLoader5_instance = new com_google_gwt_lang_asyncloaders_AsyncLoader5_AsyncLoader5__V;
+  com_google_gwt_core_client_impl_AsyncFragmentLoader_$fragmentHasLoaded__Lcom_google_gwt_core_client_impl_AsyncFragmentLoader_2IV((com_google_gwt_core_client_impl_AsyncFragmentLoader_$clinit__V() , com_google_gwt_core_client_impl_AsyncFragmentLoader_BROWSER_1LOADER), 5);
+  !!$stats && $stats(com_google_gwt_core_client_impl_AsyncFragmentLoader$StandardLogger_$createStatsEvent__Lcom_google_gwt_core_client_impl_AsyncFragmentLoader$StandardLogger_2Ljava_lang_String_2Ljava_lang_String_2IILcom_google_gwt_core_client_JavaScriptObject_2($intern_6168, $intern_1677, -1, -1));
+  com_google_gwt_lang_asyncloaders_AsyncLoader5_instance.runCallbacks__V();
+  !!$stats && $stats(com_google_gwt_core_client_impl_AsyncFragmentLoader$StandardLogger_$createStatsEvent__Lcom_google_gwt_core_client_impl_AsyncFragmentLoader$StandardLogger_2Ljava_lang_String_2Ljava_lang_String_2IILcom_google_gwt_core_client_JavaScriptObject_2($intern_6168, $intern_1933, -1, -1));
+}
+
+function com_google_gwt_lang_asyncloaders_AsyncLoader5(){
+}
+
+_ = com_google_gwt_lang_asyncloaders_AsyncLoader5_AsyncLoader5__V.prototype = com_google_gwt_lang_asyncloaders_AsyncLoader5.prototype = new java_lang_Object;
+_.getClass__Ljava_lang_Class_2$ = function com_google_gwt_lang_asyncloaders_AsyncLoader5_getClass__Ljava_lang_Class_2(){
+  return com_google_gwt_lang_ClassLiteralHolder_Lcom_1google_1gwt_1lang_1asyncloaders_1AsyncLoader5_12_1classLit;
+}
+;
+_.runCallbacks__V = function com_google_gwt_lang_asyncloaders_AsyncLoader5_runCallbacks__V(){
+  com_google_gwt_lang_asyncloaders_AsyncLoader5_$runCallbacks__Lcom_google_gwt_lang_asyncloaders_AsyncLoader5_2V();
+}
+;
+_.java_lang_Object_castableTypeMap$ = {};
+function org_jahia_ajax_gwt_client_service_content_JahiaContentManagementService_1Proxy_$markForDeletion__Lorg_jahia_ajax_gwt_client_service_content_JahiaContentManagementService_1Proxy_2Ljava_util_List_2Ljava_lang_String_2Lcom_google_gwt_user_client_rpc_AsyncCallback_2V(this$static, paths, comment, async){
+  var $e0, ex, payload, statsContext, streamWriter;
+  statsContext = new com_google_gwt_user_client_rpc_impl_RpcStatsContext_RpcStatsContext__V;
+  !!$stats && $stats({moduleName:$moduleName, sessionId:$sessionId, subSystem:$intern_1931, evtGroup:statsContext.com_google_gwt_user_client_rpc_impl_RpcStatsContext_requestId, method:$intern_6169, millis:(new Date).getTime(), type:$intern_1677});
+  streamWriter = com_google_gwt_user_client_rpc_impl_RemoteServiceProxy_$createStreamWriter__Lcom_google_gwt_user_client_rpc_impl_RemoteServiceProxy_2Lcom_google_gwt_user_client_rpc_SerializationStreamWriter_2(this$static);
+  try {
+    com_google_gwt_user_client_rpc_impl_ClientSerializationStreamWriter_append__Ljava_lang_StringBuffer_2Ljava_lang_String_2V(streamWriter.com_google_gwt_user_client_rpc_impl_ClientSerializationStreamWriter_encodeBuffer, $intern_88 + com_google_gwt_user_client_rpc_impl_AbstractSerializationStreamWriter_$addString__Lcom_google_gwt_user_client_rpc_impl_AbstractSerializationStreamWriter_2Ljava_lang_String_2I(streamWriter, $intern_2171));
+    com_google_gwt_user_client_rpc_impl_ClientSerializationStreamWriter_append__Ljava_lang_StringBuffer_2Ljava_lang_String_2V(streamWriter.com_google_gwt_user_client_rpc_impl_ClientSerializationStreamWriter_encodeBuffer, $intern_88 + com_google_gwt_user_client_rpc_impl_AbstractSerializationStreamWriter_$addString__Lcom_google_gwt_user_client_rpc_impl_AbstractSerializationStreamWriter_2Ljava_lang_String_2I(streamWriter, $intern_6170));
+    com_google_gwt_user_client_rpc_impl_ClientSerializationStreamWriter_append__Ljava_lang_StringBuffer_2Ljava_lang_String_2V(streamWriter.com_google_gwt_user_client_rpc_impl_ClientSerializationStreamWriter_encodeBuffer, $intern_398);
+    com_google_gwt_user_client_rpc_impl_ClientSerializationStreamWriter_append__Ljava_lang_StringBuffer_2Ljava_lang_String_2V(streamWriter.com_google_gwt_user_client_rpc_impl_ClientSerializationStreamWriter_encodeBuffer, $intern_88 + com_google_gwt_user_client_rpc_impl_AbstractSerializationStreamWriter_$addString__Lcom_google_gwt_user_client_rpc_impl_AbstractSerializationStreamWriter_2Ljava_lang_String_2I(streamWriter, $intern_2181));
+    com_google_gwt_user_client_rpc_impl_ClientSerializationStreamWriter_append__Ljava_lang_StringBuffer_2Ljava_lang_String_2V(streamWriter.com_google_gwt_user_client_rpc_impl_ClientSerializationStreamWriter_encodeBuffer, $intern_88 + com_google_gwt_user_client_rpc_impl_AbstractSerializationStreamWriter_$addString__Lcom_google_gwt_user_client_rpc_impl_AbstractSerializationStreamWriter_2Ljava_lang_String_2I(streamWriter, $intern_2102));
+    com_google_gwt_user_client_rpc_impl_AbstractSerializationStreamWriter_$writeObject__Lcom_google_gwt_user_client_rpc_impl_AbstractSerializationStreamWriter_2Ljava_lang_Object_2V(streamWriter, paths);
+    com_google_gwt_user_client_rpc_impl_ClientSerializationStreamWriter_append__Ljava_lang_StringBuffer_2Ljava_lang_String_2V(streamWriter.com_google_gwt_user_client_rpc_impl_ClientSerializationStreamWriter_encodeBuffer, $intern_88 + com_google_gwt_user_client_rpc_impl_AbstractSerializationStreamWriter_$addString__Lcom_google_gwt_user_client_rpc_impl_AbstractSerializationStreamWriter_2Ljava_lang_String_2I(streamWriter, comment));
+    payload = com_google_gwt_user_client_rpc_impl_ClientSerializationStreamWriter_$toString__Lcom_google_gwt_user_client_rpc_impl_ClientSerializationStreamWriter_2Ljava_lang_String_2(streamWriter);
+    !!$stats && $stats({moduleName:$moduleName, sessionId:$sessionId, subSystem:$intern_1931, evtGroup:statsContext.com_google_gwt_user_client_rpc_impl_RpcStatsContext_requestId, method:$intern_6169, millis:(new Date).getTime(), type:$intern_2104});
+    com_google_gwt_user_client_rpc_impl_RemoteServiceProxy_$doInvoke__Lcom_google_gwt_user_client_rpc_impl_RemoteServiceProxy_2Lcom_google_gwt_user_client_rpc_impl_RequestCallbackAdapter$ResponseReader_2Ljava_lang_String_2Lcom_google_gwt_user_client_rpc_impl_RpcStatsContext_2Ljava_lang_String_2Lcom_google_gwt_user_client_rpc_AsyncCallback_2Lcom_google_gwt_http_client_Request_2(this$static, (com_google_gwt_user_client_rpc_impl_RequestCallbackAdapter$ResponseReader_$clinit__V() , com_google_gwt_user_client_rpc_impl_RequestCallbackAdapter$ResponseReader_VOID), $intern_6169, statsContext, payload, async);
+  }
+   catch ($e0) {
+    $e0 = com_google_gwt_lang_Exceptions_caught__Ljava_lang_Object_2Ljava_lang_Object_2($e0);
+    if (com_google_gwt_lang_Cast_instanceOf__Ljava_lang_Object_2IZ($e0, 309)) {
+      ex = $e0;
+      org_jahia_ajax_gwt_client_core_BaseAsyncCallback_$onFailure__Lorg_jahia_ajax_gwt_client_core_BaseAsyncCallback_2Ljava_lang_Throwable_2V(async, ex);
+    }
+     else 
+      throw $e0;
+  }
+}
+
+function org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1_$onSuccess__Lorg_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1_2V(this$static){
+  var async, l, lh, node, node$iterator;
+  lh = this$static.org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1_this$0.org_jahia_ajax_gwt_client_widget_toolbar_action_BaseActionItem_linker.getSelectionContext__Lorg_jahia_ajax_gwt_client_widget_LinkerSelectionContext_2();
+  if (!lh.org_jahia_ajax_gwt_client_widget_LinkerSelectionContext_multipleSelection.isEmpty__Z()) {
+    l = new java_util_ArrayList_ArrayList__V;
+    for (node$iterator = lh.org_jahia_ajax_gwt_client_widget_LinkerSelectionContext_multipleSelection.iterator__Ljava_util_Iterator_2(); node$iterator.hasNext__Z();) {
+      node = com_google_gwt_lang_Cast_dynamicCast__Ljava_lang_Object_2ILjava_lang_Object_2(node$iterator.next__Ljava_lang_Object_2(), 149);
+      java_util_ArrayList_$add__Ljava_util_ArrayList_2Ljava_lang_Object_2Z(l, com_google_gwt_lang_Cast_dynamicCast__Ljava_lang_Object_2ILjava_lang_Object_2(com_extjs_gxt_ui_client_data_BaseModelData_$get__Lcom_extjs_gxt_ui_client_data_BaseModelData_2Ljava_lang_String_2Ljava_lang_Object_2(node, $intern_2035), 1));
+    }
+    async = org_jahia_ajax_gwt_client_service_content_JahiaContentManagementService$App_getInstance__Lorg_jahia_ajax_gwt_client_service_content_JahiaContentManagementServiceAsync_2();
+    org_jahia_ajax_gwt_client_service_content_JahiaContentManagementService_1Proxy_$getUsages__Lorg_jahia_ajax_gwt_client_service_content_JahiaContentManagementService_1Proxy_2Ljava_util_List_2Lcom_google_gwt_user_client_rpc_AsyncCallback_2V(async, l, new org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1_DeleteActionItem$1$1__Lorg_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1_2V(this$static, l, lh, async));
+  }
+}
+
+function org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1_$onSuccess__Lorg_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1_2Ljava_util_List_2V(this$static, result){
+  var box, i, icon, j, message, n, node, node$iterator, nodeUsage, size;
+  icon = $intern_1133;
+  if (this$static.org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1_val$l.java_util_ArrayList_size > 1) {
+    message = org_jahia_ajax_gwt_client_messages_Messages_getWithArgs__Ljava_lang_String_2Ljava_lang_String_2_3Ljava_lang_Object_2Ljava_lang_String_2($intern_6171, $intern_6172, com_google_gwt_lang_Array_initValues__Ljava_lang_Class_2Lcom_google_gwt_core_client_JavaScriptObject_2ILcom_google_gwt_lang_Array_2Lcom_google_gwt_lang_Array_2(com_google_gwt_lang_ClassLiteralHolder__13Ljava_1lang_1String_12_1classLit, {113:1, 174:1, 176:1, 319:1}, 1, [$intern_88 + this$static.org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1_val$l.java_util_ArrayList_size]));
+  }
+   else {
+    if (com_google_gwt_lang_Cast_dynamicCast__Ljava_lang_Object_2ILjava_lang_Object_2(com_extjs_gxt_ui_client_data_BaseModelData_$get__Lcom_extjs_gxt_ui_client_data_BaseModelData_2Ljava_lang_String_2Ljava_lang_Object_2(com_google_gwt_lang_Cast_dynamicCast__Ljava_lang_Object_2ILjava_lang_Object_2(this$static.org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1_val$lh.org_jahia_ajax_gwt_client_widget_LinkerSelectionContext_multipleSelection.get__ILjava_lang_Object_2(0), 149), $intern_2059), 173).contains__Ljava_lang_Object_2Z($intern_2619)) {
+      message = org_jahia_ajax_gwt_client_messages_Messages_getWithArgs__Ljava_lang_String_2Ljava_lang_String_2_3Ljava_lang_Object_2Ljava_lang_String_2($intern_6173, $intern_6174, com_google_gwt_lang_Array_initValues__Ljava_lang_Class_2Lcom_google_gwt_core_client_JavaScriptObject_2ILcom_google_gwt_lang_Array_2Lcom_google_gwt_lang_Array_2(com_google_gwt_lang_ClassLiteralHolder__13Ljava_1lang_1String_12_1classLit, {113:1, 174:1, 176:1, 319:1}, 1, [com_google_gwt_lang_Cast_dynamicCast__Ljava_lang_Object_2ILjava_lang_Object_2(com_extjs_gxt_ui_client_data_BaseModelData_$get__Lcom_extjs_gxt_ui_client_data_BaseModelData_2Ljava_lang_String_2Ljava_lang_Object_2(this$static.org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1_val$lh.org_jahia_ajax_gwt_client_widget_LinkerSelectionContext_singleSelection, $intern_539), 1)]));
+      icon = $intern_6175;
+    }
+     else {
+      message = org_jahia_ajax_gwt_client_messages_Messages_getWithArgs__Ljava_lang_String_2Ljava_lang_String_2_3Ljava_lang_Object_2Ljava_lang_String_2($intern_3769, $intern_3770, com_google_gwt_lang_Array_initValues__Ljava_lang_Class_2Lcom_google_gwt_core_client_JavaScriptObject_2ILcom_google_gwt_lang_Array_2Lcom_google_gwt_lang_Array_2(com_google_gwt_lang_ClassLiteralHolder__13Ljava_1lang_1String_12_1classLit, {113:1, 174:1, 176:1, 319:1}, 1, [com_google_gwt_lang_Cast_dynamicCast__Ljava_lang_Object_2ILjava_lang_Object_2(com_extjs_gxt_ui_client_data_BaseModelData_$get__Lcom_extjs_gxt_ui_client_data_BaseModelData_2Ljava_lang_String_2Ljava_lang_Object_2(this$static.org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1_val$lh.org_jahia_ajax_gwt_client_widget_LinkerSelectionContext_singleSelection, $intern_539), 1)]));
+    }
+  }
+  if (this$static.org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1_val$l.java_util_ArrayList_size > 1) {
+    message += $intern_6176;
+    i = 0;
+    for (node$iterator = this$static.org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1_val$lh.org_jahia_ajax_gwt_client_widget_LinkerSelectionContext_multipleSelection.iterator__Ljava_util_Iterator_2(); node$iterator.hasNext__Z();) {
+      node = com_google_gwt_lang_Cast_dynamicCast__Ljava_lang_Object_2ILjava_lang_Object_2(node$iterator.next__Ljava_lang_Object_2(), 149);
+      if (i > 4) {
+        message += $intern_6177;
+        break;
+      }
+      message += $intern_3273 + com_google_gwt_lang_Cast_dynamicCast__Ljava_lang_Object_2ILjava_lang_Object_2(com_extjs_gxt_ui_client_data_BaseModelData_$get__Lcom_extjs_gxt_ui_client_data_BaseModelData_2Ljava_lang_String_2Ljava_lang_Object_2(node, $intern_539), 1);
+      ++i;
+    }
+  }
+  message += $intern_6176;
+  n = $intern_88;
+  size = result.size__I();
+  size > 0 && (message += this$static.org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1_val$l.java_util_ArrayList_size > 1?org_jahia_ajax_gwt_client_messages_Messages_get__Ljava_lang_String_2Ljava_lang_String_2Ljava_lang_String_2($intern_6178, $intern_6179):org_jahia_ajax_gwt_client_messages_Messages_get__Ljava_lang_String_2Ljava_lang_String_2Ljava_lang_String_2($intern_6180, $intern_6181));
+  i = 0;
+  for (j = 0; j < (size > 4?4:size); ++j) {
+    nodeUsage = com_google_gwt_lang_Cast_dynamicCast__Ljava_lang_Object_2ILjava_lang_Object_2(result.get__ILjava_lang_Object_2(j), 147);
+    if (java_lang_String_$equals__Ljava_lang_String_2Ljava_lang_Object_2Z(com_google_gwt_lang_Cast_dynamicCast__Ljava_lang_Object_2ILjava_lang_Object_2(com_extjs_gxt_ui_client_data_BaseModelData_$get__Lcom_extjs_gxt_ui_client_data_BaseModelData_2Ljava_lang_String_2Ljava_lang_Object_2(nodeUsage, $intern_6182), 1), n)) {
+      message += $intern_6183 + com_google_gwt_lang_Cast_dynamicCast__Ljava_lang_Object_2ILjava_lang_Object_2(com_extjs_gxt_ui_client_data_BaseModelData_$get__Lcom_extjs_gxt_ui_client_data_BaseModelData_2Ljava_lang_String_2Ljava_lang_Object_2(nodeUsage, $intern_5743), 1) + $intern_990;
+    }
+     else {
+      message += $intern_6183 + com_google_gwt_lang_Cast_dynamicCast__Ljava_lang_Object_2ILjava_lang_Object_2(com_extjs_gxt_ui_client_data_BaseModelData_$get__Lcom_extjs_gxt_ui_client_data_BaseModelData_2Ljava_lang_String_2Ljava_lang_Object_2(nodeUsage, $intern_6182), 1) + $intern_107 + org_jahia_ajax_gwt_client_messages_Messages_get__Ljava_lang_String_2Ljava_lang_String_2Ljava_lang_String_2($intern_6184, $intern_6185) + $intern_3273 + com_google_gwt_lang_Cast_dynamicCast__Ljava_lang_Object_2ILjava_lang_Object_2(com_extjs_gxt_ui_client_data_BaseModelData_$get__Lcom_extjs_gxt_ui_client_data_BaseModelData_2Ljava_lang_String_2Ljava_lang_Object_2(nodeUsage, $intern_5743), 1) + $intern_990;
+      ++i;
+    }
+    n = com_google_gwt_lang_Cast_dynamicCast__Ljava_lang_Object_2ILjava_lang_Object_2(com_extjs_gxt_ui_client_data_BaseModelData_$get__Lcom_extjs_gxt_ui_client_data_BaseModelData_2Ljava_lang_String_2Ljava_lang_Object_2(nodeUsage, $intern_6182), 1);
+  }
+  i > 4 && (message += $intern_6186);
+  i > 0 && (message += $intern_3273);
+  this$static.org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1_this$1.org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1_this$0.org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem_permanentlyDelete?(message += org_jahia_ajax_gwt_client_messages_Messages_get__Ljava_lang_String_2Ljava_lang_String_2Ljava_lang_String_2($intern_3771, $intern_6187)):(message += $intern_3273 + org_jahia_ajax_gwt_client_messages_Messages_get__Ljava_lang_String_2Ljava_lang_String_2Ljava_lang_String_2($intern_3794, $intern_3795) + $intern_56);
+  box = new com_extjs_gxt_ui_client_widget_MessageBox_MessageBox__V;
+  box.com_extjs_gxt_ui_client_widget_MessageBox_title = org_jahia_ajax_gwt_client_messages_Messages_get__Ljava_lang_String_2Ljava_lang_String_2Ljava_lang_String_2($intern_3083, $intern_3084);
+  box.com_extjs_gxt_ui_client_widget_MessageBox_message = message;
+  this$static.org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1_this$1.org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1_this$0.org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem_permanentlyDelete || (box.com_extjs_gxt_ui_client_widget_MessageBox_type = (com_extjs_gxt_ui_client_widget_MessageBox$MessageBoxType_$clinit__V() , com_extjs_gxt_ui_client_widget_MessageBox$MessageBoxType_MULTIPROMPT) , undefined);
+  box.com_extjs_gxt_ui_client_widget_MessageBox_buttons = $intern_1135;
+  com_extjs_gxt_ui_client_widget_MessageBox_$setIcon__Lcom_extjs_gxt_ui_client_widget_MessageBox_2Ljava_lang_String_2V(box, icon);
+  com_extjs_gxt_ui_client_widget_MessageBox_$addCallback__Lcom_extjs_gxt_ui_client_widget_MessageBox_2Lcom_extjs_gxt_ui_client_event_Listener_2V(box, new org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1$1_DeleteActionItem$1$1$1__Lorg_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1_2V(this$static, this$static.org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1_val$async, this$static.org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1_val$l, box));
+  box.com_extjs_gxt_ui_client_widget_MessageBox_dialog = com_extjs_gxt_ui_client_widget_MessageBox_$getDialog__Lcom_extjs_gxt_ui_client_widget_MessageBox_2Lcom_extjs_gxt_ui_client_widget_Dialog_2(box);
+  com_extjs_gxt_ui_client_widget_Window_$show__Lcom_extjs_gxt_ui_client_widget_Window_2V(box.com_extjs_gxt_ui_client_widget_MessageBox_dialog);
+}
+
+function org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1_DeleteActionItem$1$1__Lorg_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1_2V(this$1, val$l, val$lh, val$async){
+  this.org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1_this$1 = this$1;
+  this.org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1_val$l = val$l;
+  this.org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1_val$lh = val$lh;
+  this.org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1_val$async = val$async;
+}
+
+function org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1(){
+}
+
+_ = org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1_DeleteActionItem$1$1__Lorg_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1_2V.prototype = org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1.prototype = new org_jahia_ajax_gwt_client_core_BaseAsyncCallback;
+_.getClass__Ljava_lang_Class_2$ = function org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1_getClass__Ljava_lang_Class_2(){
+  return com_google_gwt_lang_ClassLiteralHolder_Lorg_1jahia_1ajax_1gwt_1client_1widget_1toolbar_1action_1DeleteActionItem$1$1_12_1classLit;
+}
+;
+_.onApplicationFailure__Ljava_lang_Throwable_2V = function org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1_onApplicationFailure__Ljava_lang_Throwable_2V(caught){
+  $wnd.alert($intern_3688 + caught.getMessage__Ljava_lang_String_2());
+}
+;
+_.onSuccess__Ljava_lang_Object_2V = function org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1_onSuccess__Ljava_lang_Object_2V(result){
+  org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1_$onSuccess__Lorg_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1_2Ljava_util_List_2V(this, com_google_gwt_lang_Cast_dynamicCast__Ljava_lang_Object_2ILjava_lang_Object_2(result, 173));
+}
+;
+_.java_lang_Object_castableTypeMap$ = {};
+_.org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1_this$1 = null;
+_.org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1_val$async = null;
+_.org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1_val$l = null;
+_.org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1_val$lh = null;
+function org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1$1_$handleEvent__Lorg_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1$1_2Lcom_extjs_gxt_ui_client_event_MessageBoxEvent_2V(this$static, be){
+  var baseAsyncCallback;
+  if (java_lang_String_$equalsIgnoreCase__Ljava_lang_String_2Ljava_lang_String_2Z(be.com_extjs_gxt_ui_client_event_WindowEvent_buttonClicked.com_extjs_gxt_ui_client_widget_button_Button_text, $intern_1090)) {
+    baseAsyncCallback = new org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1$1$1_DeleteActionItem$1$1$1$1__Lorg_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1$1_2V(this$static, this$static.org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1$1_val$l);
+    this$static.org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1$1_this$2.org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1_this$1.org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1_this$0.org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem_permanentlyDelete?org_jahia_ajax_gwt_client_service_content_JahiaContentManagementService_1Proxy_$deletePaths__Lorg_jahia_ajax_gwt_client_service_content_JahiaContentManagementService_1Proxy_2Ljava_util_List_2Lcom_google_gwt_user_client_rpc_AsyncCallback_2V(this$static.org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1$1_val$async, this$static.org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1$1_val$l, baseAsyncCallback):org_jahia_ajax_gwt_client_service_content_JahiaContentManagementService_1Proxy_$markForDeletion__Lorg_jahia_ajax_gwt_client_service_content_JahiaContentManagementService_1Proxy_2Ljava_util_List_2Ljava_lang_String_2Lcom_google_gwt_user_client_rpc_AsyncCallback_2V(this$static.org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1$1_val$async, this$static.org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1$1_val$l, com_google_gwt_lang_Cast_dynamicCast__Ljava_lang_Object_2ILjava_lang_Object_2(com_extjs_gxt_ui_client_widget_form_Field_$getValue__Lcom_extjs_gxt_ui_client_widget_form_Field_2Ljava_lang_Object_2(this$static.org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1$1_val$box.com_extjs_gxt_ui_client_widget_MessageBox_textArea), 1), baseAsyncCallback);
+  }
+}
+
+function org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1$1_DeleteActionItem$1$1$1__Lorg_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1_2V(this$2, val$async, val$l, val$box){
+  this.org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1$1_this$2 = this$2;
+  this.org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1$1_val$async = val$async;
+  this.org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1$1_val$l = val$l;
+  this.org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1$1_val$box = val$box;
+}
+
+function org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1$1(){
+}
+
+_ = org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1$1_DeleteActionItem$1$1$1__Lorg_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1_2V.prototype = org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1$1.prototype = new java_lang_Object;
+_.getClass__Ljava_lang_Class_2$ = function org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1$1_getClass__Ljava_lang_Class_2(){
+  return com_google_gwt_lang_ClassLiteralHolder_Lorg_1jahia_1ajax_1gwt_1client_1widget_1toolbar_1action_1DeleteActionItem$1$1$1_12_1classLit;
+}
+;
+_.handleEvent__Lcom_extjs_gxt_ui_client_event_BaseEvent_2V = function org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1$1_handleEvent__Lcom_extjs_gxt_ui_client_event_BaseEvent_2V(be){
+  org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1$1_$handleEvent__Lorg_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1$1_2Lcom_extjs_gxt_ui_client_event_MessageBoxEvent_2V(this, com_google_gwt_lang_Cast_dynamicCast__Ljava_lang_Object_2ILjava_lang_Object_2(be, 391));
+}
+;
+_.java_lang_Object_castableTypeMap$ = {187:1};
+_.org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1$1_this$2 = null;
+_.org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1$1_val$async = null;
+_.org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1$1_val$box = null;
+_.org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1$1_val$l = null;
+function org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1$1$1_DeleteActionItem$1$1$1$1__Lorg_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1$1_2V(this$3, val$l){
+  this.org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1$1$1_this$3 = this$3;
+  this.org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1$1$1_val$l = val$l;
+}
+
+function org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1$1$1(){
+}
+
+_ = org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1$1$1_DeleteActionItem$1$1$1$1__Lorg_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1$1_2V.prototype = org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1$1$1.prototype = new org_jahia_ajax_gwt_client_core_BaseAsyncCallback;
+_.getClass__Ljava_lang_Class_2$ = function org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1$1$1_getClass__Ljava_lang_Class_2(){
+  return com_google_gwt_lang_ClassLiteralHolder_Lorg_1jahia_1ajax_1gwt_1client_1widget_1toolbar_1action_1DeleteActionItem$1$1$1$1_12_1classLit;
+}
+;
+_.onApplicationFailure__Ljava_lang_Throwable_2V = function org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1$1$1_onApplicationFailure__Ljava_lang_Throwable_2V(throwable){
+  throwable.getMessage__Ljava_lang_String_2();
+  com_extjs_gxt_ui_client_widget_MessageBox_alert__Ljava_lang_String_2Ljava_lang_String_2Lcom_extjs_gxt_ui_client_event_Listener_2Lcom_extjs_gxt_ui_client_widget_MessageBox_2(org_jahia_ajax_gwt_client_messages_Messages_get__Ljava_lang_String_2Ljava_lang_String_2Ljava_lang_String_2($intern_2642, $intern_2643), throwable.getMessage__Ljava_lang_String_2());
+}
+;
+_.onSuccess__Ljava_lang_Object_2V = function org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1$1$1_onSuccess__Ljava_lang_Object_2V(o){
+  var el;
+  el = null;
+  com_google_gwt_lang_Cast_instanceOf__Ljava_lang_Object_2IZ(this.org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1$1$1_this$3.org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1$1_this$2.org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1_this$1.org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1_this$0.org_jahia_ajax_gwt_client_widget_toolbar_action_BaseActionItem_linker, 366)?(el = com_google_gwt_lang_Cast_dynamicCast__Ljava_lang_Object_2ILjava_lang_Object_2(this.org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1$1$1_this$3.org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1$1_this$2.org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1_this$1.org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1_this$0.org_jahia_ajax_gwt_client_widget_toolbar_action_BaseActionItem_linker, 366).org_jahia_ajax_gwt_client_widget_edit_sidepanel_SidePanelTabItem$SidePanelLinker_this$0.org_jahia_ajax_gwt_client_widget_edit_sidepanel_SidePanelTabItem_editLinker):com_google_gwt_lang_Cast_instanceOf__Ljava_lang_Object_2IZ(this.org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1$1$1_this$3.org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1$1_this$2.org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1_this$1.org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1_this$0.org_jahia_ajax_gwt_client_widget_toolbar_action_BaseActionItem_linker, 356) && (el = com_google_gwt_lang_Cast_dynamicCast__Ljava_lang_Object_2ILjava_lang_Object_2(this.org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1$1$1_this$3.org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1$1_this$2.org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1_this$1.org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1_this$0.org_jahia_ajax_gwt_client_widget_toolbar_action_BaseActionItem_linker, 356));
+  if (!!el && java_util_ArrayList_$indexOf__Ljava_util_ArrayList_2Ljava_lang_Object_2II(this.org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1$1$1_val$l, com_google_gwt_lang_Cast_dynamicCast__Ljava_lang_Object_2ILjava_lang_Object_2(com_extjs_gxt_ui_client_data_BaseModelData_$get__Lcom_extjs_gxt_ui_client_data_BaseModelData_2Ljava_lang_String_2Ljava_lang_Object_2(el.org_jahia_ajax_gwt_client_widget_edit_EditLinker_selectionContext.org_jahia_ajax_gwt_client_widget_LinkerSelectionContext_mainNode, $intern_2035), 1), 0) != -1) {
+    this.org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1$1$1_this$3.org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1$1_this$2.org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1_this$1.org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1_this$0.org_jahia_ajax_gwt_client_widget_toolbar_action_BaseActionItem_linker.refresh__IV(2);
+    this.org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1$1$1_this$3.org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1$1_this$2.org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1_this$1.org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1_this$0.org_jahia_ajax_gwt_client_widget_toolbar_action_BaseActionItem_linker.select__Ljava_lang_Object_2V(null);
+  }
+   else {
+    this.org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1$1$1_this$3.org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1$1_this$2.org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1_this$1.org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1_this$0.org_jahia_ajax_gwt_client_widget_toolbar_action_BaseActionItem_linker.refresh__IV(63);
+    this.org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1$1$1_this$3.org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1$1_this$2.org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1_this$1.org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1_this$0.org_jahia_ajax_gwt_client_widget_toolbar_action_BaseActionItem_linker.select__Ljava_lang_Object_2V(null);
+  }
+}
+;
+_.java_lang_Object_castableTypeMap$ = {};
+_.org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1$1$1_this$3 = null;
+_.org_jahia_ajax_gwt_client_widget_toolbar_action_DeleteActionItem$1$1$1$1_val$l = null;
+var com_google_gwt_lang_ClassLiteralHolder_Lcom_1google_1gwt_1lang_1asyncloaders_1AsyncLoader5_12_1classLit = java_lang_Class_createForClass__Ljava_lang_String_2Ljava_lang_String_2Ljava_lang_String_2Ljava_lang_Class_2Ljava_lang_Class_2($intern_4596, $intern_6188), com_google_gwt_lang_ClassLiteralHolder_Lorg_1jahia_1ajax_1gwt_1client_1widget_1toolbar_1action_1DeleteActionItem$1$1_12_1classLit = java_lang_Class_createForClass__Ljava_lang_String_2Ljava_lang_String_2Ljava_lang_String_2Ljava_lang_Class_2Ljava_lang_Class_2($intern_5429, $intern_6189), com_google_gwt_lang_ClassLiteralHolder_Lorg_1jahia_1ajax_1gwt_1client_1widget_1toolbar_1action_1DeleteActionItem$1$1$1_12_1classLit = java_lang_Class_createForClass__Ljava_lang_String_2Ljava_lang_String_2Ljava_lang_String_2Ljava_lang_Class_2Ljava_lang_Class_2($intern_5429, $intern_6190), com_google_gwt_lang_ClassLiteralHolder_Lorg_1jahia_1ajax_1gwt_1client_1widget_1toolbar_1action_1DeleteActionItem$1$1$1$1_12_1classLit = java_lang_Class_createForClass__Ljava_lang_String_2Ljava_lang_String_2Ljava_lang_String_2Ljava_lang_Class_2Ljava_lang_Class_2($intern_5429, $intern_6191);
+$entry(com_google_gwt_lang_asyncloaders_AsyncLoader5_onLoad__V)();

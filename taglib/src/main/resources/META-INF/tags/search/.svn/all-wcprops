@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/jahia/!svn/ver/40154/trunk/taglib/src/main/resources/META-INF/tags/search
+END
+pagePath.tag
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/jahia/!svn/ver/38177/trunk/taglib/src/main/resources/META-INF/tags/search/pagePath.tag
+END
+fileType.tag
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/jahia/!svn/ver/38177/trunk/taglib/src/main/resources/META-INF/tags/search/fileType.tag
+END
+lastModifiedBy.tag
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/jahia/!svn/ver/38177/trunk/taglib/src/main/resources/META-INF/tags/search/lastModifiedBy.tag
+END
+nodeProperty.tag
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/jahia/!svn/ver/38177/trunk/taglib/src/main/resources/META-INF/tags/search/nodeProperty.tag
+END
+language.tag
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/jahia/!svn/ver/38177/trunk/taglib/src/main/resources/META-INF/tags/search/language.tag
+END
+termMatch.tag
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/jahia/!svn/ver/38177/trunk/taglib/src/main/resources/META-INF/tags/search/termMatch.tag
+END
+nodeType.tag
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/jahia/!svn/ver/38177/trunk/taglib/src/main/resources/META-INF/tags/search/nodeType.tag
+END
+createdBy.tag
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/jahia/!svn/ver/38177/trunk/taglib/src/main/resources/META-INF/tags/search/createdBy.tag
+END
+lastModified.tag
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/jahia/!svn/ver/38177/trunk/taglib/src/main/resources/META-INF/tags/search/lastModified.tag
+END
+rawQuery.tag
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/jahia/!svn/ver/38177/trunk/taglib/src/main/resources/META-INF/tags/search/rawQuery.tag
+END
+filePath.tag
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/jahia/!svn/ver/38177/trunk/taglib/src/main/resources/META-INF/tags/search/filePath.tag
+END
+form.tag
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/jahia/!svn/ver/38177/trunk/taglib/src/main/resources/META-INF/tags/search/form.tag
+END
+suggestedSearchUrl.tag
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/jahia/!svn/ver/38603/trunk/taglib/src/main/resources/META-INF/tags/search/suggestedSearchUrl.tag
+END
+termFields.tag
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/jahia/!svn/ver/40154/trunk/taglib/src/main/resources/META-INF/tags/search/termFields.tag
+END
+searchUrl.tag
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/jahia/!svn/ver/38603/trunk/taglib/src/main/resources/META-INF/tags/search/searchUrl.tag
+END
+site.tag
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/jahia/!svn/ver/39593/trunk/taglib/src/main/resources/META-INF/tags/search/site.tag
+END
+created.tag
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/jahia/!svn/ver/38177/trunk/taglib/src/main/resources/META-INF/tags/search/created.tag
+END
+term.tag
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/jahia/!svn/ver/39900/trunk/taglib/src/main/resources/META-INF/tags/search/term.tag
+END
+itemsPerPage.tag
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/jahia/!svn/ver/38177/trunk/taglib/src/main/resources/META-INF/tags/search/itemsPerPage.tag
+END
+date.tag
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/jahia/!svn/ver/38177/trunk/taglib/src/main/resources/META-INF/tags/search/date.tag
+END

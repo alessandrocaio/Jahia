@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/jahia/!svn/ver/40302/trunk/modules/assets/src/main/webapp/WEB-INF/scripts
+END
+ajaxResources.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/jahia/!svn/ver/40040/trunk/modules/assets/src/main/webapp/WEB-INF/scripts/ajaxResources.groovy
+END
+resources.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/jahia/!svn/ver/40302/trunk/modules/assets/src/main/webapp/WEB-INF/scripts/resources.groovy
+END
+markedForDeletionPreview.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/jahia/!svn/ver/39350/trunk/modules/assets/src/main/webapp/WEB-INF/scripts/markedForDeletionPreview.groovy
+END

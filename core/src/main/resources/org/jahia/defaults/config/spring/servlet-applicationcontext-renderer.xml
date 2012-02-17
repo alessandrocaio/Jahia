@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <bean id="rendererPlaceholderConfig" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="properties">
+            <ref bean="jahiaProperties"/>
+        </property>
+    </bean>
+
+    <bean id="captchaProducer" class="com.google.code.kaptcha.impl.DefaultKaptcha">
+        <property name="config">
+            <bean class="com.google.code.kaptcha.util.Config">
+                <constructor-arg type="java.util.Properties">
+                    <value>kaptcha.border=yes</value>
+                </constructor-arg>
+            </bean>
+        </property>
+    </bean>
+
+
+    <bean name="abstractRender" class="org.jahia.bin.Render">
+        <property name="loggingService" ref="loggingService"/>
+        <property name="templateService" ref="JahiaTemplateManagerService"/>
+        <property name="defaultPostAction" >
+            <bean class="org.jahia.bin.DefaultPostAction">
+                <property name="loggingService" ref="loggingService"/>
+            </bean>
+        </property>
+        <property name="settingsBean" ref="settingsBean" />
+        <property name="renderService" ref="RenderService" />
+        <property name="jcrSessionFactory" ref="jcrSessionFactory" />
+        <property name="cookieExpirationInDays" value="1"/>
+        <property name="urlResolverFactory" ref="urlResolverFactory" />
+    </bean>
+
+    <bean name="rendererMapping" class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+        <property name="urlMap">
+            <map>
+                <entry key="/render/**">
+                    <bean name="org.jahia.bin.Render" parent="abstractRender"/>
+                </entry>
+                <entry key="/contribute/**">
+                    <bean name="org.jahia.bin.Contribute" parent="abstractRender" class="org.jahia.bin.Contribute">
+                        <property name="sessionExpiryTime" value="60" />
+                    </bean>
+                </entry>
+                <entry key="/edit/**">
+                    <bean name="org.jahia.bin.Edit" parent="abstractRender" class="org.jahia.bin.Edit">
+                        <property name="sessionExpiryTime" value="60" />
+                    </bean>
+                </entry>
+                <entry key="/studio/**">
+                    <bean name="org.jahia.bin.Studio" parent="abstractRender" class="org.jahia.bin.Studio">
+                        <property name="sessionExpiryTime" value="60" />
+                    </bean>
+                </entry>
+                <entry key="/find/**">
+                    <bean class="org.jahia.bin.Find">
+                        <property name="urlResolverFactory" ref="urlResolverFactory" />
+                    </bean>
+                </entry>
+                <entry key="/findPrincipal">
+                    <bean class="org.jahia.bin.FindPrincipal">
+                        <property name="jahiaUserManagerService" ref="JahiaUserManagerService" />
+                        <property name="jahiaGroupManagerService" ref="JahiaGroupManagerService" />
+                        <property name="jahiaSitesService" ref="JahiaSitesService" /> 
+                        <property name="requiredPermission" value="adminUsers"/>
+                    </bean>
+                </entry>
+                <entry key="/findUser">
+                    <bean class="org.jahia.bin.FindUser">
+                        <property name="jahiaUserManagerService" ref="JahiaUserManagerService" />
+                        <property name="requireAuthenticatedUser" value="true"/>
+                        <property name="hardLimit" value="20"/>
+                    </bean>
+                </entry>
+                <entry key="/login">
+                    <bean name="org.jahia.bin.Login" class="org.jahia.bin.Login"/>
+                </entry>
+                <entry key="/initializers/**">
+                    <bean name="org.jahia.bin.Initializers" class="org.jahia.bin.Initializers"/>
+                </entry>
+                <entry key="/logout">
+                    <bean name="org.jahia.bin.Logout" class="org.jahia.bin.Logout">
+                        <property name="cookieAuthConfig" ref="cookieAuthConfig"/>
+                        <property name="urlResolverFactory" ref="urlResolverFactory" />
+                        <property name="urlRewriteService" ref="UrlRewriteService" />
+                        <property name="fireLogoutEvent" value="${fireLogoutEvent:false}" />
+                        <property name="preserveSessionAttributes" value="${preserveSessionAttributesOnLogout:}" />
+                    </bean>
+                </entry>
+                <entry key="/captcha">
+                    <bean name="org.jahia.bin.Captcha" class="org.jahia.bin.Captcha">
+                        <property name="captchaProducer" ref="captchaProducer"/>
+                    </bean>
+                </entry>
+                <entry key="/export/**">
+                    <bean name="org.jahia.bin.Export" class="org.jahia.bin.Export">
+                        <property name="importExportService" ref="ImportExportService"/>
+                        <property name="requireAuthenticatedUser" value="true"/>
+                    </bean>
+                </entry>
+                <entry key="/wcag/**">
+					<bean class="org.jahia.services.htmlvalidator.WCAGController"/>
+                </entry>
+                <entry key="/serverStats/**">
+                    <bean class="org.jahia.bin.ServerStats">
+                        <property name="requestLoadAverage" ref="RequestLoadAverage" />
+                    </bean>
+                </entry>
+            </map>
+        </property>
+    </bean>
+
+</beans>

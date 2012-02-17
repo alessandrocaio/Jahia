@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/jahia/!svn/ver/40218/trunk/src/site/apt/roles
+END
+concepts.apt
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/jahia/!svn/ver/40218/trunk/src/site/apt/roles/concepts.apt
+END
+roles.apt
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/jahia/!svn/ver/40201/trunk/src/site/apt/roles/roles.apt
+END
+customizing.apt
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/jahia/!svn/ver/39299/trunk/src/site/apt/roles/customizing.apt
+END
+privileged.apt
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/jahia/!svn/ver/39299/trunk/src/site/apt/roles/privileged.apt
+END
+ui.apt
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/jahia/!svn/ver/39299/trunk/src/site/apt/roles/ui.apt
+END
+using.apt
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/jahia/!svn/ver/39299/trunk/src/site/apt/roles/using.apt
+END
+roles_rules.apt
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/jahia/!svn/ver/40210/trunk/src/site/apt/roles/roles_rules.apt
+END

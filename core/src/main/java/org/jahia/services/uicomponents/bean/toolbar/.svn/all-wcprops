@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/uicomponents/bean/toolbar
+END
+Menu.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/uicomponents/bean/toolbar/Menu.java
+END
+Toolbar.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/uicomponents/bean/toolbar/Toolbar.java
+END
+Selected.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/uicomponents/bean/toolbar/Selected.java
+END
+Property.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/uicomponents/bean/toolbar/Property.java
+END
+ResourceBundleProperty.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/uicomponents/bean/toolbar/ResourceBundleProperty.java
+END
+Item.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/uicomponents/bean/toolbar/Item.java
+END

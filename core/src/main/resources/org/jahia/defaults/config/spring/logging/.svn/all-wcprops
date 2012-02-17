@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/jahia/!svn/ver/38796/trunk/core/src/main/resources/org/jahia/defaults/config/spring/logging
+END
+applicationcontext-logging.xml
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/jahia/!svn/ver/38796/trunk/core/src/main/resources/org/jahia/defaults/config/spring/logging/applicationcontext-logging.xml
+END

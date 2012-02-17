@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <echo message="${buildNumber}" file="/Users/alessandrocaio/Desktop/workspace_demo/jahia/core/target/classes/META-INF/jahia-impl-marker.txt"/>
+</target>
+</project>

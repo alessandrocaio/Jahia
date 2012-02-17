@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/jahia/!svn/ver/40221/trunk/war/src/main/resources/org/jahia/services/workflow
+END
+alert-reject-template.fr.mail
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/jahia/!svn/ver/40221/trunk/war/src/main/resources/org/jahia/services/workflow/alert-reject-template.fr.mail
+END
+1-step-publication.png
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/jahia/!svn/ver/39839/trunk/war/src/main/resources/org/jahia/services/workflow/1-step-publication.png
+END
+alert-reject-template.en.mail
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/jahia/!svn/ver/40221/trunk/war/src/main/resources/org/jahia/services/workflow/alert-reject-template.en.mail
+END
+1-step-publication_de.properties
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/jahia/!svn/ver/37423/trunk/war/src/main/resources/org/jahia/services/workflow/1-step-publication_de.properties
+END
+1-step-unpublication.png
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/jahia/!svn/ver/39839/trunk/war/src/main/resources/org/jahia/services/workflow/1-step-unpublication.png
+END
+alert-reject-template.mail
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/jahia/!svn/ver/40221/trunk/war/src/main/resources/org/jahia/services/workflow/alert-reject-template.mail
+END
+start-publication-template.fr.mail
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/jahia/!svn/ver/40221/trunk/war/src/main/resources/org/jahia/services/workflow/start-publication-template.fr.mail
+END
+1-step-unpublication.properties
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/jahia/!svn/ver/39839/trunk/war/src/main/resources/org/jahia/services/workflow/1-step-unpublication.properties
+END
+start-publication-template.en.mail
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/jahia/!svn/ver/40221/trunk/war/src/main/resources/org/jahia/services/workflow/start-publication-template.en.mail
+END
+alert-publish-template.fr.mail
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/jahia/!svn/ver/40221/trunk/war/src/main/resources/org/jahia/services/workflow/alert-publish-template.fr.mail
+END
+alert-publish-template.en.mail
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/jahia/!svn/ver/40221/trunk/war/src/main/resources/org/jahia/services/workflow/alert-publish-template.en.mail
+END
+1-step-unpublication.jpdl.xml
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/jahia/!svn/ver/39839/trunk/war/src/main/resources/org/jahia/services/workflow/1-step-unpublication.jpdl.xml
+END
+1-step-publication.properties
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/jahia/!svn/ver/37423/trunk/war/src/main/resources/org/jahia/services/workflow/1-step-publication.properties
+END
+alert-publish-template.mail
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/jahia/!svn/ver/40221/trunk/war/src/main/resources/org/jahia/services/workflow/alert-publish-template.mail
+END
+1-step-publication.jpdl.xml
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/jahia/!svn/ver/40003/trunk/war/src/main/resources/org/jahia/services/workflow/1-step-publication.jpdl.xml
+END
+start-publication-template.mail
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/jahia/!svn/ver/40221/trunk/war/src/main/resources/org/jahia/services/workflow/start-publication-template.mail
+END

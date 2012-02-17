@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/jahia/!svn/ver/40181/trunk/taglib/src/main/java/org/jahia/taglibs/utility/session
+END
+UserPropertyTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/jahia/!svn/ver/40181/trunk/taglib/src/main/java/org/jahia/taglibs/utility/session/UserPropertyTag.java
+END
+SessionViewerTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/jahia/!svn/ver/40181/trunk/taglib/src/main/java/org/jahia/taglibs/utility/session/SessionViewerTag.java
+END

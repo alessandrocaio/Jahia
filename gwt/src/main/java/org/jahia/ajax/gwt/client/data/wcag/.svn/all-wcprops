@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/data/wcag
+END
+WCAGValidationResult.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/data/wcag/WCAGValidationResult.java
+END
+WCAGViolation.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/data/wcag/WCAGViolation.java
+END

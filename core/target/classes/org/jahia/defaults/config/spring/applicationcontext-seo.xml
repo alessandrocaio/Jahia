@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <bean id="org.jahia.services.render.StaticAssetMappingRegistry" class="org.springframework.beans.factory.config.MapFactoryBean">
+        <property name="sourceMap">
+            <!-- Map minified jQuery to the full one for debugging -->
+              <!--entry key="/modules/assets/javascript/jquery.min.js"
+                  value="/modules/assets/javascript/jquery.js"/-->
+            <map/>
+        </property>
+    </bean>
+
+    <bean id="UrlRewriteService" class="org.jahia.services.seo.urlrewrite.UrlRewriteService">
+        <property name="confReloadCheckIntervalSeconds" value="300" />
+        <property name="configurationResources">
+            <list>
+                <value>WEB-INF/etc/config/urlrewrite.xml</value><!-- these are core rules that should not be removed -->
+                
+                <value>WEB-INF/etc/config/urlrewrite-*.xml</value>
+                <value>modules/**/META-INF/urlrewrite*.xml</value>
+            </list>
+        </property>
+        <property name="seoRulesEnabled" value="${urlRewriteSeoRulesEnabled}"/>
+        <property name="seoConfigurationResources">
+            <list>
+                <value>WEB-INF/etc/config/seo-urlrewrite*.xml</value>
+                <value>modules/**/META-INF/seo-urlrewrite*.xml</value>
+            </list>
+        </property>
+        <property name="vanityUrlService" ref="org.jahia.services.seo.jcr.VanityUrlService"/>
+        <property name="urlResolverFactory" ref="urlResolverFactory" />
+    </bean>
+                        
+    <bean class="org.jahia.services.render.filter.URLFilter">
+        <constructor-arg ref="org.jahia.services.render.filter.URLTraverser" />
+        <property name="priority" value="19" />
+        <property name="description" value="SEO URL filter"/>
+        <property name="applyOnConfigurations" value="page,module,wrappedcontent" />
+        <property name="applyOnModes" value="live"/>
+        <property name="handlers">
+            <list>
+                <bean class="org.jahia.services.seo.urlrewrite.UrlRewriteVisitor">
+                    <property name="applyOnModes" value="live"/>
+                    <property name="urlRewriteService" ref="UrlRewriteService"/>
+                </bean>
+            </list>
+        </property>
+    </bean>
+
+    <bean id="UrlRewriteFilter" class="org.jahia.services.seo.urlrewrite.UrlRewriteFilter">
+        <property name="enabled" value="true"/>
+        <property name="outboundRulesEnabled" value="true"/>
+        <property name="urlRewriteService" ref="UrlRewriteService"/>
+    </bean>
+    
+</beans>

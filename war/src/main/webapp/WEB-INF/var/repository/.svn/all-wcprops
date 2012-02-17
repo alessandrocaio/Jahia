@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/jahia/!svn/ver/40134/trunk/war/src/main/webapp/WEB-INF/var/repository
+END
+indexing_configuration.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/jahia/!svn/ver/40134/trunk/war/src/main/webapp/WEB-INF/var/repository/indexing_configuration.xml
+END
+indexing_configuration_version.xml
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/jahia/!svn/ver/40015/trunk/war/src/main/webapp/WEB-INF/var/repository/indexing_configuration_version.xml
+END

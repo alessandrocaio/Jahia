@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/visibility
+END
+VisibilityConditionRule.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/visibility/VisibilityConditionRule.java
+END
+BaseVisibilityConditionRule.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/visibility/BaseVisibilityConditionRule.java
+END
+VisibilityService.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/visibility/VisibilityService.java
+END

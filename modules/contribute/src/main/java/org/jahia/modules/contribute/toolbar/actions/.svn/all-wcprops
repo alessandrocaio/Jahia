@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/jahia/!svn/ver/40181/trunk/modules/contribute/src/main/java/org/jahia/modules/contribute/toolbar/actions
+END
+MultipleCopyAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/jahia/!svn/ver/40181/trunk/modules/contribute/src/main/java/org/jahia/modules/contribute/toolbar/actions/MultipleCopyAction.java
+END
+MultiplePasteAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/jahia/!svn/ver/40181/trunk/modules/contribute/src/main/java/org/jahia/modules/contribute/toolbar/actions/MultiplePasteAction.java
+END
+MultipleCutAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/jahia/!svn/ver/40181/trunk/modules/contribute/src/main/java/org/jahia/modules/contribute/toolbar/actions/MultipleCutAction.java
+END
+MultiplePublishAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/jahia/!svn/ver/40181/trunk/modules/contribute/src/main/java/org/jahia/modules/contribute/toolbar/actions/MultiplePublishAction.java
+END
+CheckClipboardAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/jahia/!svn/ver/40181/trunk/modules/contribute/src/main/java/org/jahia/modules/contribute/toolbar/actions/CheckClipboardAction.java
+END
+CleanClipboardAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/jahia/!svn/ver/40181/trunk/modules/contribute/src/main/java/org/jahia/modules/contribute/toolbar/actions/CleanClipboardAction.java
+END
+MultipleDeleteAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/jahia/!svn/ver/40181/trunk/modules/contribute/src/main/java/org/jahia/modules/contribute/toolbar/actions/MultipleDeleteAction.java
+END

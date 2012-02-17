@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/jahia/!svn/ver/40421/trunk/war/src/main/webapp/WEB-INF/etc/repository
+END
+site.xml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/jahia/!svn/ver/37294/trunk/war/src/main/webapp/WEB-INF/etc/repository/site.xml
+END
+templatesSet.xml
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/jahia/!svn/ver/39275/trunk/war/src/main/webapp/WEB-INF/etc/repository/templatesSet.xml
+END
+jahiapp.xml
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/jahia/!svn/ver/39276/trunk/war/src/main/webapp/WEB-INF/etc/repository/jahiapp.xml
+END
+user.xml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/jahia/!svn/ver/37061/trunk/war/src/main/webapp/WEB-INF/etc/repository/user.xml
+END
+root.xml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/jahia/!svn/ver/40421/trunk/war/src/main/webapp/WEB-INF/etc/repository/root.xml
+END
+profileModule.xml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/jahia/!svn/ver/37833/trunk/war/src/main/webapp/WEB-INF/etc/repository/profileModule.xml
+END

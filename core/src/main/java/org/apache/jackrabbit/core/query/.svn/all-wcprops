@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/jahia/!svn/ver/40359/trunk/core/src/main/java/org/apache/jackrabbit/core/query
+END
+FacetedQueryResult.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/apache/jackrabbit/core/query/FacetedQueryResult.java
+END
+JahiaQueryObjectModelImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/apache/jackrabbit/core/query/JahiaQueryObjectModelImpl.java
+END
+JahiaSimpleQueryResult.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/apache/jackrabbit/core/query/JahiaSimpleQueryResult.java
+END

@@ -1,0 +1,67 @@
+9
+
+dir
+40433
+http://subversion.jahia.org/svn/jahia/trunk/test/jahia-test-module-war/src/main/webapp/WEB-INF/classes/plugins
+http://subversion.jahia.org/svn/jahia
+
+
+
+2011-07-15T16:17:56.616052Z
+38562
+bpapez
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+69c369ed-ed09-0410-a4a1-e19a46c23626
+
+feed
+dir
+
+lib-http
+dir
+
+lib-nekohtml
+dir
+
+lib-regex-filter
+dir
+
+nutch-extensionpoints
+dir
+
+parse-html
+dir
+
+parse-js
+dir
+
+parse-rss
+dir
+
+parse-text
+dir
+
+parse-zip
+dir
+
+protocol-httpclient
+dir
+
+urlfilter-regex
+dir
+
+urlnormalizer-regex
+dir
+

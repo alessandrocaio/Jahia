@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/jahia/!svn/ver/40233/trunk/core/src/main/resources/org/jahia/defaults/config/spring/jcr
+END
+applicationcontext-jcr.xml
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/jahia/!svn/ver/40233/trunk/core/src/main/resources/org/jahia/defaults/config/spring/jcr/applicationcontext-jcr.xml
+END
+applicationcontext-jcr-smb.xml.example
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/jahia/!svn/ver/38527/trunk/core/src/main/resources/org/jahia/defaults/config/spring/jcr/applicationcontext-jcr-smb.xml.example
+END
+applicationcontext-jcr-local.xml.example
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/jahia/!svn/ver/38527/trunk/core/src/main/resources/org/jahia/defaults/config/spring/jcr/applicationcontext-jcr-local.xml.example
+END

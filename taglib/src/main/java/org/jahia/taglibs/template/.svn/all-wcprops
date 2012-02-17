@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/jahia/!svn/ver/40411/trunk/taglib/src/main/java/org/jahia/taglibs/template
+END
+CaptchaTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/jahia/!svn/ver/40181/trunk/taglib/src/main/java/org/jahia/taglibs/template/CaptchaTag.java
+END
+TokenizedFormTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/jahia/!svn/ver/40181/trunk/taglib/src/main/java/org/jahia/taglibs/template/TokenizedFormTag.java
+END

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/apache/jackrabbit/core/query/lucene/constraint
+END
+NoDuplicatesConstraint.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/apache/jackrabbit/core/query/lucene/constraint/NoDuplicatesConstraint.java
+END
+JahiaDescendantNodeConstraint.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/apache/jackrabbit/core/query/lucene/constraint/JahiaDescendantNodeConstraint.java
+END
+JahiaConstraintBuilder.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/apache/jackrabbit/core/query/lucene/constraint/JahiaConstraintBuilder.java
+END
+JahiaChildNodeConstraint.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/apache/jackrabbit/core/query/lucene/constraint/JahiaChildNodeConstraint.java
+END

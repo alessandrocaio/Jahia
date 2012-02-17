@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/jahia/!svn/ver/39860/trunk/war/src/main/webapp/errors
+END
+error.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/jahia/!svn/ver/39860/trunk/war/src/main/webapp/errors/error.jsp
+END
+error_400.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/jahia/!svn/ver/39121/trunk/war/src/main/webapp/errors/error_400.jsp
+END
+error_401.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/jahia/!svn/ver/39121/trunk/war/src/main/webapp/errors/error_401.jsp
+END
+error_403.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/jahia/!svn/ver/39121/trunk/war/src/main/webapp/errors/error_403.jsp
+END
+error_404.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/jahia/!svn/ver/39121/trunk/war/src/main/webapp/errors/error_404.jsp
+END
+maintenance.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/jahia/!svn/ver/39121/trunk/war/src/main/webapp/errors/maintenance.jsp
+END

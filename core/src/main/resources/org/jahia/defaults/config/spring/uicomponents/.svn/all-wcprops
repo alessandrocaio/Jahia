@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/jahia/!svn/ver/40310/trunk/core/src/main/resources/org/jahia/defaults/config/spring/uicomponents
+END
+applicationcontext-studiomode.xml
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/jahia/!svn/ver/39687/trunk/core/src/main/resources/org/jahia/defaults/config/spring/uicomponents/applicationcontext-studiomode.xml
+END
+applicationcontext-contentpicker.xml
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/jahia/!svn/ver/40310/trunk/core/src/main/resources/org/jahia/defaults/config/spring/uicomponents/applicationcontext-contentpicker.xml
+END
+applicationcontext-editmode.xml
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/jahia/!svn/ver/39963/trunk/core/src/main/resources/org/jahia/defaults/config/spring/uicomponents/applicationcontext-editmode.xml
+END
+applicationcontext-toolbar.xml
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/jahia/!svn/ver/40186/trunk/core/src/main/resources/org/jahia/defaults/config/spring/uicomponents/applicationcontext-toolbar.xml
+END
+applicationcontext-contentmanager.xml
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/jahia/!svn/ver/40310/trunk/core/src/main/resources/org/jahia/defaults/config/spring/uicomponents/applicationcontext-contentmanager.xml
+END

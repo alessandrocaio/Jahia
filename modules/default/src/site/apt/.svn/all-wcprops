@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/jahia/!svn/ver/40208/trunk/modules/default/src/site/apt
+END
+profile.apt
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/jahia/!svn/ver/37730/trunk/modules/default/src/site/apt/profile.apt
+END
+autoSplitting.apt
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/jahia/!svn/ver/34987/trunk/modules/default/src/site/apt/autoSplitting.apt
+END
+userDashboard.apt
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/jahia/!svn/ver/35640/trunk/modules/default/src/site/apt/userDashboard.apt
+END
+userAgent.apt
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/jahia/!svn/ver/32591/trunk/modules/default/src/site/apt/userAgent.apt
+END
+navMenuOverview.apt
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/jahia/!svn/ver/40208/trunk/modules/default/src/site/apt/navMenuOverview.apt
+END
+defaultActions.apt
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/jahia/!svn/ver/36192/trunk/modules/default/src/site/apt/defaultActions.apt
+END
+navMenuCustomizing.apt
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/jahia/!svn/ver/40208/trunk/modules/default/src/site/apt/navMenuCustomizing.apt
+END
+navMenuUsage.apt
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/jahia/!svn/ver/40208/trunk/modules/default/src/site/apt/navMenuUsage.apt
+END
+navMenu.apt
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/jahia/!svn/ver/40200/trunk/modules/default/src/site/apt/navMenu.apt
+END
+lists.apt
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/jahia/!svn/ver/38520/trunk/modules/default/src/site/apt/lists.apt
+END
+tagging.apt
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/jahia/!svn/ver/32591/trunk/modules/default/src/site/apt/tagging.apt
+END
+defaultmodules.apt
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/jahia/!svn/ver/40201/trunk/modules/default/src/site/apt/defaultmodules.apt
+END
+hideTemplates.apt
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/jahia/!svn/ver/32591/trunk/modules/default/src/site/apt/hideTemplates.apt
+END

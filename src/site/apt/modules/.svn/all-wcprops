@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/jahia/!svn/ver/40217/trunk/src/site/apt/modules
+END
+deployment.apt
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/jahia/!svn/ver/40215/trunk/src/site/apt/modules/deployment.apt
+END
+components.apt
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/jahia/!svn/ver/39339/trunk/src/site/apt/modules/components.apt
+END
+myspacemodule.apt
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/jahia/!svn/ver/40217/trunk/src/site/apt/modules/myspacemodule.apt
+END
+modules.apt
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/jahia/!svn/ver/40199/trunk/src/site/apt/modules/modules.apt
+END

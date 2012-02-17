@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/jahia/!svn/ver/40349/trunk/test/jahia-test-module/src/main/java/org/jahia/services/query
+END
+IndexOptionsTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/jahia/!svn/ver/40181/trunk/test/jahia-test-module/src/main/java/org/jahia/services/query/IndexOptionsTest.java
+END
+QueryResultTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/jahia/!svn/ver/40181/trunk/test/jahia-test-module/src/main/java/org/jahia/services/query/QueryResultTest.java
+END
+QueryModificationTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/jahia/!svn/ver/40181/trunk/test/jahia-test-module/src/main/java/org/jahia/services/query/QueryModificationTest.java
+END
+FacetedQueryTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/jahia/!svn/ver/40349/trunk/test/jahia-test-module/src/main/java/org/jahia/services/query/FacetedQueryTest.java
+END

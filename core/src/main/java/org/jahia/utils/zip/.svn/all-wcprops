@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/utils/zip
+END
+ExclusionWildcardFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/utils/zip/ExclusionWildcardFilter.java
+END
+InflaterInputStream.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/utils/zip/InflaterInputStream.java
+END
+ZipConstants.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/utils/zip/ZipConstants.java
+END
+PathFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/utils/zip/PathFilter.java
+END
+FilteredDirectoryWalker.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/utils/zip/FilteredDirectoryWalker.java
+END
+ZipInputStream.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/utils/zip/ZipInputStream.java
+END
+DeflaterOutputStream.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/utils/zip/DeflaterOutputStream.java
+END
+JahiaArchiveFileHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/utils/zip/JahiaArchiveFileHandler.java
+END
+ZipOutputStream.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/utils/zip/ZipOutputStream.java
+END
+ZipEntry.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/utils/zip/ZipEntry.java
+END

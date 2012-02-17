@@ -1,0 +1,161 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/nodetypes/initializers
+END
+MenusChoiceListInitializerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/nodetypes/initializers/MenusChoiceListInitializerImpl.java
+END
+CountryChoiceListInitializerAndRendererImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/nodetypes/initializers/CountryChoiceListInitializerAndRendererImpl.java
+END
+NodeTypesChoiceListInitializerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/nodetypes/initializers/NodeTypesChoiceListInitializerImpl.java
+END
+SubNodeTypesChoiceListInitializerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/nodetypes/initializers/SubNodeTypesChoiceListInitializerImpl.java
+END
+TemplatesChoiceListInitializerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/nodetypes/initializers/TemplatesChoiceListInitializerImpl.java
+END
+WorkflowTypesChoiceListInitializer.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/nodetypes/initializers/WorkflowTypesChoiceListInitializer.java
+END
+TemplatesNodeChoiceListInitializer.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/nodetypes/initializers/TemplatesNodeChoiceListInitializer.java
+END
+ComponentTypesChoiceListInitializerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/nodetypes/initializers/ComponentTypesChoiceListInitializerImpl.java
+END
+SortChoiceListInitializerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/jahia/!svn/ver/39688/trunk/core/src/main/java/org/jahia/services/content/nodetypes/initializers/SortChoiceListInitializerImpl.java
+END
+CurrentUser.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/nodetypes/initializers/CurrentUser.java
+END
+WorkflowChoiceListInitializer.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/nodetypes/initializers/WorkflowChoiceListInitializer.java
+END
+ChoiceListInitializer.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/nodetypes/initializers/ChoiceListInitializer.java
+END
+BackgroundActionChoiceListInitializerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/nodetypes/initializers/BackgroundActionChoiceListInitializerImpl.java
+END
+ComponentLinkerChoiceListInitializer.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/nodetypes/initializers/ComponentLinkerChoiceListInitializer.java
+END
+SortableFieldnamesChoiceListInitializerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/nodetypes/initializers/SortableFieldnamesChoiceListInitializerImpl.java
+END
+UsersChoiceListInitializerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/nodetypes/initializers/UsersChoiceListInitializerImpl.java
+END
+CountryFlagChoiceListInitializerAndRendererImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/nodetypes/initializers/CountryFlagChoiceListInitializerAndRendererImpl.java
+END
+ScriptChoiceListInitializerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/nodetypes/initializers/ScriptChoiceListInitializerImpl.java
+END
+ModuleChoiceListInitializer.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/nodetypes/initializers/ModuleChoiceListInitializer.java
+END
+Now.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/nodetypes/initializers/Now.java
+END
+ModuleImageChoiceListInitializerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/nodetypes/initializers/ModuleImageChoiceListInitializerImpl.java
+END
+ResourceBundleChoiceListInitializerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/nodetypes/initializers/ResourceBundleChoiceListInitializerImpl.java
+END
+NodesChoiceListInitializerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/nodetypes/initializers/NodesChoiceListInitializerImpl.java
+END
+ChoiceListInitializerService.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/nodetypes/initializers/ChoiceListInitializerService.java
+END
+ChoiceListValue.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/nodetypes/initializers/ChoiceListValue.java
+END
+ValueInitializer.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/nodetypes/initializers/ValueInitializer.java
+END

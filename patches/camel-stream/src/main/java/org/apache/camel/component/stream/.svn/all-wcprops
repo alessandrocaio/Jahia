@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/jahia/!svn/ver/33059/trunk/patches/camel-stream/src/main/java/org/apache/camel/component/stream
+END
+StreamConsumer.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/jahia/!svn/ver/33059/trunk/patches/camel-stream/src/main/java/org/apache/camel/component/stream/StreamConsumer.java
+END

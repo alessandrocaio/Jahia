@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <bean id="springContextSingleton" class="org.jahia.services.SpringContextSingleton" factory-method="getInstance"/>
+
+    <bean id="jahiaServiceTemplate" class="org.jahia.services.JahiaService" abstract="true" init-method="start"
+          destroy-method="stop" depends-on="springContextSingleton">
+        <property name="settingsBean" ref="settingsBean"/>
+    </bean>
+
+    <bean id="JahiaPreferencesService" class="org.jahia.services.preferences.JahiaPreferencesService"
+          parent="jahiaServiceTemplate" factory-method="getInstance">
+        <property name="cacheService" ref="JahiaCacheService"/>
+        <property name="jcrStoreService" ref="JCRStoreService"/>
+        <property name="providerTypes">
+            <map>
+                <entry key="portlet" value="jnt:portletPreference"/>
+            </map>
+        </property>
+    </bean>
+    <bean id="PortletDispatchingProvider" class="org.jahia.services.applications.pluto.PlutoDispatchingProvider"
+          init-method="start" destroy-method="stop"/>
+	<bean id="DispatchingService" class="org.jahia.services.applications.DispatchingServiceImpl"
+		parent="jahiaServiceTemplate" factory-method="getInstance">
+		<property name="dispatchingProviders">
+			<map>
+				<entry key="portlet" value-ref="PortletDispatchingProvider" />
+			</map>
+		</property>
+		<property name="applicationsManager" ref="ApplicationsManagerService" />
+	</bean>
+    <bean id="ServletContextManager" class="org.jahia.services.applications.ServletContextManager"
+          factory-method="getInstance" init-method="start">
+        <property name="cacheService" ref="JahiaCacheService"/>
+    </bean>
+	<bean id="QueryService" class="org.jahia.services.query.QueryServiceImpl"
+		parent="jahiaServiceTemplate" factory-method="getInstance" />
+    <bean id="ApplicationsManagerPortletProvider"
+          class="org.jahia.services.applications.pluto.ApplicationsManagerPlutoProvider" init-method="start"
+          destroy-method="stop"/>
+	<bean id="ApplicationsManagerService"
+		class="org.jahia.services.applications.ApplicationsManagerServiceImpl"
+		parent="jahiaServiceTemplate" factory-method="getInstance">
+		<property name="managerProviders">
+			<map>
+				<entry key="portlet" value-ref="ApplicationsManagerPortletProvider" />
+			</map>
+		</property>
+		<property name="jcrTemplate" ref="jcrTemplate" />
+		<property name="cacheService" ref="JahiaCacheService" />
+		<property name="groupManagerService" ref="JahiaGroupManagerService" />
+		<property name="servletContextManager" ref="ServletContextManager" />
+		<property name="plutoServices" ref="PlutoServices" />
+        <property name="defaultPortletPermissionMappings">
+            <map>
+                <entry key="createInstance" value="/roles/editor" />
+            </map>
+        </property>
+        <property name="defaultWebAppRoleMappings">
+            <map>
+                <entry key="tomcat" value="/roles/administrator" />
+            </map>
+        </property>
+        <property name="defaultPortletModeMappings">
+            <map>
+                <entry key="view" value="/roles/reader" />
+                <entry key="edit" value="/roles/editor" />
+                <entry key="help" value="/roles/editor" />
+            </map>
+        </property>
+	</bean>
+	<bean id="JahiaFileWatcherService"
+		class="org.jahia.services.deamons.filewatcher.JahiaFileWatcherBaseService"
+		parent="jahiaServiceTemplate" factory-method="getInstance">
+		<property name="schedulerService" ref="SchedulerService" />
+	</bean>
+    <bean id="JahiaSitesService" class="org.jahia.services.sites.JahiaSitesBaseService" parent="jahiaServiceTemplate"
+          factory-method="getInstance" lazy-init="true">
+        <property name="groupService" ref="JahiaGroupManagerService"/>
+        <property name="cacheService" ref="JahiaCacheService"/>
+        <property name="sessionFactory" ref="jcrSessionFactory"/>
+        <property name="systemSiteTitle" value="System Site"/>
+        <property name="systemSiteServername" value=""/>
+        <property name="systemSiteDefaultLanguage" value="en"/>
+        <property name="systemSiteLanguages" >
+            <set>
+                <value>en</value>
+                <value>fr</value>
+            </set>
+        </property>
+        <property name="systemSiteTemplateSetName" value="templates-system"/>
+    </bean>
+
+	<bean id="CategoryService" class="org.jahia.services.categories.CategoryServiceImpl"
+		parent="jahiaServiceTemplate" factory-method="getInstance">
+		<property name="categoryProvider"
+			ref="org.jahia.services.categories.jcr.JCRCategoryProvider" />
+	</bean>
+    
+    <bean id="org.jahia.services.categories.jcr.JCRCategoryProvider" class="org.jahia.services.categories.jcr.JCRCategoryProvider">
+		<property name="sessionFactory" ref="jcrSessionFactory"/>
+    </bean>
+    
+    <bean id="org.jahia.services.tags.TaggingService" class="org.jahia.services.tags.TaggingService"/>
+
+	<bean id="ImportExportService" class="org.jahia.services.importexport.ImportExportBaseService" parent="jahiaServiceTemplate" factory-method="getInstance">
+		<property name="sitesService" ref="JahiaSitesService" />
+		<property name="jcrStoreService" ref="JCRStoreService" />
+		<property name="fileWatcherService" ref="JahiaFileWatcherService" />
+		<property name="categoryService" ref="CategoryService" />
+        <property name="xmlContentTransformers">
+            <list value-type="org.jahia.services.importexport.XMLContentTransformer">
+                <!--
+                    <bean class="com.myproject.MyCustomXMLContentTransformer" />
+ 	 	 		-->
+            </list>
+        </property>
+        <!--
+        <property name="legacyPidMappingTool">
+            <bean class="org.jahia.services.importexport.LegacyPidToVanityUrlMappingToolImpl">
+                <property name="urlMgr" ref="org.jahia.services.seo.jcr.VanityUrlManager"/>
+            </bean>
+        </property>
+        -->
+	</bean>
+
+    <bean id="org.jahia.services.templates.TemplatePackageRegistry"
+          class="org.jahia.services.templates.TemplatePackageRegistry">
+        <property name="settingsBean" ref="settingsBean"/>
+        <property name="jcrStoreService" ref="JCRStoreService" />
+    </bean>
+
+    <bean id="JahiaTemplateManagerService" class="org.jahia.services.templates.JahiaTemplateManagerService"
+          parent="jahiaServiceTemplate">
+        <property name="templatePackageDeployer">
+            <bean class="org.jahia.services.templates.TemplatePackageDeployer">
+                <property name="settingsBean" ref="settingsBean"/>
+                <property name="templatePackageRegistry" ref="org.jahia.services.templates.TemplatePackageRegistry"/>
+                <property name="importExportService" ref="ImportExportService"/>
+                <property name="contextLoader" ref="TemplatePackageApplicationContextLoader"/>
+            </bean>
+        </property>
+        <property name="siteService" ref="JahiaSitesService"/>
+        <property name="templatePackageRegistry" ref="org.jahia.services.templates.TemplatePackageRegistry"/>
+        <property name="componentRegistry" ref="ComponentRegistry"/>
+    </bean>
+    
+    <bean id="ComponentRegistry" class="org.jahia.services.templates.ComponentRegistry">
+        <property name="templatePackageRegistry" ref="org.jahia.services.templates.TemplatePackageRegistry"/>
+    </bean>
+
+    <bean id="TemplatePackageApplicationContextLoader"
+          class="org.jahia.services.templates.TemplatePackageApplicationContextLoader">
+        <property name="contextConfigLocation" value="modules/**/META-INF/spring/*.xml"/>
+    </bean>
+
+	<bean id="org.jahia.services.tasks.TaskService" class="org.jahia.services.tasks.TaskService">
+		<property name="groupManager" ref="JahiaGroupManagerService" />
+        <property name="userManagerService" ref="JahiaUserManagerService"/>
+	</bean>
+
+	<bean id="SearchService" class="org.jahia.services.search.SearchServiceImpl"
+		parent="jahiaServiceTemplate" factory-method="getInstance">
+		<property name="searchProvider"
+			ref="org.jahia.services.search.jcr.JahiaJCRSearchProvider" />
+	</bean>
+
+    <bean id="org.jahia.services.search.jcr.JahiaJCRSearchProvider"
+          class="org.jahia.services.search.jcr.JahiaJCRSearchProvider">
+        <property name="taggingService" ref="org.jahia.services.tags.TaggingService"/>
+    </bean>
+
+    <bean id="org.jahia.services.seo.jcr.VanityUrlManager" class="org.jahia.services.seo.jcr.VanityUrlManager"/>
+    <bean id="org.jahia.services.seo.jcr.VanityUrlService" class="org.jahia.services.seo.jcr.VanityUrlService">
+        <property name="vanityUrlManager" ref="org.jahia.services.seo.jcr.VanityUrlManager"/>
+        <property name="cacheService" ref="JahiaCacheService" />
+        <property name="urlResolverListener" ref="urlResolverListener" />
+    </bean>
+
+    <bean id="ContentHistoryService" class="org.jahia.services.history.ContentHistoryService"
+          init-method="start" factory-method="getInstance">
+        <property name="sessionFactoryBean" ref="sessionFactory"/>
+        <property name="from" value="seda:logMsgs"/>
+        <property name="ignoreProperties">
+            <set>
+                <value>jcr:created</value>
+                <value>jcr:createdBy</value>
+                <value>jcr:lastModifiedBy</value>
+                <value>jcr:baseVersion</value>
+                <value>jcr:lastModified</value>
+                <value>jcr:versionHistory</value>
+                <value>jcr:predecessors</value>
+                <value>jcr:isCheckedOut</value>
+                <value>jcr:mimeType</value>
+                <value>jcr:data</value>
+                <value>jcr:uuid</value>
+                <value>jcr:primaryType</value>
+                <value>jcr:mixinTypes</value>
+                <value>jcr:language</value>
+                <value>j:hidden</value>
+                <value>j:inherit</value>
+                <value>j:userView</value>
+                <value>j:aceType</value>
+                <value>j:nodename</value>
+                <value>j:fullpath</value>
+                <value>j:originWS</value>
+                <value>j:roles</value>
+                <value>j:principal</value>
+                <value>j:protected</value>
+                <value>j:external</value>
+                <value>j:password</value>
+                <value>j:accountLocked</value>
+                <value>j:lockTypes</value>
+                <value>j:locktoken</value>
+                <value>j:published</value>
+            </set>
+        </property>
+        <property name="ignoreNodeTypes">
+            <set>
+                <value>jnt:usersFolder</value>
+                <value>jnt:groupsFolder</value>
+            </set>
+        </property>
+    </bean>
+
+    <bean id="ImageJImageService" class="org.jahia.services.image.ImageJImageService"  factory-method="getInstance" />
+
+    <bean id="ImageMagickImageService" class="org.jahia.services.image.ImageMagickImageService" factory-method="getInstance" init-method="init">
+        <property name="imageMagickPath" value="${imageMagickPath}"/>
+    </bean>
+
+    <bean id="visibilityService" class="org.jahia.services.visibility.VisibilityService" factory-method="getInstance">
+        <property name="conditions">
+            <map key-type="java.lang.String" value-type="org.jahia.services.visibility.VisibilityConditionRule"/>
+        </property>
+    </bean>
+    
+    <bean class="org.jahia.tools.patches.GroovyPatcher"/>
+</beans>

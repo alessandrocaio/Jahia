@@ -1,0 +1,31 @@
+9
+
+dir
+40433
+http://subversion.jahia.org/svn/jahia/trunk/modules/facets/src/site/resources/images
+http://subversion.jahia.org/svn/jahia
+
+
+
+2011-02-28T23:38:27.918405Z
+36312
+bpapez
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+69c369ed-ed09-0410-a4a1-e19a46c23626
+
+facets
+dir
+

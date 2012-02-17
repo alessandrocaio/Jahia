@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/jahia/!svn/ver/39865/trunk/modules/profile/src/main/webapp/jnt_editUserDetails/html
+END
+editUserDetails.properties
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/jahia/!svn/ver/35852/trunk/modules/profile/src/main/webapp/jnt_editUserDetails/html/editUserDetails.properties
+END
+editUserDetails.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/jahia/!svn/ver/39865/trunk/modules/profile/src/main/webapp/jnt_editUserDetails/html/editUserDetails.jsp
+END
+editUserDetails.visibility.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/jahia/!svn/ver/38177/trunk/modules/profile/src/main/webapp/jnt_editUserDetails/html/editUserDetails.visibility.jsp
+END
+editUserDetails.visibility.properties
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/jahia/!svn/ver/35852/trunk/modules/profile/src/main/webapp/jnt_editUserDetails/html/editUserDetails.visibility.properties
+END

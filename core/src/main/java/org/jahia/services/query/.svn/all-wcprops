@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/query
+END
+QueryResultWrapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/query/QueryResultWrapper.java
+END
+QueryService.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/query/QueryService.java
+END
+QueryServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/query/QueryServiceImpl.java
+END
+QOMBuilder.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/query/QOMBuilder.java
+END
+QueryWrapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/query/QueryWrapper.java
+END
+MultipleQueryResultAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/query/MultipleQueryResultAdapter.java
+END
+QueryManagerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/query/QueryManagerImpl.java
+END

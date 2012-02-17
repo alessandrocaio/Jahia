@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/jahia/!svn/ver/40377/trunk/modules/facets/src/main/webapp/jnt_facets/html
+END
+facetDisplay.jspf
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/jahia/!svn/ver/39577/trunk/modules/facets/src/main/webapp/jnt_facets/html/facetDisplay.jspf
+END
+facets.javascripttagcloud.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/jahia/!svn/ver/40144/trunk/modules/facets/src/main/webapp/jnt_facets/html/facets.javascripttagcloud.jsp
+END
+facets.tagcloud.properties
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/jahia/!svn/ver/39577/trunk/modules/facets/src/main/webapp/jnt_facets/html/facets.tagcloud.properties
+END
+facets.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/jahia/!svn/ver/40377/trunk/modules/facets/src/main/webapp/jnt_facets/html/facets.jsp
+END
+facets.properties
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/jahia/!svn/ver/39577/trunk/modules/facets/src/main/webapp/jnt_facets/html/facets.properties
+END
+facets.tagcloud.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/jahia/!svn/ver/40144/trunk/modules/facets/src/main/webapp/jnt_facets/html/facets.tagcloud.jsp
+END
+facets.javascripttagcloud.properties
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/jahia/!svn/ver/39577/trunk/modules/facets/src/main/webapp/jnt_facets/html/facets.javascripttagcloud.properties
+END
+activeFacets.jspf
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/jahia/!svn/ver/39577/trunk/modules/facets/src/main/webapp/jnt_facets/html/activeFacets.jspf
+END

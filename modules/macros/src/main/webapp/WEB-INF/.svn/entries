@@ -1,0 +1,34 @@
+9
+
+dir
+40433
+http://subversion.jahia.org/svn/jahia/trunk/modules/macros/src/main/webapp/WEB-INF
+http://subversion.jahia.org/svn/jahia
+
+
+
+2011-10-14T15:33:26.488207Z
+39398
+cmailleux
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+69c369ed-ed09-0410-a4a1-e19a46c23626
+
+macros
+dir
+
+modules-macros
+dir
+

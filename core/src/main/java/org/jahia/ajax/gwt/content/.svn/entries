@@ -1,0 +1,31 @@
+9
+
+dir
+40433
+http://subversion.jahia.org/svn/jahia/trunk/core/src/main/java/org/jahia/ajax/gwt/content
+http://subversion.jahia.org/svn/jahia
+
+
+
+2012-02-13T16:12:24.974821Z
+40400
+bamboo
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+69c369ed-ed09-0410-a4a1-e19a46c23626
+
+server
+dir
+

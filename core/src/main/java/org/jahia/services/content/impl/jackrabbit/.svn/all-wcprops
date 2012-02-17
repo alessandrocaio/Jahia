@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/jahia/!svn/ver/40253/trunk/core/src/main/java/org/jahia/services/content/impl/jackrabbit
+END
+SpringJackrabbitRepository.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/jahia/!svn/ver/40241/trunk/core/src/main/java/org/jahia/services/content/impl/jackrabbit/SpringJackrabbitRepository.java
+END
+JackrabbitStoreProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/impl/jackrabbit/JackrabbitStoreProvider.java
+END
+RepositoryMigrator.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/jahia/!svn/ver/40253/trunk/core/src/main/java/org/jahia/services/content/impl/jackrabbit/RepositoryMigrator.java
+END
+JahiaRepositoryConfig.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/impl/jackrabbit/JahiaRepositoryConfig.java
+END

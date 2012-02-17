@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/form
+END
+FormQuickRemotePublication.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/form/FormQuickRemotePublication.java
+END
+FileUploadField.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/form/FileUploadField.java
+END
+CalendarField.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/form/CalendarField.java
+END
+CKEditorField.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/form/CKEditorField.java
+END
+AutoCompleteComboBox.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/form/AutoCompleteComboBox.java
+END
+CompletionItems.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/form/CompletionItems.java
+END
+FormDeployPortletDefinition.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/form/FormDeployPortletDefinition.java
+END

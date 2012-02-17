@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/jahia/!svn/ver/39634/trunk/test/jahia-test-module-war/src/main/webapp/scripts/jmeter/createusers
+END
+createUsers.jmx
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/jahia/!svn/ver/39634/trunk/test/jahia-test-module-war/src/main/webapp/scripts/jmeter/createusers/createUsers.jmx
+END
+users.txt
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/jahia/!svn/ver/39634/trunk/test/jahia-test-module-war/src/main/webapp/scripts/jmeter/createusers/users.txt
+END
+test.properties
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/jahia/!svn/ver/39634/trunk/test/jahia-test-module-war/src/main/webapp/scripts/jmeter/createusers/test.properties
+END

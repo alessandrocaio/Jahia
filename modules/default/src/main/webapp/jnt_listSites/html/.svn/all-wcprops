@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/jahia/!svn/ver/39848/trunk/modules/default/src/main/webapp/jnt_listSites/html
+END
+listSites.hidden.load.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/jahia/!svn/ver/39330/trunk/modules/default/src/main/webapp/jnt_listSites/html/listSites.hidden.load.jsp
+END
+listSites.properties
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/jahia/!svn/ver/37761/trunk/modules/default/src/main/webapp/jnt_listSites/html/listSites.properties
+END
+listSites.paginated.properties
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/jahia/!svn/ver/39608/trunk/modules/default/src/main/webapp/jnt_listSites/html/listSites.paginated.properties
+END
+listSites.paginated.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/jahia/!svn/ver/38464/trunk/modules/default/src/main/webapp/jnt_listSites/html/listSites.paginated.jsp
+END
+listSites.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/jahia/!svn/ver/39848/trunk/modules/default/src/main/webapp/jnt_listSites/html/listSites.jsp
+END

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/jahia/!svn/ver/40232/trunk/modules/contribute/src/main/webapp/jnt_folder/html
+END
+edit.jspf
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/jahia/!svn/ver/38177/trunk/modules/contribute/src/main/webapp/jnt_folder/html/edit.jspf
+END
+folder.contribute.table.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/jahia/!svn/ver/38177/trunk/modules/contribute/src/main/webapp/jnt_folder/html/folder.contribute.table.jsp
+END
+folder.contribute.default.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/jahia/!svn/ver/40232/trunk/modules/contribute/src/main/webapp/jnt_folder/html/folder.contribute.default.jsp
+END
+workflow.jspf
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/jahia/!svn/ver/38177/trunk/modules/contribute/src/main/webapp/jnt_folder/html/workflow.jspf
+END

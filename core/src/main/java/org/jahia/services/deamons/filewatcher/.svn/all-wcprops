@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/deamons/filewatcher
+END
+JahiaFileWatcherService.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/deamons/filewatcher/JahiaFileWatcherService.java
+END
+JahiaFileWatcherBaseService.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/deamons/filewatcher/JahiaFileWatcherBaseService.java
+END

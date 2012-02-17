@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/jahia/!svn/ver/40411/trunk/taglib/src/main/java/org/jahia/taglibs/template/include
+END
+ModuleTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/jahia/!svn/ver/40411/trunk/taglib/src/main/java/org/jahia/taglibs/template/include/ModuleTag.java
+END
+AddCacheDependencyTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/jahia/!svn/ver/40181/trunk/taglib/src/main/java/org/jahia/taglibs/template/include/AddCacheDependencyTag.java
+END
+AreaTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/jahia/!svn/ver/40396/trunk/taglib/src/main/java/org/jahia/taglibs/template/include/AreaTag.java
+END
+ListTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/jahia/!svn/ver/40181/trunk/taglib/src/main/java/org/jahia/taglibs/template/include/ListTag.java
+END
+AddWrapperTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/jahia/!svn/ver/40181/trunk/taglib/src/main/java/org/jahia/taglibs/template/include/AddWrapperTag.java
+END
+AddResourcesTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/jahia/!svn/ver/40181/trunk/taglib/src/main/java/org/jahia/taglibs/template/include/AddResourcesTag.java
+END
+OptionTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/jahia/!svn/ver/40181/trunk/taglib/src/main/java/org/jahia/taglibs/template/include/OptionTag.java
+END
+IncludeTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/jahia/!svn/ver/40181/trunk/taglib/src/main/java/org/jahia/taglibs/template/include/IncludeTag.java
+END

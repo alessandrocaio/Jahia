@@ -1,0 +1,614 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee
+                            http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
+        version="2.0">
+    <description>Provides a tag library for declaring JSR-283 based Query Object Model.</description>
+    <display-name>Jahia Query Tag Library</display-name>
+    <tlib-version>6.5</tlib-version>
+    <short-name>query</short-name>
+    <uri>http://www.jahia.org/tags/queryLib</uri>
+    
+    <tag>
+        <description>Compound query QOM constraint that conjuncts (ANDs) its child constraints.</description>
+        <name>and</name>
+        <tag-class>org.jahia.taglibs.query.AndTag</tag-class>
+        <body-content>JSP</body-content>
+    </tag>        
+    
+    <tag>
+        <description>Used to define a ChildNode Constraint. You can set one or less childNode constraint by query.
+        If you search in a page, It does the search only in the page you define in path.
+        </description>
+        <name>childNode</name>
+        <tag-class>org.jahia.taglibs.query.ChildNodeTag</tag-class>
+        <body-content>empty</body-content>
+        <attribute>
+            <description>
+                The name of the selector on which this constraint apply.
+            </description>
+            <name>selectorName</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <description><![CDATA[
+                <p>The path of the parent node.</p>
+                <p>Jahia Content Objects can be used as Parent Node are : Jahia Page, Jahia ContainerList, Jahia Site
+                With jahia container query tags, path value should be generated using one of the
+                following ways:
+                <ul>
+                <li>1. "/" means returns containers from all virtual sites.</li>
+                <li>2. In the context of a JSP page, Jahia provides a currentPage bean and a currentSite bean in request scope so you
+                can directly refer to all pages or site to generate their paths :
+                <code>&lt;query:childNode path="${currentPage.path}"/&gt;</code>
+                Any instance object of <code>SiteBean</code>, <code>PageBean</code>, <code>ContainerListBean</code> classes have the method <code>getJCRPath():String</code>
+                for that purpose.</li>
+                <li>3. This path can be obtained through the method : getJCRPath(ProcessingContext context):String on the
+                followin classes : JahiaSite, JahiaPage; ContentPage, JahiaContainerList or ContentContainerList. This method is not
+                recommanded as it supposes to have some scriplet in your JSPs.</li>
+                </ul>
+                Note that if the Parent Node is a Jahia Page, the JahiaDBFilterCreator will create a search filter
+                instead of a DB filter.</p>]]>
+            </description>
+            <name>path</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+    </tag>
+    
+    <tag>
+    	<description>
+	    	Defines a column to include in the tabular view of query results.
+			If propertyName is not specified, a column is included for each single-valued non-residual 
+			property of the node type specified by the nodeType attribute of the selector selectorName. 
+			If propertyName is specified, columnName is required and used to name the column in the tabular results.
+			If propertyName is not specified, columnName must not be specified, and the included columns will
+			be named "selectorName.propertyName". 
+    	</description>
+    	<name>column</name>
+    	<tag-class>org.jahia.taglibs.query.ColumnTag</tag-class>
+    	<body-content>empty</body-content>
+    	<attribute>
+    		<description>The name of the corresponding selector. Can be omitted if the query has only one selector.</description>
+    		<name>selectorName</name>
+    		<required>false</required>
+    		<rtexprvalue>true</rtexprvalue>
+    		<type>java.lang.String</type>
+    	</attribute>
+    	<attribute>
+    		<description>The name of the node property to include into the query results.</description>
+    		<name>propertyName</name>
+    		<required>false</required>
+    		<rtexprvalue>true</rtexprvalue>
+    		<type>java.lang.String</type>
+    	</attribute>
+    	<attribute>
+    		<description>The name of the corresponding column in the query results.</description>
+    		<name>columnName</name>
+    		<required>false</required>
+    		<rtexprvalue>true</rtexprvalue>
+    		<type>java.lang.String</type>
+    	</attribute>
+    </tag>
+    
+    <tag>
+        <description>Used to define a comparison Constraint</description>
+        <name>comparison</name>
+        <tag-class>org.jahia.taglibs.query.ComparisonTag</tag-class>
+        <body-content>empty</body-content>
+        <attribute>
+        	<description>
+        		The sequence (a comma-separated string) of dynamic operand types to
+     			be applied on the operand1 (left operand of the comparison)
+     		</description>
+        	<name>operandTypes</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <description>The property name.</description>
+            <name>propertyName</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <description><![CDATA[The comparison operator: =, >, <, <=, like, != or <>]]></description>
+            <name>operator</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <description>The string value to compare with.</description>
+            <name>value</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+    </tag>
+    
+    <tag>
+        <description>Used to define a query object model.</description>
+        <name>definition</name>
+        <tag-class>org.jahia.taglibs.query.QueryDefinitionTag</tag-class>
+        <body-content>JSP</body-content>
+        <attribute>
+            <description>the name of the scoped bean with the created javax.jcr.query.qom.QueryObjectModel</description>
+            <name>var</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <description>
+                Existing QueryObjectModel bean in the request scope to be used for the query.
+            </description>
+            <name>qom</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.Object</type>
+        </attribute>
+        <attribute>
+            <description>
+                Name of an existing QueryObjectModel bean in the request scope to be used for the query.
+            </description>
+            <name>qomBeanName</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <description>
+                SQL-2 statement that will be used to initialize the QOM - ignored if qomBeanName is used
+            </description>
+            <name>statement</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <description>the scope of the exposed bean with the QueryObjectModel (see PageContext). Defaults to page scope.</description>
+            <name>scope</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <description>the maximum size of the result set, expressed in terms of the number of Rows</description>
+            <name>limit</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.Long</type>
+        </attribute>
+        <attribute>
+            <description>the start offset of the result set</description>
+            <name>offset</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.Long</type>
+        </attribute>
+    </tag>
+    
+    <tag>
+        <description>Used to define a DescendantNode Constraint. You can set one or less descendantNode constraint by query.
+            If you search in a page, it does the search in page and sub-pages from the page you define in path.</description>
+        <name>descendantNode</name>
+        <tag-class>org.jahia.taglibs.query.DescendantNodeTag</tag-class>
+        <body-content>empty</body-content>
+        <attribute>
+            <description>
+               <![CDATA[ The name of the selector on which this constraint apply. ]]>
+            </description>
+            <name>selectorName</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <description><![CDATA[
+                <p>The path of the ancestor node.</p>
+                Jahia Content Objects can be used as Parent Node are : Jahia Page, Jahia Site
+                With jahia container query tags, path value should be generated using one of the
+                following ways:
+                <ul>
+                <li>1. "/" means returns containers from all virtual sites.</li>
+                <li>2. In the context of a JSP page, Jahia provides a currentPage bean and currentSite bean in request
+                scope so you can directly refer to all pages or site to generate their paths :<br>
+                <code>&lt;query:descendantNode path="${currentPage.path}"/&gt;</code><br>
+                <code>&lt;query:descendantNode path="${currentSite.path}"/&gt;</code><br>
+                Any instance object of PageBean or SiteBean classes have the method getJCRPath():String
+                for that purpose.</li>
+                <li>3. This path can be obtained through the method : <code>getJCRPath(ProcessingContext context):String</code> on the
+                followin classes : JahiaPage; ContentPage or JahiaSite. This method is not
+                recommanded as it supposes to have some scriplet in your JSPs.</li>
+                </ul>
+                Note that if the Parent Node is a Jahia Page, the JahiaDBFilterCreator will create a search filter
+                instead of a DB filter.</p>
+                ]]>
+            </description>
+            <name>path</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+    </tag>
+    <tag>
+        <description>Used to define an Equal To Constraint</description>
+        <name>equalTo</name>
+        <tag-class>org.jahia.taglibs.query.EqualToTag</tag-class>
+        <body-content>empty</body-content>
+        <attribute>
+        	<description>
+        		The sequence (a comma-separated string) of dynamic operand types to
+     			be applied on the operand1 (left operand of the comparison)
+     		</description>
+        	<name>operandTypes</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <description>The property name.</description>
+            <name>propertyName</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <description>The string value to compare with.</description>
+            <name>value</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+    </tag>
+    <tag>
+        <description>Used to define a full text search Constraint</description>
+        <name>fullTextSearch</name>
+        <tag-class>org.jahia.taglibs.query.FullTextSearchTag</tag-class>
+        <body-content>empty</body-content>
+        <attribute>
+            <description><![CDATA[
+                    <p>a <code>term</code> not preceded by "-" (minus) is satisfied only if the value contains that term.</p>
+                    <p>a <code>term</code> preceded by "-" (minus) is satisfied only if the value does not contain that term.</p>
+                    <p>Terms separated by withespace are implicity "ANDed".</p>
+                    <p>"AND" has higher precedence that "OR"</p>
+                    <p>Within a term, each double quote ("),  minus sign (-), and backslah (\) must be preceded by a backslash (\)</p>
+                    <p>This parameter is required</p>
+                    <p>look at <a href="http://lucene.apache.org/java/2_3_2/queryparsersyntax.html">http://lucene.apache.org/java/2_3_2/queryparsersyntax.html</a> for more information</p>
+                    ]]>
+            </description>
+            <name>searchExpression</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <description>
+                <![CDATA[
+                        <p>The search can be limited to a property.</p>
+                        <p>If null or empty, the search is done everywhere</p>
+                ]]>
+            </description>
+            <name>propertyName</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <description>
+                Name of the selector.
+            </description>
+            <name>selectorName</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>        
+    </tag>
+    
+    <tag>
+        <description>Used to define a Greater Than Constraint</description>
+        <name>greaterThan</name>
+        <tag-class>org.jahia.taglibs.query.GreaterThanTag</tag-class>
+        <body-content>empty</body-content>
+        <attribute>
+        	<description>
+        		The sequence (a comma-separated string) of dynamic operand types to
+     			be applied on the operand1 (left operand of the comparison)
+     		</description>
+        	<name>operandTypes</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <description>The property name.</description>
+            <name>propertyName</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <description>The string value to compare with.</description>
+            <name>value</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+    </tag>
+    <tag>
+        <description>Used to define a Greater Than Or Equal To Constraint</description>
+        <name>greaterThanOrEqualTo</name>
+        <tag-class>org.jahia.taglibs.query.GreaterThanOrEqualToTag</tag-class>
+        <body-content>empty</body-content>
+        <attribute>
+        	<description>
+        		The sequence (a comma-separated string) of dynamic operand types to
+     			be applied on the operand1 (left operand of the comparison)
+     		</description>
+        	<name>operandTypes</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <description>The property name.</description>
+            <name>propertyName</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <description>The string value to compare with.</description>
+            <name>value</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+    </tag>
+    <tag>
+        <description>Used to define a Less Than Constraint</description>
+        <name>lessThan</name>
+        <tag-class>org.jahia.taglibs.query.LessThanTag</tag-class>
+        <body-content>empty</body-content>
+        <attribute>
+        	<description>
+        		The sequence (a comma-separated string) of dynamic operand types to
+     			be applied on the operand1 (left operand of the comparison)
+     		</description>
+        	<name>operandTypes</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <description>The property name.</description>
+            <name>propertyName</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <description>The string value to compare with.</description>
+            <name>value</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+    </tag>
+    <tag>
+        <description>Used to define a Less Than Or Equal To Constraint</description>
+        <name>lessThanOrEqualTo</name>
+        <tag-class>org.jahia.taglibs.query.LessThanOrEqualToTag</tag-class>
+        <body-content>empty</body-content>
+        <attribute>
+        	<description>
+        		The sequence (a comma-separated string) of dynamic operand types to
+     			be applied on the operand1 (left operand of the comparison)
+     		</description>
+        	<name>operandTypes</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <description>The property name.</description>
+            <name>propertyName</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <description>The string value to compare with.</description>
+            <name>value</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+    </tag>
+    <tag>
+        <description>Used to define a Like Constraint</description>
+        <name>like</name>
+        <tag-class>org.jahia.taglibs.query.LikeTag</tag-class>
+        <body-content>empty</body-content>
+        <attribute>
+        	<description>
+        		The sequence (a comma-separated string) of dynamic operand types to
+     			be applied on the operand1 (left operand of the comparison)
+     		</description>
+        	<name>operandTypes</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <description>The property name.</description>
+            <name>propertyName</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <description>The string value to compare with.</description>
+            <name>value</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+    </tag>
+    
+    <tag>
+        <description>
+        	Compound query QOM constraint that negates its child constraint. If it
+     		has multiple children, they are first ANDed and the result constrain is
+     		negated.
+		</description>
+        <name>not</name>
+        <tag-class>org.jahia.taglibs.query.NotTag</tag-class>
+        <body-content>JSP</body-content>
+    </tag>
+    
+    <tag>
+        <description>Used to define a Not Equal To Constraint</description>
+        <name>notEqualTo</name>
+        <tag-class>org.jahia.taglibs.query.NotEqualToTag</tag-class>
+        <body-content>empty</body-content>
+        <attribute>
+        	<description>
+        		The sequence (a comma-separated string) of dynamic operand types to
+     			be applied on the operand1 (left operand of the comparison)
+     		</description>
+        	<name>operandTypes</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <description>The property name.</description>
+            <name>propertyName</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <description>The string value to compare with.</description>
+            <name>value</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+    </tag>
+    
+    <tag>
+        <description>Compound query QOM constraint that disjuncts (ORs) its child constraints.</description>
+        <name>or</name>
+        <tag-class>org.jahia.taglibs.query.OrTag</tag-class>
+        <body-content>JSP</body-content>
+    </tag>
+    
+    <tag>
+    	<description>Adds the property existence constraint to the current query.</description>
+    	<name>propertyExistence</name>
+    	<tag-class>org.jahia.taglibs.query.PropertyExistenceTag</tag-class>
+    	<body-content>empty</body-content>
+    	<attribute>
+    		<description>The name of the node property to check for existence.</description>
+    		<name>propertyName</name>
+    		<required>true</required>
+    		<rtexprvalue>true</rtexprvalue>
+    		<type>java.lang.String</type>
+    	</attribute>
+    	<attribute>
+    		<description>The name of the corresponding selector. Can be omitted if the query has only one selector.</description>
+    		<name>selectorName</name>
+    		<required>false</required>
+    		<rtexprvalue>true</rtexprvalue>
+    		<type>java.lang.String</type>
+    	</attribute>
+    </tag>
+    
+    <tag>
+    	<description>Adds the same node constraint to the current query, i.e. tests whether the selectorName node is reachable by the absolute path specified.</description>
+    	<name>sameNode</name>
+    	<tag-class>org.jahia.taglibs.query.SameNodeTag</tag-class>
+    	<body-content>empty</body-content>
+    	<attribute>
+    		<description>The absolute path to test.</description>
+    		<name>path</name>
+    		<required>true</required>
+    		<rtexprvalue>true</rtexprvalue>
+    		<type>java.lang.String</type>
+    	</attribute>
+    	<attribute>
+    		<description>The name of the corresponding selector. Can be omitted if the query has only one selector.</description>
+    		<name>selectorName</name>
+    		<required>false</required>
+    		<rtexprvalue>true</rtexprvalue>
+    		<type>java.lang.String</type>
+    	</attribute>
+    </tag>
+    
+    <tag>
+        <description>Used to define a selector, which is used to select a subset of the nodes in the workspace based on node type.</description>
+        <name>selector</name>
+        <tag-class>org.jahia.taglibs.query.SelectorTag</tag-class>
+        <body-content>empty</body-content>
+        <attribute>
+            <description>
+                The node type name to use for selection
+            </description>
+            <name>nodeTypeName</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <description>
+                Name of the selector. If not specified, the nodeTypeName value is used.
+            </description>
+            <name>selectorName</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+        <example>
+            &lt;query:selector selectorName="news" nodeTypeName="jnt:news"/&gt;
+        </example>
+    </tag>
+    
+    <tag>
+        <description>Used to define an ordering. You can set multiple sortBy tag in the same query. </description>
+        <name>sortBy</name>
+        <tag-class>org.jahia.taglibs.query.SortByTag</tag-class>
+        <body-content>empty</body-content>
+        <attribute>
+            <description>The name of the property on which to order.</description>
+            <name>propertyName</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+             <description>Defines the sorting order. "asc" for ascending order, "desc" for descending order. [asc]</description>
+            <name>order</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <description>
+                Name of the selector.
+            </description>
+            <name>selectorName</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+    </tag>
+</taglib>

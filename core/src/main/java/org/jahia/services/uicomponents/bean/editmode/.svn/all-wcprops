@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/uicomponents/bean/editmode
+END
+EditConfiguration.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/uicomponents/bean/editmode/EditConfiguration.java
+END
+SidePanelTab.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/uicomponents/bean/editmode/SidePanelTab.java
+END
+EngineTabPropertyEditor.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/uicomponents/bean/editmode/EngineTabPropertyEditor.java
+END
+EngineTab.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/uicomponents/bean/editmode/EngineTab.java
+END
+Engine.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/uicomponents/bean/editmode/Engine.java
+END

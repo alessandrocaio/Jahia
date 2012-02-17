@@ -1,0 +1,46 @@
+9
+
+dir
+40433
+http://subversion.jahia.org/svn/jahia/trunk/modules/assets/src/main/webapp
+http://subversion.jahia.org/svn/jahia
+
+
+
+2012-02-01T10:38:59.084556Z
+40302
+bamboo
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+69c369ed-ed09-0410-a4a1-e19a46c23626
+
+META-INF
+dir
+
+WEB-INF
+dir
+
+css
+dir
+
+icons
+dir
+
+javascript
+dir
+
+swf
+dir
+

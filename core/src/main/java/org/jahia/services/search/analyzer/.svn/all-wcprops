@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/search/analyzer
+END
+GermanSnowballAnalyzer.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/search/analyzer/GermanSnowballAnalyzer.java
+END
+EnglishSnowballAnalyzer.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/search/analyzer/EnglishSnowballAnalyzer.java
+END
+StandardAnalyzer.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/search/analyzer/StandardAnalyzer.java
+END
+FrenchSnowballAnalyzer.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/search/analyzer/FrenchSnowballAnalyzer.java
+END

@@ -1,0 +1,209 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/jahia/!svn/ver/40353/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/content
+END
+ContentExport.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/content/ContentExport.java
+END
+ImageCrop.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/content/ImageCrop.java
+END
+ContentDetails.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/content/ContentDetails.java
+END
+ContentRepositoryTabs.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/content/ContentRepositoryTabs.java
+END
+ThumbsListView.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/content/ThumbsListView.java
+END
+PickedContentView.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/content/PickedContentView.java
+END
+ContentManagerViewPort.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/content/ContentManagerViewPort.java
+END
+ImageRotate.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/content/ImageRotate.java
+END
+ContentViews.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/jahia/!svn/ver/40310/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/content/ContentViews.java
+END
+ImageResize.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/content/ImageResize.java
+END
+SearchGrid.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/content/SearchGrid.java
+END
+ContentPickerViewport.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/content/ContentPickerViewport.java
+END
+CronField.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/content/CronField.java
+END
+RepositoryTab.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/content/RepositoryTab.java
+END
+FileUploader.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/content/FileUploader.java
+END
+FilterStatusBar.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/content/FilterStatusBar.java
+END
+ColorPickerField.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/jahia/!svn/ver/40041/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/content/ColorPickerField.java
+END
+ContentStatusBar.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/content/ContentStatusBar.java
+END
+ContentPicker.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/content/ContentPicker.java
+END
+ContentExportTemplate.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/content/ContentExportTemplate.java
+END
+AbstractView.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/jahia/!svn/ver/40353/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/content/AbstractView.java
+END
+Mounter.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/content/Mounter.java
+END
+ContentSearchForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/jahia/!svn/ver/40310/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/content/ContentSearchForm.java
+END
+ContentToolbar.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/content/ContentToolbar.java
+END
+PasswordPrompt.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/content/PasswordPrompt.java
+END
+ContentImport.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/content/ContentImport.java
+END
+ThumbView.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/content/ThumbView.java
+END
+InfoTabItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/content/InfoTabItem.java
+END
+NodeUsagesGrid.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/content/NodeUsagesGrid.java
+END
+ContentManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/content/ContentManager.java
+END
+ManagerLinker.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/content/ManagerLinker.java
+END
+ContentPickerField.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/content/ContentPickerField.java
+END
+TableView.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/jahia/!svn/ver/40310/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/content/TableView.java
+END
+ImagePopup.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/content/ImagePopup.java
+END

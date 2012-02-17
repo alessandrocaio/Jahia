@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/files
+END
+FileCacheEntry.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/files/FileCacheEntry.java
+END
+FileLastModifiedCacheEntry.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/files/FileLastModifiedCacheEntry.java
+END
+FileCacheListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/files/FileCacheListener.java
+END
+FileServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/files/FileServlet.java
+END
+FileCacheManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/files/FileCacheManager.java
+END
+FileKey.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/files/FileKey.java
+END

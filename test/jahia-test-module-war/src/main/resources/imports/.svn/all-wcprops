@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/jahia/!svn/ver/39634/trunk/test/jahia-test-module-war/src/main/resources/imports
+END
+importJCRContainerList.xml
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/jahia/!svn/ver/39634/trunk/test/jahia-test-module-war/src/main/resources/imports/importJCRContainerList.xml
+END
+importJCRContainer.xml
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/jahia/!svn/ver/39634/trunk/test/jahia-test-module-war/src/main/resources/imports/importJCRContainer.xml
+END
+importIndexOptionNodes.xml
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/jahia/!svn/ver/39634/trunk/test/jahia-test-module-war/src/main/resources/imports/importIndexOptionNodes.xml
+END
+importTemplatesForCacheTest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/jahia/!svn/ver/39634/trunk/test/jahia-test-module-war/src/main/resources/imports/importTemplatesForCacheTest.xml
+END
+importJCR.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/jahia/!svn/ver/39634/trunk/test/jahia-test-module-war/src/main/resources/imports/importJCR.xml
+END
+import.xml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/jahia/!svn/ver/39634/trunk/test/jahia-test-module-war/src/main/resources/imports/import.xml
+END

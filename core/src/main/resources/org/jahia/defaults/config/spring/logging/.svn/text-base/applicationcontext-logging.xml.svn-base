@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <bean id="loggingService" class="org.jahia.services.logging.MetricsLoggingServiceImpl" factory-method="getInstance" depends-on="ContentHistoryService">
+        <property name="ignoreUsers">
+            <set>
+                <value><![CDATA[ system ]]></value>
+            </set>
+        </property>
+        <property name="logTemplatesMap">
+            <map>
+                <entry key="fileAccessed" value="file accessed with status {}"/>
+                <entry key="moduleViewed" value="module viewed with template {}"/>
+                <entry key="pageViewed" value="page viewed with {} from {} in {} ms"/>
+                <entry key="nodeUpdated" value="node updated with {}"/>
+                <entry key="nodeCreated" value="node created with {}"/>
+                <entry key="nodeDeleted" value="node deleted"/>
+                <entry key="nodeMoved" value="node moved to {}"/>
+                <entry key="propertyAdded" value="property added"/>
+                <entry key="propertyChanged" value="property changed to {}"/>
+                <entry key="propertyRemoved" value="property removed"/>
+                <entry key="publishedNode" value="node published from {} to {} with comments {}"/>
+                <entry key="unpublishedNode" value="node unpublished from {}"/>
+            </map>
+        </property>
+    </bean>
+</beans>

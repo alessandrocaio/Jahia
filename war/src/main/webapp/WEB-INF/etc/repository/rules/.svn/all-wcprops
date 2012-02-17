@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/jahia/!svn/ver/40322/trunk/war/src/main/webapp/WEB-INF/etc/repository/rules
+END
+text-extraction-rules.drl
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/jahia/!svn/ver/34762/trunk/war/src/main/webapp/WEB-INF/etc/repository/rules/text-extraction-rules.drl
+END
+repository-rules.drl
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/jahia/!svn/ver/39529/trunk/war/src/main/webapp/WEB-INF/etc/repository/rules/repository-rules.drl
+END
+rules.dsl
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/jahia/!svn/ver/40322/trunk/war/src/main/webapp/WEB-INF/etc/repository/rules/rules.dsl
+END
+repository-live-rules.drl
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/jahia/!svn/ver/39529/trunk/war/src/main/webapp/WEB-INF/etc/repository/rules/repository-live-rules.drl
+END

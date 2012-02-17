@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/bin/listeners
+END
+ShutdownLoggingConfigListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/bin/listeners/ShutdownLoggingConfigListener.java
+END
+JahiaContextLoaderListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/bin/listeners/JahiaContextLoaderListener.java
+END
+LoggingConfigListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/bin/listeners/LoggingConfigListener.java
+END
+InitLoggingConfigListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/bin/listeners/InitLoggingConfigListener.java
+END

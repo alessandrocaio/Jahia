@@ -1,0 +1,205 @@
+.bodywrapper .admin-placeholder {
+    background : #e1ebf1 url(images/placeholder.png) top left;
+    color: #333 !important;
+	font-weight: bold;
+    font-size: 9px;
+    border:1px solid #bfcfd9;
+	padding: 0px 5px ;
+	vertical-align: middle;
+    horizontal-align:middle;
+	margin-bottom:2px;
+    text-align:center;
+    font-family: tahoma, arial, verdana, sans-serif;
+    font-size: 9px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	padding:5px;
+	margin:5px;
+}
+/* Utils */
+.bodywrapper .clear {
+  clear: both;
+}
+.bodywrapper br.clearFloat{
+  float: left;
+  width: 100%;
+}
+/* general */
+body {
+  background-color:#f1f5fa;
+  padding: 0;
+  margin: 0;
+}
+.bodywrapper {
+  font-family:Arial, Verdana, Helvetica, sans-serif;
+  background-color:#f1f5fa;
+  font-size:11px!important;
+  padding: 0px;
+  margin: 0;
+}
+.bodywrapper input[type="text"] {
+	font-size: 11px;
+	}
+.bodywrapper input[type="password"] {
+	font-size: 11px;
+}
+.bodywrapper input[type="file"] {
+	font-size: 11px;
+}
+.bodywrapper select {
+	 font-size: 11px;
+}
+#adminLogin label, #adminLogin th, #adminLogin td {
+	 font-size: 11px;
+}
+/* Copyright */
+.bodywrapper #copyright {
+  text-align: center;
+  color: #ADB7BD;
+  padding-top: 7px;
+  width: 100%;
+  float: left;
+}
+.bodywrapper #copyright {
+  text-align: center;
+  color: #ADB7BD;
+}
+/* General */
+.bodywrapper #topTitle {
+  margin: 12px 20px 20px 20px;
+  height: 20px;
+}
+.bodywrapper h1 {
+  font-size: 100%;
+  margin: 0;
+  float: left;
+  padding-right: 10px;
+  text-indent: -2000em;
+  display: block;
+  width: 55px;
+  height: 20px;
+  background: url(images/logo-jahia.gif) no-repeat 10px 0px ;
+  text-indent: -2000em;
+}
+.bodywrapper a {
+  color: #006699;
+  text-decoration: none;
+}
+.bodywrapper a:hover {
+  color: #3399CC;
+  text-decoration: none;
+}
+/**
+ * Section title
+ */
+.bodywrapper h2 {
+  font-size: 120%;
+  margin: 2px;
+  display: block;
+  float: left;
+}
+.bodywrapper h2.edit {
+  background: url(images/data_edit.png) no-repeat;
+  padding: 0 10px 0 20px;
+}
+.bodywrapper h3 {
+  margin-left: 5px;
+}
+/**
+ * Main content
+ */
+.bodywrapper #content {
+  background-color: #ffffff;
+  display: block;
+  width: 100%;
+  border: 1px solid #b7cbd8;
+}
+.bodywrapper #content div.floatright {
+  float: right;
+  padding:5px 5px 5px 5px
+}
+.bodywrapper #content div.floatleft {
+  float: right;
+  padding:5px 5px 5px 5px
+}
+.bodywrapper #content p {
+  padding: 5px;
+}
+.bodywrapper #content .head, .bodywrapper #content .headtop {
+  background: #d8e5ec url(images/bkg-section.png) 0 0;
+  font-weight: bold;
+  height: 23px;
+  border-bottom: 1px solid #b7cbd8;
+}
+.bodywrapper #content .head, .bodywrapper #content .head {
+  border-top: 1px solid #b7cbd8;
+}
+.bodywrapper #content div.object-title {
+  float: left;
+  padding:5px 5px 0 5px
+}
+.bodywrapper #content table.object-title td,.bodywrapper #content table.object-title th {
+  font-weight: normal;
+  padding:5px 5px 0 5px
+}
+/**
+ * Table
+ */
+.bodywrapper table {
+    font-size: 11px;
+	border-bottom: 1px solid #d4d4d4;
+	margin-bottom:5px
+}
+.bodywrapper .evenOddTable {
+
+}
+.bodywrapper table.tBorder {
+  border-top: 1px solid #d4d4d4;
+}
+.bodywrapper table.bBorder {
+  border-bottom: 1px solid #d4d4d4;
+}
+.bodywrapper table.evenOddTable th, .bodywrapper table.evenOddTable td {
+  border-color: #d4d4d4;
+  border-style: solid;
+  margin: 0;
+  padding: 4px;
+}
+.bodywrapper .evenOddTable th {
+  border-width: 0 1px 0 0;
+  background: #ffffff;
+  color: #666666;
+  background:#e6e7e6 url(images/bkg-th.png) repeat-x top left;
+  font-weight: bold;
+  font-size: 11px;
+  text-align: left;
+}
+.bodywrapper .evenOddTable td {
+  border-width: 1px 1px 0 0;
+}
+.bodywrapper .evenOddTable.full td {
+  border-width: 1px 0 0 0;
+}
+.bodywrapper .evenOddTable td td {
+  border: 0;
+}
+.bodywrapper table.evenOddTable td.lastCol {
+  border-right: 0;
+}
+.bodywrapper table.evenOddTable th.lastCol {
+  border-right: 0;
+}
+.bodywrapper tr.evenLine {
+  background-color: #FFFFFF;
+}
+.bodywrapper tr.oddLine {
+  background-color: #f8f8f8;
+}
+.bodywrapper .evenOddTable .x-panel th, .bodywrapper .evenOddTable .x-panel td, .bodywrapper .permissions .x-panel th, .bodywrapper .permissions .x-panel td {
+  padding: 0 !important;
+}
+/**
+ * contribute div
+ */
+.bodywrapper div.addcontent{padding:5px 10px}

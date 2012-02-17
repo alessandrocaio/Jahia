@@ -1,0 +1,34 @@
+9
+
+dir
+40433
+http://subversion.jahia.org/svn/jahia/trunk/modules/templates-system/src/main
+http://subversion.jahia.org/svn/jahia
+
+
+
+2012-02-14T14:21:28.446195Z
+40413
+bamboo
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+69c369ed-ed09-0410-a4a1-e19a46c23626
+
+import
+dir
+
+webapp
+dir
+

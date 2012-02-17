@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/jahia/!svn/ver/40257/trunk/modules/search/src/site/apt
+END
+cnd.apt
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/jahia/!svn/ver/38626/trunk/modules/search/src/site/apt/cnd.apt
+END
+searchIndex.apt
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/jahia/!svn/ver/38131/trunk/modules/search/src/site/apt/searchIndex.apt
+END
+locations.apt
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/jahia/!svn/ver/38144/trunk/modules/search/src/site/apt/locations.apt
+END
+forms.apt
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/jahia/!svn/ver/40257/trunk/modules/search/src/site/apt/forms.apt
+END
+openSearch.apt
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/jahia/!svn/ver/38141/trunk/modules/search/src/site/apt/openSearch.apt
+END
+didYouMean.apt
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/jahia/!svn/ver/38131/trunk/modules/search/src/site/apt/didYouMean.apt
+END
+components.apt
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/jahia/!svn/ver/38132/trunk/modules/search/src/site/apt/components.apt
+END
+search.apt
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/jahia/!svn/ver/40203/trunk/modules/search/src/site/apt/search.apt
+END

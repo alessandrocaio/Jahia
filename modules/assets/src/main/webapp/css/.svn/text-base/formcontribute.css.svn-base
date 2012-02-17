@@ -1,0 +1,222 @@
+.bodywrapper .FormContribute input[type="hidden"]{
+	display:none !important;
+}
+/******************************************************************************
+*  Tables
+******************************************************************************/
+.bodywrapper .FormContribute .table th img{
+	vertical-align: middle
+}
+.bodywrapper .FormContribute .table,
+.bodywrapper .FormContribute .table caption
+{
+    margin: auto;
+	line-height:1.9em;
+
+}
+
+.bodywrapper .FormContribute .table
+{
+    border-collapse:collapse;
+	margin-bottom:1em;
+	font-size:0.85em;
+	border:none;
+}
+.bodywrapper .FormContribute .table, .bodywrapper .FormContribute .table th, .bodywrapper .FormContribute .table td
+{
+border: 1px solid #B7CBD8;
+}
+.bodywrapper .FormContribute .table caption
+{
+	font-weight:normal;
+	font-size:2em;
+	margin:0 ;
+	padding:0;
+}
+
+.bodywrapper .FormContribute .table th {
+    color: #fff;
+	white-space:nowrap;
+	background-color:#77848c;
+	padding:2px;
+}
+.bodywrapper .FormContribute .table td
+{
+	background-color:#fff;
+	padding:2px;
+}
+.bodywrapper .FormContribute .table tr:hover{
+	background-color:#ccc
+}
+.bodywrapper .FormContribute .table .odd td{background-color:#fff}
+.bodywrapper .FormContribute .table .even td{ background-color:#eaeaea}
+.bodywrapper .FormContribute .col1{}
+.bodywrapper .FormContribute .col2{}
+.bodywrapper .FormContribute .col3{}
+.bodywrapper .FormContribute .col4{}
+
+.bodywrapper .FormContribute .table td.center,
+.bodywrapper .FormContribute .table th.center
+{
+	text-align:center;
+}
+
+.bodywrapper .FormContribute .wcag-warnings-ignore label,
+.bodywrapper .FormContribute input[type=checkbox]{
+	display:inline
+}
+/******************************************************************************
+* FormContribute
+******************************************************************************/
+.bodywrapper .FormContribute {
+
+}
+ .bodywrapper .FormContribute fieldset {
+	border:1px solid #b7cbd8;
+	margin:5px;
+	padding:5px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+ .bodywrapper .FormContribute legend {
+	background:#fff url(img/toolbar-input.png) repeat-x left bottom;
+	border:1px solid #b7cbd8;
+	color:#000;
+	display:inline;
+	font-weight:bold;
+	padding:0 0.5em;
+	text-transform:uppercase;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+ .bodywrapper .FormContribute input,
+ .bodywrapper .FormContribute textarea {
+	width:97%
+}
+.bodywrapper .FormContribute input[type=checkbox] {
+	width:auto;
+}
+ .bodywrapper .FormContribute p{
+	clear:both;
+	margin:0.5em 0;
+	padding:0px
+}
+ .bodywrapper .FormContribute .formMarginLeft{
+	margin:0.5em 0 0.5em 0;
+	padding:0;
+}
+ .bodywrapper .FormContribute label.left,
+ .bodywrapper .FormContribute label {
+	display:block;
+	font-weight:bold
+}
+ .bodywrapper .FormContribute input,  .bodywrapper .FormContribute select,  .bodywrapper .FormContribute textarea {
+	background:none;
+	border:1px inset #b7cbd8;
+	color:#000;
+	padding:4px;
+	margin-right:5px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+ .bodywrapper .FormContribute input.radio,  .bodywrapper .FormContribute input.checkbox {
+	width:auto;
+}
+ .bodywrapper .FormContribute input.button,  .bodywrapper .FormContribute button{
+	width:auto;
+	background:#fff url(img/toolbar-input.png) repeat-x left bottom;
+    color: #000;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	-moz-box-shadow: 0 1px 3px #999;
+	-webkit-box-shadow: 0 1px 3px #999;
+	box-shadow: 0 1px 3px #999;
+	padding:2px;
+	vertical-align: middle;
+	display:inline;
+	border:1px solid #b7cbd8;
+	font-family:Arial,Verdana,Helvetica,sans-serif;
+	font-size:11px !important;
+	line-height:14px;
+	margin-bottom:5px;
+	margin-top:2px
+}
+ .bodywrapper .FormContribute input.button:hover,  .bodywrapper .FormContribute button:hover{
+    background:#fff url(img/toolbar-input-on.png) repeat-x left bottom;
+    color: #333;
+	cursor: pointer;
+	text-decoration:none;
+}
+
+
+ .bodywrapper .FormContribute input.disabled,  .bodywrapper .FormContribute button.disabled {
+    background:none;
+    background-color:#ccc;
+     color:#666;
+
+}
+ .bodywrapper .FormContribute button img{
+	vertical-align: text-bottom;
+	margin-right:2px
+}
+button span.icon-contribute{
+	width:16px;
+	height:16px;
+	display:block;
+	float:left;
+	margin-right:3px;
+}
+button span.icon-locked{
+ 	background:url(img/toolbar-contribute.png) no-repeat 0px 0px;
+}
+button span.icon-edit{
+ 	background:url(img/toolbar-contribute.png) no-repeat 0px -16px;
+}
+button span.icon-preview{
+ 	background:url(img/toolbar-contribute.png) no-repeat 0px -32px;
+}
+button span.icon-moveup{
+ 	background:url(img/toolbar-contribute.png) no-repeat 0px -48px;
+}
+button span.icon-movedown{
+ 	background:url(img/toolbar-contribute.png) no-repeat 0px -64px;
+}
+button span.icon-delete{
+ 	background:url(img/toolbar-contribute.png) no-repeat 0px -80px;
+}
+button span.icon-add{
+ 	background:url(img/toolbar-contribute.png) no-repeat 0px -96px;
+}
+button span.icon-accept{
+ 	background:url(img/toolbar-contribute.png) no-repeat 0px -112px;
+}
+button span.icon-cancel{
+ 	background:url(img/toolbar-contribute.png) no-repeat 0px -128px;
+}
+button span.icon-undelete{
+ 	background:url(img/toolbar-contribute.png) no-repeat 0px -144px;
+}
+button span.icon-publish{
+ 	background:url(img/toolbar-contribute.png) no-repeat 0px -160px;
+}
+
+/******************************************************************************
+*  subnodes List
+******************************************************************************/
+.bodywrapper ul.subnodesList,
+.bodywrapper ol.subnodesList {
+	list-style:none;
+	margin:1em 0 1em 3em;
+	padding:0;
+	border-bottom:none;
+}
+.bodywrapper ul.subnodesList li,
+.bodywrapper ol.subnodesList li {
+	list-style-type:none;
+	margin:0.2em 0;
+	padding:0;
+}

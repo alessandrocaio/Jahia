@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/ajax/gwt/commons/server
+END
+GWTController.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/ajax/gwt/commons/server/GWTController.java
+END
+RequestResponseAware.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/ajax/gwt/commons/server/RequestResponseAware.java
+END
+JahiaRemoteService.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/ajax/gwt/commons/server/JahiaRemoteService.java
+END

@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/jahia/!svn/ver/40424/trunk/core/src/main/java/org/jahia/services/workflow
+END
+WorkflowBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/workflow/WorkflowBase.java
+END
+WorkflowProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/workflow/WorkflowProvider.java
+END
+StartProcessJob.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/workflow/StartProcessJob.java
+END
+HistoryWorkflowAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/workflow/HistoryWorkflowAction.java
+END
+HistoryWorkflowBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/workflow/HistoryWorkflowBase.java
+END
+WorkflowTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/workflow/WorkflowTask.java
+END
+WorkflowParticipation.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/workflow/WorkflowParticipation.java
+END
+WorkflowComment.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/workflow/WorkflowComment.java
+END
+Workflow.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/workflow/Workflow.java
+END
+WorkflowRule.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/workflow/WorkflowRule.java
+END
+WorkflowVariable.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/workflow/WorkflowVariable.java
+END
+WorkflowTaskComment.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/workflow/WorkflowTaskComment.java
+END
+HistoryWorkflowTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/workflow/HistoryWorkflowTask.java
+END
+AssignAndCompleteTaskJob.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/workflow/AssignAndCompleteTaskJob.java
+END
+WorklowTypeRegistration.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/workflow/WorklowTypeRegistration.java
+END
+WorkflowService.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/workflow/WorkflowService.java
+END
+WorkflowAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/workflow/WorkflowAction.java
+END
+HistoryWorkflow.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/workflow/HistoryWorkflow.java
+END
+WorkflowDefinition.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/workflow/WorkflowDefinition.java
+END

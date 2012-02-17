@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/content/portlet
+END
+PortletRoleCard.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/content/portlet/PortletRoleCard.java
+END
+PortletFormCard.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/content/portlet/PortletFormCard.java
+END
+PortletDefinitionField.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/content/portlet/PortletDefinitionField.java
+END
+PortletDefinitionCard.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/content/portlet/PortletDefinitionCard.java
+END
+PortletSaveAsCard.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/content/portlet/PortletSaveAsCard.java
+END
+PortletModesCard.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/content/portlet/PortletModesCard.java
+END
+PortletWizardWindow.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/content/portlet/PortletWizardWindow.java
+END
+PortletWizardCard.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/content/portlet/PortletWizardCard.java
+END

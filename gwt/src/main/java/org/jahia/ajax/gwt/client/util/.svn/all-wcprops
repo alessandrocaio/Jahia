@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/jahia/!svn/ver/40396/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/util
+END
+URL.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/util/URL.java
+END
+Constants.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/util/Constants.java
+END
+Formatter.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/util/Formatter.java
+END
+Collator.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/util/Collator.java
+END
+WindowUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/util/WindowUtil.java
+END

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/jahia/!svn/ver/40181/trunk/modules/visibility/src/main/webapp/META-INF
+END
+LICENSE.txt
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/jahia/!svn/ver/40181/trunk/modules/visibility/src/main/webapp/META-INF/LICENSE.txt
+END
+live-rules.drl
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/jahia/!svn/ver/38986/trunk/modules/visibility/src/main/webapp/META-INF/live-rules.drl
+END
+rules.dsl
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/jahia/!svn/ver/38931/trunk/modules/visibility/src/main/webapp/META-INF/rules.dsl
+END
+default-rules.drl
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/jahia/!svn/ver/38961/trunk/modules/visibility/src/main/webapp/META-INF/default-rules.drl
+END
+definitions.cnd
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/jahia/!svn/ver/38934/trunk/modules/visibility/src/main/webapp/META-INF/definitions.cnd
+END

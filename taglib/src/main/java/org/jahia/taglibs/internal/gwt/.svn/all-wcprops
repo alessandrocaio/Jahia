@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/jahia/!svn/ver/40181/trunk/taglib/src/main/java/org/jahia/taglibs/internal/gwt
+END
+GWTIncluder.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/jahia/!svn/ver/40181/trunk/taglib/src/main/java/org/jahia/taglibs/internal/gwt/GWTIncluder.java
+END
+GWTInitTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/jahia/!svn/ver/40181/trunk/taglib/src/main/java/org/jahia/taglibs/internal/gwt/GWTInitTag.java
+END
+GWTImportTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/jahia/!svn/ver/40181/trunk/taglib/src/main/java/org/jahia/taglibs/internal/gwt/GWTImportTag.java
+END

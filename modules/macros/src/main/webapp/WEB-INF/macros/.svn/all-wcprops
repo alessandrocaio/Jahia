@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/jahia/!svn/ver/39031/trunk/modules/macros/src/main/webapp/WEB-INF/macros
+END
+getConstant.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/jahia/!svn/ver/36902/trunk/modules/macros/src/main/webapp/WEB-INF/macros/getConstant.groovy
+END
+username.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/jahia/!svn/ver/39031/trunk/modules/macros/src/main/webapp/WEB-INF/macros/username.groovy
+END
+formtoken.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/jahia/!svn/ver/36902/trunk/modules/macros/src/main/webapp/WEB-INF/macros/formtoken.groovy
+END
+sessionid.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/jahia/!svn/ver/38476/trunk/modules/macros/src/main/webapp/WEB-INF/macros/sessionid.groovy
+END

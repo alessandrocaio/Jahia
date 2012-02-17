@@ -1,0 +1,158 @@
+package org.jahia.services.content.rules
+
+#list any import classes here.
+import org.jahia.services.content.rules.*
+import org.jahia.services.content.*
+import javax.jcr.observation.Event
+import org.slf4j.Logger
+
+expander rules.dsl
+
+#declare any global variables here
+global User user
+global Service service
+global ImageService imageService
+global ExtractionService extractionService
+global RulesNotificationService notificationService
+global Logger logger
+global JCRStoreProvider provider
+
+rule "Remove user from cache when updated"
+    when
+		A property j:accountLocked has been set on a node
+			- the node has the type jnt:user
+    then
+        Remove entry node.getName() from cache "JCRUserCache"
+end
+
+rule "ACL added"
+    when
+        A property j:roles has been set on a node
+        The node has a parent
+         - the parent has the type jnt:acl
+    then
+        Update the privileged users
+end
+
+rule "ACL removed"
+    when
+        A node is deleted
+        The node has a parent
+         - the parent has the type jnt:acl
+    then
+        Update the privileged users
+end
+
+// This is an example that shows how to propagate a property to all sub folders and sub files
+// First rule copy the value from the parent when a file is uploaded / modified
+// Second rule propagates a property change to all children
+
+rule "Copy status parent value by new type"
+    salience 25
+    when
+        The type jmix:categorizedDocument has been assigned to a node
+        The property j:status is not defined for the node
+        The node has a parent
+        The parent has a property j:status
+    then
+        Log "Copy status parent value by new type"
+        Set the property j:status of the node with the value of that property
+end
+
+rule "Propagate status value to children"
+    salience 25
+    when
+        A property j:status has been set on a node
+        The node has a child
+            - it has the extension type jmix:categorizedDocument
+    then
+        Log "Propagate status value to child "+child
+        Set the property j:status of the child with the value of that property
+end
+
+rule "Import file"
+    salience 50
+    when
+        A new node is created
+        The node has a parent
+             - it has the extension type jnt:importDropBox
+    then
+        Import the node
+        Log "Import file fired for node " + node.getPath()
+end
+
+rule "Profile Image update"
+    salience 25
+    when
+        A property j:picture has been set on a node
+             - the node has the type jnt:user
+    then
+        Create a square thumbnail on reference "avatar_120" of size 120
+        Create a square thumbnail on reference "avatar_60" of size 60
+        Publish the node.getProperty("j:picture").getNode()
+end
+
+rule "Move subnodes to split folder"
+    salience 100
+    when
+        The type jmix:autoSplitFolders has been assigned to a node
+            - not in operation import
+    then
+        Move subnodes of node to split folder
+end
+
+rule "Move to split folder"
+    salience 100
+    when
+        A new node is created
+            - the parent has the type jmix:autoSplitFolders
+            - not in operation import
+    then
+        Move to split folder node
+end
+
+# Portlet rules
+rule "Portlet definition deleted"
+    when
+        A node is deleted
+        The node has a parent
+            - the parent has the type jnt:portletDefinitions
+    then
+        Flush ApplicationCache
+        Flush ApplicationContextCache
+end
+
+rule "notify user (create)"
+    when
+       A new node is created
+		- the node has the type jnt:user
+		- its name is not guest
+		- its name is not root
+    then
+        Notify new user with mail template "/WEB-INF/notifications/templates/mail/newUser.vm"
+end
+
+rule "User password is set"
+    when
+        A property j:password has been set on a node
+			- the node has the type jnt:user
+    then
+        Store password history for user node.getName()
+end
+
+rule "Create permission for template"
+    when
+        A new node is created
+            - the node has the type jnt:pageTemplate
+    then
+        Create a permission in /permissions/templates named "template-" + node.getName()
+end
+
+rule "Flush group cache"
+    when
+        A node is deleted
+        The node has a parent
+            - the parent has the type jnt:virtualsitesFolder
+    then
+        Flush group cache
+end

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <!-- You can change here the cache implementation that Jahia will use, notably for it's HTML cache, internal
+         caches. For DB caches, this is now managed by the Hibernate implementation, and is configured in the
+         applicationcontext-hibernate.xml file.
+    -->
+    <bean id="noCacheProvider" class="org.jahia.services.cache.dummy.DummyCacheProvider"/>
+
+    <bean id="ehCacheProvider" class="org.jahia.services.cache.ehcache.EhCacheProvider">
+    	<property name="configurationResource">
+			<bean class="org.jahia.settings.EhCacheConfigFactoryBean">
+				<constructor-arg index="0" value="/ehcache-jahia.xml" />
+				<constructor-arg index="1" value="${cluster.activated}" />
+			</bean>
+    	</property>
+        <!-- This property allows to fix a limit for cache entries dependencies management,
+if an entry have more than this value of dependencies then
+when we flush this entry we will flush the whole cache
+        A value of 0 disables groups cache
+        -->
+        <property name="groupsSizeLimit" value="0"/>
+        <property name="jmxActivated" value="true"/>
+        <!-- enable cache statistics by default -->
+        <property name="statisticsEnabled" value="true"/>
+    </bean>
+    <bean id="JahiaCacheService" class="org.jahia.services.cache.CacheFactory" parent="jahiaServiceTemplate" factory-method="getInstance" init-method="start">
+		<property name="cacheProviders">
+			<map>
+				<entry key="default" value-ref="ehCacheProvider" />
+				<entry key="ehcache" value-ref="ehCacheProvider"/>
+                <entry key="nocache" value-ref="noCacheProvider"/>
+			</map>
+		</property>
+    </bean>
+
+    <bean id="cacheKeyGenerator" class="org.jahia.services.render.filter.cache.DefaultCacheKeyGenerator">
+        <property name="groupManagerService" ref="JahiaGroupManagerService"/>
+        <property name="userManagerService" ref="JahiaUserManagerService"/>
+        <property name="cacheProvider" ref="ehCacheProvider"/>
+        <property name="template" ref="jcrTemplate"/>
+    </bean>
+
+	<bean id="ModuleCacheProvider" class="org.jahia.services.render.filter.cache.ModuleCacheProvider">
+        <property name="cacheProvider" ref="ehCacheProvider"/>
+        <!-- Time to wait before going to render generation if someone is already asking for the same key put 0 for waiting forever-->
+        <property name="blockingTimeout" value="30000"/>
+        <property name="keyGenerator" ref="cacheKeyGenerator"/>
+	</bean>
+
+    <bean id="moduleGeneratorQueue" class="org.jahia.services.render.filter.cache.ModuleGeneratorQueue">
+        <property name="maxModulesToGenerateInParallel" value="${maxModulesToGenerateInParallel}"/>
+        <property name="moduleGenerationWaitTime" value="${moduleGenerationWaitTime}"/>
+        <property name="minimumIntervalAfterLastAutoThreadDump" value="${minimumIntervalAfterLastAutoThreadDump}"/>
+        <property name="threadDumpToSystemOut" value="${moduleGenerationThreadDumpToSystemOut}"/>
+        <property name="threadDumpToFile" value="${moduleGenerationTthreadDumpToFile}"/>
+    </bean>
+
+    <bean id="cacheFilter" class="org.jahia.services.render.filter.cache.AggregateCacheFilter">
+        <property name="disabled" value="false"/>
+        <property name="priority" value="16" />
+        <property name="description" value="Module content caching filter." />
+    	<property name="cacheProvider" ref="ModuleCacheProvider"/>
+    	<property name="skipOnTemplateTypes" value="json"/>
+        <property name="skipOnConfiguration" value="include,wrapper,option"/>
+        <property name="applyOnModes" value="live"/>
+        <property name="generatorQueue" ref="moduleGeneratorQueue"/>
+        <property name="moduleParamsProperties">
+            <map key-type="java.lang.String" value-type="java.lang.String">
+                <entry key="j:subNodesView" value="subNodesView"/>
+            </map>
+        </property>
+    </bean>
+
+    <bean name="cacheMapping" class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+        <property name="urlMap">
+            <map>
+                <entry key="/cache/**">
+					<bean class="org.jahia.bin.CacheController">
+						<property name="cacheService" ref="JahiaCacheService"/>
+                        <property name="requiredPermission" value="adminCache"/>
+					</bean>
+                </entry>
+            </map>
+        </property>
+    </bean>
+
+    <bean id="abstractFlushCacheOnNodeBackgroundAction" class="org.jahia.services.content.rules.FlushCacheOnNodeBackgroundAction" abstract="true">
+        <property name="cacheProvider" ref="ModuleCacheProvider"/>
+    </bean>
+
+</beans>

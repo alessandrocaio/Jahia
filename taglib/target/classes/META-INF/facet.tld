@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee
+                            http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
+        version="2.0">
+    <description>Provides a tag library for Jahia's faceting support.</description>
+    <display-name>Jahia Facet Tag Library</display-name>
+    <tlib-version>6.5</tlib-version>
+    <short-name>facet</short-name>
+    <uri>http://www.jahia.org/tags/facetLib</uri>
+
+    <tag-file>
+        <name>facetLabel</name>
+        <path>/META-INF/tags/facet/facetLabel.tag</path>
+    </tag-file>
+    <tag-file>
+        <name>facetValueLabel</name>
+        <path>/META-INF/tags/facet/facetValueLabel.tag</path>
+    </tag-file> 
+
+    <function>
+        <description>Get a list of applied facets</description>
+        <name>getAppliedFacetFilters</name>
+        <function-class>org.jahia.taglibs.facet.Functions</function-class>
+        <function-signature>java.util.Map getAppliedFacetFilters(java.lang.String)
+        </function-signature>
+        <example>
+            ${facet:getAppliedFacetFilters(facet:decodeFacetUrlParam(param[facetParamVarName])[facetParamVarName])}
+        </example>
+    </function>
+    
+    <function>
+        <description>Check whether a facet is currently applied to the query</description>
+        <name>isFacetApplied</name>
+        <function-class>org.jahia.taglibs.facet.Functions</function-class>
+        <function-signature>boolean isFacetApplied(java.lang.String, java.util.Map, javax.jcr.nodetype.PropertyDefinition)
+        </function-signature>
+        <example>
+            ${not facet:isFacetApplied(facetPropertyName, activeFacetsVars[activeFacetMapVarName], facetNodeType.propertyDefinitionsAsMap[facetPropertyName])}        
+        </example>
+    </function>    
+    
+    <function>
+        <description>Check whether a facet value is currently applied to the query</description>
+        <name>isFacetValueApplied</name>
+        <function-class>org.jahia.taglibs.facet.Functions</function-class>
+        <function-signature>boolean isFacetValueApplied(java.lang.Object, java.util.Map)
+        </function-signature>
+        <example>
+            ${not facet:isFacetValueApplied(facetValue, activeFacetsVars[activeFacetMapVarName])}
+        </example>
+    </function>
+
+    <function>
+        <description>Create the drill down URL for a facet value</description>
+        <name>getFacetDrillDownUrl</name>
+        <function-class>org.jahia.taglibs.facet.Functions</function-class>
+        <function-signature>java.lang.String getFacetDrillDownUrl(java.lang.Object, java.lang.String)
+        </function-signature>
+        <example>
+            ${facet:getFacetDrillDownUrl(facetValue, activeFacetsVars[facetParamVarName])}
+        </example>
+    </function>
+
+    <function>
+        <description>Create the URL to remove the facet value from the filter</description>
+        <name>getDeleteFacetUrl</name>
+        <function-class>org.jahia.taglibs.facet.Functions</function-class>
+        <function-signature>java.lang.String getDeleteFacetUrl(java.lang.Object, org.apache.commons.collections.KeyValue, java.lang.String)
+        </function-signature>
+        <example>
+            ${facet:getDeleteFacetUrl(facet, facetValue, activeFacetsVars[facetParamVarName])}
+        </example>
+    </function>
+
+    <function>
+        <description>Return true if there will be an unapplied facet. Useful to decide whether a title should be displayed.</description>
+        <name>isUnappliedFacetExisting</name>
+        <function-class>org.jahia.taglibs.facet.Functions</function-class>
+        <function-signature>boolean isUnappliedFacetExisting(org.jahia.services.query.QueryResultWrapper, java.util.Map)
+        </function-signature>
+        <example>
+            ${facet:isUnappliedFacetExisting(result, activeFacetsVars[activeFacetMapVarName]))}
+        </example>
+    </function>    
+    
+    <function>
+        <description>Return true if there will be an unapplied facet value. Useful to decide whether a title should be displayed.</description>
+        <name>isUnappliedFacetValueExisting</name>
+        <function-class>org.jahia.taglibs.facet.Functions</function-class>
+        <function-signature>boolean isUnappliedFacetValueExisting(org.apache.solr.client.solrj.response.FacetField, java.util.Map)
+        </function-signature>
+        <example>
+            ${facet:isUnappliedFacetValueExisting(currentFacet, activeFacetsVars[activeFacetMapVarName]))}
+        </example>
+    </function>
+
+    <function>
+        <description>Get the drill down prefix for a hierarchical facet value</description>
+        <name>getDrillDownPrefix</name>
+        <function-class>org.jahia.taglibs.facet.Functions</function-class>
+        <function-signature>java.lang.String getDrillDownPrefix(java.lang.String)
+        </function-signature>
+        <example>
+            ${facet:getDrillDownPrefix(facetValue.key)}
+        </example>
+    </function>
+
+    <function>
+        <description>Get the facet property definitions necessary to build the filter query</description>
+        <name>getPropertyDefinitions</name>
+        <function-class>org.jahia.taglibs.facet.Functions</function-class>
+        <function-signature>java.util.List getPropertyDefinitions(org.jahia.services.content.JCRNodeWrapper)
+        </function-signature>
+        <example>
+            ${facet:getPropertyDefinitions(facet)}
+        </example>
+    </function>
+
+    <function>
+        <description>Get the index prefixed path of a hierarchical facet root. For example, 1/sites/systemsite/categories.</description>
+        <name>getIndexPrefixedPath</name>
+        <function-class>org.jahia.taglibs.facet.Functions</function-class>
+        <function-signature>java.lang.String getIndexPrefixedPath(java.lang.String)
+        </function-signature>
+        <example>
+            ${facet:getIndexPrefixedPath(facetPropValue.string)}
+        </example>
+    </function>
+
+</taglib>

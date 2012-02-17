@@ -1,0 +1,31 @@
+9
+
+dir
+40433
+http://subversion.jahia.org/svn/jahia/trunk/core/src/test/java/org/jahia/tools
+http://subversion.jahia.org/svn/jahia
+
+
+
+2011-12-14T16:41:03.026144Z
+39860
+shuber
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+69c369ed-ed09-0410-a4a1-e19a46c23626
+
+jvm
+dir
+

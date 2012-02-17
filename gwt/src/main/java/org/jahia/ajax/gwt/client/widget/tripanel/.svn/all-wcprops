@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/jahia/!svn/ver/40310/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/tripanel
+END
+TopBar.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/tripanel/TopBar.java
+END
+BottomRightComponent.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/tripanel/BottomRightComponent.java
+END
+TriPanelBrowserLayout.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/tripanel/TriPanelBrowserLayout.java
+END
+LinkableComponent.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/tripanel/LinkableComponent.java
+END
+BottomBar.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/tripanel/BottomBar.java
+END
+TopRightComponent.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/jahia/!svn/ver/40310/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/tripanel/TopRightComponent.java
+END
+LeftComponent.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/tripanel/LeftComponent.java
+END
+MyStatusBar.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/tripanel/MyStatusBar.java
+END

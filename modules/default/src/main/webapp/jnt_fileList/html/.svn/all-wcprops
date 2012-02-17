@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/jahia/!svn/ver/38688/trunk/modules/default/src/main/webapp/jnt_fileList/html
+END
+fileList.select.properties
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/jahia/!svn/ver/36253/trunk/modules/default/src/main/webapp/jnt_fileList/html/fileList.select.properties
+END
+fileList.wikiSelect.properties
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/jahia/!svn/ver/36267/trunk/modules/default/src/main/webapp/jnt_fileList/html/fileList.wikiSelect.properties
+END
+fileList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/jahia/!svn/ver/38688/trunk/modules/default/src/main/webapp/jnt_fileList/html/fileList.jsp
+END
+fileList.select.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/jahia/!svn/ver/38464/trunk/modules/default/src/main/webapp/jnt_fileList/html/fileList.select.jsp
+END
+fileList.wikiSelect.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/jahia/!svn/ver/38464/trunk/modules/default/src/main/webapp/jnt_fileList/html/fileList.wikiSelect.jsp
+END

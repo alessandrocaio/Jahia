@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/jahia/!svn/ver/40394/trunk/core/src/main/java/org/jahia/services/render
+END
+FileSystemView.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/render/FileSystemView.java
+END
+Resource.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/render/Resource.java
+END
+StaticAssetMapping.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/render/StaticAssetMapping.java
+END
+URLResolverListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/render/URLResolverListener.java
+END
+EmptyTemplate.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/render/EmptyTemplate.java
+END
+TemplateNotFoundException.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/render/TemplateNotFoundException.java
+END
+View.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/render/View.java
+END
+URLGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/render/URLGenerator.java
+END
+RenderService.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/render/RenderService.java
+END
+Template.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/render/Template.java
+END
+RenderContext.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/jahia/!svn/ver/40211/trunk/core/src/main/java/org/jahia/services/render/RenderContext.java
+END
+RenderException.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/render/RenderException.java
+END
+URLResolverFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/render/URLResolverFactory.java
+END
+SiteInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/render/SiteInfo.java
+END
+URLResolver.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/jahia/!svn/ver/40335/trunk/core/src/main/java/org/jahia/services/render/URLResolver.java
+END
+AssetsMapFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/render/AssetsMapFactory.java
+END

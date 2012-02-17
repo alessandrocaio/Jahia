@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/jahia/!svn/ver/40181/trunk/taglib/src/main/java/org/jahia/taglibs/jcr/node
+END
+JCRTagUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/jahia/!svn/ver/40181/trunk/taglib/src/main/java/org/jahia/taglibs/jcr/node/JCRTagUtils.java
+END
+JCRNodeTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/jahia/!svn/ver/40181/trunk/taglib/src/main/java/org/jahia/taglibs/jcr/node/JCRNodeTag.java
+END
+JCRNodeVersionTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/jahia/!svn/ver/40181/trunk/taglib/src/main/java/org/jahia/taglibs/jcr/node/JCRNodeVersionTag.java
+END
+JCRPropertyTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/jahia/!svn/ver/40181/trunk/taglib/src/main/java/org/jahia/taglibs/jcr/node/JCRPropertyTag.java
+END
+JCRFilterTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/jahia/!svn/ver/40181/trunk/taglib/src/main/java/org/jahia/taglibs/jcr/node/JCRFilterTag.java
+END
+JCRPropertyCustomRendererTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/jahia/!svn/ver/40181/trunk/taglib/src/main/java/org/jahia/taglibs/jcr/node/JCRPropertyCustomRendererTag.java
+END
+JCRPropertyInitializerTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/jahia/!svn/ver/40181/trunk/taglib/src/main/java/org/jahia/taglibs/jcr/node/JCRPropertyInitializerTag.java
+END
+JCRNodeIconTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/jahia/!svn/ver/40181/trunk/taglib/src/main/java/org/jahia/taglibs/jcr/node/JCRNodeIconTag.java
+END
+JCRNodeTypeTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/jahia/!svn/ver/40181/trunk/taglib/src/main/java/org/jahia/taglibs/jcr/node/JCRNodeTypeTag.java
+END
+JCRNodeLinkTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/jahia/!svn/ver/40181/trunk/taglib/src/main/java/org/jahia/taglibs/jcr/node/JCRNodeLinkTag.java
+END
+JCRSortTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/jahia/!svn/ver/40181/trunk/taglib/src/main/java/org/jahia/taglibs/jcr/node/JCRSortTag.java
+END

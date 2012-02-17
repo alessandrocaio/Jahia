@@ -1,0 +1,209 @@
+
+.gwt-toolbar-icon-previewPane {
+    padding: 10px;
+}
+
+.gwt-toolbar-icon-property-adder {
+    padding: 10px;
+}
+
+.gwt-toolbar-icon-bottom-margin {
+    margin-bottom: 5px;
+}
+
+.gwt-toolbar-icon-label {
+    font-size: 12px;
+}
+
+#images-view {
+    background: white;
+    font: normal 11px tahoma, arial, helvetica, sans-serif;
+}
+
+#images-view .thumb {
+    padding: 3px;
+}
+
+/*#images-view .thumb img {*/
+    /*height: 60px;*/
+    /*width: 80px;*/
+/*}*/
+
+#images-view .thumb-wrap {
+    border: 1px solid #ffffff;
+    float: left;
+    margin: 4px;
+    margin-right: 0;
+    padding: 4px;
+}
+
+#images-view .thumb-wrap span {
+    display: block;
+    overflow: hidden;
+    text-align: center;
+}
+
+#images-view .x-view-over {
+    border: 1px solid #dddddd;
+    background: #efefef url(../images/default/grid/row-over.gif) repeat-x left top;
+}
+
+#images-view .x-view-selected {
+    background: #eff5fb no-repeat right bottom;
+    border: 1px solid #99bbe8;
+}
+
+#images-view .x-view-selected .thumb {
+    background: transparent;
+}
+
+#images-view .loading-indicator {
+    font-size: 11px;
+    background-image: url(../images/default/grid/loading.gif);
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-left: 20px;
+    margin: 10px;
+}
+
+/*filemanagement*/
+.gwt-toolbar-icon-infoPane {
+    padding: 10px;
+}
+
+.gwt-toolbar-icon-previewPane {
+    padding: 10px;
+}
+
+.gwt-toolbar-icon-property-adder {
+    padding: 10px;
+}
+
+.gwt-toolbar-icon-selection-background {
+    background-color: #C7E6EB;
+}
+
+.gwt-toolbar-icon-vertical-align-bottom {
+    vertical-align: bottom;
+}
+
+#images-view div {
+    border: 0;
+}
+
+.hasErrorsOrWarnings {
+    color: #ff6600;
+}
+
+.normal {
+    color: black;
+}
+
+.in-path {
+    color: gray;
+    font-style: italic;
+}
+
+/* Workflow */
+/* toolbar */
+.item-field-label {
+    margin-left: 10px;
+    margin-right: 8px;
+}
+
+.item-field {
+    margin-right: 10px;
+}
+
+/* misc */
+.raw-content, .raw-content div {
+    font: 12px arial, tahoma, helvetica, sans-serif;
+}
+
+.bold-font {
+    font-weight: bold !important;
+}
+
+.gxt-fix-topcomponent-position {
+    position: relative !important;
+}
+
+/* checkbox space */
+.checkbox-space {
+    padding: 0 0 3px 0;
+    margin: 0;
+    width: 20px;
+}
+
+.workflow-checkbox {
+    padding-left: 3px;
+    padding-right: 1px;
+}
+/*categories picker*/
+.gwt-categoriespiker-icon-select {
+    background-image: url(../images/categoriespiker-icon-select.png) !important;
+}
+
+/* date field */
+.jahia-date-field {
+
+}
+
+/* misc */
+.align-left {
+    text-align: left;
+}
+
+.ext-ux-wiz-Header {
+    background-color: white;
+}
+
+.ext-ux-wiz-Header-title {
+    font-weight: bold;
+    font-size: 11px;
+    padding: 4px 0px 0px 4px;
+}
+
+.ext-ux-wiz-Header-step {
+    color: #767676;
+    font-size: 11px;
+    text-align: right;
+    padding: 2px 4px 0px 0px;
+}
+
+.ext-ux-wiz-Header-stepIndicator-container {
+    float: right;
+    margin-right: 6px;
+    margin-top: 8px;
+}
+
+.ext-ux-wiz-Header-stepIndicator {
+    margin-left: 28px;
+    float: left;
+}
+
+.directory-entry {
+    clear: both;
+    display: block;
+    width: 900px;
+}
+
+.gadget {
+    width: 140px;
+    float: left;
+    text-align: center;
+}
+
+.gadget a img {
+    margin-bottom: 5px;
+}
+
+/* Flags */
+.language-code-display {
+    margin: 0.2em;
+    background-color: #eaeaea;
+    border: 1px solid #ccc;
+    padding: 0 0.2em;
+    text-transform: uppercase
+}
+

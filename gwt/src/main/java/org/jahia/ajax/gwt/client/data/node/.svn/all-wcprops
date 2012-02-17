@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/data/node
+END
+GWTJahiaNodeUsage.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/data/node/GWTJahiaNodeUsage.java
+END
+GWTBitSet.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/data/node/GWTBitSet.java
+END
+GWTJahiaPortletDefinition.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/data/node/GWTJahiaPortletDefinition.java
+END
+GWTJahiaNode.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/data/node/GWTJahiaNode.java
+END
+GWTJahiaNewPortletInstance.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/data/node/GWTJahiaNewPortletInstance.java
+END
+GWTJahiaGetPropertiesResult.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/data/node/GWTJahiaGetPropertiesResult.java
+END
+GWTJahiaNodeVersion.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/data/node/GWTJahiaNodeVersion.java
+END

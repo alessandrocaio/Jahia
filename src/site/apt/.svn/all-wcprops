@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/jahia/!svn/ver/40406/trunk/src/site/apt
+END
+users_batch_creation.apt
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/jahia/!svn/ver/39299/trunk/src/site/apt/users_batch_creation.apt
+END
+guest_user_group_labels.apt
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/jahia/!svn/ver/40220/trunk/src/site/apt/guest_user_group_labels.apt
+END
+interceptors.apt
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/jahia/!svn/ver/39299/trunk/src/site/apt/interceptors.apt
+END
+logging.apt
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/jahia/!svn/ver/39299/trunk/src/site/apt/logging.apt
+END
+image_service.apt
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/jahia/!svn/ver/40220/trunk/src/site/apt/image_service.apt
+END
+index.apt
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/jahia/!svn/ver/40111/trunk/src/site/apt/index.apt
+END
+input_validations.apt
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/jahia/!svn/ver/40220/trunk/src/site/apt/input_validations.apt
+END

@@ -1,0 +1,160 @@
+Developer Guidelines
+====================
+
+Introduction
+------------
+The goal of this document is to present the guidelines for developers working on the Jahia source code. It is strongly
+recommended that all developers familiarize themselves with these rules and then apply them and possibly also extend or
+review them.
+
+Code style conventions
+----------------------
+- We are based on the Sun coding style conventions : http://java.sun.com/docs/codeconv/ , with a few modifications
+- We allow lines longer than 80 characters
+- We do not allow the usage of tabs as spacers
+- We do NOT put braces on separate lines, this helps make the code a little more compact. We also put opening and
+closing braces even for single-line statements.
+
+Properties files
+----------------
+- Properties files must ALWAYS be encoded in ISO-8859-1. If they concern resource bundles, they should use the \u
+encoding for non ISO-8859-1 characters as it is the standard. We recommend you edit resources bundles with specialized
+editors such as JetBrains' IntelliJ IDEA or other resource bundle translation utilities.
+
+XML files
+---------
+- XML files should always validate.
+- Use indentation and keep the files easy to read
+- Insert comments to help understand the file
+
+Singletons
+----------
+- Don't create singletons, we have Spring that does a much better job at creating objects and making them available. If
+don't know how to use Spring, just ask someone who knows :)
+- When you see a singleton and have the time to do some maintenance, try to remove it.
+
+Configuration files
+-------------------
+- Don't hardcode settings in Spring configuration files, refer them from properties files
+- Design in services as "modules", with their separate configuration file if they are adding a new service, or inside
+in an existing one if already has a "classification" (such as users-groups for example).
+- Always document each setting you add. It's ok if you don't do it immediately, but do it before you commit
+- Choose a setting name that makes sense, think about the user of the setting, that needs to understand it
+- It might be a good idea to prefix your setting with your class package, so that you don't conflict with other settings
+- Regroup similar settings into groups, to make it easy for users looking for settings to be able to find them
+- Integrate with the Maven plugin jahia:configure goal if needed
+- Think hard about the default values of your settings, especially in terms of performance and memory usage.
+- Try to make your properties "portable", so that we may move them to another storage system, such as a database
+easily.
+- Avoid putting configuration files in WEB-INF/classes. And always make them overrideable using the classpath mechanism
+(meaning that default configuration files can be overridden with a configuration provided in the classpath). This helps
+make node-specific configuration on cluster-installed servers.
+- Avoid putting configuration in the web.xml file, prefer Spring configuration that is more easy to re-use and also
+use in test units. In this case the best is using Spring to expose the bean to a property coming from the Jahia
+properties file.
+
+Transactions
+------------
+- Although transactions are not (yet) active in Jahia, make sure all the new code you write is transaction-friendly.
+This means that you should avoid locks, and make copies instead of holding on to shared resources, such as cache entries
+for example. Some cache implementations will even do this for you.
+- Don’t use shared caches (or maps) directly, as they are not ACID-compliant
+- Introduce session caches (if needed), or re-use a framework that implements sessions caches
+- Think about rollback, how does it work ? Better : write a test unit that fails an operation
+- How do you guarantee ACID properties? Make sure your code is ACID-compliant
+- If the power goes off, is your data corrupted or not ? Design to allow for the worst possible failure !
+- If you have long background tasks, don’t put them in a single “transaction”, split them
+- Avoid creating thread yourself, use Spring’s support for scheduling instead.
+- Avoid calling JCR session.save() too often, ideally we should do it only once in a transaction.
+- Don’t use synchronized methods, as they cause problems with multi-threading transactions
+
+Websphere
+---------
+- Be careful when you write JSP files, especially including tags that embed double-quotes within double-quotes. In
+general WAS (WebSphere Application Server) prefers that you surround double-quotes with single-quotes, and NOT the
+opposite
+- Avoid tag files if you can, on some version of WAS, they are very buggy
+- Be careful that hashmaps will not be processed in the same order than on the Sun JVM. So any startup that works
+"magically" because of the default ordering on the Sun JVM might not work on WAS. For example Spring dependencies must
+be explicitely configured with depends-on or real dependency injection when possible.
+- You can find more details at : http://jira.jahia.org/browse/DOCU-60
+- Don't create your own threads. Websphere will not like this at all. If you have no other choice, use Quartz to perform
+background tasks.
+- Don't access or bind JNDI resources outside of a container managed thread. Websphere doesn't allow it.
+- If you bind something in JNDI, you must unbind for proper undeployment.
+
+Weblogic
+--------
+TBC
+
+JBoss
+-----
+TBC
+
+Tomcat
+------
+- Always test your developments by performing a clean shutdown of Tomcat, not by simply killing the JVM. This will help
+fix quickly resource freeing bugs. Use the destroy() method on the main servlets or simply integrate with Spring which
+will do this for you.
+
+Developing services
+-------------------
+- New services should always be developed with injection and should NEVER use singletons. If you're not using Spring or
+Google Guice or some other type of injection, you're probably doing it wrong. Your service should also be started and
+stopped using Spring lifecycle methods.
+- AVOID IMPLEMENTING SINGLETONS ! If you re-use existing singleton and have no way of doing otherwise except
+rewriting a lot of code that's acceptable, but should be avoided at all costs.
+- When performing JCR operations with a system sessions, make sure you always use the JCRTemplate mechanism, as is
+illustrated in the example below :
+            return jcrTemplate.doExecuteWithSystemSession(new JCRCallback<JahiaUser>() {
+                public JahiaUser doInJCR(JCRSessionWrapper session) throws RepositoryException {
+                    Node usersFolderNode = session.getNode("/" + Constants.CONTENT + "/users/" + name.trim());
+                    if (usersFolderNode.getProperty(JCRUser.J_EXTERNAL).getBoolean()) {
+                        JCRUser user = new JCRUser(usersFolderNode.getIdentifier(), jcrTemplate.getSessionFactory());
+                        cache.put(name, user);
+                        return user;
+                    }
+                    return null;
+                }
+            });
+This will make sure that all the exceptions handling, session handling etc is properly done for you, and you can
+concentrate on implementing the actual JCR operations. This will also in the future offer services such as transaction
+participating, etc. Make sure also you use the proper callback and not just the one illustrated above.
+- For normal JCR session, the JCRSessionFilter will close the session for you at the end of the request processing. If
+you are performing operations OUTSIDE of a request, make sure you close the session at the end of the handling (TODO:
+might be a good idea to offer a more generic Spring-based framework for "transaction" handling).
+- When developing a GWT back-end service, make sure you declare it as the others are declared in the
+applicationcontext-gwt.xml services. Again, make sure you use dependency injection *everywhere*. For URL mapping, you
+should either add it to the SimpleUrlHandlerMapping or dynamically register with the HandlerMapping (this will be great
+when we go the OSGi route).
+- When referencing files, make sure you always use Spring' Resource class instead of a String or a File reference. This
+makes it easier to modify the location of the file at deployment time.
+- Take the time to modify legacy services to make them more modern. Little by little, this will help migrate to the new
+way of doing things. If you need more time, make sure the product owner is informed that we will have to do this later.
+- Design your service so that it can automatically register itself into the system, and not that it must be declared in
+a list of service. Imagine that your service might be deployed dynamically in an already running system (even if it
+isn't the case right now), and that it should be able to do so.
+- Get familiar with OSGi
+- Make sure you leverage Spring as much as possible
+
+Exception handling
+------------------
+- NEVER do this :
+        } catch (Exception e) {
+            logger.error(e);
+        }
+This will not log the stack trace of the exception, only the error message.
+- Except in cases you really master and expect, always remount the exception because it might impact the global
+operation and it might need to be handled at a higher level (i.e. transactions).
+- When throwing an exception from an existing exception, always include the source exception in the new exception being
+thrown.
+
+Javadoc
+-------
+- Document the class, describe it's responsibility, what it does, and how it fits into the global system
+- Sometimes it's more important to document the method's parameters and return values than what it does if the name
+of the method is very explicit
+- Make sure you mark deprecated methods
+- For tags, also supply the TLD doc
+- If javadocs are missing to a class you are modifying, try to add as much as possible, correcting any errors too.
+- Use TODOs to mark stuff that still needs to be done at a later time.

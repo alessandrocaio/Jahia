@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/jahia/!svn/ver/39634/trunk/test/jahia-test-module-war/src/main/webapp/scripts/jmeter/ACMEMixed
+END
+content.csv
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/jahia/!svn/ver/39634/trunk/test/jahia-test-module-war/src/main/webapp/scripts/jmeter/ACMEMixed/content.csv
+END
+usersacme.txt
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/jahia/!svn/ver/39634/trunk/test/jahia-test-module-war/src/main/webapp/scripts/jmeter/ACMEMixed/usersacme.txt
+END
+ACMEMixed.jmx
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/jahia/!svn/ver/39634/trunk/test/jahia-test-module-war/src/main/webapp/scripts/jmeter/ACMEMixed/ACMEMixed.jmx
+END

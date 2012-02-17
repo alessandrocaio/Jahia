@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/jahia/!svn/ver/40310/trunk/core/src/main/java/org/jahia/services/uicomponents/bean/contentmanager
+END
+RootUserVisibility.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/uicomponents/bean/contentmanager/RootUserVisibility.java
+END
+RepositoryPropertyEditor.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/uicomponents/bean/contentmanager/RepositoryPropertyEditor.java
+END
+Repository.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/uicomponents/bean/contentmanager/Repository.java
+END
+ManagerConfiguration.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/jahia/!svn/ver/40310/trunk/core/src/main/java/org/jahia/services/uicomponents/bean/contentmanager/ManagerConfiguration.java
+END
+ColumnPropertyEditor.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/uicomponents/bean/contentmanager/ColumnPropertyEditor.java
+END
+ProviderKeyColumnVisibility.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/uicomponents/bean/contentmanager/ProviderKeyColumnVisibility.java
+END
+Column.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/uicomponents/bean/contentmanager/Column.java
+END
+WebFolderVisibility.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/uicomponents/bean/contentmanager/WebFolderVisibility.java
+END
+Item.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/uicomponents/bean/contentmanager/Item.java
+END

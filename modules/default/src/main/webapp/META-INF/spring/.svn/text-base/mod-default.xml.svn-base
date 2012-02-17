@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <bean id="modulePlaceholderConfig"
+        class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="properties">
+            <ref bean="jahiaProperties" />
+        </property>
+    </bean>
+
+	<bean name="org.jahia.modules.default.ModuleRegistry" class="org.jahia.services.templates.TemplatePackageRegistry$ModuleRegistry">
+		<property name="templatePackageRegistry" ref="org.jahia.services.templates.TemplatePackageRegistry"/>
+        <property name="choiceListRendererService" ref="choiceListRenderers"/>
+        <property name="choiceListInitializers" ref="choiceListInitializers"/>
+        <property name="renderService" ref="RenderService"/>
+        <property name="staticAssetMapping" ref="org.jahia.services.render.StaticAssetMappingRegistry"/>
+        <property name="workflowService" ref="workflowService"/>
+        <property name="visibilityService" ref="visibilityService"/>
+	</bean>
+    
+    <bean class="org.jahia.params.valves.AuthPipelineInitializer">
+        <property name="authPipeline" ref="authPipeline"/>
+    </bean>
+
+    <bean name="managerEditorConfigurerModules" class="org.springframework.beans.factory.config.CustomEditorConfigurer">
+        <property name="customEditors">
+            <map>
+                <entry key="org.jahia.services.uicomponents.bean.contentmanager.Column">
+                    <bean class="org.jahia.services.uicomponents.bean.contentmanager.ColumnPropertyEditor"/>
+                </entry>
+                <entry key="org.jahia.services.uicomponents.bean.contentmanager.Repository">
+                    <bean class="org.jahia.services.uicomponents.bean.contentmanager.RepositoryPropertyEditor"/>
+                </entry>
+            </map>
+        </property>
+    </bean>
+
+    <bean name="editmodeEditorConfigurerModules" class="org.springframework.beans.factory.config.CustomEditorConfigurer">
+        <property name="customEditors">
+            <map>
+                <entry key="org.jahia.services.uicomponents.bean.editmode.EngineTab">
+                    <bean class="org.jahia.services.uicomponents.bean.editmode.EngineTabPropertyEditor"/>
+                </entry>
+                <entry key="org.jahia.services.uicomponents.bean.Visibility">
+                    <bean class="org.jahia.services.uicomponents.bean.VisibilityPropertyEditor"/>
+                </entry>
+            </map>
+        </property>
+    </bean>
+
+    <bean class="org.jahia.modules.defaultmodule.MoveAction">
+        <property name="contentManager" ref="ContentManagerHelper"/>
+    </bean>
+
+    <bean class="org.jahia.modules.defaultmodule.LockAction"/>
+
+    <bean class="org.jahia.modules.defaultmodule.UnlockAction"/>
+
+    <bean class="org.jahia.modules.defaultmodule.StartWorkflowAction">
+        <property name="workflowService" ref="workflowService"/>
+    </bean>
+    <bean class="org.jahia.modules.defaultmodule.StartPublicationWorkflowAction">
+        <property name="publicationService" ref="jcrPublicationService"/>
+    </bean>
+
+    <bean class="org.jahia.modules.defaultmodule.ExecuteTaskAction">
+        <property name="workflowService" ref="workflowService"/>
+    </bean>
+
+    <bean class="org.jahia.modules.defaultmodule.CommentTaskAction">
+        <property name="workflowService" ref="workflowService"/>
+    </bean>
+
+    <bean class="org.jahia.modules.defaultmodule.actions.ChainAction">
+        <property name="templateService" ref="JahiaTemplateManagerService"/>
+        <property name="urlResolverFactory" ref="urlResolverFactory" />
+        <property name="defaultPostAction" >
+            <bean class="org.jahia.bin.DefaultPostAction">
+                <property name="loggingService" ref="loggingService"/>
+            </bean>
+        </property>
+    </bean>
+    
+    <bean class="org.apache.camel.spring.CamelBeanPostProcessor">
+    	<property name="camelContext" ref="jahiaNotificationContext"/>
+    </bean>
+
+    <bean class="org.jahia.modules.defaultmodule.actions.AddComment" >
+        <property name="name" value="addComment"/>
+        <property name="requiredPermission" value="addComment" />
+    </bean>
+
+    <bean class="org.jahia.modules.defaultmodule.actions.PublishAction">
+        <property name="publicationService" ref="jcrPublicationService"/>
+        <property name="requiredPermission" value="publish"/>
+        <property name="requiredWorkspace" value="default"/>
+    </bean>
+
+    <bean class="org.jahia.modules.defaultmodule.actions.AddMemberToGroupAction">
+        <property name="name" value="addMember"/>
+        <property name="jahiaGroupManagerService" ref="JahiaGroupManagerService"/>
+        <property name="jahiaUserManagerService" ref="JahiaUserManagerService"/>
+        <property name="jahiaSitesService" ref="JahiaSitesService"/>
+        <property name="requiredPermission" value="addMemberToGroup" />
+    </bean>
+
+    <bean class="org.jahia.modules.defaultmodule.actions.AddPrincipalsInRolesAction">
+        <property name="name" value="addInRoles"/>
+        <property name="jahiaGroupManagerService" ref="JahiaGroupManagerService"/>
+        <property name="jahiaUserManagerService" ref="JahiaUserManagerService"/>
+        <property name="requiredPermission" value="addPrincipalsInRoles" />
+    </bean>
+
+</beans>

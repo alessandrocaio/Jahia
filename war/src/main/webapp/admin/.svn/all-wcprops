@@ -1,0 +1,173 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/jahia/!svn/ver/40254/trunk/war/src/main/webapp/admin
+END
+site_add.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/jahia/!svn/ver/38177/trunk/war/src/main/webapp/admin/site_add.jsp
+END
+site_create_display_values.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/jahia/!svn/ver/39263/trunk/war/src/main/webapp/admin/site_create_display_values.jsp
+END
+no_sites_selected.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/jahia/!svn/ver/38177/trunk/war/src/main/webapp/admin/no_sites_selected.jsp
+END
+site_choose_template_set.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/jahia/!svn/ver/39263/trunk/war/src/main/webapp/admin/site_choose_template_set.jsp
+END
+cron_help.html
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/jahia/!svn/ver/39111/trunk/war/src/main/webapp/admin/cron_help.html
+END
+admin.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/jahia/!svn/ver/38177/trunk/war/src/main/webapp/admin/admin.jsp
+END
+show_info.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/jahia/!svn/ver/38177/trunk/war/src/main/webapp/admin/show_info.jsp
+END
+manage_components.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/jahia/!svn/ver/38177/trunk/war/src/main/webapp/admin/manage_components.jsp
+END
+import_choose.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/jahia/!svn/ver/40079/trunk/war/src/main/webapp/admin/import_choose.jsp
+END
+displayurlmappings.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/jahia/!svn/ver/39554/trunk/war/src/main/webapp/admin/displayurlmappings.jsp
+END
+status.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/jahia/!svn/ver/40223/trunk/war/src/main/webapp/admin/status.jsp
+END
+finish.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/jahia/!svn/ver/38177/trunk/war/src/main/webapp/admin/finish.jsp
+END
+direct_menu.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/jahia/!svn/ver/38177/trunk/war/src/main/webapp/admin/direct_menu.jsp
+END
+sitemap.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/jahia/!svn/ver/38177/trunk/war/src/main/webapp/admin/sitemap.jsp
+END
+password_policy.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/jahia/!svn/ver/38177/trunk/war/src/main/webapp/admin/password_policy.jsp
+END
+sites_management.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/jahia/!svn/ver/40254/trunk/war/src/main/webapp/admin/sites_management.jsp
+END
+html_settings.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/jahia/!svn/ver/38177/trunk/war/src/main/webapp/admin/html_settings.jsp
+END
+site_existant_admin.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/jahia/!svn/ver/38177/trunk/war/src/main/webapp/admin/site_existant_admin.jsp
+END
+view_templates.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/jahia/!svn/ver/39586/trunk/war/src/main/webapp/admin/view_templates.jsp
+END
+menu.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/jahia/!svn/ver/38177/trunk/war/src/main/webapp/admin/menu.jsp
+END
+manage_templates.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/jahia/!svn/ver/38177/trunk/war/src/main/webapp/admin/manage_templates.jsp
+END
+config_server.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/jahia/!svn/ver/38177/trunk/war/src/main/webapp/admin/config_server.jsp
+END
+import_validation.jspf
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/jahia/!svn/ver/39154/trunk/war/src/main/webapp/admin/import_validation.jspf
+END
+manage_languages.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/jahia/!svn/ver/39008/trunk/war/src/main/webapp/admin/manage_languages.jsp
+END
+site_multiple_delete.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/jahia/!svn/ver/40008/trunk/war/src/main/webapp/admin/site_multiple_delete.jsp
+END
+site_edit.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/jahia/!svn/ver/39894/trunk/war/src/main/webapp/admin/site_edit.jsp
+END
+site_delete.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/jahia/!svn/ver/40008/trunk/war/src/main/webapp/admin/site_delete.jsp
+END
+site_create_admin.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/jahia/!svn/ver/38177/trunk/war/src/main/webapp/admin/site_create_admin.jsp
+END

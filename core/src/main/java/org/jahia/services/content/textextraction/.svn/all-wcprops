@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/textextraction
+END
+TextExtractionListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/textextraction/TextExtractionListener.java
+END
+TextExtractorJob.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/textextraction/TextExtractorJob.java
+END

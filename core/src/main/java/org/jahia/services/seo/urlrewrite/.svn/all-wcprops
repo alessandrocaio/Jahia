@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/jahia/!svn/ver/40188/trunk/core/src/main/java/org/jahia/services/seo/urlrewrite
+END
+UrlRewriteEngine.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/jahia/!svn/ver/40188/trunk/core/src/main/java/org/jahia/services/seo/urlrewrite/UrlRewriteEngine.java
+END
+UrlRewriteService.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/seo/urlrewrite/UrlRewriteService.java
+END
+SessionidRemovalResponseWrapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/seo/urlrewrite/SessionidRemovalResponseWrapper.java
+END
+Configuration.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/seo/urlrewrite/Configuration.java
+END
+UrlRewriteFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/seo/urlrewrite/UrlRewriteFilter.java
+END
+ServerNameToSiteMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/seo/urlrewrite/ServerNameToSiteMapper.java
+END
+UrlRewriteVisitor.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/seo/urlrewrite/UrlRewriteVisitor.java
+END

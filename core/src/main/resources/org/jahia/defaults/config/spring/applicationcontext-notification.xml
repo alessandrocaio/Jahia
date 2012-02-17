@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+          http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+          http://camel.apache.org/schema/spring http://camel.apache.org/schema/spring/camel-spring.xsd">
+
+    <bean id="MailService" class="org.jahia.services.mail.MailServiceImpl" parent="jahiaServiceTemplate">
+        <property name="mailEndpointUri" value="seda:mailUsers?multipleConsumers=true"/>
+        <property name="scriptEngineUtils" ref="scriptEngineUtils"/>
+    </bean>
+
+    <bean id="HttpClientService" class="org.jahia.services.notification.HttpClientService" destroy-method="shutdown">
+        <property name="httpClient">
+		    <bean id="HttpClient" class="org.apache.commons.httpclient.HttpClient">
+		        <constructor-arg index="0">
+		            <bean class="org.apache.commons.httpclient.params.HttpClientParams">
+		                <property name="authenticationPreemptive" value="true"/>
+		            </bean>
+		        </constructor-arg>
+		        <constructor-arg index="1">
+		            <bean class="org.apache.commons.httpclient.MultiThreadedHttpConnectionManager">
+		                <property name="params">
+		                    <bean class="org.apache.commons.httpclient.params.HttpConnectionManagerParams">
+		                        <property name="connectionTimeout" value="15000"/>
+		                        <property name="soTimeout" value="60000"/>
+		                    </bean>
+		                </property>
+		            </bean>
+		        </constructor-arg>
+		    </bean>
+		</property>        
+    </bean>
+
+    <bean id="HtmlExternalizationService" class="org.jahia.services.notification.HtmlExternalizationService">
+        <property name="urlTraverser"
+                  ref="org.jahia.services.render.filter.URLTraverser"/>
+        <property name="httpClientService" ref="HttpClientService"/>
+        <property name="useServletContextResources" value="true"/>
+        <property name="rewriteUrls" value="true"/>
+        <property name="inlineCss" value="true"/>
+        <property name="rewriteUrlsInCss" value="true"/>
+        <property name="removeExternalScripts" value="true"/>
+        <property name="removeInlinedScripts" value="true"/>
+    </bean>
+
+    <camelContext id="jahiaNotificationContext" xmlns="http://camel.apache.org/schema/spring"
+                  depends-on="jahiaProperties">
+        <jmxAgent id="agent" disabled="true"/>
+        <route>
+            <!-- route for sending mails synchronously -->
+            <from uri="direct:mailUsers"/>
+            <choice>
+                <when>
+                    <!-- check if main mail service is activated -->
+                    <method bean="MailService" method="isEnabled"/>
+                    <to uri="log:org.jahia.services.notification.mail?level=DEBUG"/>
+                    <!-- send messages using main mail sender -->
+                    <to uri="MailService"/>
+                </when>
+                <otherwise>
+                    <!-- mail service is not activated: log message and stop processing -->
+                    <to uri="log:org.jahia.services.notification.mail?level=INFO"/>
+                    <stop/>
+                </otherwise>
+            </choice>
+        </route>
+        <route>
+            <!-- route for sending mails asynchronously -->
+            <from uri="seda:mailUsers?multipleConsumers=true"/>
+            <choice>
+                <when>
+                    <method bean="MailService" method="isEnabled"/>
+                    <!-- send messages using main mail sender -->
+                    <to uri="MailService"/>
+                    <to uri="log:org.jahia.services.notification.mail?level=DEBUG"/>
+                </when>
+                <otherwise>
+                    <!-- mail service is not activated: log message and stop processing -->
+                    <to uri="log:org.jahia.services.notification.mail?level=INFO"/>
+                    <stop/>
+                </otherwise>
+            </choice>
+        </route>
+        <!-- route for parsing jahia log files filename can refer to a log4j appender or to a file on disk-->
+        <route>
+            <!--
+            <from uri="stream:file?fileName=log4j_accessLogger_hitAccess&amp;scanStream=true&amp;scanStreamDelay=100"/>
+            -->
+            <!-- direct:logs is an URI where the log4j appender is writing messages -->
+            <from uri="direct:logs"/>
+            <to uri="seda:logMsgs?size=1000000&amp;concurrentConsumers=5&amp;multipleConsumers=true"/>
+        </route>
+    </camelContext>
+
+    <bean id="camelNotificationService" class="org.jahia.services.notification.CamelNotificationService"/>
+
+    <bean id="org.jahia.services.content.rules.RulesNotificationService"
+          class="org.jahia.services.content.rules.RulesNotificationService" factory-method="getInstance">
+        <property name="notificationService" ref="MailService"/>
+        <property name="scriptEngineUtils" ref="scriptEngineUtils"/>
+    </bean>
+
+    <bean name="notificationMapping" class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+        <property name="urlMap">
+            <map>
+                <entry key="/notification/**">
+                    <bean class="org.jahia.bin.Notifications">
+                        <property name="mailService" ref="MailService"/>
+                        <property name="requiredPermission" value="adminEmailSettings"/>
+                    </bean>
+                </entry>
+            </map>
+        </property>
+    </bean>
+
+    <bean id="subscriptionService" class="org.jahia.services.notification.SubscriptionService">
+        <property name="userManagerService" ref="JahiaUserManagerService"/>
+    </bean>
+
+    <bean id="scriptEngineUtils" class="org.jahia.utils.ScriptEngineUtils" factory-method="getInstance"/>
+</beans>

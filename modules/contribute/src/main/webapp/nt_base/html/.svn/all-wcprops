@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/jahia/!svn/ver/40302/trunk/modules/contribute/src/main/webapp/nt_base/html
+END
+base.html.contribute.toolbar.properties
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/jahia/!svn/ver/37410/trunk/modules/contribute/src/main/webapp/nt_base/html/base.html.contribute.toolbar.properties
+END
+base.contribute.table.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/jahia/!svn/ver/40232/trunk/modules/contribute/src/main/webapp/nt_base/html/base.contribute.table.jsp
+END
+base.contribute.editmetadata.properties
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/jahia/!svn/ver/39798/trunk/modules/contribute/src/main/webapp/nt_base/html/base.contribute.editmetadata.properties
+END
+base.contribute.add.properties
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/jahia/!svn/ver/37410/trunk/modules/contribute/src/main/webapp/nt_base/html/base.contribute.add.properties
+END
+base.html.contribute.toolbar.end.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/jahia/!svn/ver/38464/trunk/modules/contribute/src/main/webapp/nt_base/html/base.html.contribute.toolbar.end.jsp
+END
+base.contribute.edit.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/jahia/!svn/ver/40302/trunk/modules/contribute/src/main/webapp/nt_base/html/base.contribute.edit.jsp
+END
+base.contribute.subnodes.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/jahia/!svn/ver/40187/trunk/modules/contribute/src/main/webapp/nt_base/html/base.contribute.subnodes.jsp
+END
+base.contribute.edit.properties
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/jahia/!svn/ver/39798/trunk/modules/contribute/src/main/webapp/nt_base/html/base.contribute.edit.properties
+END
+base.html.contribute.toolbar.end.properties
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/jahia/!svn/ver/37410/trunk/modules/contribute/src/main/webapp/nt_base/html/base.html.contribute.toolbar.end.properties
+END
+base.contribute.editmetadata.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/jahia/!svn/ver/38177/trunk/modules/contribute/src/main/webapp/nt_base/html/base.contribute.editmetadata.jsp
+END
+base.contribute.add.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/jahia/!svn/ver/40074/trunk/modules/contribute/src/main/webapp/nt_base/html/base.contribute.add.jsp
+END
+base.contribute.table.properties
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/jahia/!svn/ver/39798/trunk/modules/contribute/src/main/webapp/nt_base/html/base.contribute.table.properties
+END
+base.html.contribute.toolbar.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/jahia/!svn/ver/40302/trunk/modules/contribute/src/main/webapp/nt_base/html/base.html.contribute.toolbar.jsp
+END
+base.contribute.workflow.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/jahia/!svn/ver/39924/trunk/modules/contribute/src/main/webapp/nt_base/html/base.contribute.workflow.jsp
+END
+base.contribute.workflow.properties
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/jahia/!svn/ver/37410/trunk/modules/contribute/src/main/webapp/nt_base/html/base.contribute.workflow.properties
+END

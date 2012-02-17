@@ -1,0 +1,34 @@
+9
+
+dir
+40433
+http://subversion.jahia.org/svn/jahia/trunk/core/src/main/java/org/jahia/services/uicomponents
+http://subversion.jahia.org/svn/jahia
+
+
+
+2012-02-02T10:36:49.686861Z
+40310
+dgriffon
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+69c369ed-ed09-0410-a4a1-e19a46c23626
+
+bean
+dir
+
+resolver
+dir
+

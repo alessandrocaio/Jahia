@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/mail
+END
+MailSettingsValidationResult.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/mail/MailSettingsValidationResult.java
+END
+MailService.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/mail/MailService.java
+END
+MailServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/mail/MailServiceImpl.java
+END
+MailSettings.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/mail/MailSettings.java
+END

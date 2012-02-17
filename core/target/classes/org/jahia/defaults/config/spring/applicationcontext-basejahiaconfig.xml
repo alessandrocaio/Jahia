@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+  <bean name="jahiaProperties" class="org.springframework.beans.factory.config.PropertiesFactoryBean">
+  	<property name="ignoreResourceNotFound" value="true"/>
+  	<property name="locations">
+  		<list>
+            <value>classpath*:org/jahia/defaults/config/properties/jahia*.properties</value>
+  			<value>/WEB-INF/etc/config/jahia.properties</value>
+  			<value>/WEB-INF/etc/config/jahia.advanced.properties</value>
+  			<value>/WEB-INF/etc/config/jahia.custom.properties</value>
+  			<value>classpath*:org/jahia/config/jahia*.properties</value>
+            <value>file:${jahia.config}</value>
+  		</list>
+  	</property>
+    <property name="localOverride" value="true"/>
+    <property name="properties">
+        <bean class="org.jahia.settings.SystemPropertiesFactoryBean">
+            <property name="prefix" value="jahiaConfig."/>
+        </bean>
+    </property>
+  </bean>
+
+  <bean id="placeholderConfig" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+    <property name="properties">
+    	<ref bean="jahiaProperties"/>
+    </property>
+  </bean>
+
+  <bean id="pathResolver" class="org.jahia.utils.WebAppPathResolver" />
+
+  <bean id="settingsBean" class="org.jahia.settings.SettingsBean" init-method="load">
+      <constructor-arg index="0">
+          <ref bean="pathResolver" />
+      </constructor-arg>
+      <constructor-arg index="1" type="java.util.Properties">
+          <ref bean="jahiaProperties"/>
+      </constructor-arg>
+      <constructor-arg index="2" type="java.util.List">
+          <list>
+              <!-- we will take the first found license file -->
+              <value>file:/${jahia.license}</value>
+              <value>classpath*:org/jahia/config/license*.xml</value>
+              <value>WEB-INF/etc/config/license*.xml</value>
+          </list>
+      </constructor-arg>
+  </bean>
+
+	<bean id="org.jahia.params.ProcessingContextFactory" class="org.jahia.params.ProcessingContextFactoryImpl" />
+
+    <bean id="JCRContentUtils" class="org.jahia.services.content.JCRContentUtils">
+        <constructor-arg index="0">
+            <map>
+                <entry key="image">
+                    <list>
+                        <value>image/*</value>
+                    </list>
+                </entry>
+                <entry key="pdf">
+                    <list>
+                        <value>application/pdf</value>
+                        <value>application/x-pdf</value>
+                    </list>
+                </entry>
+                <entry key="word">
+                    <list>
+                        <value>application/msword</value>
+                        <value>application/vnd.openxmlformats-officedocument.wordprocessingml.document</value>
+                    </list>
+                </entry>
+                <entry key="rtf">
+                    <list>
+                        <value>text/rtf</value>
+                        <value>application/rtf</value>
+                    </list>
+                </entry>
+                <entry key="excel">
+                    <list>
+                        <value>application/vnd.ms-excel</value>
+                        <value>application/ms-excel</value>
+                        <value>application/msexcel</value>
+                        <value>application/x-msexcel</value>
+                        <value>application/x-excel</value>
+                        <value>application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</value>
+                    </list>
+                </entry>
+                <entry key="powerpoint">
+                    <list>
+                        <value>application/vnd.ms-powerpoint</value>
+                        <value>application/mspowerpoint</value>
+                        <value>application/vnd.openxmlformats-officedocument.presentationml.presentation</value>
+                    </list>
+                </entry>
+                <entry key="openoffice">
+                    <list>
+                        <value>application/vnd.oasis.opendocument.*</value>
+                    </list>
+                </entry>
+                <entry key="archive">
+                    <list>
+                        <value>application/zip</value>
+                        <value>application/x-tar</value>
+                        <value>application/x-gzip</value>
+                        <value>application/x-gtar</value>
+                        <value>application/x-compressed</value>
+                        <value>application/java-archive</value>
+                    </list>
+                </entry>
+            </map>
+        </constructor-arg>
+        <constructor-arg index="1" ref="fileExtensionIcons"/>
+        
+        <property name="nameGenerationHelper">
+            <bean id="defaultNameGenerationHelper" class="org.jahia.services.content.DefaultNameGenerationHelperImpl">
+                <property name="randomizedNames">
+                    <set value-type="java.lang.String">
+                        <value>jnt:absoluteArea</value>
+                        <value>jnt:levelAbsoluteArea</value>
+                        <value>jnt:area</value>
+                    </set>
+                </property>
+            </bean>
+        </property>
+        
+        <property name="unsupportedMarkForDeletionNodeTypes">
+            <set>
+                <value>jmix:autoPublish</value>
+                <value>jnt:remotePublication</value>
+            </set>
+        </property>
+    </bean>
+
+    <bean id="fileExtensionIcons" class="org.springframework.beans.factory.config.MapFactoryBean">
+        <property name="sourceMap">
+            <map>
+                <entry key="unknown" value="file"/>
+                <entry key="dir" value="dir"/>
+            
+                <entry key="aiff" value="sound"/>
+                <entry key="asf" value="video"/>
+                <entry key="asx" value="video"/>
+                <entry key="avi" value="video"/>
+                <entry key="bmp" value="img"/>
+                <entry key="doc" value="doc"/>
+                <entry key="docm" value="doc"/>
+                <entry key="docx" value="doc"/>
+                <entry key="dot" value="doc"/>
+                <entry key="dotm" value="doc"/>
+                <entry key="dotx" value="doc"/>
+                <entry key="exe" value="exe"/>
+                <entry key="gif" value="img"/>
+                <entry key="gz" value="zip"/>
+                <entry key="htm" value="html"/>
+                <entry key="html" value="html"/>
+                <entry key="ico" value="img"/>
+                <entry key="jar" value="zip"/>
+                <entry key="jpe" value="img"/>
+                <entry key="jpeg" value="img"/>
+                <entry key="jpg" value="img"/>
+                <entry key="m3u" value="sound"/>
+                <entry key="mid" value="sound"/>
+                <entry key="midi" value="sound"/>
+                <entry key="mov" value="video"/>
+                <entry key="mp2" value="sound"/>
+                <entry key="mp3" value="sound"/>
+                <entry key="mp4" value="video"/>
+                <entry key="mpa" value="sound"/>
+                <entry key="mpe" value="video"/>
+                <entry key="mpeg" value="video"/>
+                <entry key="mpega" value="sound"/>
+                <entry key="mpg" value="video"/>
+                <entry key="pdf" value="pdf"/>
+                <entry key="png" value="img"/>
+                <entry key="pot" value="ppt"/>
+                <entry key="potm" value="ppt"/>
+                <entry key="potx" value="ppt"/>
+                <entry key="ppa" value="ppt"/>
+                <entry key="ppam" value="ppt"/>
+                <entry key="pps" value="ppt"/>
+                <entry key="ppsm" value="ppt"/>
+                <entry key="ppsx" value="ppt"/>
+                <entry key="ppt" value="ppt"/>
+                <entry key="pptm" value="ppt"/>
+                <entry key="pptx" value="ppt"/>
+                <entry key="ppz" value="ppt"/>
+                <entry key="rar" value="rar"/>
+                <entry key="rtf" value="rtf"/>
+                <entry key="svg" value="svg"/>
+                <entry key="svgz" value="svg"/>
+                <entry key="text" value="txt"/>
+                <entry key="tgz" value="zip"/>
+                <entry key="tif" value="img"/>
+                <entry key="tiff" value="img"/>
+                <entry key="txt" value="txt"/>
+                <entry key="waw" value="sound"/>
+                <entry key="xhtml" value="html"/>
+                <entry key="xlc" value="xls"/>
+                <entry key="xll" value="xls"/>
+                <entry key="xlm" value="xls"/>
+                <entry key="xls" value="xls"/>
+                <entry key="xlsb" value="xls"/>
+                <entry key="xlsm" value="xls"/>
+                <entry key="xlsx" value="xls"/>
+                <entry key="xlt" value="xls"/>
+                <entry key="xltm" value="xls"/>
+                <entry key="xltx" value="xls"/>
+                <entry key="z" value="zip"/>
+                <entry key="zip" value="zip"/>
+                <entry key="kml" value="gearth"/>
+                <entry key="kmz" value="gearth"/>
+				<entry key="swf" value="swf"/>
+				<entry key="odg" value="odg"/>
+				<entry key="odp" value="odp"/>
+				<entry key="ods" value="ods"/>
+				<entry key="odt" value="odt"/>
+				<entry key="sxc" value="sxc"/>
+				<entry key="sxi" value="sxi"/>
+				<entry key="sxw" value="sxw"/>
+				<entry key="tsv" value="tsv"/>
+            </map>
+        </property>
+    </bean>
+
+
+    <bean id="org.jahia.bin.errors.handler" class="org.jahia.bin.errors.DefaultErrorHandler"/>
+
+	<bean id="MaintenanceFilter" class="org.jahia.bin.filters.MaintenanceFilter">
+		<property name="allowedResources">
+			<set>
+				<value>^/css/.*</value>
+				<value>^/engines/images/.*</value>
+				<value>^/tools/.*</value>
+			</set>
+		</property>
+	</bean>
+
+    <bean id="RequestLoadAverage" class="org.jahia.utils.RequestLoadAverage" init-method="start" destroy-method="stop">
+        <constructor-arg index="0" value="request-loadaverage"/>
+    </bean>
+
+    <bean id="JCRSessionLoadAverage" class="org.jahia.utils.JCRSessionLoadAverage" init-method="start" destroy-method="stop">
+        <constructor-arg index="0" value="jcrsession-loadaverage"/>
+    </bean>
+
+
+    <bean id="jahiaContextListenersConfiguration" class="org.springframework.beans.factory.config.MapFactoryBean">
+    <property name="sourceMap">
+      <map>
+        <entry key="interceptHttpSessionListenerEvents" value="${interceptHttpSessionListenerEvents:false}"/>
+        <entry key="interceptHttpSessionActivationEvents" value="${interceptHttpSessionActivationEvents:false}"/>
+        <entry key="interceptHttpSessionAttributeListenerEvents" value="${interceptHttpSessionAttributeListenerEvents:false}"/>
+        <entry key="interceptHttpSessionBindingListenerEvents" value="${interceptHttpSessionBindingListenerEvents:false}"/>
+        <entry key="interceptServletRequestListenerEvents" value="${interceptServletRequestListenerEvents:false}"/>
+        <entry key="interceptServletRequestAttributeListenerEvents" value="${interceptServletRequestAttributeListenerEvents:false}"/>
+        <entry key="interceptServletContextAttributeListenerEvents" value="${interceptServletContextAttributeListenerEvents:false}"/>
+        <entry key="interceptServletContextListenerEvents" value="${interceptServletContextListenerEvents:false}"/>
+      </map>
+    </property>
+  </bean>
+
+
+</beans>

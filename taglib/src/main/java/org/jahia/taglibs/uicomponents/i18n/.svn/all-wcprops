@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/jahia/!svn/ver/40181/trunk/taglib/src/main/java/org/jahia/taglibs/uicomponents/i18n
+END
+LanguageLinkDisplayBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/jahia/!svn/ver/40181/trunk/taglib/src/main/java/org/jahia/taglibs/uicomponents/i18n/LanguageLinkDisplayBean.java
+END
+InitLangBarAttributes.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/jahia/!svn/ver/40181/trunk/taglib/src/main/java/org/jahia/taglibs/uicomponents/i18n/InitLangBarAttributes.java
+END
+DisplayLanguageFlagTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/jahia/!svn/ver/40181/trunk/taglib/src/main/java/org/jahia/taglibs/uicomponents/i18n/DisplayLanguageFlagTag.java
+END
+DisplayLanguageSwitchLinkTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/jahia/!svn/ver/40181/trunk/taglib/src/main/java/org/jahia/taglibs/uicomponents/i18n/DisplayLanguageSwitchLinkTag.java
+END

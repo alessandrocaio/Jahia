@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/jahia/!svn/ver/36629/trunk/war/src/main/resources/jbpm/hibernate
+END
+jbpm.repository.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/jahia/!svn/ver/36629/trunk/war/src/main/resources/jbpm/hibernate/jbpm.repository.hbm.xml
+END
+jbpm.identity.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/jahia/!svn/ver/36629/trunk/war/src/main/resources/jbpm/hibernate/jbpm.identity.hbm.xml
+END
+jbpm.history.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/jahia/!svn/ver/36629/trunk/war/src/main/resources/jbpm/hibernate/jbpm.history.hbm.xml
+END
+jbpm.task.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/jahia/!svn/ver/36629/trunk/war/src/main/resources/jbpm/hibernate/jbpm.task.hbm.xml
+END
+jbpm.execution.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/jahia/!svn/ver/36629/trunk/war/src/main/resources/jbpm/hibernate/jbpm.execution.hbm.xml
+END

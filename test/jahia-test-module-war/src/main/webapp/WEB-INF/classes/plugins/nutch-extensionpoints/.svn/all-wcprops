@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/jahia/!svn/ver/39634/trunk/test/jahia-test-module-war/src/main/webapp/WEB-INF/classes/plugins/nutch-extensionpoints
+END
+nutch-extensionpoints.jar
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/jahia/!svn/ver/39634/trunk/test/jahia-test-module-war/src/main/webapp/WEB-INF/classes/plugins/nutch-extensionpoints/nutch-extensionpoints.jar
+END
+plugin.xml
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/jahia/!svn/ver/39634/trunk/test/jahia-test-module-war/src/main/webapp/WEB-INF/classes/plugins/nutch-extensionpoints/plugin.xml
+END

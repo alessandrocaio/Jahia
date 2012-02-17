@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/pwdpolicy
+END
+JahiaPasswordPolicyService.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/pwdpolicy/JahiaPasswordPolicyService.java
+END
+PolicyEvaluator.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/pwdpolicy/PolicyEvaluator.java
+END
+PolicyEnforcementResult.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/pwdpolicy/PolicyEnforcementResult.java
+END
+PolicyEnforcementResultConvertor.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/pwdpolicy/PolicyEnforcementResultConvertor.java
+END
+JahiaPasswordPolicyRuleParam.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/pwdpolicy/JahiaPasswordPolicyRuleParam.java
+END
+PasswordHistoryEntry.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/pwdpolicy/PasswordHistoryEntry.java
+END
+JahiaPasswordPolicyManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/pwdpolicy/JahiaPasswordPolicyManager.java
+END
+JahiaPasswordPolicy.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/pwdpolicy/JahiaPasswordPolicy.java
+END
+JavaConditionEvaluator.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/pwdpolicy/JavaConditionEvaluator.java
+END
+RuleConditions.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/pwdpolicy/RuleConditions.java
+END
+ConditionEvaluator.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/pwdpolicy/ConditionEvaluator.java
+END
+EvaluationContext.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/pwdpolicy/EvaluationContext.java
+END
+PasswordPolicyRuleCondition.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/pwdpolicy/PasswordPolicyRuleCondition.java
+END
+JahiaPasswordPolicyRule.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/pwdpolicy/JahiaPasswordPolicyRule.java
+END

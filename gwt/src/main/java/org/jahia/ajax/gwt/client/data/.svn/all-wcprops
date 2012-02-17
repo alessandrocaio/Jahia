@@ -1,0 +1,143 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/jahia/!svn/ver/40339/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/data
+END
+GWTJahiaUser.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/data/GWTJahiaUser.java
+END
+GWTJahiaAjaxActionResultError.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/data/GWTJahiaAjaxActionResultError.java
+END
+GWTJahiaLanguageSwitcherBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/data/GWTJahiaLanguageSwitcherBean.java
+END
+GWTJahiaFieldInitializer.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/data/GWTJahiaFieldInitializer.java
+END
+GWTJahiaSite.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/data/GWTJahiaSite.java
+END
+GWTJahiaPrincipal.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/data/GWTJahiaPrincipal.java
+END
+GWTJahiaValueDisplayBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/data/GWTJahiaValueDisplayBean.java
+END
+GWTJahiaPortletOutputBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/data/GWTJahiaPortletOutputBean.java
+END
+GWTJahiaUserProperty.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/data/GWTJahiaUserProperty.java
+END
+GWTJahiaBasicDataBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/data/GWTJahiaBasicDataBean.java
+END
+GWTJahiaCreateEngineInitBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/data/GWTJahiaCreateEngineInitBean.java
+END
+GWTJahiaLanguage.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/data/GWTJahiaLanguage.java
+END
+GWTJahiaBookmark.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/data/GWTJahiaBookmark.java
+END
+GWTJahiaRolePermissionBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/data/GWTJahiaRolePermissionBase.java
+END
+GWTJahiaSearchQuery.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/jahia/!svn/ver/40310/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/data/GWTJahiaSearchQuery.java
+END
+GWTJahiaGroup.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/data/GWTJahiaGroup.java
+END
+GWTJahiaProperty.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/data/GWTJahiaProperty.java
+END
+SerializableBaseModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/data/SerializableBaseModel.java
+END
+GWTJahiaCreatePortletInitBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/data/GWTJahiaCreatePortletInitBean.java
+END
+GWTJahiaAjaxActionResult.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/data/GWTJahiaAjaxActionResult.java
+END
+GWTRenderResult.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/data/GWTRenderResult.java
+END
+GWTJahiaContentHistoryEntry.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/data/GWTJahiaContentHistoryEntry.java
+END
+GWTJahiaEditEngineInitBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/data/GWTJahiaEditEngineInitBean.java
+END

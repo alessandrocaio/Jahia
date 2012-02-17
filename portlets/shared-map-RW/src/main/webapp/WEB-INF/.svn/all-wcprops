@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/jahia/!svn/ver/27400/trunk/portlets/shared-map-RW/src/main/webapp/WEB-INF
+END
+portlet.xml
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/jahia/!svn/ver/27400/trunk/portlets/shared-map-RW/src/main/webapp/WEB-INF/portlet.xml
+END
+web.xml
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/jahia/!svn/ver/27061/trunk/portlets/shared-map-RW/src/main/webapp/WEB-INF/web.xml
+END

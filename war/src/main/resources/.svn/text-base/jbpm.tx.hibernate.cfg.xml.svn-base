@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<jbpm-configuration>
+
+  <process-engine-context>
+
+    <command-service name="txRequiredCommandService">
+      <jbpmeventgenerator-interceptor />
+      <skip-interceptor />
+      <retry-interceptor />
+      <environment-interceptor />
+      <standard-transaction-interceptor />
+    </command-service>
+
+    <command-service name="newTxRequiredCommandService">
+      <jbpmeventgenerator-interceptor />
+      <retry-interceptor />
+      <environment-interceptor policy="requiresNew" />
+      <standard-transaction-interceptor />
+    </command-service>
+
+<!-- 
+    <hibernate-configuration>
+      <cfg resource="jbpm.hibernate.cfg.xml" />     
+    </hibernate-configuration>
+
+    <hibernate-session-factory />
+ -->    
+    
+  </process-engine-context>
+
+  <transaction-context>
+    <transaction />
+    <hibernate-session factory="sessionFactory" />
+  </transaction-context>
+
+</jbpm-configuration>

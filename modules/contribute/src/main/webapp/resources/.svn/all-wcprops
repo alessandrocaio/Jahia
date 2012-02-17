@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/jahia/!svn/ver/40166/trunk/modules/contribute/src/main/webapp/resources
+END
+JahiaContributeMode_en.properties
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/jahia/!svn/ver/40101/trunk/modules/contribute/src/main/webapp/resources/JahiaContributeMode_en.properties
+END
+JahiaContributeMode.properties
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/jahia/!svn/ver/40166/trunk/modules/contribute/src/main/webapp/resources/JahiaContributeMode.properties
+END
+JahiaContributeMode_de.properties
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/jahia/!svn/ver/40101/trunk/modules/contribute/src/main/webapp/resources/JahiaContributeMode_de.properties
+END
+JahiaContributeMode_fr.properties
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/jahia/!svn/ver/40101/trunk/modules/contribute/src/main/webapp/resources/JahiaContributeMode_fr.properties
+END

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/jahia/!svn/ver/40054/trunk/core/src/main/resources/org/jahia/defaults/config/spring/workflow
+END
+applicationcontext-workflow.xml
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/jahia/!svn/ver/40054/trunk/core/src/main/resources/org/jahia/defaults/config/spring/workflow/applicationcontext-workflow.xml
+END
+applicationcontext-jBPM.xml
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/jahia/!svn/ver/40003/trunk/core/src/main/resources/org/jahia/defaults/config/spring/workflow/applicationcontext-jBPM.xml
+END

@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/jahia/!svn/ver/40415/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget
+END
+AsyncTabItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/AsyncTabItem.java
+END
+Poller.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/Poller.java
+END
+LinkerSelectionContext.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/LinkerSelectionContext.java
+END
+NodeColumnConfigList.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/NodeColumnConfigList.java
+END
+IndexedToggleButton.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/IndexedToggleButton.java
+END
+Linker.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/Linker.java
+END
+LinkerComponent.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/LinkerComponent.java
+END
+WorkInProgress.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/WorkInProgress.java
+END
+SearchField.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/SearchField.java
+END
+LoginBox.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/LoginBox.java
+END

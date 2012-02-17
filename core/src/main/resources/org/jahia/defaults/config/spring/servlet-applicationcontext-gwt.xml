@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+       
+    <bean class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+        <property name="mappings">
+            <value>
+                /**/contentManager.gwt=contentManagerServiceController
+                /**/subscription.gwt=subscriptionServiceController
+                /**/toolbar.gwt=toolbarServiceController
+                /**/userManager.gwt=userManagerServiceController
+            </value>
+        </property>
+    </bean>
+    
+    <bean name="abstractServiceController" class="org.jahia.ajax.gwt.commons.server.GWTController"  abstract="true">
+        <property name="sessionExpiryTime" value="30" />
+        <property name="allowPostMethodOnly" value="true"/>
+        <property name="requireAuthenticatedUser" value="true"/>
+    </bean>
+
+    <bean name="contentManagerServiceController" parent="abstractServiceController">
+        <property name="remoteServiceName" value="gwtJahiaContentManagenentService"/>
+    </bean>
+    <bean name="gwtJahiaContentManagenentService" class="org.jahia.ajax.gwt.content.server.JahiaContentManagementServiceImpl" scope="prototype">
+        <property name="acl" ref="ACLHelper"/>
+        <property name="contentDefinition" ref="ContentDefinitionHelper"/>
+        <property name="contentHub" ref="ContentHubHelper"/>
+        <property name="contentManager" ref="ContentManagerHelper"/>
+        <property name="portlet" ref="PortletHelper"/>
+        <property name="versioning" ref="VersioningHelper"/>
+        <property name="navigation" ref="NavigationHelper"/>
+        <property name="properties" ref="PropertiesHelper"/>
+        <property name="languages" ref="LanguagesHelper"/>
+        <property name="publication" ref="PublicationHelper"/>
+        <property name="workflow" ref="WorkflowHelper"/>
+        <property name="search" ref="SearchHelper"/>
+        <property name="template" ref="TemplateHelper"/>
+        <property name="zip" ref="ZipHelper"/>
+        <property name="diff" ref="DiffHelper"/>
+        <property name="seo" ref="SeoHelper"/>
+        <property name="uiConfig" ref="UiConfigHelper"/>
+        <property name="sessionPollingFrequency" value="300000"/>
+        <property name="cacheHelper" ref="CacheHelper"/>
+        <property name="schedulerHelper" ref="SchedulerHelper"/>
+        <property name="uiConfigHelper" ref="UiConfigHelper"/>
+        <property name="image" ref="ImageHelper"/>
+        <property name="JCRContentUtils" ref="JCRContentUtils"/>
+    </bean>
+
+    <bean name="toolbarServiceController" parent="abstractServiceController">
+        <property name="remoteServiceName" value="gwtToolbarService"/>
+    </bean>
+
+    <bean name="userManagerServiceController" parent="abstractServiceController">
+        <property name="remoteServiceName" value="gwtUserManagerService"/>
+    </bean>
+    <bean name="gwtUserManagerService" class="org.jahia.ajax.gwt.commons.server.rpc.UserManagerServiceImpl" scope="prototype">
+        <property name="groupManagerService" ref="JahiaGroupManagerService"/>
+        <property name="userManagerService" ref="JahiaUserManagerService"/>
+        <property name="sitesService" ref="JahiaSitesService"/>
+    </bean>
+    
+    <bean name="subscriptionServiceController" parent="abstractServiceController">
+        <property name="remoteServiceName" value="gwtSubscriptionService"/>
+    </bean>
+    <bean name="gwtSubscriptionService" class="org.jahia.ajax.gwt.subscription.server.SubscriptionServiceImpl" scope="prototype">
+    	<property name="subscriptionService" ref="subscriptionService"/>
+    </bean>
+</beans>

@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/jahia/!svn/ver/40415/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/edit/mainarea
+END
+PlaceholderModule.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/jahia/!svn/ver/40415/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/edit/mainarea/PlaceholderModule.java
+END
+SimpleModule.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/edit/mainarea/SimpleModule.java
+END
+SimpleModuleDragSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/edit/mainarea/SimpleModuleDragSource.java
+END
+ModuleDropTarget.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/jahia/!svn/ver/40402/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/edit/mainarea/ModuleDropTarget.java
+END
+Hover.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/edit/mainarea/Hover.java
+END
+Module.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/jahia/!svn/ver/40396/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/edit/mainarea/Module.java
+END
+Selection.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/edit/mainarea/Selection.java
+END
+ListModule.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/edit/mainarea/ListModule.java
+END
+ModuleHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/edit/mainarea/ModuleHelper.java
+END
+BoundModule.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/edit/mainarea/BoundModule.java
+END
+AreaModule.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/edit/mainarea/AreaModule.java
+END
+MainModule.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/edit/mainarea/MainModule.java
+END

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/categories/jcr
+END
+JCRCategoryProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/categories/jcr/JCRCategoryProvider.java
+END
+JCRCategory.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/categories/jcr/JCRCategory.java
+END

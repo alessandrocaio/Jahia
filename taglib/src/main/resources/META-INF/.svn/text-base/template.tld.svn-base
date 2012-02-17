@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee
+                            http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
+        version="2.0">
+    <description>Provides a tag library with template specific tags</description>
+    <display-name>Template Jahia Tag Library</display-name>
+    <tlib-version>6.5</tlib-version>
+    <short-name>template</short-name>
+    <uri>http://www.jahia.org/tags/templateLib</uri>
+    <tag>
+        <description>
+            Tag is used to add parameters to the parent tag, that implements ParamParent, e.g. 'include' or 'module' tags
+        </description>
+	    <name>param</name>
+	    <tag-class>org.apache.taglibs.standard.tag.rt.core.ParamTag</tag-class>
+	    <body-content>JSP</body-content>
+	    <attribute>
+	        <description>Name of the parameter.</description>
+	        <name>name</name>
+	        <required>true</required>
+	        <rtexprvalue>true</rtexprvalue>
+	    </attribute>
+	    <attribute>
+	        <description>Value of the parameter.</description>
+	        <name>value</name>
+	        <required>false</required>
+	        <rtexprvalue>true</rtexprvalue>
+	    </attribute>
+    </tag>
+
+    <tag>
+        <description>Includes a node as a module into the page. The node to display is determined either by nodeName, contentBeanName, path or node attribute. Only one these attributes must be specified.
+            templateType / template attributes determine the way the node is rendered.
+        </description>
+        <name>module</name>
+        <tag-class>org.jahia.taglibs.template.include.ModuleTag</tag-class>
+        <body-content>JSP</body-content>
+        <attribute>
+            <description>Node to include in the page</description>
+            <name>node</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <description>Name of the node attribute to be found in page context</description>
+            <name>nodeName</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <description>Relative or absolute path to the node to include</description>
+            <name>path</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <description>The template type to use. By default, inherited from parent module, or HTML.</description>
+            <name>templateType</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <description>The default view used for displaying the node. Can be overriden with template of the node itself.</description>
+            <name>view</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <description>Enable or disable edition of this module in edit mode. Mainly used for absolute or references.</description>
+            <name>editable</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <description>Space separated list of allowed node types. If the node does not match any node type, it won't be displayed. Edit mode will forbid drop of any incompatible node.</description>
+            <name>nodeTypes</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <description>Name of the exported pageContext variable to hold the value specified in the action.</description>
+            <name>var</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+    <tag>
+        <description>
+            Tag to use include another template.
+        </description>
+        <name>include</name>
+        <tag-class>org.jahia.taglibs.template.include.IncludeTag</tag-class>
+        <body-content>JSP</body-content>
+        <attribute>
+            <description>The template type to use. By default, inherited from parent module, or HTML.</description>
+            <name>templateType</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <description>The template used for displaying the node. Overriden the template defined in the node itself.</description>
+            <name>view</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+    <!-- gwt -->
+    <tag>
+        <description>Generate place holder for a JahiaModule.</description>
+        <name>gwtJahiaModule</name>
+        <tag-class>org.jahia.taglibs.template.gwt.GWTJahiaModuleTag</tag-class>
+        <body-content>JSP</body-content>
+        <attribute>
+            <name>id</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <description>jahiaType is one of : actionmenu,calendar,calendar,form,inlineediting,jobreport,layoutmanager,layoutmanager,
+                layoutmanagerbox,mediaGallery,mySettings,opensearch,pdisplay,
+                portletrender,query,rss,subscription,toolsbars,usergroup,versioncomparison</description>
+            <name>jahiaType</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <name>cssClassName</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <description>if false (default) use gxt-admin module, if true use gxt-template module</description>
+            <name>templateUsage</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>boolean</type>
+        </attribute>
+        <dynamic-attributes>true</dynamic-attributes>
+    </tag>
+   
+
+    <!-- layout manager -->
+    <tag>
+        <description>create html struture for layout manager.</description>
+        <name>layoutManagerArea</name>
+        <tag-class>org.jahia.taglibs.template.layoutmanager.LayoutManagerAreaTag</tag-class>
+        <body-content>JSP</body-content>
+        <attribute>
+            <name>width</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <name>node</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>javax.jcr.Node</type>
+        </attribute>
+    </tag>
+    <tag>
+        <description>Includes an option as a module into the page. The nodetype of the option to render is defined by nodetype attribute.
+            The node to display is determined by node attribute. template attribute determine the way the node is rendered.
+        </description>
+        <name>option</name>
+        <tag-class>org.jahia.taglibs.template.include.OptionTag</tag-class>
+        <body-content>JSP</body-content>
+        <attribute>
+            <description>Node to include in the page</description>
+            <name>node</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <description>Nodetype of the option to include in the page</description>
+            <name>nodetype</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <description>Name of the template used for the rendering</description>
+            <name>view</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+    <tag>
+        <description>Add some resources to the head tag of the html.
+        </description>
+        <name>addResources</name>
+        <tag-class>org.jahia.taglibs.template.include.AddResourcesTag</tag-class>
+        <body-content>JSP</body-content>
+        <attribute>
+            <description>
+            	Type of the resources (will define where to find (in css direcory for css, in javascript directory for javascript).
+            	If not set the content of the tag body will be used as the asset itself and
+            	the resources attribute can be left empty. 
+            </description>
+            <name>type</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <description>
+            	The list of resources they will be included in the define order.
+            	If the tag body is not empty, it will be used as the asset itself and
+            	the resources attribute can be left empty. 
+           	</description>
+            <name>resources</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <description>
+            	For css resource type, this attribute specify the media on which the css will be applied
+            </description>
+            <name>media</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <description>
+                optional html browser condition (ex : if gte IE 6)
+            </description>
+            <name>condition</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+        	<description>If set to true the resource is inserted at the top of the resources list. Otherwise it is appended to the end. [false]</description>
+        	<name>insert</name>
+        	<required>false</required>
+        	<rtexprvalue>true</rtexprvalue>
+        	<type>boolean</type>
+        </attribute>
+        <attribute>
+            <description>
+                An optional title value for this asset (in case of a link). 
+            </description>
+            <name>title</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <description>
+                key for managing uniqueness of inline type.
+            </description>
+            <name>key</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <description>Name of the exported pageContext variable to hold the value specified in the action.</description>
+            <name>var</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+    <tag>
+        <description>Add a wrapper.
+        </description>
+        <name>addWrapper</name>
+        <tag-class>org.jahia.taglibs.template.include.AddWrapperTag</tag-class>
+        <body-content>empty</body-content>
+        <attribute>
+            <description>Name of the wrapper to include</description>
+            <name>name</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+    <tag>
+        <description>Init pager
+        </description>
+        <name>initPager</name>
+        <tag-class>org.jahia.taglibs.template.pager.InitPagerTag</tag-class>
+        <body-content>empty</body-content>
+        <attribute>
+            <description>Number of elements per page</description>
+            <name>pageSize</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <description>Total number of elements</description>
+            <name>totalSize</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <description>id of current pagination</description>
+            <name>id</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+    <tag>
+        <description>Remove pager properties from request</description>
+        <name>removePager</name>
+        <tag-class>org.jahia.taglibs.template.pager.RemovePagerTag</tag-class>
+        <body-content>empty</body-content>
+        <attribute>
+            <description>id of current pagination</description>
+            <name>id</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+
+    <tag>
+        <description>Define an area for containing sub modules.
+        </description>
+        <name>list</name>
+        <tag-class>org.jahia.taglibs.template.include.ListTag</tag-class>
+        <body-content>JSP</body-content>
+        <attribute>
+            <description>Relative or absolute path to the node to include</description>
+            <name>path</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <description>The template type to use. By default, inherited from parent module, or HTML.</description>
+            <name>templateType</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <description>The default template used for displaying the node. Can be overriden with template of the node itself.</description>
+            <name>view</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <description>Enable or disable edition of this module in edit mode. Mainly used for absolute or references.</description>
+            <name>editable</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <description>Space separated list of allowed node types. If the node does not match any node type, it won't be displayed. Edit mode will forbid drop of any incompatible node.</description>
+            <name>nodeTypes</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <description>Content type .</description>
+            <name>listType</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <description>Name of the exported pageContext variable to hold the value specified in the action.</description>
+            <name>var</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+
+    <tag>
+        <description>Define an area for containing sub modules.
+        </description>
+        <name>area</name>
+        <tag-class>org.jahia.taglibs.template.include.AreaTag</tag-class>
+        <body-content>JSP</body-content>
+        <attribute>
+            <description>Relative or absolute path to the node to include</description>
+            <name>path</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <description>Type of module, area is the default. Set to absoluteArea for absolute.</description>
+            <name>moduleType</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <description>The CSS style name to use for mockup.</description>
+            <name>mockupStyle</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <description>The template type to use. By default, inherited from parent module, or HTML.</description>
+            <name>templateType</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <description>The default template used for displaying the node. Can be overriden with template of the node itself.</description>
+            <name>view</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <description>Enable or disable edition of this module in edit mode. Mainly used for absolute or references.</description>
+            <name>editable</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <description>Space separated list of allowed node types. If the node does not match any node type, it won't be displayed. Edit mode will forbid drop of any incompatible node.</description>
+            <name>nodeTypes</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <description>Number of elements to display.</description>
+            <name>listLimit</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <description>Ancestor level for absolute area - 0 is Home page, 1 first sub pages, ..</description>
+            <name>level</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <description>Allows area to be stored as a subnode</description>
+            <name>areaAsSubNode</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <description>Content type .</description>
+            <name>areaType</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <description>Name of the exported pageContext variable to hold the value specified in the action.</description>
+            <name>var</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+
+    <tag>
+        <description>Add a dependency.
+        </description>
+        <name>addCacheDependency</name>
+        <tag-class>org.jahia.taglibs.template.include.AddCacheDependencyTag</tag-class>
+        <body-content>empty</body-content>
+        <attribute>
+            <description>Node to be added as a dependency</description>
+            <name>node</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>org.jahia.services.content.JCRNodeWrapper</type>
+        </attribute>
+        <attribute>
+            <description>Node to be added as a dependency</description>
+            <name>path</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <description>Node to be added as a dependency</description>
+            <name>uuid</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <description>Regexp matching path that should flush this component</description>
+            <name>flushOnPathMatchingRegexp</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+    </tag>
+
+    <tag>
+        <description>Form</description>
+        <name>tokenizedForm</name>
+        <tag-class>org.jahia.taglibs.template.TokenizedFormTag</tag-class>
+        <body-content>JSP</body-content>
+    </tag>
+    <tag>
+        <description>Captcha</description>
+        <name>captcha</name>
+        <tag-class>org.jahia.taglibs.template.CaptchaTag</tag-class>
+        <body-content>JSP</body-content>
+        <attribute>
+            <description>If set to false the captach image won't be shown, but the generated Captcha image URL will be exposed into the page scope variabled, defined by var (since Jahia 6.6). [true]</description>
+            <name>display</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>boolean</type>
+        </attribute>
+        <attribute>
+            <description>If set to true (default) or not specified, an additional link (image) is generated to reload the current captcha image. Is only relevant when display attribute is true (since Jahia 6.6). [true]</description>
+            <name>displayReloadLink</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>boolean</type>
+        </attribute>
+        <attribute>
+            <description>Name of the exported pageContext variable to hold the value of the Captcha URL (since Jahia 6.6). [captchaUrl]</description>
+            <name>var</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+    </tag>
+    <tag-file>
+    	<name>displayPagination</name>
+    	<path>/META-INF/tags/displayPagination.tag</path>
+    </tag-file>
+
+    <tag-file>
+        <name>theme</name>
+        <path>/META-INF/tags/theme.tag</path>
+    </tag-file>
+
+
+</taglib>

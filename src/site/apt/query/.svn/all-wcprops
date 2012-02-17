@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/jahia/!svn/ver/40201/trunk/src/site/apt/query
+END
+overview.apt
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/jahia/!svn/ver/40111/trunk/src/site/apt/query/overview.apt
+END
+query-vs-search.apt
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/jahia/!svn/ver/39299/trunk/src/site/apt/query/query-vs-search.apt
+END
+basics.apt
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/jahia/!svn/ver/40111/trunk/src/site/apt/query/basics.apt
+END
+configuration.apt
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/jahia/!svn/ver/40111/trunk/src/site/apt/query/configuration.apt
+END
+query.apt
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/jahia/!svn/ver/40201/trunk/src/site/apt/query/query.apt
+END

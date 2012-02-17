@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/jahia/!svn/ver/39634/trunk/test/jahia-test-module-war/src/main/webapp/WEB-INF/classes/plugins/feed
+END
+rome-0.9.jar
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/jahia/!svn/ver/39634/trunk/test/jahia-test-module-war/src/main/webapp/WEB-INF/classes/plugins/feed/rome-0.9.jar
+END
+feed.jar
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/jahia/!svn/ver/39634/trunk/test/jahia-test-module-war/src/main/webapp/WEB-INF/classes/plugins/feed/feed.jar
+END
+plugin.xml
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/jahia/!svn/ver/39634/trunk/test/jahia-test-module-war/src/main/webapp/WEB-INF/classes/plugins/feed/plugin.xml
+END

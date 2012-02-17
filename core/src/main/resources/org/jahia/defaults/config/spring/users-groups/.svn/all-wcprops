@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/jahia/!svn/ver/38527/trunk/core/src/main/resources/org/jahia/defaults/config/spring/users-groups
+END
+applicationcontext-users.xml
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/jahia/!svn/ver/38527/trunk/core/src/main/resources/org/jahia/defaults/config/spring/users-groups/applicationcontext-users.xml
+END
+applicationcontext-groups.xml
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/jahia/!svn/ver/38527/trunk/core/src/main/resources/org/jahia/defaults/config/spring/users-groups/applicationcontext-groups.xml
+END

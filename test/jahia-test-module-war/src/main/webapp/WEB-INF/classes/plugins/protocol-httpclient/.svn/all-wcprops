@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/jahia/!svn/ver/39634/trunk/test/jahia-test-module-war/src/main/webapp/WEB-INF/classes/plugins/protocol-httpclient
+END
+protocol-httpclient.jar
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/jahia/!svn/ver/39634/trunk/test/jahia-test-module-war/src/main/webapp/WEB-INF/classes/plugins/protocol-httpclient/protocol-httpclient.jar
+END
+plugin.xml
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/jahia/!svn/ver/39634/trunk/test/jahia-test-module-war/src/main/webapp/WEB-INF/classes/plugins/protocol-httpclient/plugin.xml
+END

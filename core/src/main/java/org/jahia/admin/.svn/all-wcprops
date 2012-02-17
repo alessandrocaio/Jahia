@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/jahia/!svn/ver/40431/trunk/core/src/main/java/org/jahia/admin
+END
+PlaceholderAdministrationModule.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/admin/PlaceholderAdministrationModule.java
+END
+AbstractAdministrationModule.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/admin/AbstractAdministrationModule.java
+END
+AdministrationModule.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/admin/AdministrationModule.java
+END
+JspForwardAdministrationModule.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/admin/JspForwardAdministrationModule.java
+END
+AdministrationModulesRegistry.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/admin/AdministrationModulesRegistry.java
+END

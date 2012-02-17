@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/jahia/!svn/ver/40394/trunk/core/src/main/java/org/jahia/services/render/filter/cache
+END
+CacheUrlDependenciesParserFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/jahia/!svn/ver/40163/trunk/core/src/main/java/org/jahia/services/render/filter/cache/CacheUrlDependenciesParserFilter.java
+END
+AggregateCacheFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/jahia/!svn/ver/40394/trunk/core/src/main/java/org/jahia/services/render/filter/cache/AggregateCacheFilter.java
+END
+ModuleGeneratorQueue.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/render/filter/cache/ModuleGeneratorQueue.java
+END
+HtmlCacheEventListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/render/filter/cache/HtmlCacheEventListener.java
+END
+ModuleCacheProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/jahia/!svn/ver/40225/trunk/core/src/main/java/org/jahia/services/render/filter/cache/ModuleCacheProvider.java
+END
+CacheKeyGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/render/filter/cache/CacheKeyGenerator.java
+END
+DefaultCacheKeyGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/jahia/!svn/ver/40394/trunk/core/src/main/java/org/jahia/services/render/filter/cache/DefaultCacheKeyGenerator.java
+END
+RenderServiceTemplateCacheEventListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/render/filter/cache/RenderServiceTemplateCacheEventListener.java
+END

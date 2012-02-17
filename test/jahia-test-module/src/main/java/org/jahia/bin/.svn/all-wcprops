@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/jahia/!svn/ver/40181/trunk/test/jahia-test-module/src/main/java/org/jahia/bin
+END
+TestCreateSiteServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/jahia/!svn/ver/40181/trunk/test/jahia-test-module/src/main/java/org/jahia/bin/TestCreateSiteServlet.java
+END
+FindTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/jahia/!svn/ver/40181/trunk/test/jahia-test-module/src/main/java/org/jahia/bin/FindTest.java
+END
+RenderTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/jahia/!svn/ver/40181/trunk/test/jahia-test-module/src/main/java/org/jahia/bin/RenderTest.java
+END
+FindPrincipalTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/jahia/!svn/ver/40181/trunk/test/jahia-test-module/src/main/java/org/jahia/bin/FindPrincipalTest.java
+END
+TestServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/jahia/!svn/ver/40181/trunk/test/jahia-test-module/src/main/java/org/jahia/bin/TestServlet.java
+END
+TestBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/jahia/!svn/ver/40181/trunk/test/jahia-test-module/src/main/java/org/jahia/bin/TestBean.java
+END

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/jahia/!svn/ver/40235/trunk/test/jahia-test-module-war/src/main/webapp/scripts/jmeter/consultation-contribution
+END
+ldap-users-editing.csv
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/jahia/!svn/ver/39634/trunk/test/jahia-test-module-war/src/main/webapp/scripts/jmeter/consultation-contribution/ldap-users-editing.csv
+END
+ldap-users-browsing.csv
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/jahia/!svn/ver/39634/trunk/test/jahia-test-module-war/src/main/webapp/scripts/jmeter/consultation-contribution/ldap-users-browsing.csv
+END
+consultation-contribution.jmx
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/jahia/!svn/ver/40235/trunk/test/jahia-test-module-war/src/main/webapp/scripts/jmeter/consultation-contribution/consultation-contribution.jmx
+END

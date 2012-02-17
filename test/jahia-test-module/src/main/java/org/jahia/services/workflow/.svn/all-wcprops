@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/jahia/!svn/ver/40181/trunk/test/jahia-test-module/src/main/java/org/jahia/services/workflow
+END
+WorkflowServiceTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/jahia/!svn/ver/40181/trunk/test/jahia-test-module/src/main/java/org/jahia/services/workflow/WorkflowServiceTest.java
+END
+StateSequenceTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/jahia/!svn/ver/40181/trunk/test/jahia-test-module/src/main/java/org/jahia/services/workflow/StateSequenceTest.java
+END

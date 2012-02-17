@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/jahia/!svn/ver/39634/trunk/test/jahia-test-module-war/src/main/webapp/scripts/jmeter/createblogs
+END
+users.txt
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/jahia/!svn/ver/39634/trunk/test/jahia-test-module-war/src/main/webapp/scripts/jmeter/createblogs/users.txt
+END
+createBlogs.jmx
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/jahia/!svn/ver/39634/trunk/test/jahia-test-module-war/src/main/webapp/scripts/jmeter/createblogs/createBlogs.jmx
+END
+test.properties
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/jahia/!svn/ver/39634/trunk/test/jahia-test-module-war/src/main/webapp/scripts/jmeter/createblogs/test.properties
+END

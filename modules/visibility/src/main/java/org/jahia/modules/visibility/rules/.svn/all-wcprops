@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/jahia/!svn/ver/40181/trunk/modules/visibility/src/main/java/org/jahia/modules/visibility/rules
+END
+VisibilityActionPurgeJob.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/jahia/!svn/ver/40181/trunk/modules/visibility/src/main/java/org/jahia/modules/visibility/rules/VisibilityActionPurgeJob.java
+END
+VisibilityRuleService.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/jahia/!svn/ver/40181/trunk/modules/visibility/src/main/java/org/jahia/modules/visibility/rules/VisibilityRuleService.java
+END

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/jahia/!svn/ver/39111/trunk/war/src/main/webapp/admin/include
+END
+left_menu.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/jahia/!svn/ver/38177/trunk/war/src/main/webapp/admin/include/left_menu.jsp
+END
+header-simple.inc
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/jahia/!svn/ver/39111/trunk/war/src/main/webapp/admin/include/header-simple.inc
+END
+tab_menu.inc
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/jahia/!svn/ver/38334/trunk/war/src/main/webapp/admin/include/tab_menu.inc
+END
+footer.inc
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/jahia/!svn/ver/38667/trunk/war/src/main/webapp/admin/include/footer.inc
+END
+header.inc
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/jahia/!svn/ver/38177/trunk/war/src/main/webapp/admin/include/header.inc
+END

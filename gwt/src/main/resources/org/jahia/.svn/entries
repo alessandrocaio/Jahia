@@ -1,0 +1,31 @@
+9
+
+dir
+40433
+http://subversion.jahia.org/svn/jahia/trunk/gwt/src/main/resources/org/jahia
+http://subversion.jahia.org/svn/jahia
+
+
+
+2012-01-11T07:42:54.499229Z
+40106
+tdraier
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+69c369ed-ed09-0410-a4a1-e19a46c23626
+
+ajax
+dir
+

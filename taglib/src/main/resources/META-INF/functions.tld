@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
+        version="2.0">
+
+    <description>Jahia functions library</description>
+    <display-name>Jahia functions</display-name>
+    <tlib-version>6.5</tlib-version>
+    <short-name>functions</short-name>
+    <uri>http://www.jahia.org/tags/functions</uri>
+
+	<function>
+		<description>
+			Abbreviates a String using ellipses. This will turn:
+     		"Now is the time for all good men" into "Now is the time for..."
+		</description>
+		<name>abbreviate</name>
+		<function-class>org.apache.commons.lang.WordUtils</function-class>
+		<function-signature>java.lang.String abbreviate(java.lang.String, int, int,java.lang.String)</function-signature>
+		<example>
+			${functions:abbreviate(field.value, 100,120,'...')}
+		</example>
+	</function>
+	
+    <function>
+        <description>Prints out the attribute values for a tag, based on the provided Map</description>
+        <name>attributes</name>
+        <function-class>org.jahia.taglibs.functions.Functions</function-class>
+        <function-signature>java.lang.String attributes(java.util.Map)</function-signature>
+        <example>
+            &lt;input ${functions:attributes(tagAttributes)}/&gt;
+        </example>
+    </function>
+
+    <function>
+        <description>Checks if the target object can be found in the source. The source can be either a Collection, and array of objects or a String.</description>
+        <name>contains</name>
+        <function-class>org.jahia.taglibs.functions.Functions</function-class>
+        <function-signature>boolean contains(java.lang.Object,java.lang.Object)</function-signature>
+        <example>
+            &lt;input ${functions:contains('my original string', 'original')}/&gt;
+            &lt;input ${functions:contains(myArray, testString)}/&gt;
+        </example>
+    </function>
+
+    <function>
+        <description>Returns the requested value if it is not empty, otherwise returns provided default value
+        </description>
+        <name>default</name>
+        <function-class>org.jahia.taglibs.functions.Functions</function-class>
+        <function-signature>java.lang.Object defaultValue(java.lang.Object, java.lang.Object)</function-signature>
+        <example>
+            &lt;c:out value="${functions:default(param.itemsPerPage, '10')}"&gt;
+        </example>
+    </function>
+    
+    <function>
+        <description>Remove all cache tags from string.
+        </description>
+        <name>removeCacheTags</name>
+        <function-class>org.jahia.taglibs.functions.Functions</function-class>
+        <function-signature>java.lang.String removeCacheTags(java.lang.String)</function-signature>
+    </function>
+    <function>
+        <description>Test whether a string matches a regular expression.
+        </description>
+        <name>matches</name>
+        <function-class>org.jahia.taglibs.functions.Functions</function-class>
+        <function-signature>boolean matches(java.lang.String, java.lang.String)</function-signature>
+    </function>
+
+    <function>
+        <description>
+            Escapes the characters in a String using JavaScript String rules.
+            Escapes any values it finds into their JavaScript String form.
+            Deals correctly with quotes and control-chars (tab, backslash, cr, ff, etc.)         
+        </description>
+        <name>escapeJavaScript</name>
+        <function-class>org.apache.commons.lang.StringEscapeUtils</function-class>
+        <function-signature>java.lang.String escapeJavaScript(java.lang.String)</function-signature>
+        <example>
+            &lt;c:set var="msg"&gt;He didn't say, "Stop!"&lt;/c:set&gt;
+            ${functions:escapeJavaScript(msg) will result in: He didn\'t say, \"Stop!\"
+        </example>
+    </function>
+    
+    <function>
+        <description>Returns the given value cleaned of its HTML tags</description>
+        <name>removeHtmlTags</name>
+        <function-class>org.jahia.taglibs.functions.Functions</function-class>
+        <function-signature>java.lang.String removeHtmlTags(java.lang.String)</function-signature>
+        <example>
+            &lt;c:out value="${functions:removeHtmlTags('myHomeKey')}"&gt;
+        </example>
+    </function>
+
+    <function>
+        <description>Returns true if the current user is member of the specified group name or comma-separated list of
+            group names
+        </description>
+        <name>memberOf</name>
+        <function-class>org.jahia.taglibs.functions.Functions</function-class>
+        <function-signature>java.lang.Boolean memberOf(java.lang.String)</function-signature>
+        <example>
+            &lt;c:if test="${functions:memberOf('administrators')}"&gt;
+            The user belongs to administrators
+            &lt;/c:if&gt;
+        </example>
+    </function>
+
+    <function>
+        <description>Returns true if the current user is NOT member of the specified group name or any of the specified
+            groups
+            (comma-separated list of group names)
+        </description>
+        <name>notMemberOf</name>
+        <function-class>org.jahia.taglibs.functions.Functions</function-class>
+        <function-signature>java.lang.Boolean notMemberOf(java.lang.String)</function-signature>
+        <example>
+            &lt;c:if test="${functions:notMemberOf('administrators,editors')}"&gt;
+            The user belong neither to administrators nor to editors
+            &lt;/c:if&gt;
+        </example>
+    </function>
+
+    <function>
+        <description>Appends 3 strings together and returns the concatenated value</description>
+        <name>stringConcatenation</name>
+        <function-class>org.jahia.taglibs.functions.Functions</function-class>
+        <function-signature>java.lang.String stringConcatenation(java.lang.String, java.lang.String, java.lang.String)
+        </function-signature>
+        <example>
+            &lt;c:out value="${functions:stringConcatenation('new', ' ', 'value')}"&gt;
+        </example>
+    </function>
+
+    <function>
+        <description>
+            Unescapes any JavaScript literals found in the String.
+        </description>
+        <name>unescapeJavaScript</name>
+        <function-class>org.apache.commons.lang.StringEscapeUtils</function-class>
+        <function-signature>java.lang.String unescapeJavaScript(java.lang.String)</function-signature>
+    </function>
+
+    <function>
+        <description>removes duplicate occurences in a string</description>
+        <name>removeDuplicates</name>
+        <function-class>org.jahia.taglibs.functions.Functions</function-class>
+        <function-signature>java.lang.String removeDuplicates(java.lang.String, java.lang.String)
+        </function-signature>
+        <example>
+            &lt;c:out value="${functions:removeDuplicates('aaa,bbb,ccc,ddd,eee,aaa', ',')}"&gt;
+        </example>
+    </function>
+
+    <function>
+        <description>counts occurences of a string in a string</description>
+        <name>countOccurences</name>
+        <function-class>org.jahia.taglibs.functions.Functions</function-class>
+        <function-signature>int countOccurences(java.lang.String, java.lang.String)
+        </function-signature>
+        <example>
+            &lt;c:out value="${functions:countOccurences('aaa,bbb,ccc,ddd,eee,aaa', 'aaa')}"&gt;
+        </example>
+    </function>
+
+    <function>
+        <description>
+        	Returns a pseudorandom, uniformly distributed int value between '0' (inclusive) 
+        	and the specified value (exclusive), from the Math.random() sequence.
+        </description>
+        <name>randomInt</name>
+        <function-class>org.apache.commons.lang.math.RandomUtils</function-class>
+        <function-signature>int nextInt(int)</function-signature>
+        <example>
+            &lt;c:out value="${functions:randomInt(currentNode.nodes.size)}"&gt;
+        </example>
+    </function>
+
+    <function>
+        <description>
+        	Returns the closest int to the argument. 
+        	The result is rounded to an integer by adding 1/2, taking the 
+     		floor of the result, and casting the result to type int.
+        </description>
+        <name>round</name>
+        <function-class>java.lang.Math</function-class>
+        <function-signature>int round(float)</function-signature>
+        <example>
+            &lt;c:out value="${functions:round(9 * tag.references.size / totalTagUsage)}"&gt;
+        </example>
+    </function>
+    
+    <function>
+        <description>Returns the smaller of two long values.</description>
+        <name>min</name>
+        <function-class>java.lang.Math</function-class>
+        <function-signature>long min(long, long)</function-signature>
+        <example>
+            &lt;c:out value="${functions:min(hitCount, 10)}"&gt;
+        </example>
+    </function>
+    
+    <function>
+        <description>Returns the smaller of two long values.</description>
+        <name>nextLongIdentifier</name>
+        <function-class>org.apache.commons.id.IdentifierUtils</function-class>
+        <function-signature>java.lang.Long nextLongIdentifier()</function-signature>
+        <example>
+            &lt;input type="text" name="date" id="date-${functions:nextLongIdentifier()}"/&gt;
+        </example>
+    </function>
+    
+    <function>
+        <description>
+			Extends the standard JSTL's fn:length() function with JCR's RangeIterator support
+        </description>
+        <name>length</name>
+        <function-class>org.jahia.taglibs.functions.Functions</function-class>
+        <function-signature>long length(java.lang.Object)</function-signature>
+        <example>
+            Tag usage count: ${functions:length(tag.weakReferences)}
+        </example>
+    </function>
+    
+    <function>
+        <description>
+			Reverse a List
+        </description>
+        <name>reverse</name>
+        <function-class>org.jahia.taglibs.functions.Functions</function-class>
+        <function-signature>java.util.List reverse(java.util.Collection)</function-signature>
+        <example>
+            Tag usage reverse: ${functions:reverse(mylist)}
+        </example>
+    </function>
+
+    <function>
+        <description>
+			Reverse an Iterator
+        </description>
+        <name>reverseIterator</name>
+        <function-class>org.jahia.taglibs.functions.Functions</function-class>
+        <function-signature>java.util.Iterator reverse(java.util.Iterator)</function-signature>
+        <example>
+            Tag usage reverse: ${functions:reverse(myIterator)}
+        </example>
+    </function>
+
+
+    <function>
+        <description>
+            Returns the CSS style name that corresponds to the file extension of the provided file name.
+        </description>
+        <name>fileIcon</name>
+        <function-class>org.jahia.utils.FileUtils</function-class>
+        <function-signature>java.lang.String getFileIcon(java.lang.String)</function-signature>
+        <example>
+            &lt;a href="${currentNode.url}" class="${functions:fileIcon(currentNode.name)}"&gt;My File&lt;a&gt;
+        </example>
+    </function>
+
+    <function>
+        <description>
+            Returns the CSS style name that corresponds to the mime type.
+        </description>
+        <name>fileIconFromMimetype</name>
+        <function-class>org.jahia.utils.FileUtils</function-class>
+        <function-signature>java.lang.String getFileIconFromMimetype(java.lang.String)</function-signature>
+        <example>
+            &lt;a href="${currentNode.url}" class="${functions:fileIconFromMimetype(currentNode.properties.type.string)}"&gt;My File&lt;a&gt;
+        </example>
+    </function>
+
+    <function>
+        <description>
+            Returns the extension name that corresponds to the filename.
+        </description>
+        <name>fileExtension</name>
+        <function-class>org.jahia.utils.FileUtils</function-class>
+        <function-signature>java.lang.String getExtension(java.lang.String)</function-signature>
+        <example>
+            &lt;a href="${currentNode.url}" class="${functions:fileExtension(currentNode.name)}"&gt;My File&lt;a&gt;
+        </example>
+    </function>
+
+    <function>
+        <description>
+            Returns the extension name that corresponds to the mime type.
+        </description>
+        <name>fileExtensionFromMimetype</name>
+        <function-class>org.jahia.utils.FileUtils</function-class>
+        <function-signature>java.lang.String getExtensionFromMimeType(java.lang.String)</function-signature>
+        <example>
+            &lt;a href="${currentNode.url}" class="${functions:fileExtensionFromMimetype(currentNode.properties.type.string)}"&gt;My File&lt;a&gt;
+        </example>
+    </function>
+
+    <function>
+        <description>
+            Returns map of possible conversion.
+        </description>
+        <name>possibleFormats</name>
+        <function-class>org.jahia.utils.FileUtils</function-class>
+        <function-signature>java.util.List getPossibleFormats()</function-signature>
+    </function>
+    
+    <function>
+        <description>
+			Checks if the given object is iterable to be used with c:forEach
+        </description>
+        <name>isIterable</name>
+        <function-class>org.jahia.taglibs.functions.Functions</function-class>
+        <function-signature>java.lang.Boolean isIterable(java.lang.Object)</function-signature>
+        <example>
+            &lt;c:if test="${functions:isIterable(object)}"&gt;
+                &lt;c:forEach items="${object}" var="item"&gt;
+                    ${item}
+                &lt;/c:forEach&gt;
+            &lt;/c:if&gt;
+        </example>
+    </function>
+
+    <function>
+        <description>Convert language code to locale object</description>
+        <name>toLocale</name>
+        <function-class>org.jahia.utils.LanguageCodeConverters</function-class>
+        <function-signature>java.util.Locale languageCodeToLocale(java.lang.String)</function-signature>
+    </function>
+
+    <function>
+        <description>Get list of available locales for administration</description>
+        <name>availableAdminBundleLocale</name>
+        <function-class>org.jahia.utils.LanguageCodeConverters</function-class>
+        <function-signature>java.util.List getAvailableBundleLocalesSorted(java.util.Locale)</function-signature>
+    </function>
+
+    <function>
+        <description>
+			Display a locale name in a specified locale
+        </description>
+        <name>displayLocaleNameWith</name>
+        <function-class>org.jahia.taglibs.functions.Functions</function-class>
+        <function-signature>java.lang.String displayLocaleNameWith(java.util.Locale,java.util.Locale)</function-signature>
+    </function>
+
+    <function>
+		<description>
+			Capitalize a string "i am FINE" to "I Am Fine" as an example.
+		</description>
+		<name>capitalize</name>
+		<function-class>org.apache.commons.lang.WordUtils</function-class>
+		<function-signature>java.lang.String capitalizeFully(java.lang.String)</function-signature>
+		<example>
+			${functions:capitalize(field.value)}
+		</example>
+	</function>
+
+    <function>
+		<description>
+			Lookup the user by the user key (with provider prefix) or username.
+		</description>
+		<name>lookupUser</name>
+		<function-class>org.jahia.taglibs.functions.Functions</function-class>
+		<function-signature>org.jahia.services.usermanager.JahiaUser lookupUser(java.lang.String)</function-signature>
+		<example>
+			${functions:lookupUser('sergiy')} or ${functions:lookupUser('{ldap}john')}
+		</example>
+	</function>
+
+    <function>
+		<description>
+			Retrieve the displayable name for a principal object. For the moment this implementation only changes
+            the guest user and guest group names to be localized using resource bundle entries (see jahia.properties
+            for configuration of resource bundle name and key).
+		</description>
+		<name>displayName</name>
+		<function-class>org.jahia.data.viewhelper.principal.PrincipalViewHelper</function-class>
+        <function-signature>java.lang.String getDisplayName(java.security.Principal)</function-signature>
+        <example>
+			${functions:displayName(jahiaUser)}
+		</example>
+	</function>
+
+    <function>
+		<description>
+			Retrieve the full name or displayable for a principal object.
+            Builds the full user name, which is build the following way :
+            - for a JahiaGroup, simply calls getDisplayName(p)
+            - for a JahiaUser, if the firstName and lastName properties are defined, they are concatenated and this method
+            returns that result. If the properties don't exist, this is equivalent to getDisplayName(p)
+		</description>
+		<name>fullName</name>
+		<function-class>org.jahia.data.viewhelper.principal.PrincipalViewHelper</function-class>
+        <function-signature>java.lang.String getFullName(java.security.Principal)</function-signature>
+        <example>
+			${functions:fullName(jahiaUser)} or ${functions:fullName(jahiaGroup)}
+		</example>
+	</function>
+
+    <function>
+        <description>Encode facet filter URL parameter</description>
+        <name>encodeUrlParam</name>
+        <function-class>org.jahia.taglibs.functions.Functions</function-class>
+        <function-signature>java.lang.String encodeUrlParam(java.lang.String)
+        </function-signature>
+        <example>
+            ${functions:encodeFacetUrlParam(facet:getFacetDrillDownUrl(facetValue, activeFacetsVars[facetParamVarName]))}
+        </example>
+    </function>
+
+    <function>
+        <description>Decode facet filter URL parameter</description>
+        <name>decodeUrlParam</name>
+        <function-class>org.jahia.taglibs.functions.Functions</function-class>
+        <function-signature>java.lang.String decodeUrlParam(java.lang.String)
+        </function-signature>
+        <example>
+            ${functions:decodeFacetUrlParam(param[facetParamVarName])}
+        </example>
+    </function>
+    <function>
+        <description>Test if the node has a specific view</description>
+        <name>hasScriptView</name>
+        <function-class>org.jahia.taglibs.functions.Functions</function-class>
+        <function-signature>java.lang.Boolean
+            hasScriptView(org.jahia.services.content.JCRNodeWrapper,java.lang.String,org.jahia.services.render.RenderContext)</function-signature>
+        <example>${functions:hasScriptView(node,"basic",renderContext)}</example>
+    </function>
+
+    <function>
+        <description>Return the default vanity url for a node</description>
+        <name>getDefaultVanityUrl</name>
+        <function-class>org.jahia.taglibs.functions.Functions</function-class>
+        <function-signature>org.jahia.services.seo.VanityUrl getDefaultVanityUrl(org.jahia.services.content.JCRNodeWrapper)</function-signature>
+        <example>${functions:getDefaultVanityUrl(node)}</example>
+    </function>
+</taglib>

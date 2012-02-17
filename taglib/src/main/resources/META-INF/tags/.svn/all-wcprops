@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/jahia/!svn/ver/40316/trunk/taglib/src/main/resources/META-INF/tags
+END
+rssButton.tag
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/jahia/!svn/ver/38305/trunk/taglib/src/main/resources/META-INF/tags/rssButton.tag
+END
+ckeditor.tag
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/jahia/!svn/ver/38465/trunk/taglib/src/main/resources/META-INF/tags/ckeditor.tag
+END
+theme.tag
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/jahia/!svn/ver/38177/trunk/taglib/src/main/resources/META-INF/tags/theme.tag
+END
+fileSelector.tag
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/jahia/!svn/ver/38305/trunk/taglib/src/main/resources/META-INF/tags/fileSelector.tag
+END
+displayPagination.tag
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/jahia/!svn/ver/39934/trunk/taglib/src/main/resources/META-INF/tags/displayPagination.tag
+END
+folderSelector.tag
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/jahia/!svn/ver/38305/trunk/taglib/src/main/resources/META-INF/tags/folderSelector.tag
+END
+categorySelector.tag
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/jahia/!svn/ver/38305/trunk/taglib/src/main/resources/META-INF/tags/categorySelector.tag
+END
+dateSelector.tag
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/jahia/!svn/ver/38465/trunk/taglib/src/main/resources/META-INF/tags/dateSelector.tag
+END
+pageSelector.tag
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/jahia/!svn/ver/38305/trunk/taglib/src/main/resources/META-INF/tags/pageSelector.tag
+END
+treeItemSelector.tag
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/jahia/!svn/ver/39003/trunk/taglib/src/main/resources/META-INF/tags/treeItemSelector.tag
+END
+userGroupSelector.tag
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/jahia/!svn/ver/38177/trunk/taglib/src/main/resources/META-INF/tags/userGroupSelector.tag
+END

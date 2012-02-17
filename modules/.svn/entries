@@ -1,0 +1,110 @@
+9
+
+dir
+40433
+http://subversion.jahia.org/svn/jahia/trunk/modules
+http://subversion.jahia.org/svn/jahia
+
+
+
+2012-02-14T14:21:28.446195Z
+40413
+bamboo
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+69c369ed-ed09-0410-a4a1-e19a46c23626
+
+assets
+dir
+
+contentRetrieval
+dir
+
+contribute
+dir
+
+default
+dir
+
+facets
+dir
+
+grid
+dir
+
+macros
+dir
+
+pom.xml
+file
+
+
+
+
+2012-02-16T16:55:47.000000Z
+047b464277889e562faf358a7b19af94
+2012-01-31T00:02:05.137555Z
+40286
+fisheye
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+10998
+
+profile
+dir
+
+search
+dir
+
+skins
+dir
+
+src
+dir
+
+tabularList
+dir
+
+tags
+dir
+
+tasks
+dir
+
+templates-system
+dir
+
+visibility
+dir
+

@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/jahia/!svn/ver/39551/trunk/war/src/main/webapp/admin/group_management
+END
+group_search.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/jahia/!svn/ver/38177/trunk/war/src/main/webapp/admin/group_management/group_search.jsp
+END
+group_edit.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/jahia/!svn/ver/38421/trunk/war/src/main/webapp/admin/group_management/group_edit.jsp
+END
+group_create.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/jahia/!svn/ver/38177/trunk/war/src/main/webapp/admin/group_management/group_create.jsp
+END
+group_management.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/jahia/!svn/ver/39551/trunk/war/src/main/webapp/admin/group_management/group_management.jsp
+END
+group_remove.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/jahia/!svn/ver/38177/trunk/war/src/main/webapp/admin/group_management/group_remove.jsp
+END
+group_copy.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/jahia/!svn/ver/38177/trunk/war/src/main/webapp/admin/group_management/group_copy.jsp
+END
+group_view.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/jahia/!svn/ver/38177/trunk/war/src/main/webapp/admin/group_management/group_view.jsp
+END

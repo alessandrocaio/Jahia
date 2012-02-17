@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/jahia/!svn/ver/40181/trunk/portlets/bridges/src/main/java/org/jahia/portal/pluto/bridges/struts
+END
+PlutoServletContextProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/jahia/!svn/ver/40181/trunk/portlets/bridges/src/main/java/org/jahia/portal/pluto/bridges/struts/PlutoServletContextProvider.java
+END
+PlutoStrutsPortlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/jahia/!svn/ver/40181/trunk/portlets/bridges/src/main/java/org/jahia/portal/pluto/bridges/struts/PlutoStrutsPortlet.java
+END
+PlutoStrutsPortletServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/jahia/!svn/ver/40181/trunk/portlets/bridges/src/main/java/org/jahia/portal/pluto/bridges/struts/PlutoStrutsPortletServlet.java
+END

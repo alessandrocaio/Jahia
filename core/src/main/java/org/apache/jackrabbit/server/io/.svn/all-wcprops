@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/apache/jackrabbit/server/io
+END
+JahiaIOManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/apache/jackrabbit/server/io/JahiaIOManager.java
+END
+JahiaIOManagerNoDirectory.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/apache/jackrabbit/server/io/JahiaIOManagerNoDirectory.java
+END
+SymLinkHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/apache/jackrabbit/server/io/SymLinkHandler.java
+END
+ExtraContentHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/apache/jackrabbit/server/io/ExtraContentHandler.java
+END

@@ -1,0 +1,91 @@
+9
+
+dir
+40433
+http://subversion.jahia.org/svn/jahia/trunk/test/jahia-test-module/src/main/java/org/jahia/services
+http://subversion.jahia.org/svn/jahia
+
+
+
+2012-02-10T13:14:11.552562Z
+40380
+bamboo
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+69c369ed-ed09-0410-a4a1-e19a46c23626
+
+acl
+dir
+
+applications
+dir
+
+categories
+dir
+
+content
+dir
+
+feedimporter
+dir
+
+htmlvalidator
+dir
+
+i18n
+dir
+
+importexport
+dir
+
+logging
+dir
+
+notification
+dir
+
+publication
+dir
+
+query
+dir
+
+render
+dir
+
+search
+dir
+
+seo
+dir
+
+tags
+dir
+
+templates
+dir
+
+usermanager
+dir
+
+versioning
+dir
+
+visibility
+dir
+
+workflow
+dir
+

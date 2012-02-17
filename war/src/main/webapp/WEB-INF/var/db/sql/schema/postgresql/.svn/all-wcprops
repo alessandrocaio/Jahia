@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/jahia/!svn/ver/39114/trunk/war/src/main/webapp/WEB-INF/var/db/sql/schema/postgresql
+END
+quartz-schema.sql
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/jahia/!svn/ver/34216/trunk/war/src/main/webapp/WEB-INF/var/db/sql/schema/postgresql/quartz-schema.sql
+END
+jackrabbit-schema.sql
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/jahia/!svn/ver/39114/trunk/war/src/main/webapp/WEB-INF/var/db/sql/schema/postgresql/jackrabbit-schema.sql
+END
+jahia-schema.sql
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/jahia/!svn/ver/37263/trunk/war/src/main/webapp/WEB-INF/var/db/sql/schema/postgresql/jahia-schema.sql
+END
+jbpm-schema.sql
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/jahia/!svn/ver/31382/trunk/war/src/main/webapp/WEB-INF/var/db/sql/schema/postgresql/jbpm-schema.sql
+END

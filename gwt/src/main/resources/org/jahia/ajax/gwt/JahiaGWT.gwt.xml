@@ -1,0 +1,22 @@
+<module>
+    <inherits name="com.google.gwt.user.User"/>
+    <inherits name="com.google.gwt.http.HTTP"/>
+    <inherits name="com.google.gwt.i18n.I18N"/>
+    <inherits name="com.extjs.gxt.ui.GXT"/>
+
+    <inherits name="com.allen_sauer.gwt.log.gwt-log-OFF" />
+    <!--
+    <inherits name="com.allen_sauer.gwt.log.gwt-log-ERROR" />
+    <extend-property name="log_level" values="DEBUG"/>
+    <set-property name="log_DivLogger" value="DISABLED"/>
+    <set-property name="log_FirebugLogger" value="ENABLED"/>
+    -->
+
+    <set-property name="gwt.suppressNonStaticFinalFieldWarnings" value="true" />
+
+    <script src="./ckeditor/ckeditor.js"/>
+    <!--<set-property name="user.agent" value="gecko,gecko1_8,safari"/>-->
+    <!--<extend-property name="locale" values="fr"/>
+    <extend-property name="locale" values="en"/>
+    <extend-property name="locale" values="de"/>-->
+</module>

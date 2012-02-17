@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/jahia/!svn/ver/40181/trunk/test/jahia-test-module/src/main/java/org/jahia/services/notification
+END
+HtmlExternalizationServiceTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/jahia/!svn/ver/40181/trunk/test/jahia-test-module/src/main/java/org/jahia/services/notification/HtmlExternalizationServiceTest.java
+END
+CamelNotificationServiceTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/jahia/!svn/ver/40181/trunk/test/jahia-test-module/src/main/java/org/jahia/services/notification/CamelNotificationServiceTest.java
+END

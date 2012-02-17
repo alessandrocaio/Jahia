@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/jahia/!svn/ver/40310/trunk/core/src/main/java/org/jahia/services/uicomponents/bean
+END
+InvertedVisibility.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/uicomponents/bean/InvertedVisibility.java
+END
+VisibilityPropertyEditor.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/uicomponents/bean/VisibilityPropertyEditor.java
+END
+Visibility.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/uicomponents/bean/Visibility.java
+END

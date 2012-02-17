@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/preferences/exception
+END
+JahiaPreferenceNotDefinedPropertyException.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/preferences/exception/JahiaPreferenceNotDefinedPropertyException.java
+END
+JahiaPreferencesException.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/preferences/exception/JahiaPreferencesException.java
+END
+JahiaPreferenceNotDefinedAttributeException.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/preferences/exception/JahiaPreferenceNotDefinedAttributeException.java
+END
+JahiaPreferenceProviderException.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/preferences/exception/JahiaPreferenceProviderException.java
+END
+JahiaPreferencesNotValidException.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/preferences/exception/JahiaPreferencesNotValidException.java
+END
+JahiaPreferencesVersionningException.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/preferences/exception/JahiaPreferencesVersionningException.java
+END

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/util/icons
+END
+StandardIconsImageBundle.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/util/icons/StandardIconsImageBundle.java
+END
+StandardIconsProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/util/icons/StandardIconsProvider.java
+END
+ContentModelIconProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/util/icons/ContentModelIconProvider.java
+END
+ToolbarIconProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/util/icons/ToolbarIconProvider.java
+END

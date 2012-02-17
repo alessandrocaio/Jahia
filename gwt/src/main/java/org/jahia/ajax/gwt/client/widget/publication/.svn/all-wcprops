@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/jahia/!svn/ver/40309/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/publication
+END
+PublicationStatusWindow.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/jahia/!svn/ver/40309/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/publication/PublicationStatusWindow.java
+END
+PublicationWorkflow.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/jahia/!svn/ver/40309/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/publication/PublicationWorkflow.java
+END
+PublicationStatusGrid.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/jahia/!svn/ver/40309/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/publication/PublicationStatusGrid.java
+END
+PublicationManagerEngine.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/publication/PublicationManagerEngine.java
+END
+UnpublicationWorkflow.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/jahia/!svn/ver/40309/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/publication/UnpublicationWorkflow.java
+END

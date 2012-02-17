@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/apache/jackrabbit/core/security
+END
+JahiaAccessManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/apache/jackrabbit/core/security/JahiaAccessManager.java
+END
+JahiaAuthContextProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/apache/jackrabbit/core/security/JahiaAuthContextProvider.java
+END
+JahiaSystemSession.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/apache/jackrabbit/core/security/JahiaSystemSession.java
+END
+JahiaLoginModule.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/apache/jackrabbit/core/security/JahiaLoginModule.java
+END
+PrivilegesListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/apache/jackrabbit/core/security/PrivilegesListener.java
+END
+JahiaPrivilegeRegistry.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/apache/jackrabbit/core/security/JahiaPrivilegeRegistry.java
+END
+JahiaSecurityManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/apache/jackrabbit/core/security/JahiaSecurityManager.java
+END
+PrivilegeImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/apache/jackrabbit/core/security/PrivilegeImpl.java
+END

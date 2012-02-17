@@ -1,0 +1,271 @@
+9
+
+dir
+40433
+http://subversion.jahia.org/svn/jahia/trunk/modules/assets/src/main/webapp/javascript/ckeditor/_source/plugins
+http://subversion.jahia.org/svn/jahia
+
+
+
+2012-01-17T11:49:34.854965Z
+40181
+sshyrkov
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+69c369ed-ed09-0410-a4a1-e19a46c23626
+
+a11yhelp
+dir
+
+about
+dir
+
+acheck
+dir
+
+adobeair
+dir
+
+ajax
+dir
+
+autogrow
+dir
+
+basicstyles
+dir
+
+bidi
+dir
+
+blockquote
+dir
+
+button
+dir
+
+clipboard
+dir
+
+colorbutton
+dir
+
+colordialog
+dir
+
+contextmenu
+dir
+
+dialog
+dir
+
+dialogadvtab
+dir
+
+dialogui
+dir
+
+div
+dir
+
+domiterator
+dir
+
+editingblock
+dir
+
+elementspath
+dir
+
+enterkey
+dir
+
+entities
+dir
+
+fakeobjects
+dir
+
+filebrowser
+dir
+
+find
+dir
+
+flash
+dir
+
+floatpanel
+dir
+
+font
+dir
+
+format
+dir
+
+forms
+dir
+
+horizontalrule
+dir
+
+htmldataprocessor
+dir
+
+htmlwriter
+dir
+
+iframe
+dir
+
+iframedialog
+dir
+
+image
+dir
+
+indent
+dir
+
+justify
+dir
+
+keystrokes
+dir
+
+link
+dir
+
+list
+dir
+
+listblock
+dir
+
+liststyle
+dir
+
+maximize
+dir
+
+menu
+dir
+
+menubutton
+dir
+
+newpage
+dir
+
+pagebreak
+dir
+
+panel
+dir
+
+panelbutton
+dir
+
+pastefromword
+dir
+
+pastetext
+dir
+
+placeholder
+dir
+
+popup
+dir
+
+preview
+dir
+
+print
+dir
+
+removeformat
+dir
+
+resize
+dir
+
+richcombo
+dir
+
+save
+dir
+
+scayt
+dir
+
+selection
+dir
+
+showblocks
+dir
+
+showborders
+dir
+
+smiley
+dir
+
+sourcearea
+dir
+
+specialchar
+dir
+
+styles
+dir
+
+stylescombo
+dir
+
+tab
+dir
+
+table
+dir
+
+tableresize
+dir
+
+tabletools
+dir
+
+templates
+dir
+
+toolbar
+dir
+
+uicolor
+dir
+
+undo
+dir
+
+wsc
+dir
+
+wysiwygarea
+dir
+
+xml
+dir
+

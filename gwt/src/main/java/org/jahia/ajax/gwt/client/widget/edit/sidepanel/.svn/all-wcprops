@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/edit/sidepanel
+END
+TemplatesTabItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/edit/sidepanel/TemplatesTabItem.java
+END
+SidePanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/edit/sidepanel/SidePanel.java
+END
+CreateContentTabItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/edit/sidepanel/CreateContentTabItem.java
+END
+FileImagesBrowseTabItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/edit/sidepanel/FileImagesBrowseTabItem.java
+END
+ContentBrowseTabItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/edit/sidepanel/ContentBrowseTabItem.java
+END
+PortletBrowseTabItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/edit/sidepanel/PortletBrowseTabItem.java
+END
+PagesTabItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/edit/sidepanel/PagesTabItem.java
+END
+TreeGridClickSelectionModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/edit/sidepanel/TreeGridClickSelectionModel.java
+END
+CategoryBrowseTabItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/edit/sidepanel/CategoryBrowseTabItem.java
+END
+SearchTabItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/edit/sidepanel/SearchTabItem.java
+END
+BrowseTabItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/edit/sidepanel/BrowseTabItem.java
+END
+LastContentBrowseTabItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/edit/sidepanel/LastContentBrowseTabItem.java
+END
+SidePanelTabItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/edit/sidepanel/SidePanelTabItem.java
+END
+DisplayGridDragSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/edit/sidepanel/DisplayGridDragSource.java
+END
+CreateGridDragSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/widget/edit/sidepanel/CreateGridDragSource.java
+END

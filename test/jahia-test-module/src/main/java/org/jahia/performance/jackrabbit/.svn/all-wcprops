@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/jahia/!svn/ver/40181/trunk/test/jahia-test-module/src/main/java/org/jahia/performance/jackrabbit
+END
+ConcurrentReadTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/jahia/!svn/ver/40181/trunk/test/jahia-test-module/src/main/java/org/jahia/performance/jackrabbit/ConcurrentReadTest.java
+END

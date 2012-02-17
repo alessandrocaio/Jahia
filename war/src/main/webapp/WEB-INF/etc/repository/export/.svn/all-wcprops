@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/jahia/!svn/ver/40413/trunk/war/src/main/webapp/WEB-INF/etc/repository/export
+END
+cleanup.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/jahia/!svn/ver/39112/trunk/war/src/main/webapp/WEB-INF/etc/repository/export/cleanup.xsl
+END
+templatesCleanup.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/jahia/!svn/ver/40413/trunk/war/src/main/webapp/WEB-INF/etc/repository/export/templatesCleanup.xsl
+END

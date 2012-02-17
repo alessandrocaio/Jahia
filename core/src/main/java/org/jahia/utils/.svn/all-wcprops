@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/utils
+END
+InsertionSortedMap.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/utils/InsertionSortedMap.java
+END
+Url.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/utils/Url.java
+END
+EncryptionUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/utils/EncryptionUtils.java
+END
+ThreadLoadAverage.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/utils/ThreadLoadAverage.java
+END
+PathResolver.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/utils/PathResolver.java
+END
+PaginatedList.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/utils/PaginatedList.java
+END
+RequestLoadAverage.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/utils/RequestLoadAverage.java
+END
+FilePathResolver.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/utils/FilePathResolver.java
+END
+ScriptEngineUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/utils/ScriptEngineUtils.java
+END
+DateUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/utils/DateUtils.java
+END
+StringResponseWrapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/utils/StringResponseWrapper.java
+END
+WebUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/utils/WebUtils.java
+END
+JCRSessionLoadAverage.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/utils/JCRSessionLoadAverage.java
+END
+ArrayUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/utils/ArrayUtils.java
+END
+WebAppPathResolver.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/utils/WebAppPathResolver.java
+END
+Version.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/utils/Version.java
+END
+LanguageCodeConverters.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/utils/LanguageCodeConverters.java
+END
+LoadAverage.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/utils/LoadAverage.java
+END
+InsertionSortedSet.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/utils/InsertionSortedSet.java
+END
+FileUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/utils/FileUtils.java
+END

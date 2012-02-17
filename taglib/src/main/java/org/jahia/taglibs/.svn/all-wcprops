@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/jahia/!svn/ver/40411/trunk/taglib/src/main/java/org/jahia/taglibs
+END
+AbstractJahiaTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/jahia/!svn/ver/40181/trunk/taglib/src/main/java/org/jahia/taglibs/AbstractJahiaTag.java
+END
+ValueJahiaTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/jahia/!svn/ver/40181/trunk/taglib/src/main/java/org/jahia/taglibs/ValueJahiaTag.java
+END

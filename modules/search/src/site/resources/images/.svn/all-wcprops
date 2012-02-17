@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/jahia/!svn/ver/40195/trunk/modules/search/src/site/resources/images
+END
+createJcrQueryTemplate.png
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/jahia/!svn/ver/40195/trunk/modules/search/src/site/resources/images/createJcrQueryTemplate.png
+END
+autoSuggest.png
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/jahia/!svn/ver/40195/trunk/modules/search/src/site/resources/images/autoSuggest.png
+END
+simpleSearchArea.png
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/jahia/!svn/ver/38132/trunk/modules/search/src/site/resources/images/simpleSearchArea.png
+END
+simpleSearch.png
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/jahia/!svn/ver/38132/trunk/modules/search/src/site/resources/images/simpleSearch.png
+END
+advancedSearch.png
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/jahia/!svn/ver/38132/trunk/modules/search/src/site/resources/images/advancedSearch.png
+END
+createJcrQuery.png
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/jahia/!svn/ver/40195/trunk/modules/search/src/site/resources/images/createJcrQuery.png
+END
+jcrQueryResult.png
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/jahia/!svn/ver/40195/trunk/modules/search/src/site/resources/images/jcrQueryResult.png
+END
+advancedSearchDocuments.png
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/jahia/!svn/ver/32591/trunk/modules/search/src/site/resources/images/advancedSearchDocuments.png
+END
+searchResults.png
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/jahia/!svn/ver/40195/trunk/modules/search/src/site/resources/images/searchResults.png
+END
+suggestions.png
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/jahia/!svn/ver/40195/trunk/modules/search/src/site/resources/images/suggestions.png
+END
+advancedSearchSite.png
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/jahia/!svn/ver/32591/trunk/modules/search/src/site/resources/images/advancedSearchSite.png
+END
+openSearch.png
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/jahia/!svn/ver/38141/trunk/modules/search/src/site/resources/images/openSearch.png
+END
+addingOpenSearch.png
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/jahia/!svn/ver/38141/trunk/modules/search/src/site/resources/images/addingOpenSearch.png
+END

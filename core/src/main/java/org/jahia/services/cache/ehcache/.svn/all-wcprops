@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/cache/ehcache
+END
+EhCacheProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/cache/ehcache/EhCacheProvider.java
+END
+EhCacheImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/cache/ehcache/EhCacheImpl.java
+END
+LoggingCacheEventListenerFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/cache/ehcache/LoggingCacheEventListenerFactory.java
+END
+LoggingCacheEventListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/cache/ehcache/LoggingCacheEventListener.java
+END

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/jahia/!svn/ver/39328/trunk/war/src/main/webapp/WEB-INF/var/db/sql/schema/mysql
+END
+quartz-schema.sql
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/jahia/!svn/ver/35767/trunk/war/src/main/webapp/WEB-INF/var/db/sql/schema/mysql/quartz-schema.sql
+END
+jackrabbit-schema.sql
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/jahia/!svn/ver/39328/trunk/war/src/main/webapp/WEB-INF/var/db/sql/schema/mysql/jackrabbit-schema.sql
+END
+jahia-schema.sql
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/jahia/!svn/ver/37263/trunk/war/src/main/webapp/WEB-INF/var/db/sql/schema/mysql/jahia-schema.sql
+END
+jbpm-schema.sql
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/jahia/!svn/ver/33151/trunk/war/src/main/webapp/WEB-INF/var/db/sql/schema/mysql/jbpm-schema.sql
+END

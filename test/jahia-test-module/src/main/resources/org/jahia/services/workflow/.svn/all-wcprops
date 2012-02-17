@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/jahia/!svn/ver/38231/trunk/test/jahia-test-module/src/main/resources/org/jahia/services/workflow
+END
+sequence_process.jpdl.xml
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/jahia/!svn/ver/38231/trunk/test/jahia-test-module/src/main/resources/org/jahia/services/workflow/sequence_process.jpdl.xml
+END
+StateSequence.properties
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/jahia/!svn/ver/38231/trunk/test/jahia-test-module/src/main/resources/org/jahia/services/workflow/StateSequence.properties
+END

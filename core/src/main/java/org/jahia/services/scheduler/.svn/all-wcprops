@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/jahia/!svn/ver/40234/trunk/core/src/main/java/org/jahia/services/scheduler
+END
+BackgroundJob.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/scheduler/BackgroundJob.java
+END
+DataStoreGarbageCollectorJob.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/scheduler/DataStoreGarbageCollectorJob.java
+END
+SchedulerService.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/scheduler/SchedulerService.java
+END
+JobHistoryPurgeJob.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/scheduler/JobHistoryPurgeJob.java
+END
+JSR223ScriptJob.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/scheduler/JSR223ScriptJob.java
+END
+JahiaJobListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/scheduler/JahiaJobListener.java
+END
+JahiaSchedulerListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/scheduler/JahiaSchedulerListener.java
+END
+JobSchedulingBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/jahia/!svn/ver/40234/trunk/core/src/main/java/org/jahia/services/scheduler/JobSchedulingBean.java
+END

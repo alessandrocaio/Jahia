@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/content
+END
+ObjectKey.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/content/ObjectKey.java
+END
+ObjectKeyInterface.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/content/ObjectKeyInterface.java
+END
+ObjectLink.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/content/ObjectLink.java
+END
+JahiaObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/content/JahiaObject.java
+END
+StructuralRelationship.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/content/StructuralRelationship.java
+END
+CategoryKey.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/content/CategoryKey.java
+END

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/seo/jcr
+END
+VanityUrlManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/seo/jcr/VanityUrlManager.java
+END
+VanityUrlService.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/seo/jcr/VanityUrlService.java
+END

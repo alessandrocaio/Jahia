@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/jahia/!svn/ver/39634/trunk/test/jahia-test-module-war/src/main/webapp/WEB-INF/classes/plugins/lib-regex-filter
+END
+lib-regex-filter.jar
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/jahia/!svn/ver/39634/trunk/test/jahia-test-module-war/src/main/webapp/WEB-INF/classes/plugins/lib-regex-filter/lib-regex-filter.jar
+END
+plugin.xml
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/jahia/!svn/ver/39634/trunk/test/jahia-test-module-war/src/main/webapp/WEB-INF/classes/plugins/lib-regex-filter/plugin.xml
+END

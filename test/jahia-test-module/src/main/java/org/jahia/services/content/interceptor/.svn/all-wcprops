@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/jahia/!svn/ver/40181/trunk/test/jahia-test-module/src/main/java/org/jahia/services/content/interceptor
+END
+URLInterceptorTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/jahia/!svn/ver/40181/trunk/test/jahia-test-module/src/main/java/org/jahia/services/content/interceptor/URLInterceptorTest.java
+END
+HtmlFilteringInterceptorTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/jahia/!svn/ver/40181/trunk/test/jahia-test-module/src/main/java/org/jahia/services/content/interceptor/HtmlFilteringInterceptorTest.java
+END

@@ -1,0 +1,11 @@
+K 10
+svn:ignore
+V 51
+*.iml
+target
+.settings
+.classpath
+.project
+forge-*
+
+END

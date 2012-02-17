@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/service/content
+END
+JahiaContentManagementServiceAsync.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/service/content/JahiaContentManagementServiceAsync.java
+END
+ExistingFileException.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/service/content/ExistingFileException.java
+END
+JahiaContentManagementService.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/service/content/JahiaContentManagementService.java
+END

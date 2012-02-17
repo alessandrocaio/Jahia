@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/jahia/!svn/ver/40310/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/data/toolbar
+END
+GWTEngineTab.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/data/toolbar/GWTEngineTab.java
+END
+GWTRepository.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/data/toolbar/GWTRepository.java
+END
+GWTManagerConfiguration.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/jahia/!svn/ver/40310/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/data/toolbar/GWTManagerConfiguration.java
+END
+GWTSidePanelTab.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/data/toolbar/GWTSidePanelTab.java
+END
+GWTColumn.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/data/toolbar/GWTColumn.java
+END
+GWTJahiaToolbarItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/data/toolbar/GWTJahiaToolbarItem.java
+END
+GWTEditConfiguration.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/data/toolbar/GWTEditConfiguration.java
+END
+GWTJahiaToolbar.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/data/toolbar/GWTJahiaToolbar.java
+END
+GWTEngine.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/data/toolbar/GWTEngine.java
+END
+GWTJahiaToolbarMenu.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/data/toolbar/GWTJahiaToolbarMenu.java
+END
+GWTConfiguration.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/data/toolbar/GWTConfiguration.java
+END

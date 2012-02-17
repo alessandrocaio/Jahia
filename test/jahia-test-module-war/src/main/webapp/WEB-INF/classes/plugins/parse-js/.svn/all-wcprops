@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/jahia/!svn/ver/39634/trunk/test/jahia-test-module-war/src/main/webapp/WEB-INF/classes/plugins/parse-js
+END
+parse-js.jar
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/jahia/!svn/ver/39634/trunk/test/jahia-test-module-war/src/main/webapp/WEB-INF/classes/plugins/parse-js/parse-js.jar
+END
+plugin.xml
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/jahia/!svn/ver/39634/trunk/test/jahia-test-module-war/src/main/webapp/WEB-INF/classes/plugins/parse-js/plugin.xml
+END

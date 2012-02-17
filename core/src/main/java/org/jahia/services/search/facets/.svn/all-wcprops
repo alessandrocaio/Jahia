@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/search/facets
+END
+JahiaQueryParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/search/facets/JahiaQueryParser.java
+END
+SimpleJahiaJcrFacets.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/search/facets/SimpleJahiaJcrFacets.java
+END

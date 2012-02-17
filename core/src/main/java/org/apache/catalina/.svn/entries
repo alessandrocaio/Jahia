@@ -1,0 +1,31 @@
+9
+
+dir
+40433
+http://subversion.jahia.org/svn/jahia/trunk/core/src/main/java/org/apache/catalina
+http://subversion.jahia.org/svn/jahia
+
+
+
+2011-12-13T09:18:13.341179Z
+39831
+shuber
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+69c369ed-ed09-0410-a4a1-e19a46c23626
+
+servlets
+dir
+

@@ -1,0 +1,43 @@
+<j = 'http://www.jahia.org/jahia/1.0'>
+<jnt = 'http://www.jahia.org/jahia/nt/1.0'>
+
+[jnt:facets] > jnt:content, jmix:queryContent, jmix:bindedComponent
+orderable
+- j:bindedComponent (weakreference)
++ * (jnt:facet)
+
+[jnt:facet] > jnt:content abstract
+- facet (string) mandatory indexed=no
+- label (string) i18n indexed=no
+- field (string, choicelist[choicelistfacets]) indexed=no
+- mincount (long) = 1 indexed=no
+- labelRenderer (string) indexed=no
+
+[jnt:fieldFacet] > jnt:facet
+- sort (string, choicelist[resourceBundle]) indexed=no < true,false 
+- prefix (string) indexed=no
+- limit (long) = 100 indexed=no
+- offset (long) = 0 indexed=no
+- missing (boolean) indexed=no
+
+[jnt:fieldHierarchicalFacet] > jnt:fieldFacet
+- prefix (string, picker[type='hierarchyNode']) = '/sites/systemsite/categories' mandatory indexed=no
+- field (string, choicelist[choicelisthierarchicalfacets]) = 'jmix:categorized;j:defaultCategory' mandatory indexed=no
+
+[jnt:dateFacet] > jnt:facet
+- start (string) mandatory indexed=no
+- end (string) mandatory indexed=no
+- gap (string) mandatory indexed=no
+- hardend (boolean) = false indexed=no
+- other (string, choicelist[resourceBundle]) multiple indexed=no < before,after,between,none,all
+- labelFormat (string) indexed=no
+
+[jnt:queryFacet] > jnt:facet
+- query (string) mandatory indexed=no
+- valueLabel (string) i18n indexed=no
+
+[jnt:rangeFacet] > jnt:facet
+- start (string) mandatory indexed=no
+- end (string) mandatory indexed=no
+- include (string, choicelist[resourceBundle]) = all multiple indexed=no < lower,upper,all
+- valueLabel (string) i18n indexed=no

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/jahia/!svn/ver/40212/trunk/core/src/main/resources/org/jahia/defaults/config/spring/auth
+END
+applicationcontext-auth-pipeline.xml
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/jahia/!svn/ver/40212/trunk/core/src/main/resources/org/jahia/defaults/config/spring/auth/applicationcontext-auth-pipeline.xml
+END
+applicationcontext-security.xml
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/jahia/!svn/ver/39840/trunk/core/src/main/resources/org/jahia/defaults/config/spring/auth/applicationcontext-security.xml
+END
+applicationcontext-cookie.xml
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/jahia/!svn/ver/38527/trunk/core/src/main/resources/org/jahia/defaults/config/spring/auth/applicationcontext-cookie.xml
+END

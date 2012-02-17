@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/jahia/!svn/ver/39634/trunk/test/jahia-test-module-war/src/main/webapp/WEB-INF/classes/plugins/urlnormalizer-regex
+END
+urlnormalizer-regex.jar
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/jahia/!svn/ver/39634/trunk/test/jahia-test-module-war/src/main/webapp/WEB-INF/classes/plugins/urlnormalizer-regex/urlnormalizer-regex.jar
+END
+plugin.xml
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/jahia/!svn/ver/39634/trunk/test/jahia-test-module-war/src/main/webapp/WEB-INF/classes/plugins/urlnormalizer-regex/plugin.xml
+END

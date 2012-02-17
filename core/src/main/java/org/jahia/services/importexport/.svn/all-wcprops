@@ -1,0 +1,137 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/jahia/!svn/ver/40324/trunk/core/src/main/java/org/jahia/services/importexport
+END
+DefinitionsMapping.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/jahia/!svn/ver/40324/trunk/core/src/main/java/org/jahia/services/importexport/DefinitionsMapping.java
+END
+ImportExportBaseService.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/jahia/!svn/ver/40259/trunk/core/src/main/java/org/jahia/services/importexport/ImportExportBaseService.java
+END
+XMLWriter.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/importexport/XMLWriter.java
+END
+CategoriesImportHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/importexport/CategoriesImportHandler.java
+END
+DocumentViewImportHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/importexport/DocumentViewImportHandler.java
+END
+LegacyPidMappingTool.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/jahia/!svn/ver/39464/trunk/core/src/main/java/org/jahia/services/importexport/LegacyPidMappingTool.java
+END
+DocumentViewExporter.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/importexport/DocumentViewExporter.java
+END
+PermissionsImportHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/importexport/PermissionsImportHandler.java
+END
+NoCloseZipInputStream.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/importexport/NoCloseZipInputStream.java
+END
+FilesDateImportHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/importexport/FilesDateImportHandler.java
+END
+LegacyPidToVanityUrlMappingToolImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/jahia/!svn/ver/39464/trunk/core/src/main/java/org/jahia/services/importexport/LegacyPidToVanityUrlMappingToolImpl.java
+END
+DataWriter.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/importexport/DataWriter.java
+END
+UsersImportHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/importexport/UsersImportHandler.java
+END
+LegacyImportHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/jahia/!svn/ver/40324/trunk/core/src/main/java/org/jahia/services/importexport/LegacyImportHandler.java
+END
+ImportExportService.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/importexport/ImportExportService.java
+END
+BaseDocumentViewHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/importexport/BaseDocumentViewHandler.java
+END
+ImportJob.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/importexport/ImportJob.java
+END
+XMLContentTransformer.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/jahia/!svn/ver/39464/trunk/core/src/main/java/org/jahia/services/importexport/XMLContentTransformer.java
+END
+ReferencesHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/importexport/ReferencesHelper.java
+END
+LegacyPidMappingToolLogger.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/jahia/!svn/ver/39573/trunk/core/src/main/java/org/jahia/services/importexport/LegacyPidMappingToolLogger.java
+END
+XMLFormatDetectionHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/importexport/XMLFormatDetectionHandler.java
+END
+FilesAclImportHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/importexport/FilesAclImportHandler.java
+END

@@ -1,0 +1,24 @@
+K 10
+svn:ignore
+V 188
+db
+jahia.iws
+*.bak
+.project
+exploded
+.gwt-cache
+jahia.log
+build
+META-INF
+.settings
+ant.build.properties
+Core.iml
+jahia_loom.iml
+.classpath
+spy.log
+jahia_loom.ipr
+spy_oracle.log
+target
+bin
+
+END

@@ -1,0 +1,43 @@
+<c:choose>
+    <c:when test="${value.type == jcrPropertyTypes.BINARY}"> <%-- binary --%>
+        <c:if test="${property.name == 'jcr:data'}" var="jcrData">
+            <c:if test="${currentNode.file}">
+                <c:url value="${currentNode.parent.url}" var="binaryUrl"/>
+            </c:if>
+            <c:if test="${!currentNode.file}">
+                <c:url value="${currentNode.parent.url}" var="binaryUrl">
+                    <c:param name="t" value="${currentNode.name}"/>
+                </c:url>
+            </c:if>
+            <a href="${binaryUrl}" target="_blank">&lt;binary&gt;</a>
+        </c:if>
+        <c:if test="${not jcrData}">
+                &lt;binary&gt;
+        </c:if>
+    </c:when>
+    <c:when test="${value.type == jcrPropertyTypes.DATE && not empty value.date}"> <%-- date --%>
+        <fmt:formatDate value="${value.date.time}" pattern="yyyy-MM-dd HH:mm:ss"/>
+    </c:when>
+    <c:when test="${value.type == jcrPropertyTypes.REFERENCE || value.type == jcrPropertyTypes.WEAKREFERENCE}">
+        <c:if test="${not empty value.node}" var="valuePresent">
+            <c:url var="urlValue" value="?">
+                <c:param name="uuid" value="${value.node.identifier}"/>
+                <c:param name="showProperties" value="${showProperties}"/>
+                <c:param name="showReferences" value="${showReferences}"/>
+                <c:param name="showNodes" value="${showNodes}"/>
+                <c:param name="showActions" value="${showActions}"/>
+                <c:param name="workspace" value="${workspace}"/>
+            </c:url>
+            <a href="${urlValue}">${fn:escapeXml(value.node.name)} (${fn:escapeXml(value.string)})</a>        
+        </c:if>
+        <c:if test="${not valuePresent}">${value.string}</c:if>
+    </c:when>
+    <c:otherwise> <%-- other types --%>
+        <c:set var="display" value="${fn:escapeXml(functions:abbreviate(functions:removeHtmlTags(value.string), 500,520,'...'))}"/>
+        <c:set var="raw" value="${fn:escapeXml(functions:abbreviate(value.string, 5000,5020,'...'))}"/>
+        <c:if test="${display != raw}">
+            <span title="${raw}">[raw]&nbsp;</span>
+        </c:if>
+        ${display}
+    </c:otherwise>
+</c:choose>

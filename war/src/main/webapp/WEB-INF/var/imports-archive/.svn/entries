@@ -1,0 +1,34 @@
+9
+
+dir
+40433
+http://subversion.jahia.org/svn/jahia/trunk/war/src/main/webapp/WEB-INF/var/imports-archive
+http://subversion.jahia.org/svn/jahia
+
+
+
+2011-11-15T16:02:43.510812Z
+39735
+sshyrkov
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+69c369ed-ed09-0410-a4a1-e19a46c23626
+
+6.5.1.0
+dir
+
+6.6.0.0
+dir
+

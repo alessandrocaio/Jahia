@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/jahia/!svn/ver/35072/trunk/war/tools
+END
+derby.hibernate.properties
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/jahia/!svn/ver/34607/trunk/war/tools/derby.hibernate.properties
+END
+mysql.hibernate.cfg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/jahia/!svn/ver/35072/trunk/war/tools/mysql.hibernate.cfg.xml
+END
+postgresql.hibernate.cfg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/jahia/!svn/ver/35072/trunk/war/tools/postgresql.hibernate.cfg.xml
+END
+postgresql.hibernate.properties
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/jahia/!svn/ver/34607/trunk/war/tools/postgresql.hibernate.properties
+END
+mysql.hibernate.properties
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/jahia/!svn/ver/34607/trunk/war/tools/mysql.hibernate.properties
+END
+derby.hibernate.cfg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/jahia/!svn/ver/35072/trunk/war/tools/derby.hibernate.cfg.xml
+END

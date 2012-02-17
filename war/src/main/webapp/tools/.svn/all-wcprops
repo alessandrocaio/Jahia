@@ -1,0 +1,185 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/jahia/!svn/ver/40433/trunk/war/src/main/webapp/tools
+END
+pwdEncrypt.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/jahia/!svn/ver/39200/trunk/war/src/main/webapp/tools/pwdEncrypt.jsp
+END
+definitionsBrowser.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/jahia/!svn/ver/39514/trunk/war/src/main/webapp/tools/definitionsBrowser.jsp
+END
+docConverter.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/jahia/!svn/ver/39150/trunk/war/src/main/webapp/tools/docConverter.jsp
+END
+search.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/jahia/!svn/ver/38242/trunk/war/src/main/webapp/tools/search.jsp
+END
+groovyConsole.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/jahia/!svn/ver/39995/trunk/war/src/main/webapp/tools/groovyConsole.jsp
+END
+dbQuery.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/jahia/!svn/ver/38824/trunk/war/src/main/webapp/tools/dbQuery.jsp
+END
+jcrQuery.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/jahia/!svn/ver/39927/trunk/war/src/main/webapp/tools/jcrQuery.jsp
+END
+memoryInfo.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/jahia/!svn/ver/40017/trunk/war/src/main/webapp/tools/memoryInfo.jsp
+END
+jcrBrowser.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/jahia/!svn/ver/39995/trunk/war/src/main/webapp/tools/jcrBrowser.jsp
+END
+viewsession.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/jahia/!svn/ver/38305/trunk/war/src/main/webapp/tools/viewsession.jsp
+END
+index.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/jahia/!svn/ver/40433/trunk/war/src/main/webapp/tools/index.jsp
+END
+jobadmin.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/jahia/!svn/ver/40229/trunk/war/src/main/webapp/tools/jobadmin.jsp
+END
+maintenance.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/jahia/!svn/ver/38242/trunk/war/src/main/webapp/tools/maintenance.jsp
+END
+jcrGc.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/jahia/!svn/ver/39159/trunk/war/src/main/webapp/tools/jcrGc.jsp
+END
+jcrVersionHistory.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/jahia/!svn/ver/40016/trunk/war/src/main/webapp/tools/jcrVersionHistory.jsp
+END
+log4jAdmin.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/jahia/!svn/ver/39964/trunk/war/src/main/webapp/tools/log4jAdmin.jsp
+END
+tools.css
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/jahia/!svn/ver/39964/trunk/war/src/main/webapp/tools/tools.css
+END
+textExtractor.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/jahia/!svn/ver/39150/trunk/war/src/main/webapp/tools/textExtractor.jsp
+END
+systemInfo.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/jahia/!svn/ver/39860/trunk/war/src/main/webapp/tools/systemInfo.jsp
+END
+actions.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/jahia/!svn/ver/40433/trunk/war/src/main/webapp/tools/actions.jsp
+END
+threadDump.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/jahia/!svn/ver/39860/trunk/war/src/main/webapp/tools/threadDump.jsp
+END
+jcrConsole.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/jahia/!svn/ver/40010/trunk/war/src/main/webapp/tools/jcrConsole.jsp
+END
+threadDumpMgmt.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/jahia/!svn/ver/39847/trunk/war/src/main/webapp/tools/threadDumpMgmt.jsp
+END
+choicelistInitializersRenderers.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/jahia/!svn/ver/40433/trunk/war/src/main/webapp/tools/choicelistInitializersRenderers.jsp
+END
+modulesBrowser.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/jahia/!svn/ver/39222/trunk/war/src/main/webapp/tools/modulesBrowser.jsp
+END
+cache.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/jahia/!svn/ver/38550/trunk/war/src/main/webapp/tools/cache.jsp
+END
+value.jspf
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/jahia/!svn/ver/39740/trunk/war/src/main/webapp/tools/value.jspf
+END
+wcagChecker.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/jahia/!svn/ver/39150/trunk/war/src/main/webapp/tools/wcagChecker.jsp
+END
+errorFileDumper.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/jahia/!svn/ver/39964/trunk/war/src/main/webapp/tools/errorFileDumper.jsp
+END
+renderFilters.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/jahia/!svn/ver/39006/trunk/war/src/main/webapp/tools/renderFilters.jsp
+END

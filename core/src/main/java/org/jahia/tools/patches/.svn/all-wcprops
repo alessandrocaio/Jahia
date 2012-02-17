@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/tools/patches
+END
+GroovyPatcher.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/tools/patches/GroovyPatcher.java
+END
+LoggerWrapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/tools/patches/LoggerWrapper.java
+END

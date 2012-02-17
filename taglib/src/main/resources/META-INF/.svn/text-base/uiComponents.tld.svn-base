@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee
+                            http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
+        version="2.0">
+    <description>Provides a tag library with UI components tags to use within jahia templates</description>
+    <display-name>UI components Jahia Tag Library</display-name>
+    <tlib-version>6.5</tlib-version>
+    <short-name>uiComponents</short-name>
+    <uri>http://www.jahia.org/tags/uiComponentsLib</uri>
+    <!-- Portlet decoration tags -->
+    <tag>
+        <description>Displays the GUI interface for portlet mode changes, as well
+            as the currently selected mode.
+        </description>
+        <name>portletModes</name>
+        <tag-class>org.jahia.taglibs.uicomponents.portlets.PortletModesTag</tag-class>
+        <body-content>JSP</body-content>
+        <attribute>
+            <name>name</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <name>namePostFix</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <!-- Defaults to JahiaInternalResources -->
+            <name>resourceBundle</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <!-- Defaults to "portletModes" class -->
+            <name>listCSSClass</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <!-- Defaults to "current" class -->
+            <name>currentCSSClass</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <name>node</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>org.jahia.services.content.JCRNodeWrapper</type>
+        </attribute>
+        <attribute>
+            <name>var</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+    </tag>
+
+     <!-- portlet -->
+    <tag>
+        <description>render a portlet node.</description>
+        <name>portletRender</name>
+        <tag-class>org.jahia.taglibs.uicomponents.portlets.PortletRenderTag</tag-class>
+        <body-content>JSP</body-content>
+        <attribute>
+            <name>portletNode</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>org.jahia.services.content.JCRNodeWrapper</type>
+        </attribute>
+        <attribute>
+            <name>windowId</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>int</type>
+        </attribute>
+    </tag>
+    <tag>
+        <description>Displays the GUI interface for window state changes, as well
+            as the currently selected state.
+        </description>
+        <name>windowStates</name>
+        <tag-class>org.jahia.taglibs.uicomponents.portlets.WindowStatesTag</tag-class>
+        <body-content>JSP</body-content>
+        <attribute>
+            <name>name</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <name>namePostFix</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <!-- Defaults to JahiaInternalResources -->
+            <name>resourceBundle</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <!-- Defaults to "portletModes" class -->
+            <name>listCSSClass</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <!-- Defaults to "current" class -->
+            <name>currentCSSClass</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+    <!--Groups and user search -->
+    <tag>
+        <description>Displays a limited list of groups names</description>
+        <name>groupList</name>
+        <tag-class>org.jahia.taglibs.uicomponents.user.GroupListTag</tag-class>
+        <body-content>JSP</body-content>
+        <attribute>
+            <name>displayLimit</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>int</type>
+        </attribute>
+        <attribute>
+            <name>query</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <name>scope</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <name>criteria</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <name>membersLimit</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>int</type>
+        </attribute>
+        <attribute>
+            <name>membersVisibility</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>boolean</type>
+        </attribute>
+        <attribute>
+            <name>separator</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <name>backCall</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <name>styleClass</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <name>viewMembers</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>boolean</type>
+        </attribute>
+    </tag>
+    <tag>
+        <description>Displays a limited list of users names</description>
+        <name>userList</name>
+        <tag-class>org.jahia.taglibs.uicomponents.user.UserListTag</tag-class>
+        <body-content>JSP</body-content>
+        <attribute>
+            <name>displayLimit</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>int</type>
+        </attribute>
+        <attribute>
+            <name>query</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <name>scope</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <name>criteria</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <name>backCall</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <name>styleClass</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+    <tag>
+        <description>Checks if there is a login error and evaluates body if true</description>
+        <name>isLoginError</name>
+        <tag-class>org.jahia.taglibs.uicomponents.loginform.IsLoginErrorTag</tag-class>
+        <body-content>JSP</body-content>
+        <attribute>
+            <description>
+                Name of the variable under which the errorcode will be set in page context.
+            </description>
+            <name>var</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+    <tag>
+        <description>Generates links in order to be able to switch languages when browsing the site</description>
+        <name>initLangBarAttributes</name>
+        <tag-class>org.jahia.taglibs.uicomponents.i18n.InitLangBarAttributes</tag-class>
+        <body-content>empty</body-content>
+        <attribute>
+            <name>order</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <description>If set to true only site languages marked 'active' will be displayed. Default value is false.</description>
+            <name>activeLanguagesOnly</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>boolean</type>
+        </attribute>
+    </tag>
+
+    <tag>
+        <description>Generates a full Link in order to switch languages</description>
+        <name>displayLanguageSwitchLink</name>
+        <tag-class>org.jahia.taglibs.uicomponents.i18n.DisplayLanguageSwitchLinkTag</tag-class>
+        <body-content>empty</body-content>
+        <attribute>
+            <name>languageCode</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <name>linkKind</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <description>
+                Name of the page scope variable to expose the value.
+            </description>
+            <name>var</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <description>
+                Name of the page scope variable to expose the URL value.
+            </description>
+            <name>urlVar</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <name>display</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>boolean</type>
+        </attribute>
+        <attribute>
+            <name>onLanguageSwitch</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <name>redirectCssClassName</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <name>title</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <name>titleKey</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <name>rootPage</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>org.jahia.services.content.JCRNodeWrapper</type>
+        </attribute>
+    </tag>
+    
+    <tag>
+        <description>Displays an image flag corresponding to a language code</description>
+        <name>displayLanguageFlag</name>
+        <tag-class>org.jahia.taglibs.uicomponents.i18n.DisplayLanguageFlagTag</tag-class>
+        <body-content>empty</body-content>
+        <attribute>
+            <name>languageCode</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <name>flagType</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <name>onLanguageSwitch</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <name>redirectCssClassName</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <name>title</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <name>titleKey</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <name>rootPage</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>org.jahia.services.content.JCRNodeWrapper</type>
+        </attribute>
+    </tag>
+
+
+    <tag>
+        <description>Tag returns an random image from specified path</description>
+        <name>displayRandomImage</name>
+        <tag-class>org.jahia.taglibs.uicomponents.image.RandomImageTag</tag-class>
+        <body-content>empty</body-content>
+        <attribute>
+            <name>path</name>
+            <required>yes</required>
+            <rtexprvalue>no</rtexprvalue>
+        </attribute>
+        <attribute>
+            <name>fileTypes</name>
+            <required>no</required>
+            <rtexprvalue>no</rtexprvalue>
+        </attribute>
+    </tag>
+
+    <tag-file>
+        <name>dateSelector</name>
+        <path>/META-INF/tags/dateSelector.tag</path>
+    </tag-file>
+    
+    <tag-file>
+        <name>folderSelector</name>
+        <path>/META-INF/tags/folderSelector.tag</path>
+    </tag-file>
+
+    <tag-file>
+        <name>categorySelector</name>
+        <path>/META-INF/tags/categorySelector.tag</path>
+    </tag-file>
+
+    <tag-file>
+        <name>ckeditor</name>
+        <path>/META-INF/tags/ckeditor.tag</path>
+        <example>
+        	Simple usage - will replace textarea element, having 'jahia-ckeditor' as an id with instance of CKEditor after page is loaded
+        		&lt;uiComponents:ckeditor selector="jahia-ckeditor"/&gt;
+        	Advanced usage - overriding the CKEditor configuration 
+        		&lt;uiComponents:ckeditor selector="jahia-ckeditor"&gt;
+        			{
+        				skin: 'kama',
+        				toolbar: 'Full'
+        			}
+        		&lt;/uiComponents:ckeditor&gt;
+        </example>
+    </tag-file>
+    
+    <tag-file>
+        <name>fileSelector</name>
+        <path>/META-INF/tags/fileSelector.tag</path>
+    </tag-file>
+
+    <tag-file>
+        <name>langBar</name>
+        <path>/META-INF/tags/lang/langBar.tag</path>
+    </tag-file>
+    
+    <tag-file>
+        <name>loginArea</name>
+        <path>/META-INF/tags/login/loginArea.tag</path>
+    </tag-file>
+    <tag-file>
+        <name>loginPassword</name>
+        <path>/META-INF/tags/login/loginPassword.tag</path>
+    </tag-file>
+    <tag-file>
+        <name>loginRememberMe</name>
+        <path>/META-INF/tags/login/loginRememberMe.tag</path>
+    </tag-file>
+    <tag-file>
+        <name>loginUsername</name>
+        <path>/META-INF/tags/login/loginUsername.tag</path>
+    </tag-file>
+        
+    <tag-file>
+        <name>pageSelector</name>
+        <path>/META-INF/tags/pageSelector.tag</path>
+    </tag-file>
+
+    <tag-file>
+        <name>rssButton</name>
+        <path>/META-INF/tags/rssButton.tag</path>
+    </tag-file>
+
+    <tag-file>
+        <name>treeItemSelector</name>
+        <path>/META-INF/tags/treeItemSelector.tag</path>
+    </tag-file>
+
+    <tag-file>
+        <name>userGroupSelector</name>
+        <path>/META-INF/tags/userGroupSelector.tag</path>
+    </tag-file>
+
+    <function>
+        <description>Get the bound component node</description>
+        <name>getBindedComponent</name>
+        <function-class>org.jahia.taglibs.uicomponents.Functions</function-class>
+        <function-signature>org.jahia.services.content.JCRNodeWrapper getBindedComponent(org.jahia.services.content.JCRNodeWrapper, org.jahia.services.render.RenderContext, java.lang.String)
+        </function-signature>
+        <example>
+            ${facet:getAppliedFacetFilters(facet:decodeFacetUrlParam(param[facetParamVarName])[facetParamVarName])}
+        </example>
+    </function>
+
+    <function>
+        <description>Get the bound component node</description>
+        <name>getBindedComponentPath</name>
+        <function-class>org.jahia.taglibs.uicomponents.Functions</function-class>
+        <function-signature>java.lang.String getBindedComponentPath(org.jahia.services.content.JCRNodeWrapper, org.jahia.services.render.RenderContext, java.lang.String)
+        </function-signature>
+        <example>
+            ${facet:getAppliedFacetFilters(facet:decodeFacetUrlParam(param[facetParamVarName])[facetParamVarName])}
+        </example>
+    </function>
+
+</taglib>

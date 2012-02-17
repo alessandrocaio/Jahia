@@ -1,0 +1,16 @@
+K 10
+svn:ignore
+V 100
+.classpath
+*.bak
+.project
+target
+.gwt-cache
+.gwt-tmp
+bin
+build
+.settings
+.externalToolBuilders
+.gwt
+
+END

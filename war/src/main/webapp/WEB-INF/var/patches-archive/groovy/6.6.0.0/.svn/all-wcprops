@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/jahia/!svn/ver/40233/trunk/war/src/main/webapp/WEB-INF/var/patches-archive/groovy/6.6.0.0
+END
+6.6.0.0-07-jahiapp-module-type.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/jahia/!svn/ver/39737/trunk/war/src/main/webapp/WEB-INF/var/patches-archive/groovy/6.6.0.0/6.6.0.0-07-jahiapp-module-type.groovy
+END
+6.6.0.0-08-password-policy.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/jahia/!svn/ver/39737/trunk/war/src/main/webapp/WEB-INF/var/patches-archive/groovy/6.6.0.0/6.6.0.0-08-password-policy.groovy
+END
+6.6.0.0-02-components-deploy-modules.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/jahia/!svn/ver/39828/trunk/war/src/main/webapp/WEB-INF/var/patches-archive/groovy/6.6.0.0/6.6.0.0-02-components-deploy-modules.groovy
+END
+6.6.0.0-04-visibility-permissions.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/jahia/!svn/ver/39737/trunk/war/src/main/webapp/WEB-INF/var/patches-archive/groovy/6.6.0.0/6.6.0.0-04-visibility-permissions.groovy
+END
+6.6.0.0-06-wiki-page-owner.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/jahia/!svn/ver/39829/trunk/war/src/main/webapp/WEB-INF/var/patches-archive/groovy/6.6.0.0/6.6.0.0-06-wiki-page-owner.groovy
+END
+6.6.0.0-11-rebuild-spellchecker-index.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/jahia/!svn/ver/40233/trunk/war/src/main/webapp/WEB-INF/var/patches-archive/groovy/6.6.0.0/6.6.0.0-11-rebuild-spellchecker-index.groovy
+END
+6.6.0.0-05-templates-permissions.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/jahia/!svn/ver/39737/trunk/war/src/main/webapp/WEB-INF/var/patches-archive/groovy/6.6.0.0/6.6.0.0-05-templates-permissions.groovy
+END
+6.6.0.0-03-change-socialActivity-targetNode-type.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/jahia/!svn/ver/39875/trunk/war/src/main/webapp/WEB-INF/var/patches-archive/groovy/6.6.0.0/6.6.0.0-03-change-socialActivity-targetNode-type.groovy
+END
+6.6.0.0-09-workflow-permissions.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/jahia/!svn/ver/39893/trunk/war/src/main/webapp/WEB-INF/var/patches-archive/groovy/6.6.0.0/6.6.0.0-09-workflow-permissions.groovy
+END
+6.6.0.0-01-components-permissions.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/jahia/!svn/ver/39737/trunk/war/src/main/webapp/WEB-INF/var/patches-archive/groovy/6.6.0.0/6.6.0.0-01-components-permissions.groovy
+END

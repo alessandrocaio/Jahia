@@ -1,0 +1,137 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/rules
+END
+ExtractionService.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/rules/ExtractionService.java
+END
+AddedNodeFact.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/rules/AddedNodeFact.java
+END
+NodeFact.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/rules/NodeFact.java
+END
+ModuleGlobalObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/rules/ModuleGlobalObject.java
+END
+RulesListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/rules/RulesListener.java
+END
+User.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/rules/User.java
+END
+ActionJob.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/rules/ActionJob.java
+END
+DeletedNodeFact.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/rules/DeletedNodeFact.java
+END
+BackgroundAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/rules/BackgroundAction.java
+END
+Updateable.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/rules/Updateable.java
+END
+FlushCacheOnNodeBackgroundAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/rules/FlushCacheOnNodeBackgroundAction.java
+END
+RuleJob.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/rules/RuleJob.java
+END
+UserProperty.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/rules/UserProperty.java
+END
+JobRuleExecution.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/rules/JobRuleExecution.java
+END
+Group.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/rules/Group.java
+END
+ExtractedVariable.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/rules/ExtractedVariable.java
+END
+ImageService.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/rules/ImageService.java
+END
+DeletedPropertyFact.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/rules/DeletedPropertyFact.java
+END
+Service.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/rules/Service.java
+END
+BaseBackgroundAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/rules/BaseBackgroundAction.java
+END
+ChangedPropertyFact.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/rules/ChangedPropertyFact.java
+END
+RulesNotificationService.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/rules/RulesNotificationService.java
+END

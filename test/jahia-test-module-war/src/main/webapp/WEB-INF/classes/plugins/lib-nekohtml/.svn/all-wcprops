@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/jahia/!svn/ver/39634/trunk/test/jahia-test-module-war/src/main/webapp/WEB-INF/classes/plugins/lib-nekohtml
+END
+nekohtml-0.9.4.jar
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/jahia/!svn/ver/39634/trunk/test/jahia-test-module-war/src/main/webapp/WEB-INF/classes/plugins/lib-nekohtml/nekohtml-0.9.4.jar
+END
+plugin.xml
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/jahia/!svn/ver/39634/trunk/test/jahia-test-module-war/src/main/webapp/WEB-INF/classes/plugins/lib-nekohtml/plugin.xml
+END

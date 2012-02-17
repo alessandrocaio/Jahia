@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/jahia/!svn/ver/40181/trunk/modules/default/src/main/java/org/jahia/modules/defaultmodule/actions
+END
+AddMemberToGroupAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/jahia/!svn/ver/40181/trunk/modules/default/src/main/java/org/jahia/modules/defaultmodule/actions/AddMemberToGroupAction.java
+END
+AddComment.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/jahia/!svn/ver/40181/trunk/modules/default/src/main/java/org/jahia/modules/defaultmodule/actions/AddComment.java
+END
+AddPrincipalsInRolesAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/jahia/!svn/ver/40181/trunk/modules/default/src/main/java/org/jahia/modules/defaultmodule/actions/AddPrincipalsInRolesAction.java
+END
+ChainAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/jahia/!svn/ver/40181/trunk/modules/default/src/main/java/org/jahia/modules/defaultmodule/actions/ChainAction.java
+END
+PublishAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/jahia/!svn/ver/40181/trunk/modules/default/src/main/java/org/jahia/modules/defaultmodule/actions/PublishAction.java
+END

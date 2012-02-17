@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/jahia/!svn/ver/40428/trunk/core/src/main/java/org/jahia/ajax/gwt/helper
+END
+CacheHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/ajax/gwt/helper/CacheHelper.java
+END
+ZipHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/ajax/gwt/helper/ZipHelper.java
+END
+WorkflowHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/ajax/gwt/helper/WorkflowHelper.java
+END
+SeoHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/ajax/gwt/helper/SeoHelper.java
+END
+ContentHubHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/ajax/gwt/helper/ContentHubHelper.java
+END
+SchedulerHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/ajax/gwt/helper/SchedulerHelper.java
+END
+ImageHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/ajax/gwt/helper/ImageHelper.java
+END
+TemplateHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/ajax/gwt/helper/TemplateHelper.java
+END
+PortletHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/ajax/gwt/helper/PortletHelper.java
+END
+LanguageHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/ajax/gwt/helper/LanguageHelper.java
+END
+UIConfigHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/jahia/!svn/ver/40310/trunk/core/src/main/java/org/jahia/ajax/gwt/helper/UIConfigHelper.java
+END
+NavigationHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/jahia/!svn/ver/40313/trunk/core/src/main/java/org/jahia/ajax/gwt/helper/NavigationHelper.java
+END
+ContentManagerHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/jahia/!svn/ver/40428/trunk/core/src/main/java/org/jahia/ajax/gwt/helper/ContentManagerHelper.java
+END
+PropertiesHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/jahia/!svn/ver/40339/trunk/core/src/main/java/org/jahia/ajax/gwt/helper/PropertiesHelper.java
+END
+PublicationHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/jahia/!svn/ver/40309/trunk/core/src/main/java/org/jahia/ajax/gwt/helper/PublicationHelper.java
+END
+ContentDefinitionHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/jahia/!svn/ver/40339/trunk/core/src/main/java/org/jahia/ajax/gwt/helper/ContentDefinitionHelper.java
+END
+ACLHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/ajax/gwt/helper/ACLHelper.java
+END
+VersioningHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/jahia/!svn/ver/40387/trunk/core/src/main/java/org/jahia/ajax/gwt/helper/VersioningHelper.java
+END
+SearchHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/jahia/!svn/ver/40310/trunk/core/src/main/java/org/jahia/ajax/gwt/helper/SearchHelper.java
+END
+DiffHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/ajax/gwt/helper/DiffHelper.java
+END

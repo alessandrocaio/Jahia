@@ -1,0 +1,360 @@
+# +---------------------------------------------------------------------------+
+# | Jahia main configuration file.                                            |
+# +---------------------------------------------------------------------------+
+#
+#  This file contains some of the most important settings for configuring
+#  it's behavior.
+#  Other interesting files can be found elsewhere in the WEB-INF/etc
+#  directory, such as WEB-INF/etc/spring for cache implementation
+#  configuration, Hibernate configuration, etc.
+
+######################################################################
+### Web application context path #####################################
+######################################################################
+# By default Jahia is deployed into ROOT context (context path is empty
+# in this case). If deployed into another context, e.g. /jahia this value
+# should be adjusted accordingly (in this case the context path starts
+# with a slash).
+jahia.contextPath                                      = 
+
+######################################################################
+### Server  ##########################################################
+######################################################################
+# General server information, such as the application server it is
+# running on, as well as the home disk path to the deployed Jahia instance.
+server                                                 =
+serverVersion                                          =
+serverHome                                             =
+cluster.activated                                      = false
+cluster.node.serverId                                  = jahiaServer1
+# This setting can be used to activate particular profile:
+#  - development
+#  - production
+#  - distantPublicationServer
+operatingMode                                          = development
+# Set this to true to enable maintenance mode, i.e. no requests will be
+# served except to /tools/
+maintenanceMode                                        = false
+
+######################################################################
+### Jahia Tool Manager ###############################################
+######################################################################
+jahiaToolManagerUsername                               = jahia
+jahiaToolManagerPassword                               = password
+
+######################################################################
+### Disk Paths  ######################################################
+######################################################################
+# The following disk paths configure where Jahia will store data on disk,
+# such as temporary files or content files, or even in some cases where
+# it will retrieve additional configuration from.
+
+jahiaFilesDiskPath                                     =   $context/WEB-INF
+jahiaEtcDiskPath                                       =
+jahiaVarDiskPath                                       =
+tmpContentDiskPath                                     =   $context/WEB-INF/var/content/tmp/
+
+jahiaSharedTemplatesDiskPath                           =
+jahiaImportsDiskPath                                   =
+jahiaWebAppsDiskPath                                   =
+
+######################################################################
+### URL's  ###########################################################
+######################################################################
+# Provide your custom URL for the WAR deployer, if you use non-standard one  
+jahiaWebAppsDeployerBaseURL                            = http://127.0.0.1:8080/manager/html/
+
+# This parameter will control, that if vanity URLs exists for a node and if
+# it has been accessed with a non-default vanity URL, we inform the client that
+# the resource has permanently moved (HTTP status code 301)
+permanentMoveForVanityURL                              = true
+
+# Enable this option to make URL rewrite engine "shorten" the URL to
+# content in live mode, .e.g.:
+#     http://my.acme.org/cms/render/live/en/site/myAcme/home.html
+# can become:
+#     http://my.acme.org/cms/home.html
+urlRewriteSeoRulesEnabled                              = true
+# The siteURLPortOverride allows to force the generation of siteURLs to a
+# certain port. This will bypass the request.getServerPort() calls
+# and everything else. If it is set to 0, the port override is inactive,
+# but any other positive value will force the
+# generation of the site URL (notably used in the Exit Administration button)
+# to use the port specified here. Be careful when setting this might cause
+# issues with cookies, or if you plan to access Jahia through multiple
+# front-end machines.
+siteURLPortOverride                                    = 0
+
+# Disable the jsessionid parameter added by application server to track session when no cookie is present
+disableJsessionIdParameter = true
+jsessionIdParameterName = jsessionid
+
+######################################################################
+### Mail Service Configuration #######################################
+######################################################################
+# These settings configure how Jahia will send messages for
+# error reports. They are configured via the configuration
+# wizard upon initial installation of Jahia.
+mail_service_activated                                 =   false
+mail_server                                            = localhost
+mail_administrator                                     =
+mail_from                                              =
+mail_paranoia                                          =
+# This parameter allows to control mail regrouping of a repeating exception
+# If a repeating exception occurs more than this maximum, a mail will be
+# sent anyway, just so that we are still informed in case this is the only
+# error sent.
+mail_maxRegroupingOfPreviousException                  = 500
+
+######################################################################
+### Database  ########################################################
+######################################################################
+# Database connection configuration is no longer configured here,
+# but rather through container-managed datasource connection. In Tomcat 
+# these can be found in the following file:
+# <jahia-web-app-dir>/META-INF/context.xml
+db_script                                              =   derby_embedded.script
+# The DB dialect to be used by the Hibernate
+hibernate.dialect                                      =   @HIBERNATE_DIALECT@
+# Should nested transaction be allowed?
+nested.transaction.allowed                             =   @NESTED_TRANSACTION_ALLOWED@
+# Quartz scheduler driver delegate class
+org.quartz.driverDelegateClass                         =   org.quartz.impl.jdbcjobstore.StdJDBCDelegate
+
+######################################################################
+### Template set #####################################################
+######################################################################
+# Default value for template set
+default_templates_set		                        =   templates-intranet
+# Default setting for the error handling in modules (page fragments).
+# How should we handle an exception within the fragment?
+#    'hide' - the whole module content will not be written out into
+#             the JSP writer if any error occurs;
+#    'compact' (default) - shows a predefined error message instead of
+#                          partial module content;
+#    'full' - shows real exception message with a stacktrace;
+#    'propagate' - propagates the occurred exception to the higher
+#                  level (normally ends up with a standard error page) 
+templates.modules.onError                             	= compact
+# Time in milliseconds between checks for the template deployment
+# descriptor changes in order to restart the JahiaTemplateManagerService.
+# Set to -1 to deactivate changes detection completely.
+# Note, if "operatingMode" option is set to "development", this parameter
+# is ignored and the observer is started with the interval of 5 seconds. 
+templates.observer.interval                            =   60000
+
+######################################################################
+### Filemanager  #####################################################
+######################################################################
+# Configuration of the file manager that uses JCR as a back-end.
+jahiaFileUploadMaxSize                                  =  104857600
+
+######################################################################
+### Multilingual support   ###########################################
+######################################################################
+# The character encoding (MIME charset) of the response being sent to the client,
+# request character encoding and e-mail charset. 
+characterEncoding                                      =   UTF-8
+# The fall-back language code after we have tried to resolve the
+# current browsing code from :
+# - the session
+# - the browser's settings
+# - the site's language list
+org.jahia.multilang.default_language_code              =   en
+# Resource bundle lookup mechanism type.
+# If set to true, the default ResourceBundle resolution scheme
+# is used, i.e. the Locale.getDefault() is considered before
+# using bundle with the base name (no locale):
+# 1) the requested locale is used
+# 2) the current default locale as returned by Locale.getDefault()
+# 3) the root resource bundle (basename) is used
+# See http://java.sun.com/j2se/1.5.0/docs/api/java/util/ResourceBundle.html#getBundle(java.lang.String,%20java.util.Locale,%20java.lang.ClassLoader)
+# for details.
+# If the value is false the JSTL-like lookup is used:
+# 1) the requested locale is used
+# 2) the root resource bundle (basename) is used
+# In this case the step with default locale is omitted.
+considerDefaultJVMLocale                               =   false
+# Should we switch to the user's preferred language after login?
+# Language switch takes place only if the current site has entries
+# in the user's preferred language  
+considerPreferredLanguageAfterLogin                    =   false
+
+######################################################################
+### Container Authentication ########################################
+######################################################################
+# Enable the container authentication valve
+auth.container.enabled                                 = false
+######################################################################
+### Cookie authentication valve config #############################
+######################################################################
+#
+# The cookie authentication valve is a system that uses cookies to store
+# an identifier corresponding to a specific Jahia user, when he selects the
+# "remember me" option in the login engine.
+#
+# Should we use cookie authentication for login?
+auth.cookie.enabled                                    =   true
+
+######################################################################
+### Custom errorDocument site property  ##############################
+######################################################################
+# This setting enable specific error document pages for each site.
+site.error.enabled 										= true
+
+######################################################################
+### User and Group name validation ###################################
+######################################################################
+# Pattern for the user name validation. The new user name will be
+# tested against this regular expression (see java.util.regex.Pattern)
+# pattern.
+# Please update the resource bundle message:
+# org.jahia.admin.users.ManageUsers.onlyCharacters.label
+# (JahiaInternalResources.properties),
+# to reflect the pattern changes
+userManagementUserNamePattern                           = [0-9a-z_A-Z\\-\\{\\}\\.@]+
+# Pattern for the group name validation. The new group name will be
+# tested against this regular expression (see java.util.regex.Pattern)
+# pattern.
+# Please update the resource bundle message:
+# org.jahia.admin.users.ManageGroups.onlyCharacters.label
+# (JahiaInternalResources.properties),
+# to reflect the pattern changes
+userManagementGroupNamePattern                          = [0-9a-z_A-Z\\-\\{\\}]+
+
+######################################################################
+### Servlet response wrapper behavior control ########################
+######################################################################
+# The following setting controls whether a call to
+# ServletIncludeResponseWrapper.flushBuffer() will actually trigger
+# a buffer flush or not. The default behavior is to activate this,
+# and this settings might be deprecated in a later version of Jahia
+# if this control is not necessary, but we introduced it in order to
+# control this behavior at deployment time.
+wrapperBufferFlushingActivated = true
+
+######################################################################
+### File Error dumping ###############################################
+######################################################################
+# By default Jahia dumps are errors in files created in temp directory
+# These files have the format
+# error-DATE-TIME-EXCEPTION_COUNT_SINCE_STARTUP.txt
+# The generated files contain a lot of information, very useful to
+# fully understand the context of an error. When submitting an error
+# to Jahia support, please always activate this logging and submit
+# the files into the support tracking system.
+#
+# The following setting activates / deactivates this behavior.
+dumpErrorsToFiles = true
+# This parameter allows to control file regrouping of a repeating exception
+# If a repeating exception occurs more than this maximum, a file will be
+# dumped anyway, just so that we are still informed in case this is the only
+# error sent.
+fileDumpMaxRegroupingOfPreviousException = 500
+# If set to true a call to an external jstack tool (from Oracle Java Platform SE package)
+# will be done by Jahia in order to generate thread dump.
+# This allows to generate more accurate thread dumps (although the generation process is slower).
+# But it is guaranteed that in this case a dump can be read by any
+# thread dump analyzer tool, available on the market.
+# Ensure "jstack" is available on your PATH before activating this option.
+useJstackForThreadDumps = false
+######################################################################
+### Concurrent processing options ####################################
+######################################################################
+# This variable controls how many threads are allowed to do heavy weight
+# processing (module creation not served from the cache)
+maxModulesToGenerateInParallel = 50
+# This variable controls how long threads are waiting to be able to start
+# generating modules in heavy load situations (value in milliseconds)
+moduleGenerationWaitTime = 10000
+# If set to true a thread dump will be generated into System.out to help
+# figuring out what caused the slowdown.
+moduleGenerationThreadDumpToSystemOut = true
+# If set to true a thread dump will be generated into a separate file,
+# located under ${java.io.temp}/jahia-threads/<current-date> folder
+# to help figuring out what caused the slowdown.
+moduleGenerationTthreadDumpToFile = true
+# When Jahia does not respond fast enough (see moduleGenerationWaitTime) an 
+# automatic thread dump will be created to help figuring out what caused the 
+# slowdown. In order to not spam the log file, a minimum interval between two 
+# dumps can be defined. If the interval is set to -1, then automatic thread 
+# dumps will be disabled.
+minimumIntervalAfterLastAutoThreadDump = 60000
+
+######################################################################
+### JCR and WebDAV ###################################################
+######################################################################
+# JCR repository home folder. Can be either a servlet context related resource
+# or an absolute path  
+jahia.jackrabbit.home = WEB-INF/var/repository
+# Set this option to true to force re-indexing of all repository content
+# on the server startup.
+# Note please that re-indexing could take significant time depending on
+# the volume of data.
+jahia.jackrabbit.reindexOnStartup = false
+# Flag indicating if a consistency check should be issued during startup
+# of the JCR repository
+jahia.jackrabbit.consistencyCheck = false
+# Flag indicating if the consistency check should additionally attempt to fix issues
+jahia.jackrabbit.consistencyFix = false
+# Which type of the repository inconsistency handler to use:
+# a) fail - when an inconsistency is encountered in the repository (missing child node),
+#    an error is logged with the info and the repository is shut down 
+# a) log - just log the inconsistency info and continue with the repository startup 
+jahia.jackrabbit.onWorkspaceInconsistency = log
+
+# Disable the directory listing for /repository servlet.
+# (WebDAV client access won't work in such a case)
+repositoryDirectoryListingDisabled = false
+
+# Enable access statistics logging in the Files servlet which serves files
+# from the JCR repository
+jahia.fileServlet.statisticsEnabled = false
+
+# For JCR listeners, Jahia maintains systems session alive by refreshing them
+# at a regular interval. This setting allows to specify the frequency at which
+# the sessions are refreshed. This value is in milliseconds. Note that in cluster
+# installations setting this value to a low interval might not be a good idea as it
+# will trigger a lot of journal reads (which are performed on session.refresh() calls).
+jahia.jcr.observers.sessionKeepAliveCheckInterval = 5000
+
+######################################################################
+### Document Converter Service #######################################
+######################################################################
+# Set this to true to enable the document conversion service
+documentConverter.enabled = false
+# The filesystem path to the OpenOffice
+# Usually for Linux it is: /usr/lib/openoffice
+# for Windows: c:/Program Files (x86)/OpenOffice.org 3
+# and for Mac OS X: /Applications/OpenOffice.org.app/Contents
+documentConverter.officeHome = /usr/lib/openoffice
+
+######################################################################
+### Image conversion Service #########################################
+######################################################################
+# The image service to use
+# Native java service : "ImageJImageService"
+# Set to "ImageMagickImageService" to use ImageMagick. You'll then have to set
+# the imageMagick path
+imageService = ImageJImageService
+# The path to image magick and exiftools
+# For windows : C:\\Programs\\ImageMagick;C:\\Programs\\exiftool
+imageMagickPath = /usr/bin:/usr/local/bin:/opt/local/bin
+
+######################################################################
+### System users resources ###########################################
+######################################################################
+# Set this to associate the users to a resource bundle,
+# Set the module name that contains the resource for guest
+guestUserResourceModuleName = Default Jahia Templates
+# Set the key for guest
+guestUserResourceKey =label.user.guest
+
+######################################################################
+### System group resources ###########################################
+######################################################################
+# Set this to associate the groups to a resource bundle,
+# Set the module name that contains the resource for guest
+guestGroupResourceModuleName = Default Jahia Templates
+# Set the key for guest
+guestGroupResourceKey =label.group.guest

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/jahia/!svn/ver/40015/trunk/war/src/main/webapp/WEB-INF/etc/repository/jackrabbit
+END
+webdav-config.xml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/jahia/!svn/ver/36772/trunk/war/src/main/webapp/WEB-INF/etc/repository/jackrabbit/webdav-config.xml
+END
+repository.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/jahia/!svn/ver/40015/trunk/war/src/main/webapp/WEB-INF/etc/repository/jackrabbit/repository.xml
+END

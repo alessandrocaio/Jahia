@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/jahia/!svn/ver/40316/trunk/war/src/main/webapp/WEB-INF/etc/repository/nodetypes
+END
+01-system-nodetypes.cnd
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/jahia/!svn/ver/40093/trunk/war/src/main/webapp/WEB-INF/etc/repository/nodetypes/01-system-nodetypes.cnd
+END
+02-jahia-nodetypes.cnd
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/jahia/!svn/ver/40316/trunk/war/src/main/webapp/WEB-INF/etc/repository/nodetypes/02-jahia-nodetypes.cnd
+END
+10-extension-nodetypes.cnd
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/jahia/!svn/ver/31386/trunk/war/src/main/webapp/WEB-INF/etc/repository/nodetypes/10-extension-nodetypes.cnd
+END
+05-standard-types.cnd
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/jahia/!svn/ver/28443/trunk/war/src/main/webapp/WEB-INF/etc/repository/nodetypes/05-standard-types.cnd
+END
+99-internal-nodetypes.cnd
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/jahia/!svn/ver/36999/trunk/war/src/main/webapp/WEB-INF/etc/repository/nodetypes/99-internal-nodetypes.cnd
+END

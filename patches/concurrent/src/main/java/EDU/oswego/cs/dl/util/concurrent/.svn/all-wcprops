@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/jahia/!svn/ver/27023/trunk/patches/concurrent/src/main/java/EDU/oswego/cs/dl/util/concurrent
+END
+WriterPreferenceReadWriteLock.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/jahia/!svn/ver/27023/trunk/patches/concurrent/src/main/java/EDU/oswego/cs/dl/util/concurrent/WriterPreferenceReadWriteLock.java
+END

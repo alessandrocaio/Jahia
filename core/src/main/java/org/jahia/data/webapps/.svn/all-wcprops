@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/data/webapps
+END
+JahiaWebAppDef.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/data/webapps/JahiaWebAppDef.java
+END
+Web_App_Xml.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/data/webapps/Web_App_Xml.java
+END
+JahiaWebAppsEarPackage.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/data/webapps/JahiaWebAppsEarPackage.java
+END
+JahiaWebAppsWarPackage.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/data/webapps/JahiaWebAppsWarPackage.java
+END
+Security_Role_Ref.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/data/webapps/Security_Role_Ref.java
+END
+JahiaWebAppsPackage.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/data/webapps/JahiaWebAppsPackage.java
+END
+Security_Role.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/data/webapps/Security_Role.java
+END
+Servlet_Element.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/data/webapps/Servlet_Element.java
+END

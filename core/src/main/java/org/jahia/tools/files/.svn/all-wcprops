@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/jahia/!svn/ver/40389/trunk/core/src/main/java/org/jahia/tools/files
+END
+FileWatcher.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/tools/files/FileWatcher.java
+END
+FileUpload.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/jahia/!svn/ver/40389/trunk/core/src/main/java/org/jahia/tools/files/FileUpload.java
+END
+FileWatcherJob.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/tools/files/FileWatcherJob.java
+END

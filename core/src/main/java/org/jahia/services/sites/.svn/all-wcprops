@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/sites
+END
+JahiaSite.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/sites/JahiaSite.java
+END
+SitesSettings.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/sites/SitesSettings.java
+END
+SitesDBInterface.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/sites/SitesDBInterface.java
+END
+JahiaSiteTools.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/sites/JahiaSiteTools.java
+END
+JahiaSitesService.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/sites/JahiaSitesService.java
+END
+JahiaSitesBaseService.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/sites/JahiaSitesBaseService.java
+END

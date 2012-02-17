@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/jahia/!svn/ver/36448/trunk/war/src/main/webapp/WEB-INF/notifications/templates/mail
+END
+newUser.vm
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/jahia/!svn/ver/36448/trunk/war/src/main/webapp/WEB-INF/notifications/templates/mail/newUser.vm
+END

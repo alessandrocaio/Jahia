@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/jahia/!svn/ver/40298/trunk/core/src/main/java/org/jahia/params/valves
+END
+TokenAuthValveImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/params/valves/TokenAuthValveImpl.java
+END
+CookieAuthConfig.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/params/valves/CookieAuthConfig.java
+END
+LogoutConfig.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/params/valves/LogoutConfig.java
+END
+LoginConfig.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/params/valves/LoginConfig.java
+END
+AuthValveContext.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/params/valves/AuthValveContext.java
+END
+ContainerAuthValveImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/jahia/!svn/ver/40298/trunk/core/src/main/java/org/jahia/params/valves/ContainerAuthValveImpl.java
+END
+AutoRegisteredBaseAuthValve.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/params/valves/AutoRegisteredBaseAuthValve.java
+END
+CookieAuthValveImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/jahia/!svn/ver/40298/trunk/core/src/main/java/org/jahia/params/valves/CookieAuthValveImpl.java
+END
+HttpBasicAuthValveImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/jahia/!svn/ver/40298/trunk/core/src/main/java/org/jahia/params/valves/HttpBasicAuthValveImpl.java
+END
+LoginEngineAuthValveImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/jahia/!svn/ver/40298/trunk/core/src/main/java/org/jahia/params/valves/LoginEngineAuthValveImpl.java
+END
+AuthPipelineInitializer.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/params/valves/AuthPipelineInitializer.java
+END
+LoginUrlProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/params/valves/LoginUrlProvider.java
+END
+BaseAuthValve.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/jahia/!svn/ver/40298/trunk/core/src/main/java/org/jahia/params/valves/BaseAuthValve.java
+END
+LogoutUrlProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/params/valves/LogoutUrlProvider.java
+END
+SessionAuthValveImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/params/valves/SessionAuthValveImpl.java
+END

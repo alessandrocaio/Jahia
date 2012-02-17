@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/jahia/!svn/ver/40298/trunk/core/src/main/java/org/jahia/services/usermanager/jcr
+END
+JCRUserManagerProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/usermanager/jcr/JCRUserManagerProvider.java
+END
+JCRGroupManagerProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/usermanager/jcr/JCRGroupManagerProvider.java
+END
+JCRGroup.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/usermanager/jcr/JCRGroup.java
+END
+JCRPrincipal.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/usermanager/jcr/JCRPrincipal.java
+END
+JCRUser.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/jahia/!svn/ver/40298/trunk/core/src/main/java/org/jahia/services/usermanager/jcr/JCRUser.java
+END

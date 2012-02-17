@@ -1,0 +1,297 @@
+9
+
+dir
+40433
+http://subversion.jahia.org/svn/jahia/trunk/core/src/main/java/org/jahia/services
+http://subversion.jahia.org/svn/jahia
+
+
+
+2012-02-15T13:41:00.360356Z
+40428
+bamboo
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+69c369ed-ed09-0410-a4a1-e19a46c23626
+
+Conditional.java
+file
+
+
+
+
+2012-02-16T16:54:45.000000Z
+d376d057184a38fc32808e7cd426f520
+2012-01-17T11:49:34.854965Z
+40181
+sshyrkov
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2522
+
+JahiaAfterInitializationService.java
+file
+
+
+
+
+2012-02-16T16:54:37.000000Z
+b98cf119048ca6da7031eeb7546c1e50
+2012-01-17T11:49:34.854965Z
+40181
+sshyrkov
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2293
+
+JahiaService.java
+file
+
+
+
+
+2012-02-16T16:54:50.000000Z
+af919209f2d09b20e05443ff9ad244d3
+2012-01-17T11:49:34.854965Z
+40181
+sshyrkov
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2761
+
+Serviceable.java
+file
+
+
+
+
+2012-02-16T16:54:47.000000Z
+4073dd068dc45103634ebf4293f756ba
+2012-02-03T16:57:52.079149Z
+40320
+bamboo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2528
+
+SpringContextSingleton.java
+file
+
+
+
+
+2012-02-16T16:54:50.000000Z
+aac2c4ffd3046f15cee61082e8fd2706
+2012-01-17T11:49:34.854965Z
+40181
+sshyrkov
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8274
+
+applications
+dir
+
+cache
+dir
+
+categories
+dir
+
+content
+dir
+
+deamons
+dir
+
+history
+dir
+
+htmlvalidator
+dir
+
+image
+dir
+
+importexport
+dir
+
+logging
+dir
+
+mail
+dir
+
+metadata
+dir
+
+notification
+dir
+
+pagesusers
+dir
+
+preferences
+dir
+
+pwdpolicy
+dir
+
+query
+dir
+
+render
+dir
+
+scheduler
+dir
+
+search
+dir
+
+security
+dir
+
+seo
+dir
+
+sites
+dir
+
+tags
+dir
+
+tasks
+dir
+
+templates
+dir
+
+textextraction
+dir
+
+transform
+dir
+
+uicomponents
+dir
+
+usermanager
+dir
+
+visibility
+dir
+
+webdav
+dir
+
+workflow
+dir
+

@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:util="http://www.springframework.org/schema/util"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+                        http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.0.xsd">
+
+    <bean id="AbstractJCRStoreProvider" class="org.jahia.services.content.JCRStoreProvider" abstract="true"
+          init-method="start" destroy-method="stop">
+        <property name="userManagerService" ref="JahiaUserManagerService"/>
+        <property name="groupManagerService" ref="JahiaGroupManagerService"/>
+        <property name="sitesService" ref="JahiaSitesService"/>
+        <property name="service" ref="JCRStoreService"/>
+        <property name="sessionFactory" ref="jcrSessionFactory"/>
+        <property name="publicationService" ref="jcrPublicationService"/>
+        <property name="sessionKeepAliveCheckInterval" value="${jahia.jcr.observers.sessionKeepAliveCheckInterval:5000}" />
+    </bean>
+
+    <bean id="DefaulJCRStoreProvider" class="org.jahia.services.content.impl.jackrabbit.JackrabbitStoreProvider"
+          parent="AbstractJCRStoreProvider">
+        <property name="key" value="default"/>
+        <property name="repository" ref="jackrabbit"/>
+        <property name="mountPoint" value="/"/>
+        <property name="webdavPath" value="/repository"/>
+        <!--
+        <property name="rmibind" value="jackrabbit"/>
+        -->
+        <property name="providesDynamicMountPoints" value="true"/>
+    </bean>
+
+    <bean id="jcrSessionFactory" class="org.jahia.services.content.JCRSessionFactory" factory-method="getInstance"
+          lazy-init="true" init-method="start">
+        <property name="userService" ref="JahiaUserManagerService"/>
+        <property name="descriptors">
+            <map>
+                <entry key="jcr.specification.version" value="1.0"/>
+                <entry key="jcr.specification.name"
+                       value="Content Repository API for Java(TM) Technology Specification"/>
+                <entry key="jcr.repository.vendor" value="Jahia"/>
+                <entry key="jcr.repository.vendor.url" value="http://www.jahia.org/"/>
+                <entry key="jcr.repository.name" value="Jahia"/>
+                <entry key="jcr.repository.version" value="6.5"/>
+                <entry key="level.1.supported" value="true"/>
+                <entry key="level.2.supported" value="true"/>
+                <entry key="option.transactions.supported" value="true"/>
+                <entry key="option.versioning.supported" value="true"/>
+                <entry key="option.observation.supported" value="false"/>
+                <entry key="option.locking.supported" value="true"/>
+                <entry key="option.query.sql.supported" value="true"/>
+                <entry key="query.xpath.pos.index" value="true"/>
+                <entry key="query.xpath.doc.order" value="false"/>
+            </map>
+        </property>
+        <property name="servletContextAttributeName" value="uch"/>
+    </bean>
+
+    <bean id="jcrTemplate" class="org.jahia.services.content.JCRTemplate" factory-method="getInstance">
+        <property name="sessionFactory" ref="jcrSessionFactory"/>
+    </bean>
+
+    <bean id="urlResolverListener" class="org.jahia.services.render.URLResolverListener">
+        <property name="availableDuringPublish" value="true"/>
+    </bean>
+
+    <bean id="JCRStoreService" class="org.jahia.services.content.JCRStoreService" parent="jahiaServiceTemplate"
+          factory-method="getInstance" lazy-init="true" depends-on="springContextSingleton">
+        <property name="sessionFactory" ref="jcrSessionFactory"/>
+        <property name="decorators">
+            <map>
+                <entry key="jnt:virtualsite" value="org.jahia.services.content.decorator.JCRSiteNode"/>
+                <entry key="nt:file" value="org.jahia.services.content.decorator.JCRFileNode"/>
+                <entry key="nt:folder" value="org.jahia.services.content.decorator.JCRFileNode"/>
+                <entry key="jnt:portlet" value="org.jahia.services.content.decorator.JCRPortletNode"/>
+                <entry key="nt:query" value="org.jahia.services.content.decorator.JCRQueryNode"/>
+                <entry key="jnt:mountPoint" value="org.jahia.services.content.decorator.JCRMountPointNode"/>
+                <entry key="jnt:layout" value="org.jahia.services.content.decorator.JCRLayoutNode"/>
+                <entry key="nt:version" value="org.jahia.services.content.decorator.JCRVersion"/>
+                <entry key="nt:versionHistory" value="org.jahia.services.content.decorator.JCRVersionHistory"/>
+                <entry key="nt:frozenNode" value="org.jahia.services.content.decorator.JCRFrozenNode"/>
+                <entry key="jmix:nodeReference" value="org.jahia.services.content.decorator.JCRReferenceNode"/>
+                <entry key="jnt:simplePreference"
+                       value="org.jahia.services.preferences.generic.GenericJahiaPreference"/>
+                <entry key="jnt:pagePreference" value="org.jahia.services.preferences.page.PageJahiaPreference"/>
+                <entry key="jnt:portletPreference"
+                       value="org.jahia.services.applications.pluto.JahiaPortletPreference"/>
+                <entry key="jnt:user" value="org.jahia.services.content.decorator.JCRUserNode"/>
+                <entry key="jnt:group" value="org.jahia.services.content.decorator.JCRGroupNode"/>
+                <entry key="jnt:component" value="org.jahia.services.content.decorator.JCRComponentNode"/>
+                <entry key="jnt:componentFolder" value="org.jahia.services.content.decorator.JCRComponentNode"/>
+            </map>
+        </property>
+        <property name="noValidityCheckTypes">
+            <set>
+                <value>jnt:componentFolder</value>
+                <value>jnt:contentFolder</value>
+                <value>jnt:groupsFolder</value>
+                <value>jnt:pageTemplate</value>
+                <value>jnt:portletFolder</value>
+                <value>jnt:tagList</value>
+                <value>jnt:template</value>
+                <value>jnt:templatesFolder</value>
+                <value>jnt:vanityUrl</value>
+                <value>jnt:vanityUrls</value>
+                <value>jnt:virtualsite</value>
+                <value>jnt:virtualsitesFolder</value>                
+                <value>rep:root</value>
+            </set>
+        </property>
+        <property name="listeners">
+            <map>
+                <entry key="default">
+                    <list>
+                        <bean class="org.jahia.services.content.NodenameListener"/>
+                        <bean class="org.jahia.services.content.DefaultValueListener"/>
+                        <bean class="org.jahia.services.content.LastModifiedListener"/>
+                        <bean class="org.apache.jackrabbit.core.security.PrivilegesListener"/>
+                        <bean class="org.jahia.services.content.rules.RulesListener" init-method="start">
+                            <property name="ruleFiles">
+                                <set>
+                                    <value>/repository/rules/repository-rules.drl</value>
+                                    <value>/repository/rules/text-extraction-rules.drl</value>
+                                </set>
+                            </property>
+
+                            <property name="serverId" value="${cluster.node.serverId}"/>
+                            <property name="globalObjects">
+                                <map>
+                                    <entry key="service" value-ref="org.jahia.services.content.rules.Service"/>
+                                    <entry key="imageService"
+                                           value-ref="org.jahia.services.content.rules.ImageService"/>
+                                    <entry key="extractionService"
+                                           value-ref="org.jahia.services.content.rules.ExtractionService"/>
+                                    <entry key="notificationService"
+                                           value-ref="org.jahia.services.content.rules.RulesNotificationService"/>
+                                </map>
+                            </property>
+                            <property name="filesAccepted">
+                                <list value-type="java.lang.String">
+                                    <value type="java.lang.String">rules.drl</value>
+                                    <value type="java.lang.String">default-rules.drl</value>
+                                </list>
+                            </property>
+                            <property name="operationTypes">
+                                <list value-type="java.lang.Integer">
+                                    <value type="java.lang.Integer">1</value>
+                                    <value type="java.lang.Integer">13</value>
+                                </list>
+                            </property>
+                        </bean>
+                        <bean class="org.jahia.services.content.textextraction.TextExtractionListener">
+                            <property name="extractionService"
+                                      ref="org.jahia.services.content.rules.ExtractionService"/>
+                            <property name="schedulerService" ref="SchedulerService"/>
+                        </bean>
+                        <bean class="org.jahia.services.content.files.FileCacheListener"/>
+                        <bean class="org.jahia.services.logging.MetricsLoggingJCReventListener">
+                            <property name="loggingService" ref="loggingService"/>
+                            <property name="nodeTypesList">
+                                <list/>
+                            </property>
+                        </bean>
+                        <bean class="org.jahia.services.content.JCRUserPropertyModificationListener"/>
+                        <bean class="org.jahia.services.render.filter.cache.RenderServiceTemplateCacheEventListener">
+                            <property name="cacheKeyGenerator" ref="cacheKeyGenerator"/>
+                        </bean>
+                        <ref bean="urlResolverListener" />
+                        <bean class="org.jahia.services.history.NodeVersionHistoryListener">
+                            <property name="schedulerService" ref="SchedulerService"/>
+                        </bean>
+                    </list>
+                </entry>
+                <entry key="live">
+                    <list>
+                        <bean class="org.jahia.services.content.NodenameListener">
+                            <property name="availableDuringPublish" value="true"/>
+                        </bean>
+                        <bean class="org.jahia.services.content.DefaultValueListener"/>
+                        <bean class="org.jahia.services.content.LastModifiedListener"/>
+                        <bean class="org.jahia.services.content.rules.RulesListener" init-method="start">
+                            <property name="ruleFiles" value="/repository/rules/repository-live-rules.drl"/>
+                            <property name="serverId" value="${cluster.node.serverId}"/>
+                            <property name="globalObjects">
+                                <map>
+                                    <entry key="service" value-ref="org.jahia.services.content.rules.Service"/>
+                                    <entry key="imageService"
+                                           value-ref="org.jahia.services.content.rules.ImageService"/>
+                                    <entry key="extractionService"
+                                           value-ref="org.jahia.services.content.rules.ExtractionService"/>
+                                </map>
+                            </property>
+                            <property name="filesAccepted">
+                                <list value-type="java.lang.String">
+                                    <value type="java.lang.String">rules.drl</value>
+                                </list>
+                            </property>
+                            <property name="operationTypes">
+                                <list value-type="java.lang.Integer">
+                                    <value type="java.lang.Integer">1</value>
+                                    <value type="java.lang.Integer">13</value>
+                                </list>
+                            </property>
+                        </bean>
+                        <bean class="org.jahia.services.content.rules.RulesListener" init-method="start">
+                            <property name="ruleFiles">
+                                <set/>
+                            </property>
+
+                            <property name="serverId" value="${cluster.node.serverId}"/>
+                            <property name="globalObjects">
+                                <map>
+                                    <entry key="service" value-ref="org.jahia.services.content.rules.Service"/>
+                                    <entry key="imageService"
+                                           value-ref="org.jahia.services.content.rules.ImageService"/>
+                                    <entry key="extractionService"
+                                           value-ref="org.jahia.services.content.rules.ExtractionService"/>
+                                    <entry key="notificationService"
+                                           value-ref="org.jahia.services.content.rules.RulesNotificationService"/>
+                                </map>
+                            </property>
+                            <property name="filesAccepted">
+                                <list value-type="java.lang.String">
+                                    <value type="java.lang.String">live-rules.drl</value>
+                                </list>
+                            </property>
+                            <property name="availableDuringPublish" value="true"/>
+                            <property name="operationTypes">
+                                <list value-type="java.lang.Integer">
+                                    <value type="java.lang.Integer">1</value>
+                                    <value type="java.lang.Integer">13</value>
+                                    <value type="java.lang.Integer">4</value>
+                                </list>
+                            </property>
+                        </bean>
+                        <bean class="org.jahia.services.content.files.FileCacheListener">
+                            <property name="availableDuringPublish" value="true"/>
+                        </bean>
+                        <bean class="org.jahia.services.render.filter.cache.HtmlCacheEventListener">
+                            <property name="cacheProvider" ref="ModuleCacheProvider"/>
+                            <property name="availableDuringPublish" value="true"/>
+                        </bean>
+                        <bean class="org.jahia.services.render.filter.cache.RenderServiceTemplateCacheEventListener">
+                            <property name="availableDuringPublish" value="true"/>
+                            <property name="cacheKeyGenerator" ref="cacheKeyGenerator"/>
+                        </bean>
+                        <bean class="org.jahia.services.content.JCRUserPropertyModificationListener"/>
+                        <ref bean="urlResolverListener" />
+                        <bean class="org.jahia.services.history.NodeVersionHistoryListener">
+                            <property name="schedulerService" ref="SchedulerService"/>
+                        </bean>
+                    </list>
+                </entry>
+            </map>
+        </property>
+        <property name="interceptors">
+            <list>
+                <bean class="org.jahia.services.content.interceptor.LastModifiedInterceptor"/>
+                <bean class="org.jahia.services.content.interceptor.HtmlFilteringInterceptor" parent="abstractRichTextPropertyInterceptor">
+                    <property name="considerSiteSettingsForFiltering" value="true"/>
+                    <!-- if removeContentBetweenTags is set to true also the content between the filtereed tags will be removed -->
+                    <property name="removeContentBetweenTags" value="false"/>
+                </bean>
+                <bean class="org.jahia.services.content.interceptor.URLInterceptor" parent="abstractRichTextPropertyInterceptor">
+                    <constructor-arg ref="org.jahia.services.render.filter.URLTraverser"/>
+                </bean>
+            </list>
+        </property>
+    </bean>
+    
+    <bean id="abstractRichTextPropertyInterceptor" class="org.jahia.services.content.interceptor.BaseInterceptor" abstract="true">
+        <property name="requiredTypes" value="String"/>
+        <property name="selectors" value="RichText"/>
+    </bean>
+
+    <bean id="propertyInterceptorRegistrator" class="org.jahia.services.content.interceptor.PropertyInterceptorRegistrator" abstract="true">
+        <property name="jcrStoreService" ref="JCRStoreService"/>
+    </bean>
+    
+    <bean id="jcrVersionService" class="org.jahia.services.content.JCRVersionService" factory-method="getInstance">
+    </bean>
+
+    <bean id="jcrPublicationService" class="org.jahia.services.content.JCRPublicationService"
+          factory-method="getInstance">
+        <property name="sessionFactory" ref="jcrSessionFactory"/>
+        <property name="loggingService" ref="loggingService"/>
+    </bean>
+
+    <bean id="jackrabbit" class="org.jahia.services.content.impl.jackrabbit.SpringJackrabbitRepository"
+          init-method="start" destroy-method="stop" depends-on="JahiaTemplateManagerService,dataSource">
+        <property name="configFile" value="WEB-INF/etc/repository/jackrabbit/repository.xml"/>
+        <property name="homeDir" value="${jahia.jackrabbit.home}"/>
+        <property name="servletContextAttributeName"
+                  value="org.jahia.services.content.impl.jackrabbit.SpringJackrabbitRepository"/>
+        <!-- the ID of the Spring bean with the definition of a background job for DataStore garbage collection -->
+        <property name="dataStoreGarbageCollectorBeanId" value="DataStoreGarbageCollectorJob"/>
+        <property name="settings" ref="settingsBean"/>
+        <property name="performMigrationToDataStoreIfNeeded" value="${jahia.jackrabbit.performMigrationToDataStoreIfNeeded:true}"/>
+    </bean>
+
+    <bean id="rbInitializer"
+          class="org.jahia.services.content.nodetypes.initializers.ResourceBundleChoiceListInitializerImpl"/>
+    <bean id="countryInitializerRenderer"
+          class="org.jahia.services.content.nodetypes.initializers.CountryChoiceListInitializerAndRendererImpl"/>
+    <bean id="countryFlagInitializer"
+          class="org.jahia.services.content.nodetypes.initializers.CountryFlagChoiceListInitializerAndRendererImpl"/>
+    <bean id="templatesInitializer"
+          class="org.jahia.services.content.nodetypes.initializers.TemplatesChoiceListInitializerImpl"/>
+    <bean id="templatesNodeInitializer"
+          class="org.jahia.services.content.nodetypes.initializers.TemplatesNodeChoiceListInitializer"/>
+    <bean id="usersInitializer"
+          class="org.jahia.services.content.nodetypes.initializers.UsersChoiceListInitializerImpl"/>
+    <bean id="moduleImageInitializer"
+          class="org.jahia.services.content.nodetypes.initializers.ModuleImageChoiceListInitializerImpl"/>
+    <bean id="nodetypesInitializer"
+          class="org.jahia.services.content.nodetypes.initializers.NodeTypesChoiceListInitializerImpl"/>
+    <bean id="subNodetypesInitializer"
+          class="org.jahia.services.content.nodetypes.initializers.SubNodeTypesChoiceListInitializerImpl"/>
+    <bean id="nodesInitializer"
+          class="org.jahia.services.content.nodetypes.initializers.NodesChoiceListInitializerImpl">
+        <property name="sessionFactory" ref="jcrSessionFactory"/>
+    </bean>
+    <bean id="menuInitializer"
+          class="org.jahia.services.content.nodetypes.initializers.MenusChoiceListInitializerImpl">
+    </bean>
+    <bean id="scriptInitializer"
+          class="org.jahia.services.content.nodetypes.initializers.ScriptChoiceListInitializerImpl">
+        <property name="scriptEngineUtils" ref="scriptEngineUtils"/>
+    </bean>
+    <bean id="sortableFieldnamesInitializer"
+          class="org.jahia.services.content.nodetypes.initializers.SortableFieldnamesChoiceListInitializerImpl">
+        <property name="excludedNodeTypes">
+            <set>
+                <value type="java.lang.String">jmix:nodenameInfo</value>
+                <value type="java.lang.String">mix:referenceable</value>
+                <value type="java.lang.String">mix:simpleVersionable</value>
+                <value type="java.lang.String">mix:versionable</value>
+                <value type="java.lang.String">nt:base</value>
+            </set>
+        </property>
+        <property name="showHidden" value="false"/>
+        <property name="showProtected" value="true"/>
+    </bean>
+    <bean id="commponentLinkerInitializer"
+          class="org.jahia.services.content.nodetypes.initializers.ComponentLinkerChoiceListInitializer"/>
+    <bean id="workflowInitializer"
+          class="org.jahia.services.content.nodetypes.initializers.WorkflowChoiceListInitializer">
+        <property name="workflowService" ref="workflowService"/>
+    </bean>
+    <bean id="workflowTypesInitializer"
+          class="org.jahia.services.content.nodetypes.initializers.WorkflowTypesChoiceListInitializer">
+        <property name="workflowService" ref="workflowService"/>
+    </bean>
+    <bean id="sortInitializer"
+          class="org.jahia.services.content.nodetypes.initializers.SortChoiceListInitializerImpl"/>
+    <bean id="nodeReferenceRenderer"
+          class="org.jahia.services.content.nodetypes.renderer.NodeReferenceChoiceListRenderer"/>
+    <bean id="componentTypesInitializer" class="org.jahia.services.content.nodetypes.initializers.ComponentTypesChoiceListInitializerImpl"/>
+
+    <bean id="choiceListInitializers"
+          class="org.jahia.services.content.nodetypes.initializers.ChoiceListInitializerService"
+          factory-method="getInstance">
+        <property name="initializers">
+            <map>
+                <entry key="resourceBundle" value-ref="rbInitializer"/>
+                <entry key="country" value-ref="countryInitializerRenderer"/>
+                <entry key="templates" value-ref="templatesInitializer"/>
+                <entry key="templatesNode" value-ref="templatesNodeInitializer"/>
+
+                <entry key="users" value-ref="usersInitializer"/>
+                <entry key="nodetypes" value-ref="nodetypesInitializer"/>
+                <entry key="subnodetypes" value-ref="subNodetypesInitializer"/>
+                <entry key="nodes" value-ref="nodesInitializer"/>
+                <entry key="menus" value-ref="menuInitializer"/>
+                <entry key="script" value-ref="scriptInitializer"/>
+                <entry key="flag" value-ref="countryFlagInitializer"/>
+                <entry key="sortableFieldnames" value-ref="sortableFieldnamesInitializer"/>
+                <entry key="moduleImage" value-ref="moduleImageInitializer"/>
+                <entry key="linkerProps" value-ref="commponentLinkerInitializer"/>
+                <entry key="workflow" value-ref="workflowInitializer"/>
+                <entry key="workflowTypes" value-ref="workflowTypesInitializer"/>
+                <entry key="sort" value-ref="sortInitializer"/>
+                <entry key="componenttypes" value-ref="componentTypesInitializer"/>
+            </map>
+        </property>
+    </bean>
+    <bean id="choiceListRenderers" class="org.jahia.services.content.nodetypes.renderer.ChoiceListRendererService"
+          factory-method="getInstance">
+        <property name="renderers">
+            <map>
+                <entry key="country" value-ref="countryInitializerRenderer"/>
+                <entry key="flagcountry" value-ref="countryFlagInitializer"/>
+                <entry key="resourceBundle" value-ref="rbInitializer"/>
+                <entry key="nodeReference" value-ref="nodeReferenceRenderer"/>
+            </map>
+        </property>
+    </bean>
+
+    <bean id="org.jahia.services.content.rules.ImageService" class="org.jahia.services.content.rules.ImageService"
+          factory-method="getInstance">
+        <property name="imageService" ref="${imageService}"/>
+    </bean>
+
+    <bean id="org.jahia.services.content.rules.Service" class="org.jahia.services.content.rules.Service"
+          factory-method="getInstance">
+        <property name="taggingService" ref="org.jahia.services.tags.TaggingService"/>
+        <property name="cacheService" ref="JahiaCacheService"/>
+        <property name="schedulerService" ref="SchedulerService"/>
+        <property name="sitesService" ref="JahiaSitesService"/>
+        <property name="userManagerService" ref="JahiaUserManagerService"/>
+        <property name="passwordPolicyService" ref="JahiaPasswordPolicyService"/>
+    </bean>
+
+    <bean id="JcrSessionFilter" class="org.jahia.bin.filters.jcr.JcrSessionFilter">
+        <property name="authPipeline" ref="authPipeline"/>
+        <property name="sessionFactory" ref="jcrSessionFactory"/>
+        <property name="schedulerService" ref="SchedulerService"/>
+        <property name="userManagerService" ref="JahiaUserManagerService"/>
+    </bean>
+
+    <util:set id="DocumentViewImportHandler.propertiesToSkip">
+        <value>jcr:uuid</value>
+        <value>j:publicationStatus</value>
+        <value>jcr:primaryType</value>
+        <value>j:share</value>
+        <value>j:originWS</value>
+        <value>jcr:mixinTypes</value>
+        <value>j:siteId</value>
+        <value>j:lastPublished</value>
+        <value>j:lastPublishedBy</value>
+        <value>j:published</value>
+        <value>jcr:created</value>
+        <value>jcr:createdBy</value>
+        <value>jcr:mimeType</value>
+        <value>jcr:lockOwner</value>
+        <value>jcr:lockIsDeep</value>
+        <value>j:locktoken</value>
+        <value>j:lockTypes</value>
+        <value>j:processId</value>
+    </util:set>
+    
+    <util:map id="ImportDefinitionsMappingMetadata">
+        <entry key="jahia:defaultCategory">
+            <bean class="org.jahia.services.importexport.DefinitionsMapping$PropertyMapping">
+                <constructor-arg index="0" value="jahia:defaultCategory"/>
+                <constructor-arg index="1" value="jmix:categorized|j:defaultCategory"/>
+            </bean>
+        </entry>
+        <entry key="jahia:keywords">
+            <bean class="org.jahia.services.importexport.DefinitionsMapping$PropertyMapping">
+                <constructor-arg index="0" value="jahia:keywords"/>
+                <constructor-arg index="1" value="jmix:keywords|j:keywords"/>
+            </bean>
+        </entry>
+        <entry key="jahia:description">
+            <bean class="org.jahia.services.importexport.DefinitionsMapping$PropertyMapping">
+                <constructor-arg index="0" value="jahia:description"/>
+                <constructor-arg index="1" value="jmix:description|jcr:description"/>
+            </bean>
+        </entry>
+        <entry key="jahia:createdBy">
+            <bean class="org.jahia.services.importexport.DefinitionsMapping$PropertyMapping">
+                <constructor-arg index="0" value="jahia:createdBy"/>
+                <constructor-arg index="1" value="mix:created|jcr:createdBy"/>
+            </bean>
+        </entry>
+        <entry key="jahia:lastModifiedBy">
+            <bean class="org.jahia.services.importexport.DefinitionsMapping$PropertyMapping">
+                <constructor-arg index="0" value="jahia:lastModifiedBy"/>
+                <constructor-arg index="1" value="mix:lastModified|jcr:lastModifiedBy"/>
+            </bean>
+        </entry>
+        <entry key="jahia:lastPublishingDate">
+            <bean class="org.jahia.services.importexport.DefinitionsMapping$PropertyMapping">
+                <constructor-arg index="0" value="jahia:lastPublishingDate"/>
+                <constructor-arg index="1" value="jmix:lastPublished|j:lastPublished"/>
+            </bean>
+        </entry>
+        <entry key="jahia:lastPublisher">
+            <bean class="org.jahia.services.importexport.DefinitionsMapping$PropertyMapping">
+                <constructor-arg index="0" value="jahia:lastPublisher"/>
+                <constructor-arg index="1" value="jmix:lastPublished|j:lastPublishedBy"/>
+            </bean>
+        </entry>
+        <entry key="jahia:ruleSettings">
+            <bean class="org.jahia.services.importexport.DefinitionsMapping$PropertyMapping">
+                <constructor-arg index="0" value="jahia:ruleSettings"/>
+                <constructor-arg index="1" value="jmix:conditionalVisibility|j:legacyRuleSettings"/>
+            </bean>
+        </entry>
+    </util:map>
+    
+    <bean id="DocumentViewValidationHandler" class="org.jahia.services.importexport.validation.DocumentViewValidationHandler" scope="prototype">
+        <property name="validators">
+            <list>
+                <bean class="org.jahia.services.importexport.validation.MissingModulesValidator">
+                    <property name="templateManagerService" ref="JahiaTemplateManagerService"/>
+                </bean>
+                <bean class="org.jahia.services.importexport.validation.MissingTemplatesValidator">
+                    <property name="templateManagerService" ref="JahiaTemplateManagerService"/>
+                </bean>
+                <bean class="org.jahia.services.importexport.validation.MissingNodetypesValidator"/>
+            </list>
+        </property>
+    </bean>
+</beans>

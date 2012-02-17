@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/applications
+END
+CustomWindowState.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/applications/CustomWindowState.java
+END
+StringParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/applications/StringParser.java
+END
+ServletIncludeResponseWrapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/applications/ServletIncludeResponseWrapper.java
+END
+DispatchingServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/applications/DispatchingServiceImpl.java
+END
+DispatchingService.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/applications/DispatchingService.java
+END
+CustomPortletMode.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/applications/CustomPortletMode.java
+END
+ApplicationsManagerService.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/applications/ApplicationsManagerService.java
+END
+ApplicationsManagerServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/applications/ApplicationsManagerServiceImpl.java
+END
+ApplicationsManagerProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/applications/ApplicationsManagerProvider.java
+END
+DispatchingProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/applications/DispatchingProvider.java
+END
+ServletIncludeRequestWrapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/applications/ServletIncludeRequestWrapper.java
+END
+UserRoleResolver.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/applications/UserRoleResolver.java
+END
+StringServletOutputStream.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/applications/StringServletOutputStream.java
+END
+ServletContextManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/applications/ServletContextManager.java
+END

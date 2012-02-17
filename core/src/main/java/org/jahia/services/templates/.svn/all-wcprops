@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/jahia/!svn/ver/40428/trunk/core/src/main/java/org/jahia/services/templates
+END
+TemplatePackageDeployer.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/templates/TemplatePackageDeployer.java
+END
+TemplatePackageApplicationContextLoader.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/jahia/!svn/ver/40318/trunk/core/src/main/java/org/jahia/services/templates/TemplatePackageApplicationContextLoader.java
+END
+JahiaTemplateManagerService.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/jahia/!svn/ver/40428/trunk/core/src/main/java/org/jahia/services/templates/JahiaTemplateManagerService.java
+END
+ComponentRegistry.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/templates/ComponentRegistry.java
+END
+TemplatePackageRegistry.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/templates/TemplatePackageRegistry.java
+END
+TemplateUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/templates/TemplateUtils.java
+END
+JahiaTemplatesPackageHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/templates/JahiaTemplatesPackageHandler.java
+END

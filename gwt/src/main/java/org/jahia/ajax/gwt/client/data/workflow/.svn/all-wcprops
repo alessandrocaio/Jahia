@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/data/workflow
+END
+GWTJahiaWorkflowOutcome.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/data/workflow/GWTJahiaWorkflowOutcome.java
+END
+GWTJahiaWorkflowType.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/data/workflow/GWTJahiaWorkflowType.java
+END
+GWTJahiaWorkflowComment.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/data/workflow/GWTJahiaWorkflowComment.java
+END
+GWTJahiaWorkflowTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/data/workflow/GWTJahiaWorkflowTask.java
+END
+GWTJahiaWorkflowDefinition.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/data/workflow/GWTJahiaWorkflowDefinition.java
+END
+GWTJahiaWorkflow.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/data/workflow/GWTJahiaWorkflow.java
+END
+GWTJahiaWorkflowInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/data/workflow/GWTJahiaWorkflowInfo.java
+END

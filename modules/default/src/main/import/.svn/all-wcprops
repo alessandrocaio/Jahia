@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/jahia/!svn/ver/39764/trunk/modules/default/src/main/import
+END
+repository.xml
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/jahia/!svn/ver/39764/trunk/modules/default/src/main/import/repository.xml
+END
+roles.xml
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/jahia/!svn/ver/37876/trunk/modules/default/src/main/import/roles.xml
+END
+permissions.xml
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/jahia/!svn/ver/36782/trunk/modules/default/src/main/import/permissions.xml
+END

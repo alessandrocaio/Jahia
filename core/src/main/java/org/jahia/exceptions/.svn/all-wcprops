@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/exceptions
+END
+JahiaRuntimeException.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/exceptions/JahiaRuntimeException.java
+END
+JahiaBadRequestException.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/exceptions/JahiaBadRequestException.java
+END
+JahiaForbiddenAccessException.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/exceptions/JahiaForbiddenAccessException.java
+END
+JahiaArchiveFileException.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/exceptions/JahiaArchiveFileException.java
+END
+JahiaNotFoundException.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/exceptions/JahiaNotFoundException.java
+END
+JahiaInitializationException.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/exceptions/JahiaInitializationException.java
+END
+JahiaException.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/exceptions/JahiaException.java
+END
+JahiaSessionExpirationException.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/exceptions/JahiaSessionExpirationException.java
+END
+JahiaUnauthorizedException.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/exceptions/JahiaUnauthorizedException.java
+END

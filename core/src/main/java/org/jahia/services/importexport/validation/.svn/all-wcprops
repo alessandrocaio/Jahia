@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/importexport/validation
+END
+MissingTemplatesValidator.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/importexport/validation/MissingTemplatesValidator.java
+END
+ImportValidator.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/importexport/validation/ImportValidator.java
+END
+ValidationResults.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/importexport/validation/ValidationResults.java
+END
+MissingTemplatesValidationResult.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/importexport/validation/MissingTemplatesValidationResult.java
+END
+ModuleDependencyAware.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/importexport/validation/ModuleDependencyAware.java
+END
+MissingModulesValidationResult.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/importexport/validation/MissingModulesValidationResult.java
+END
+MissingNodetypesValidationResult.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/importexport/validation/MissingNodetypesValidationResult.java
+END
+ValidationResult.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/importexport/validation/ValidationResult.java
+END
+SitesValidator.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/importexport/validation/SitesValidator.java
+END
+SitesValidatorResult.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/importexport/validation/SitesValidatorResult.java
+END
+DocumentViewValidationHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/importexport/validation/DocumentViewValidationHandler.java
+END
+MissingModulesValidator.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/importexport/validation/MissingModulesValidator.java
+END
+MissingNodetypesValidator.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/importexport/validation/MissingNodetypesValidator.java
+END

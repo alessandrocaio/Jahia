@@ -1,0 +1,76 @@
+9
+
+dir
+40433
+http://subversion.jahia.org/svn/jahia/trunk/modules/templates-system/src/main/import/content/templateSets/templates-system/templates/files/icons
+http://subversion.jahia.org/svn/jahia
+
+
+
+2011-05-12T15:47:42.496852Z
+37910
+rmora
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+69c369ed-ed09-0410-a4a1-e19a46c23626
+
+edit-content.png
+dir
+
+folder-content-files.png
+dir
+
+folder-content.png
+dir
+
+folder-files.png
+dir
+
+my-pages.png
+dir
+
+my-settings.png
+dir
+
+my-sites.png
+dir
+
+my-tasks.png
+dir
+
+mybookmarks.png
+dir
+
+mycontent.png
+dir
+
+mydocument.png
+dir
+
+myprofile.png
+dir
+
+mysites.png
+dir
+
+myspace.png
+dir
+
+mytasks.png
+dir
+
+view-content.png
+dir
+

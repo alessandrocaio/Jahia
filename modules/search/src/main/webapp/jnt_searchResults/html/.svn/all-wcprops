@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/jahia/!svn/ver/38757/trunk/modules/search/src/main/webapp/jnt_searchResults/html
+END
+searchHit.jspf
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/jahia/!svn/ver/38321/trunk/modules/search/src/main/webapp/jnt_searchResults/html/searchHit.jspf
+END
+searchResults.properties
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/jahia/!svn/ver/32591/trunk/modules/search/src/main/webapp/jnt_searchResults/html/searchResults.properties
+END
+searchResults.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/jahia/!svn/ver/38757/trunk/modules/search/src/main/webapp/jnt_searchResults/html/searchResults.jsp
+END
+searchResults.hidden.header.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/jahia/!svn/ver/38177/trunk/modules/search/src/main/webapp/jnt_searchResults/html/searchResults.hidden.header.jsp
+END

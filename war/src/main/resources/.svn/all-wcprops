@@ -1,0 +1,161 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/jahia/!svn/ver/40398/trunk/war/src/main/resources
+END
+jbpm.tx.hibernate.cfg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/jahia/!svn/ver/36694/trunk/war/src/main/resources/jbpm.tx.hibernate.cfg.xml
+END
+JahiaInternalResources_de.properties
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/jahia/!svn/ver/40309/trunk/war/src/main/resources/JahiaInternalResources_de.properties
+END
+validation.xml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/jahia/!svn/ver/30387/trunk/war/src/main/resources/validation.xml
+END
+tika-config-jahia-text.xml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/jahia/!svn/ver/31353/trunk/war/src/main/resources/tika-config-jahia-text.xml
+END
+ehcache-jahia.xml
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/jahia/!svn/ver/39569/trunk/war/src/main/resources/ehcache-jahia.xml
+END
+tika-config-jahia-metadata.xml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/jahia/!svn/ver/31353/trunk/war/src/main/resources/tika-config-jahia-metadata.xml
+END
+commons-logging.properties
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/jahia/!svn/ver/27023/trunk/war/src/main/resources/commons-logging.properties
+END
+jbpm.default.cfg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/jahia/!svn/ver/36634/trunk/war/src/main/resources/jbpm.default.cfg.xml
+END
+repositoryStubImpl.properties
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/jahia/!svn/ver/33215/trunk/war/src/main/resources/repositoryStubImpl.properties
+END
+JahiaTypesResources_es.properties
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/jahia/!svn/ver/38634/trunk/war/src/main/resources/JahiaTypesResources_es.properties
+END
+JahiaTypesResources_fr.properties
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/jahia/!svn/ver/40368/trunk/war/src/main/resources/JahiaTypesResources_fr.properties
+END
+JahiaTypesResources_it.properties
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/jahia/!svn/ver/40366/trunk/war/src/main/resources/JahiaTypesResources_it.properties
+END
+ehcache-hibernate.xml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/jahia/!svn/ver/38550/trunk/war/src/main/resources/ehcache-hibernate.xml
+END
+JahiaTypesResources_en.properties
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/jahia/!svn/ver/40368/trunk/war/src/main/resources/JahiaTypesResources_en.properties
+END
+jbpm.mail.properties
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/jahia/!svn/ver/29872/trunk/war/src/main/resources/jbpm.mail.properties
+END
+JahiaInternalResources_es.properties
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/jahia/!svn/ver/40020/trunk/war/src/main/resources/JahiaInternalResources_es.properties
+END
+JahiaTypesResources_pt.properties
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/jahia/!svn/ver/38634/trunk/war/src/main/resources/JahiaTypesResources_pt.properties
+END
+jbpm.cfg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/jahia/!svn/ver/40003/trunk/war/src/main/resources/jbpm.cfg.xml
+END
+JahiaInternalResources_fr.properties
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/jahia/!svn/ver/40310/trunk/war/src/main/resources/JahiaInternalResources_fr.properties
+END
+JahiaInternalResources_it.properties
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/jahia/!svn/ver/40020/trunk/war/src/main/resources/JahiaInternalResources_it.properties
+END
+JahiaTypesResources_de.properties
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/jahia/!svn/ver/39919/trunk/war/src/main/resources/JahiaTypesResources_de.properties
+END
+jbpm.user.wire.bindings.xml
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/jahia/!svn/ver/36694/trunk/war/src/main/resources/jbpm.user.wire.bindings.xml
+END
+JahiaInternalResources_en.properties
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/jahia/!svn/ver/40398/trunk/war/src/main/resources/JahiaInternalResources_en.properties
+END
+jahia-startup-intro.txt
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/jahia/!svn/ver/40130/trunk/war/src/main/resources/jahia-startup-intro.txt
+END
+jbpm.tx.spring.cfg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/jahia/!svn/ver/36707/trunk/war/src/main/resources/jbpm.tx.spring.cfg.xml
+END
+JahiaInternalResources_pt.properties
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/jahia/!svn/ver/40020/trunk/war/src/main/resources/JahiaInternalResources_pt.properties
+END

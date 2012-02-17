@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/nodetypes/renderer
+END
+ModuleChoiceListRenderer.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/jahia/!svn/ver/40036/trunk/core/src/main/java/org/jahia/services/content/nodetypes/renderer/ModuleChoiceListRenderer.java
+END
+NodeReferenceChoiceListRenderer.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/nodetypes/renderer/NodeReferenceChoiceListRenderer.java
+END
+AbstractChoiceListRenderer.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/nodetypes/renderer/AbstractChoiceListRenderer.java
+END
+ChoiceListRendererService.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/nodetypes/renderer/ChoiceListRendererService.java
+END
+ChoiceListRenderer.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/nodetypes/renderer/ChoiceListRenderer.java
+END

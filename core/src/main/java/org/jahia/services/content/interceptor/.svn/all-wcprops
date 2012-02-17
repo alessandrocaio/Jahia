@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/interceptor
+END
+PropertyInterceptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/interceptor/PropertyInterceptor.java
+END
+InterceptorChain.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/interceptor/InterceptorChain.java
+END
+RichTextInterceptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/interceptor/RichTextInterceptor.java
+END
+URLInterceptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/interceptor/URLInterceptor.java
+END
+LastModifiedInterceptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/interceptor/LastModifiedInterceptor.java
+END
+HtmlFilteringInterceptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/interceptor/HtmlFilteringInterceptor.java
+END
+BaseInterceptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/interceptor/BaseInterceptor.java
+END
+PropertyInterceptorRegistrator.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/interceptor/PropertyInterceptorRegistrator.java
+END

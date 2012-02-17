@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/jahia/!svn/ver/39634/trunk/test/jahia-test-module-war/src/main/webapp/WEB-INF/classes/plugins/parse-rss
+END
+xmlrpc-1.2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/jahia/!svn/ver/39634/trunk/test/jahia-test-module-war/src/main/webapp/WEB-INF/classes/plugins/parse-rss/xmlrpc-1.2.jar
+END
+parse-rss.jar
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/jahia/!svn/ver/39634/trunk/test/jahia-test-module-war/src/main/webapp/WEB-INF/classes/plugins/parse-rss/parse-rss.jar
+END
+plugin.xml
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/jahia/!svn/ver/39634/trunk/test/jahia-test-module-war/src/main/webapp/WEB-INF/classes/plugins/parse-rss/plugin.xml
+END
+commons-feedparser-0.6-fork.jar
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/jahia/!svn/ver/39634/trunk/test/jahia-test-module-war/src/main/webapp/WEB-INF/classes/plugins/parse-rss/commons-feedparser-0.6-fork.jar
+END

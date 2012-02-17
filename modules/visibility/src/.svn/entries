@@ -1,0 +1,34 @@
+9
+
+dir
+40433
+http://subversion.jahia.org/svn/jahia/trunk/modules/visibility/src
+http://subversion.jahia.org/svn/jahia
+
+
+
+2012-01-19T15:45:58.222326Z
+40220
+cmailleux
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+69c369ed-ed09-0410-a4a1-e19a46c23626
+
+main
+dir
+
+site
+dir
+

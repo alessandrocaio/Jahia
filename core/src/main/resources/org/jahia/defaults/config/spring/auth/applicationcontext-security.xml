@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+       
+    <bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
+        <property name="securityManager" ref="securityManager"/>
+        <property name="filterChainDefinitions">
+            <value>
+                /admin/** = authcBasic, roles[toolManager]
+                /modules/**/*.jsp = authcBasic, roles[toolManager]
+                
+                /cms/**/*.raw = authcBasic, roles[toolManager]
+                /cms/serverStats = authcBasic, roles[toolManager]
+                /cms/serverStats/** = authcBasic, roles[toolManager]
+                /cms/text-extract = authcBasic, roles[toolManager]
+                /cms/text-extract/** = authcBasic, roles[toolManager]
+                /tools/** = authcBasic, roles[toolManager]
+                
+                ## Apache Shindig config
+                #[main]
+                #shindigSampleRealm = org.apache.shindig.sample.shiro.SampleShiroRealm
+                #securityManager.realm = $shindigSampleRealm
+                #authc.loginUrl = /login.jsp
+                #[urls]
+                ## The /login.jsp is not restricted to authenticated users (otherwise no one could log in!), but
+                ## the 'authc' filter must still be specified for it so it can process that url's
+                ## login submissions. It is 'smart' enough to allow those requests through as specified by the
+                ## shiro.loginUrl above.
+                #/login.jsp = authc
+                #/oauth/authorize/** = authc
+            </value>
+        </property>
+    </bean>
+    
+    <bean name="textConfigurationRealm" class="org.jahia.services.security.shiro.SpringTextConfigurationRealm">
+        <property name="userDefinitions">
+            <value>
+                ${jahiaToolManagerUsername}=${jahiaToolManagerPassword},toolManager
+            </value>
+        </property>
+        <property name="credentialsMatcher">
+            <bean class="org.apache.shiro.authc.credential.HashedCredentialsMatcher">
+                <property name="hashAlgorithmName" value="SHA-1"/>
+                <property name="storedCredentialsHexEncoded" value="false"/>
+            </bean>
+        </property>
+    </bean>
+    
+    <bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">
+        <property name="realm" ref="textConfigurationRealm"/>
+        <property name="rememberMeManager"><null/></property>
+    </bean>
+    <bean class="org.apache.shiro.spring.LifecycleBeanPostProcessor"/>
+    
+    <bean id="jahiaLoginConfig" class="org.jahia.params.valves.LoginConfig" factory-method="getInstance"/>
+    <bean id="jahiaLogoutConfig" class="org.jahia.params.valves.LogoutConfig" factory-method="getInstance"/>
+</beans>

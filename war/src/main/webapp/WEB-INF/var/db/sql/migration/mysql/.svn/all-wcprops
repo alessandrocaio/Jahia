@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/jahia/!svn/ver/40233/trunk/war/src/main/webapp/WEB-INF/var/db/sql/migration/mysql
+END
+jackrabbit-migration-2-drop-original-tables.sql
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/jahia/!svn/ver/40233/trunk/war/src/main/webapp/WEB-INF/var/db/sql/migration/mysql/jackrabbit-migration-2-drop-original-tables.sql
+END
+jackrabbit-migration-3-rename-temp-tables.sql
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/jahia/!svn/ver/40233/trunk/war/src/main/webapp/WEB-INF/var/db/sql/migration/mysql/jackrabbit-migration-3-rename-temp-tables.sql
+END
+jackrabbit-migration-1-create-temp-tables.sql
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/jahia/!svn/ver/40233/trunk/war/src/main/webapp/WEB-INF/var/db/sql/migration/mysql/jackrabbit-migration-1-create-temp-tables.sql
+END

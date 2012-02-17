@@ -1,0 +1,167 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/jahia/!svn/ver/40394/trunk/core/src/main/java/org/jahia/services/render/filter
+END
+MarkedForDeletionEditModeFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/render/filter/MarkedForDeletionEditModeFilter.java
+END
+RenderFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/render/filter/RenderFilter.java
+END
+FormTokenFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/render/filter/FormTokenFilter.java
+END
+ContextPlaceholdersReplacer.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/render/filter/ContextPlaceholdersReplacer.java
+END
+SiteParameterAdder.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/render/filter/SiteParameterAdder.java
+END
+ExternalizeHtmlFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/render/filter/ExternalizeHtmlFilter.java
+END
+RenderChain.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/render/filter/RenderChain.java
+END
+WrapperFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/render/filter/WrapperFilter.java
+END
+StaticAssetsFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/render/filter/StaticAssetsFilter.java
+END
+TemplateAttributesFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/render/filter/TemplateAttributesFilter.java
+END
+URLFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/render/filter/URLFilter.java
+END
+SourceFormatterFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/render/filter/SourceFormatterFilter.java
+END
+MarkedForDeletionFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/render/filter/MarkedForDeletionFilter.java
+END
+RegexpFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/render/filter/RegexpFilter.java
+END
+RenderFilterException.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/render/filter/RenderFilterException.java
+END
+BaseAttributesFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/render/filter/BaseAttributesFilter.java
+END
+RenderServiceAware.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/render/filter/RenderServiceAware.java
+END
+TemplateScriptFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/render/filter/TemplateScriptFilter.java
+END
+EmailObfuscatorFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/render/filter/EmailObfuscatorFilter.java
+END
+AbstractFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/render/filter/AbstractFilter.java
+END
+TemplatePermissionCheckFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/render/filter/TemplatePermissionCheckFilter.java
+END
+URLSystemAttributesAppenderFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/render/filter/URLSystemAttributesAppenderFilter.java
+END
+MetricsLoggingFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/render/filter/MetricsLoggingFilter.java
+END
+TemplateNodeFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/render/filter/TemplateNodeFilter.java
+END
+HtmlTagAttributeTraverser.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/render/filter/HtmlTagAttributeTraverser.java
+END
+AreaResourceFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/render/filter/AreaResourceFilter.java
+END
+UserAgentFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/render/filter/UserAgentFilter.java
+END

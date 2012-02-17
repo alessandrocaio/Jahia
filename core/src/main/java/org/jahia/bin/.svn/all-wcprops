@@ -1,0 +1,197 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/jahia/!svn/ver/40389/trunk/core/src/main/java/org/jahia/bin
+END
+EndInit.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/bin/EndInit.java
+END
+Notifications.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/bin/Notifications.java
+END
+BaseFindController.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/bin/BaseFindController.java
+END
+DocumentConverter.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/jahia/!svn/ver/40389/trunk/core/src/main/java/org/jahia/bin/DocumentConverter.java
+END
+SystemAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/bin/SystemAction.java
+END
+FindUser.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/bin/FindUser.java
+END
+WelcomeServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/bin/WelcomeServlet.java
+END
+DefaultDeleteAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/bin/DefaultDeleteAction.java
+END
+JahiaMultiActionController.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/bin/JahiaMultiActionController.java
+END
+ServerStats.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/bin/ServerStats.java
+END
+Find.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/bin/Find.java
+END
+TextExtractor.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/bin/TextExtractor.java
+END
+Render.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/jahia/!svn/ver/40389/trunk/core/src/main/java/org/jahia/bin/Render.java
+END
+Studio.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/bin/Studio.java
+END
+FindPrincipal.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/bin/FindPrincipal.java
+END
+ActionResult.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/bin/ActionResult.java
+END
+JahiaInterface.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/bin/JahiaInterface.java
+END
+Contribute.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/bin/Contribute.java
+END
+JahiaControllerUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/bin/JahiaControllerUtils.java
+END
+Logout.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/jahia/!svn/ver/40212/trunk/core/src/main/java/org/jahia/bin/Logout.java
+END
+Edit.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/bin/Edit.java
+END
+Jahia.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/bin/Jahia.java
+END
+Login.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/bin/Login.java
+END
+JahiaAdministration.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/bin/JahiaAdministration.java
+END
+JahiaController.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/bin/JahiaController.java
+END
+ValidateTicket.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/bin/ValidateTicket.java
+END
+CacheController.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/bin/CacheController.java
+END
+Captcha.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/bin/Captcha.java
+END
+DefaultPostAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/bin/DefaultPostAction.java
+END
+Action.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/bin/Action.java
+END
+Export.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/bin/Export.java
+END
+Initializers.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/bin/Initializers.java
+END

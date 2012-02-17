@@ -1,0 +1,31 @@
+9
+
+dir
+40433
+http://subversion.jahia.org/svn/jahia/trunk/test/jahia-test-module/src/main/resources/org
+http://subversion.jahia.org/svn/jahia
+
+
+
+2011-07-04T11:21:44.454219Z
+38465
+cmailleux
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+69c369ed-ed09-0410-a4a1-e19a46c23626
+
+jahia
+dir
+

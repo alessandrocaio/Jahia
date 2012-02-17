@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/apache/jackrabbit/core/jndi
+END
+JahiaBindableRepositoryFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/apache/jackrabbit/core/jndi/JahiaBindableRepositoryFactory.java
+END
+JahiaBindableRepository.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/apache/jackrabbit/core/jndi/JahiaBindableRepository.java
+END

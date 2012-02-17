@@ -1,0 +1,71 @@
+9
+
+dir
+40433
+http://subversion.jahia.org/svn/jahia/trunk/test
+http://subversion.jahia.org/svn/jahia
+
+
+
+2012-02-10T13:14:11.552562Z
+40380
+bamboo
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+69c369ed-ed09-0410-a4a1-e19a46c23626
+
+jahia-test-module
+dir
+
+jahia-test-module-war
+dir
+
+pom.xml
+file
+
+
+
+
+2012-02-16T16:54:21.000000Z
+35ca0c8d080701182807cb741d016f6a
+2012-01-31T00:02:05.137555Z
+40286
+fisheye
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2959
+
+src
+dir
+

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/jahia/!svn/ver/39613/trunk/taglib/src/main/resources/META-INF/tags/login
+END
+loginPassword.tag
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/jahia/!svn/ver/38177/trunk/taglib/src/main/resources/META-INF/tags/login/loginPassword.tag
+END
+loginArea.tag
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/jahia/!svn/ver/39613/trunk/taglib/src/main/resources/META-INF/tags/login/loginArea.tag
+END
+loginRememberMe.tag
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/jahia/!svn/ver/38177/trunk/taglib/src/main/resources/META-INF/tags/login/loginRememberMe.tag
+END
+loginUsername.tag
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/jahia/!svn/ver/38177/trunk/taglib/src/main/resources/META-INF/tags/login/loginUsername.tag
+END

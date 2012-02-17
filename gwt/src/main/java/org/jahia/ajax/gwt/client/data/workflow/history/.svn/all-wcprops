@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/data/workflow/history
+END
+GWTJahiaWorkflowHistoryProcess.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/data/workflow/history/GWTJahiaWorkflowHistoryProcess.java
+END
+GWTJahiaWorkflowHistoryTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/data/workflow/history/GWTJahiaWorkflowHistoryTask.java
+END
+GWTJahiaWorkflowHistoryItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/jahia/!svn/ver/40181/trunk/gwt/src/main/java/org/jahia/ajax/gwt/client/data/workflow/history/GWTJahiaWorkflowHistoryItem.java
+END

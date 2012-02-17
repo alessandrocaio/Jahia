@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/jahia/!svn/ver/40233/trunk/war/src/main/webapp/WEB-INF/var/db
+END
+derby.script
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/jahia/!svn/ver/35066/trunk/war/src/main/webapp/WEB-INF/var/db/derby.script
+END
+postgresql.script
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/jahia/!svn/ver/36229/trunk/war/src/main/webapp/WEB-INF/var/db/postgresql.script
+END
+mysql.script
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/jahia/!svn/ver/35066/trunk/war/src/main/webapp/WEB-INF/var/db/mysql.script
+END
+derby_embedded.script
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/jahia/!svn/ver/36229/trunk/war/src/main/webapp/WEB-INF/var/db/derby_embedded.script
+END

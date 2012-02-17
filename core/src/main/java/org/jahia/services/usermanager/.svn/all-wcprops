@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/jahia/!svn/ver/40298/trunk/core/src/main/java/org/jahia/services/usermanager
+END
+JahiaUserSplittingRule.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/usermanager/JahiaUserSplittingRule.java
+END
+BaseJahiaExternalUser.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/jahia/!svn/ver/40298/trunk/core/src/main/java/org/jahia/services/usermanager/BaseJahiaExternalUser.java
+END
+UserPropertyReadOnlyException.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/usermanager/UserPropertyReadOnlyException.java
+END
+JahiaUserManagerProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/usermanager/JahiaUserManagerProvider.java
+END
+JahiaGroupManagerProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/usermanager/JahiaGroupManagerProvider.java
+END
+JahiaUserManagerRoutingService.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/usermanager/JahiaUserManagerRoutingService.java
+END
+GuestGroup.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/usermanager/GuestGroup.java
+END
+JahiaGroupManagerRoutingService.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/usermanager/JahiaGroupManagerRoutingService.java
+END
+JahiaUserAliasing.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/jahia/!svn/ver/40298/trunk/core/src/main/java/org/jahia/services/usermanager/JahiaUserAliasing.java
+END
+JahiaPrincipal.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/usermanager/JahiaPrincipal.java
+END
+UserProperty.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/usermanager/UserProperty.java
+END
+JahiaExternalUser.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/usermanager/JahiaExternalUser.java
+END
+JahiaGroupManagerService.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/usermanager/JahiaGroupManagerService.java
+END
+UserProperties.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/usermanager/UserProperties.java
+END
+JahiaGroupWrapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/usermanager/JahiaGroupWrapper.java
+END
+JahiaUserManagerService.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/usermanager/JahiaUserManagerService.java
+END
+UsersGroup.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/usermanager/UsersGroup.java
+END
+JahiaGroup.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/usermanager/JahiaGroup.java
+END
+JahiaUser.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/jahia/!svn/ver/40298/trunk/core/src/main/java/org/jahia/services/usermanager/JahiaUser.java
+END
+DefaultJahiaUserSplittingRuleImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/usermanager/DefaultJahiaUserSplittingRuleImpl.java
+END

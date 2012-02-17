@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/jahia/!svn/ver/40181/trunk/modules/contribute/src/main/java/org/jahia/modules/contribute/filter
+END
+ListContributionFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/jahia/!svn/ver/40181/trunk/modules/contribute/src/main/java/org/jahia/modules/contribute/filter/ListContributionFilter.java
+END
+ContributeToolbarFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/jahia/!svn/ver/40181/trunk/modules/contribute/src/main/java/org/jahia/modules/contribute/filter/ContributeToolbarFilter.java
+END

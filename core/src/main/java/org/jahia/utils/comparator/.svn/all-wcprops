@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/utils/comparator
+END
+NumericStringComparator.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/utils/comparator/NumericStringComparator.java
+END
+LanguageCodesComparator.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/utils/comparator/LanguageCodesComparator.java
+END

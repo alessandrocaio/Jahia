@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/jahia/!svn/ver/27023/trunk/gwt/src/main/resources/org/jahia/ajax/gwt/public/images/default/menu
+END
+item-over.gif
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/jahia/!svn/ver/27023/trunk/gwt/src/main/resources/org/jahia/ajax/gwt/public/images/default/menu/item-over.gif
+END
+unchecked.gif
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/jahia/!svn/ver/27023/trunk/gwt/src/main/resources/org/jahia/ajax/gwt/public/images/default/menu/unchecked.gif
+END
+menu.gif
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/jahia/!svn/ver/27023/trunk/gwt/src/main/resources/org/jahia/ajax/gwt/public/images/default/menu/menu.gif
+END
+menu-submenu.gif
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/jahia/!svn/ver/27023/trunk/gwt/src/main/resources/org/jahia/ajax/gwt/public/images/default/menu/menu-submenu.gif
+END
+menu-seperator.gif
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/jahia/!svn/ver/27023/trunk/gwt/src/main/resources/org/jahia/ajax/gwt/public/images/default/menu/menu-seperator.gif
+END
+checked.gif
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/jahia/!svn/ver/27023/trunk/gwt/src/main/resources/org/jahia/ajax/gwt/public/images/default/menu/checked.gif
+END
+menu-parent.gif
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/jahia/!svn/ver/27023/trunk/gwt/src/main/resources/org/jahia/ajax/gwt/public/images/default/menu/menu-parent.gif
+END
+group-checked.gif
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/jahia/!svn/ver/27023/trunk/gwt/src/main/resources/org/jahia/ajax/gwt/public/images/default/menu/group-checked.gif
+END

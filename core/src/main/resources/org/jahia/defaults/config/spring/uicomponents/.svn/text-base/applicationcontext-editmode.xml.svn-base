@@ -1,0 +1,969 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <bean name="editmodeEditorConfigurer" class="org.springframework.beans.factory.config.CustomEditorConfigurer">
+        <property name="customEditors">
+            <map>
+                <entry key="org.jahia.services.uicomponents.bean.Visibility">
+                    <bean class="org.jahia.services.uicomponents.bean.VisibilityPropertyEditor"/>
+                </entry>
+            </map>
+        </property>
+    </bean>
+
+    <!-- studiomode -->
+
+
+    <bean id="studiomode.managers.menu" class="org.jahia.services.uicomponents.bean.toolbar.Menu">
+        <property name="visibility">
+            <bean class="org.jahia.services.uicomponents.bean.Visibility">
+                <property name="needAuthentication" value="true"/>
+            </bean>
+        </property>
+        <property name="titleKey" value="label.managers"/>
+        <property name="items">
+            <list>
+                <ref bean="Toolbar.Item.FileManager"/>
+                <ref bean="Toolbar.Item.PortletManager"/>
+                <ref bean="Toolbar.Item.RepositoryExplorer"/>
+            </list>
+        </property>
+    </bean>
+
+
+    <bean id="editmode" class="org.jahia.services.uicomponents.bean.editmode.EditConfiguration">
+        <property name="sitesLocation" value="/sites/*"/>
+        <property name="topToolbar">
+            <bean id="editModeToolbar" class="org.jahia.services.uicomponents.bean.toolbar.Toolbar">
+                <property name="layout" value="button-label"/>
+                <property name="items">
+                    <list>
+                        <ref bean="Toolbar.Item.Live"/>
+                        <ref bean="Toolbar.Item.Preview"/>
+                        <ref bean="Toolbar.Item.Contribute"/>
+                        <bean class="org.jahia.services.uicomponents.bean.toolbar.Menu">
+                            <property name="titleKey" value="label.view"/>
+                            <!-- <property name="icon" value="preview"/> -->
+                            <property name="items">
+                                <list>
+                                    <ref bean="Toolbar.Item.PreviewAsGuest"/>
+                                    <ref bean="Toolbar.Item.ShowCompareEngine"/>
+                                    <ref bean="Toolbar.Item.ShowVersionEngine"/>
+                                    <ref bean="Toolbar.Item.ShowConsultPreviousVersionEngine"/>
+                                    <ref bean="Toolbar.Item.ViewACLStatus"/>
+                                    <ref bean="Toolbar.Item.ViewPublicationIconStatus"/>
+                                    <ref bean="Toolbar.Item.ViewVisibilityStatus"/>
+                                </list>
+                            </property>
+                        </bean>
+                        <ref bean="Toolbar.Item.Separator"/>
+                        <bean class="org.jahia.services.uicomponents.bean.toolbar.Menu">
+                            <property name="titleKey" value="label.publication"/>
+                            <!-- <property name="icon" value="publicationAction"/> -->
+                            <property name="items">
+                                <list>
+                                    <ref bean="Toolbar.Item.Publish"/>
+                                    <ref bean="Toolbar.Item.PublishAll"/>
+                                    <ref bean="Toolbar.Item.PublishSite"/>
+                                    <ref bean="Toolbar.Item.Unpublish"/>
+                                    <ref bean="Toolbar.Item.ViewPublishStatus"/>
+                                    <ref bean="Toolbar.Item.PublicationManager"/>
+                                </list>
+                            </property>
+                        </bean>
+
+                        <bean class="org.jahia.services.uicomponents.bean.toolbar.Menu">
+
+                            <property name="titleKey" value="label.workflow"/>
+                            <property name="items">
+                                <list>
+                                    <!--<ref bean="Toolbar.Item.WorkflowStatusAction"/>-->
+                                    <ref bean="Toolbar.Item.WorkflowDashboard"/>
+                                    <bean class="org.jahia.services.uicomponents.bean.toolbar.Item" scope="prototype">
+                                        <property name="actionItem">
+                                            <bean class="org.jahia.ajax.gwt.client.widget.toolbar.action.CustomWorkflowMenuActionItem"/>
+                                        </property>
+                                        <property name="titleKey" value="label.customWorkflowsMenu"/>
+                                        <property name="icon" value="workflowDashboard"/>
+                                    </bean>
+                                </list>
+                            </property>
+                        </bean>
+                        <bean class="org.jahia.services.uicomponents.bean.toolbar.Item" scope="prototype">
+                            <property name="actionItem">
+                                <bean class="org.jahia.ajax.gwt.client.widget.toolbar.action.NumberOfTasksWorkflowMenuActionItem"/>
+                            </property>
+                            <property name="titleKey" value="label.numberoftasksforuser"/>
+                            <property name="properties">
+                                <list>
+                                    <bean class="org.jahia.services.uicomponents.bean.toolbar.ResourceBundleProperty">
+                                        <property name="name" value="noTasks"/>
+                                        <property name="key" value="label.numberoftasksforuser.notasks"/>
+                                    </bean>
+                                </list>
+                            </property>
+                        </bean>
+                        <ref bean="editmode.managers.menu"/>
+                        <bean class="org.jahia.services.uicomponents.bean.toolbar.Menu">
+                            <property name="titleKey" value="label.cache"/>
+                            <!-- <property name="icon" value="publicationAction"/>  -->
+                            <property name="items">
+                                <list>
+                                    <ref bean="Toolbar.Item.Flush"/>
+                                    <ref bean="Toolbar.Item.FlushSite"/>
+                                    <ref bean="Toolbar.Item.FlushAll"/>
+                                </list>
+                            </property>
+                        </bean>
+
+                        <ref bean="Toolbar.Item.ShowTrashboard"/>
+                        <ref bean="Toolbar.Item.Admin"/>
+                        <ref bean="Toolbar.Item.Studio"/>
+                        <ref bean="Toolbar.Item.WorkInProgress"/>
+                        <ref bean="Toolbar.Item.WorkInProgressAdmin"/>
+                        <ref bean="Toolbar.Item.ClipBoard"/>
+
+                        <ref bean="Toolbar.Item.Separator"/>
+                        
+                        <bean class="org.jahia.services.uicomponents.bean.toolbar.Menu">
+                            <property name="icon" value="start"/>
+                            <property name="titleKey" value="label.user.loggedAs"/>
+                            <property name="items">
+                                <list>
+                                    <ref bean="Toolbar.Item.Start"/>
+                                    <ref bean="Toolbar.Item.Logout"/>
+                                </list>
+                            </property>
+                        </bean>
+                    </list>
+                </property>
+            </bean>
+        </property>
+        <property name="sidePanelToolbar">
+            <bean id="editModeSidePanelToolbar" class="org.jahia.services.uicomponents.bean.toolbar.Toolbar">
+                <property name="items">
+                    <list>
+                        <bean class="org.jahia.services.uicomponents.bean.toolbar.Item">
+                            <property name="actionItem">
+                                <bean class="org.jahia.ajax.gwt.client.widget.toolbar.action.SiteSwitcherActionItem">
+                                    <property name="root" value="/sites/*"/>
+                                </bean>
+                            </property>
+                            <property name="titleKey" value="label.templateSets"/>
+                        </bean>
+                        <ref bean="Toolbar.Item.Fill"/>
+                    </list>
+                </property>
+            </bean>
+        </property>
+        <property name="mainModuleToolbar">
+            <bean id="editModeMainModuleToolbar" class="org.jahia.services.uicomponents.bean.toolbar.Toolbar">
+                <property name="items">
+                    <list>
+                        <bean class="org.jahia.services.uicomponents.bean.toolbar.Menu">
+                            <property name="titleKey" value="label.edit"/>
+                            <!-- <property name="icon" value="editAction"/>  -->
+                            <property name="items">
+                                <list>
+                                    <ref bean="Toolbar.Item.EditContent"/>
+                                    <ref bean="Toolbar.Item.Delete"/>
+                                    <ref bean="Toolbar.Item.Undelete"/>
+                                    <ref bean="Toolbar.Item.DeletePermanently"/>
+                                    <ref bean="Toolbar.Item.Separator"/>
+                                    <ref bean="Toolbar.Item.EditSourceContent"/>
+                                    <ref bean="Toolbar.Item.Separator"/>
+                                    <ref bean="Toolbar.Item.Copy"/>
+                                    <ref bean="Toolbar.Item.Cut"/>
+                                    <ref bean="Toolbar.Item.Paste"/>
+                                    <ref bean="Toolbar.Item.PasteReference"/>
+                                    <ref bean="Toolbar.Item.TranslateMenu"/>
+                                    <ref bean="Toolbar.Item.Separator"/>
+                                    <ref bean="Toolbar.Item.Export"/>
+                                    <ref bean="Toolbar.Item.Import"/>
+                                    <ref bean="Toolbar.Item.Separator"/>
+                                    <ref bean="Toolbar.Item.Lock"/>
+                                    <ref bean="Toolbar.Item.Unlock"/>
+                                    <ref bean="Toolbar.Item.ClearLock"/>
+                                    <ref bean="Toolbar.Item.ClearAllLocks"/>
+                                    <ref bean="Toolbar.Item.Separator"/>
+                                    <ref bean="Toolbar.Item.SaveAsPortalComponentMenu"/>
+                                    <ref bean="Toolbar.Item.Separator"/>
+                                    <ref bean="Toolbar.Item.OpenInContentManager"/>
+                                </list>
+                            </property>
+                        </bean>
+                        <ref bean="Toolbar.ItemsGroup.SiteLanguageSwitcher"/>
+                    </list>
+                </property>
+            </bean>
+        </property>
+
+        <property name="contextMenu">
+            <bean id="editModeContextMenu" class="org.jahia.services.uicomponents.bean.toolbar.Toolbar">
+                <property name="items">
+                    <list>
+                        <ref bean="Toolbar.Item.EditContent"/>
+                        <ref bean="Toolbar.Item.Delete"/>
+                        <ref bean="Toolbar.Item.Undelete"/>
+                        <ref bean="Toolbar.Item.DeletePermanently"/>
+                        <ref bean="Toolbar.Item.EditSourceContent"/>
+                        <ref bean="Toolbar.Item.Copy"/>
+                        <ref bean="Toolbar.Item.Cut"/>
+                        <ref bean="Toolbar.Item.Paste"/>
+                        <ref bean="Toolbar.Item.PasteReference"/>
+                        <ref bean="Toolbar.Item.TranslateMenu"/>
+                        <ref bean="Toolbar.Item.Export"/>
+                        <ref bean="Toolbar.Item.Import"/>
+                        <ref bean="Toolbar.Item.Lock"/>
+                        <ref bean="Toolbar.Item.Unlock"/>
+                        <ref bean="Toolbar.Item.ClearLock"/>
+                        <ref bean="Toolbar.Item.ClearAllLocks"/>
+                        <ref bean="Toolbar.Item.SaveAsPortalComponentMenu"/>
+                        <ref bean="Toolbar.Item.OpenInContentManager"/>
+                    </list>
+                </property>
+            </bean>
+        </property>
+
+        <!-- edit engine -->
+        <property name="engineTabs">
+            <list>
+                <!--<ref bean="Engine.Tab.ContentAndLayout"/>-->
+                <ref bean="Engine.Tab.Content"/>
+                <ref bean="Engine.Tab.ListOrdering"/>
+                <ref bean="Engine.Tab.Layout"/>
+                <ref bean="Engine.Tab.Metadata"/>
+                <ref bean="Engine.Tab.Seo"/>
+                <ref bean="Engine.Tab.Tags"/>
+                <ref bean="Engine.Tab.Categories"/>
+                <ref bean="Engine.Tab.Options"/>
+                <ref bean="Engine.Tab.LiveRoles"/>
+                <ref bean="Engine.Tab.EditRoles"/>
+                <ref bean="Engine.Tab.Usages"/>
+                <ref bean="Engine.Tab.History"/>
+                <ref bean="Engine.Tab.Versioning"/>
+                <ref bean="Engine.Tab.Visibility"/>
+            </list>
+        </property>
+
+        <!-- tabs -->
+        <property name="tabs">
+            <list>
+                <bean class="org.jahia.services.uicomponents.bean.editmode.SidePanelTab">
+                    <property name="key" value="pages"/>
+                    <property name="icon" value="tab-pages"/>
+                    <property name="tabItem">
+                        <bean class="org.jahia.ajax.gwt.client.widget.edit.sidepanel.PagesTabItem">
+                            <property name="paths">
+                                <list>
+                                    <value>$site</value>
+                                </list>
+                            </property>
+                            <property name="folderTypes">
+                                <list>
+                                    <value>jmix:navMenuItem</value>
+                                    <value>jmix:visibleInPagesTree</value>
+                                </list>
+                            </property>
+                        </bean>
+                    </property>
+                    <property name="treeColumns">
+                        <list>
+                            <value>displayName,*,label.title</value>
+                            <value>locked,25</value>
+                            <value>publicationInfo,20</value>
+                        </list>
+                    </property>
+                    <property name="treeContextMenu">
+                        <bean class="org.jahia.services.uicomponents.bean.toolbar.Toolbar">
+                            <property name="items">
+                                <list>
+                                    <ref bean="Toolbar.Item.NewPage"/>
+                                    <ref bean="Toolbar.Item.NewContentFolder"/>
+                                    <ref bean="Toolbar.Item.NewInternalLink"/>
+                                    <ref bean="Toolbar.Item.NewExternalLink"/>
+                                    <ref bean="Toolbar.Item.NavMenuText"/>
+                                    <ref bean="Toolbar.Item.Publish"/>
+                                    <ref bean="Toolbar.Item.Separator"/>
+                                    <ref bean="Toolbar.Item.EditContentRootNodeEditable"/>
+                                    <ref bean="Toolbar.Item.Delete"/>
+                                    <ref bean="Toolbar.Item.Undelete"/>
+                                    <ref bean="Toolbar.Item.DeletePermanently"/>
+                                    <ref bean="Toolbar.Item.Copy"/>
+                                    <ref bean="Toolbar.Item.Cut"/>
+                                    <ref bean="Toolbar.Item.Paste"/>
+                                    <ref bean="Toolbar.Item.PasteReference"/>
+                                    <ref bean="Toolbar.Item.TranslateMenu"/>
+                                    <ref bean="Toolbar.Item.Export"/>
+                                    <ref bean="Toolbar.Item.Import"/>
+                                    <ref bean="Toolbar.Item.Lock"/>
+                                    <ref bean="Toolbar.Item.Unlock"/>
+                                    <ref bean="Toolbar.Item.ClearLock"/>
+                                    <ref bean="Toolbar.Item.ClearAllLocks"/>
+                                </list>
+                            </property>
+                        </bean>
+                    </property>
+                    <property name="requiredPermission" value="sitemapSelector"/>
+                </bean>
+                <bean class="org.jahia.services.uicomponents.bean.editmode.SidePanelTab">
+                    <property name="key" value="createContent"/>
+                    <property name="icon" value="tab-createcontent"/>
+                    <property name="tabItem">
+                        <bean class="org.jahia.ajax.gwt.client.widget.edit.sidepanel.CreateContentTabItem">
+                            <property name="baseType" value="jmix:droppableContent"/>
+                            <property name="paths">
+                                <list>
+                                    <value>$site/components/*</value>
+                                </list>
+                            </property>
+                        </bean>
+                    </property>
+                    <property name="treeColumns">
+                        <list>
+                            <value>label,*,label.displayName</value>
+                        </list>
+                    </property>
+                    <property name="requiredPermission" value="createSelector"/>
+                </bean>
+                <!--
+                <bean class="org.jahia.services.uicomponents.bean.editmode.SidePanelTab">
+                    <property name="key" value="createForumAndSiteContent"/>
+                    <property name="icon" value="tab-createcontent"/>
+                    <property name="tabItem">
+                        <bean class="org.jahia.ajax.gwt.client.widget.edit.sidepanel.CreateContentTabItem">
+                            <property name="baseType" value="jmix:forumContent jmix:siteComponent"/>
+                        </bean>
+                    </property>
+                    <property name="requiredPermission" value="createSelector"/>
+                </bean>
+                -->
+                <bean class="org.jahia.services.uicomponents.bean.editmode.SidePanelTab">
+                    <property name="key" value="content"/>
+                    <property name="icon" value="tab-content"/>
+                    <property name="tabItem">
+                        <bean class="org.jahia.ajax.gwt.client.widget.edit.sidepanel.ContentBrowseTabItem">
+                            <property name="paths">
+                                <list>
+                                    <value>$sites</value>
+                                    <value>$user/contents</value>
+                                </list>
+                            </property>
+                            <property name="folderTypes" value="jnt:contentFolder"/>
+                        </bean>
+                    </property>
+                    <property name="treeColumns">
+                        <list>
+                            <value>displayName,*,label.title</value>
+                        </list>
+                    </property>
+                    <property name="treeContextMenu">
+                        <bean class="org.jahia.services.uicomponents.bean.toolbar.Toolbar">
+                            <property name="items">
+                                <list>
+                                    <ref bean="Toolbar.Item.NewContentFolder"/>
+                                    <ref bean="Toolbar.Item.NewContent"/>
+                                    <ref bean="Toolbar.Item.EditContent"/>
+                                    <ref bean="Toolbar.Item.Delete"/>
+                                    <ref bean="Toolbar.Item.Undelete"/>
+                                    <ref bean="Toolbar.Item.DeletePermanently"/>
+                                    <ref bean="Toolbar.Item.Copy"/>
+                                    <ref bean="Toolbar.Item.Cut"/>
+                                    <ref bean="Toolbar.Item.Paste"/>
+                                    <ref bean="Toolbar.Item.PasteReference"/>
+                                </list>
+                            </property>
+                        </bean>
+                    </property>
+                    <property name="tableColumns">
+                        <list>
+                            <value>icon,40</value>
+                            <value>displayName,*,label.title</value>
+                            <value>locked,25</value>
+                            <value>publicationInfo,20</value>
+                        </list>
+                    </property>
+                    <property name="tableContextMenu">
+                        <bean class="org.jahia.services.uicomponents.bean.toolbar.Toolbar">
+                            <property name="items">
+                                <list>
+                                    <ref bean="Toolbar.Item.EditContent"/>
+                                    <ref bean="Toolbar.Item.Publish"/>
+                                    <ref bean="Toolbar.Item.Delete"/>
+                                    <ref bean="Toolbar.Item.Undelete"/>
+                                    <ref bean="Toolbar.Item.DeletePermanently"/>
+                                    <ref bean="Toolbar.Item.Copy"/>
+                                    <ref bean="Toolbar.Item.Cut"/>
+                                    <ref bean="Toolbar.Item.Paste"/>
+                                    <ref bean="Toolbar.Item.PasteReference"/>
+                                    <ref bean="Toolbar.Item.TranslateMenu"/>
+                                    <ref bean="Toolbar.Item.Export"/>
+                                    <ref bean="Toolbar.Item.Import"/>
+                                    <ref bean="Toolbar.Item.Lock"/>
+                                    <ref bean="Toolbar.Item.Unlock"/>
+                                    <ref bean="Toolbar.Item.ClearLock"/>
+                                    <ref bean="Toolbar.Item.ClearAllLocks"/>
+                                </list>
+                            </property>
+                        </bean>
+                    </property>
+                    <property name="requiredPermission" value="contentSelector"/>
+                </bean>
+                <bean class="org.jahia.services.uicomponents.bean.editmode.SidePanelTab">
+                    <property name="key" value="filesimages"/>
+                    <property name="icon" value="tab-filesimages"/>
+                    <property name="tabItem">
+                        <bean class="org.jahia.ajax.gwt.client.widget.edit.sidepanel.FileImagesBrowseTabItem">
+                            <property name="paths">
+                                <list>
+                                    <value>$sites</value>
+                                    <value>$user/files</value>
+                                </list>
+                            </property>
+                            <property name="folderTypes">
+                                <list>
+                                    <value>nt:folder</value>
+                                    <value>jnt:mountPoint</value>
+                                </list>
+                            </property>
+                        </bean>
+                    </property>
+                    <property name="treeColumns">
+                        <list>
+                            <value>displayName,*,label.title</value>
+                        </list>
+                    </property>
+                    <property name="treeContextMenu">
+                        <bean class="org.jahia.services.uicomponents.bean.toolbar.Toolbar">
+                            <property name="items">
+                                <list>
+                                    <ref bean="Toolbar.Item.NewFolder"/>
+                                    <ref bean="Toolbar.Item.Upload"/>
+                                    <ref bean="Toolbar.Item.EditContent"/>
+                                    <ref bean="Toolbar.Item.Delete"/>
+                                    <ref bean="Toolbar.Item.Undelete"/>
+                                    <ref bean="Toolbar.Item.DeletePermanently"/>
+                                    <ref bean="Toolbar.Item.Copy"/>
+                                    <ref bean="Toolbar.Item.Cut"/>
+                                    <ref bean="Toolbar.Item.Paste"/>
+                                    <ref bean="Toolbar.Item.PasteReference"/>
+                                </list>
+                            </property>
+                        </bean>
+                    </property>
+                    <property name="tableContextMenu">
+                        <bean class="org.jahia.services.uicomponents.bean.toolbar.Toolbar">
+                            <property name="items">
+                                <list>
+                                    <ref bean="Toolbar.Item.Download"/>
+                                    <ref bean="Toolbar.Item.FilePreview"/>
+                                    <ref bean="Toolbar.Item.Publish"/>
+                                    <ref bean="Toolbar.Item.EditContent"/>
+                                    <ref bean="Toolbar.Item.Delete"/>
+                                    <ref bean="Toolbar.Item.Undelete"/>
+                                    <ref bean="Toolbar.Item.DeletePermanently"/>
+                                    <ref bean="Toolbar.Item.Copy"/>
+                                    <ref bean="Toolbar.Item.Cut"/>
+                                    <ref bean="Toolbar.Item.Paste"/>
+                                    <ref bean="Toolbar.Item.PasteReference"/>
+                                </list>
+                            </property>
+                        </bean>
+                    </property>
+                    <property name="requiredPermission" value="filesAndImagesSelector"/>
+                </bean>
+                <bean class="org.jahia.services.uicomponents.bean.editmode.SidePanelTab">
+                    <property name="key" value="portlets"/>
+                    <property name="icon" value="tab-portlets"/>
+                    <property name="tabItem">
+                        <bean class="org.jahia.ajax.gwt.client.widget.edit.sidepanel.PortletBrowseTabItem">
+                            <property name="paths">
+                                <list>
+                                    <value>$sites</value>
+                                    <value>$user/portlets</value>
+                                </list>
+                            </property>
+                            <property name="folderTypes" value="jnt:portletFolder"/>
+                        </bean>
+                    </property>
+
+                    <property name="treeColumns">
+                        <list>
+                            <value>displayName,*,label.title</value>
+                        </list>
+                    </property>
+                    <property name="treeContextMenu">
+                        <bean class="org.jahia.services.uicomponents.bean.toolbar.Toolbar">
+                            <property name="items">
+                                <list>
+                                    <ref bean="Toolbar.Item.NewPortletFolder"/>
+                                    <ref bean="Toolbar.Item.NewPortlet"/>
+                                    <ref bean="Toolbar.Item.EditContent"/>
+                                    <ref bean="Toolbar.Item.Delete"/>
+                                    <ref bean="Toolbar.Item.Undelete"/>
+                                    <ref bean="Toolbar.Item.DeletePermanently"/>
+                                    <ref bean="Toolbar.Item.Copy"/>
+                                    <ref bean="Toolbar.Item.Cut"/>
+                                    <ref bean="Toolbar.Item.Paste"/>
+                                    <ref bean="Toolbar.Item.PasteReference"/>
+                                </list>
+                            </property>
+                        </bean>
+                    </property>
+                    <property name="tableContextMenu">
+                        <bean class="org.jahia.services.uicomponents.bean.toolbar.Toolbar">
+                            <property name="items">
+                                <list>
+                                    <ref bean="Toolbar.Item.EditContent"/>
+                                    <ref bean="Toolbar.Item.Publish"/>
+                                    <ref bean="Toolbar.Item.Delete"/>
+                                    <ref bean="Toolbar.Item.Undelete"/>
+                                    <ref bean="Toolbar.Item.DeletePermanently"/>
+                                    <ref bean="Toolbar.Item.Copy"/>
+                                    <ref bean="Toolbar.Item.Cut"/>
+                                    <ref bean="Toolbar.Item.Paste"/>
+                                    <ref bean="Toolbar.Item.PasteReference"/>
+                                </list>
+                            </property>
+                        </bean>
+                    </property>
+                    <property name="requiredPermission" value="portletsSelector"/>
+                </bean>
+                <ref bean="sidePanelTab.search"/>
+                <bean class="org.jahia.services.uicomponents.bean.editmode.SidePanelTab">
+                    <property name="key" value="categories"/>
+                    <property name="icon" value="tab-categories"/>
+                    <property name="tabItem">
+                        <bean class="org.jahia.ajax.gwt.client.widget.edit.sidepanel.CategoryBrowseTabItem">
+                            <property name="folderTypes" value="jnt:category"/>
+                            <property name="paths" value="$systemsite/categories"/>
+                            <property name="limit" value="500"/>
+                        </bean>
+                    </property>
+                    <property name="tableColumns">
+                        <list>
+                            <value>icon,40</value>
+                            <value>displayName,*,label.title</value>
+                            <value>locked,25</value>
+                            <value>publicationInfo,20</value>
+                        </list>
+                    </property>
+                    <property name="requiredPermission" value="categoriesSelector"/>
+                </bean>
+                <bean class="org.jahia.services.uicomponents.bean.editmode.SidePanelTab">
+                    <property name="key" value="lastContent"/>
+                    <property name="icon" value="tab-lastcontent"/>
+                    <property name="tabItem">
+                        <bean class="org.jahia.ajax.gwt.client.widget.edit.sidepanel.LastContentBrowseTabItem">
+                            <property name="search"
+                                      value="select * from [jnt:content] as content where not content.[jcr:primaryType] = 'jnt:socialActivity' order by content.['jcr:lastModified'] desc"/>
+                            <property name="limit" value="100"/>
+                            <property name="cssWrapper" value="bodywrapper"/>
+                        </bean>
+                    </property>
+
+                    <property name="tableColumns">
+                        <list>
+                            <value>icon,40</value>
+                            <value>displayName,*,label.title</value>
+                            <value>locked,25</value>
+                            <value>publicationInfo,20</value>
+                        </list>
+                    </property>
+                    <property name="tableContextMenu">
+                        <bean class="org.jahia.services.uicomponents.bean.toolbar.Toolbar">
+                            <property name="items">
+                                <list>
+                                    <ref bean="Toolbar.Item.EditContent"/>
+                                    <ref bean="Toolbar.Item.Delete"/>
+                                    <ref bean="Toolbar.Item.Undelete"/>
+                                    <ref bean="Toolbar.Item.DeletePermanently"/>
+                                    <ref bean="Toolbar.Item.Copy"/>
+                                    <ref bean="Toolbar.Item.Cut"/>
+                                    <ref bean="Toolbar.Item.Paste"/>
+                                    <ref bean="Toolbar.Item.PasteReference"/>
+                                    <ref bean="Toolbar.Item.TranslateMenu"/>
+                                    <ref bean="Toolbar.Item.Export"/>
+                                    <ref bean="Toolbar.Item.Import"/>
+                                    <ref bean="Toolbar.Item.Lock"/>
+                                    <ref bean="Toolbar.Item.Unlock"/>
+                                    <ref bean="Toolbar.Item.ClearLock"/>
+                                    <ref bean="Toolbar.Item.ClearAllLocks"/>
+                                </list>
+                            </property>
+                        </bean>
+                    </property>
+                    <property name="requiredPermission" value="latestSelector"/>
+                </bean>
+            </list>
+        </property>
+
+    </bean>
+
+    <bean id="editmode.managers.menu" class="org.jahia.services.uicomponents.bean.toolbar.Menu">
+        <property name="visibility">
+            <bean class="org.jahia.services.uicomponents.bean.Visibility">
+                <property name="needAuthentication" value="true"/>
+            </bean>
+        </property>
+        <property name="titleKey" value="label.managers"/>
+        <property name="items">
+            <list>
+                <ref bean="Toolbar.Item.EditorialContentManager"/>
+                <ref bean="Toolbar.Item.FileManager"/>
+                <ref bean="Toolbar.Item.PortletManager"/>
+                <ref bean="Toolbar.Item.RepositoryExplorer"/>
+                <ref bean="Toolbar.Item.CategoryManager"/>
+                <ref bean="Toolbar.Item.TagManager"/>
+                <ref bean="Toolbar.Item.SiteManager"/>
+                <ref bean="Toolbar.Item.SiteComponentManager"/>
+            </list>
+        </property>
+    </bean>
+
+
+    <!-- side tabs-->
+
+    <bean id="sidePanelTab.search" class="org.jahia.services.uicomponents.bean.editmode.SidePanelTab">
+        <property name="key" value="search"/>
+        <property name="icon" value="tab-search"/>
+        <property name="tabItem">
+            <bean class="org.jahia.ajax.gwt.client.widget.edit.sidepanel.SearchTabItem">
+                <property name="numberResults" value="20"/>
+            </bean>
+        </property>
+        <property name="requiredPermission" value="searchSelector"/>
+        <property name="tableContextMenu">
+            <bean class="org.jahia.services.uicomponents.bean.toolbar.Toolbar">
+                <property name="items">
+                    <list>
+                        <ref bean="Toolbar.Item.EditContent"/>
+                        <ref bean="Toolbar.Item.Delete"/>
+                        <ref bean="Toolbar.Item.Undelete"/>
+                        <ref bean="Toolbar.Item.DeletePermanently"/>
+                        <ref bean="Toolbar.Item.Copy"/>
+                        <ref bean="Toolbar.Item.Cut"/>
+                        <ref bean="Toolbar.Item.Paste"/>
+                        <ref bean="Toolbar.Item.PasteReference"/>
+                        <ref bean="Toolbar.Item.TranslateMenu"/>
+                        <ref bean="Toolbar.Item.Export"/>
+                        <ref bean="Toolbar.Item.Lock"/>
+                        <ref bean="Toolbar.Item.Unlock"/>
+                        <ref bean="Toolbar.Item.ClearLock"/>
+                        <ref bean="Toolbar.Item.ClearAllLocks"/>
+                        <ref bean="Toolbar.Item.OpenInContentManager"/>
+                    </list>
+                </property>
+            </bean>
+        </property>
+    </bean>
+
+    <bean id="Engine.Tab.Content" class="org.jahia.services.uicomponents.bean.editmode.EngineTab">
+        <property name="id" value="content"/>
+        <property name="titleKey" value="label.engineTab.content"/>
+        <property name="requiredPermission" value="viewContentTab"/>
+        <property name="tabItem">
+            <bean class="org.jahia.ajax.gwt.client.widget.contentengine.ContentTabItem">
+                <property name="nameNotEditableForTypes">
+                    <list>
+                        <value>jnt:group</value>
+                        <value>jnt:groupsFolder</value>
+                        <value>jnt:mounts</value>
+                        <value>jnt:remotePublications</value>
+                        <value>jnt:templateSets</value>
+                        <value>jnt:user</value>
+                        <value>jnt:usersFolder</value>
+                        <value>jnt:virtualsite</value>
+                        <value>jnt:virtualsitesFolder</value>
+                    </list>
+                </property>
+            </bean>            
+        </property>
+    </bean>
+
+    <bean id="Engine.Tab.ListOrdering" class="org.jahia.services.uicomponents.bean.editmode.EngineTab">
+        <property name="id" value="listOrdering"/>
+        <property name="titleKey" value="label.engineTab.listOrdering"/>
+        <property name="requiredPermission" value="viewContentTab"/>
+        <property name="tabItem">
+            <bean class="org.jahia.ajax.gwt.client.widget.contentengine.ListOrderingContentTabItem">
+                <property name="dataType" value="listOrdering"/>
+                <property name="showForTypes">
+                    <list>
+                        <value>jnt:contentList</value>
+                        <value>jnt:area</value>
+                        <value>jnt:absoluteArea</value>
+                        <value>jnt:levelAbsoluteArea</value>
+                    </list>
+                </property>
+            </bean>
+        </property>
+    </bean>
+
+    <bean id="Engine.Tab.Layout" class="org.jahia.services.uicomponents.bean.editmode.EngineTab">
+        <property name="id" value="layout"/>
+        <property name="titleKey" value="label.engineTab.layout"/>
+        <property name="requiredPermission" value="viewLayoutTab"/>
+        <property name="tabItem">
+            <bean class="org.jahia.ajax.gwt.client.widget.contentengine.LayoutTabItem">
+                <property name="hideForTypes">
+                    <list>
+                        <value>jnt:page</value>
+                        <value>jnt:area</value>
+                        <value>jnt:absoluteArea</value>
+                        <value>jnt:levelAbsoluteArea</value>
+                        <value>jnt:mainResourceDisplay</value>
+                        <value>jnt:template</value>
+                        <value>jnt:pageTemplate</value>
+                        <value>jnt:contentTemplate</value>
+                    </list>
+                </property>
+                <property name="cssWrapper" value="bodywrapper"/>
+            </bean>
+        </property>
+    </bean>
+
+    <bean id="Engine.Tab.Metadata" class="org.jahia.services.uicomponents.bean.editmode.EngineTab">
+        <property name="id" value="metadata"/>
+        <property name="titleKey" value="label.engineTab.metadata"/>
+        <property name="requiredPermission" value="viewMetadataTab"/>
+        <property name="tabItem">
+            <bean class="org.jahia.ajax.gwt.client.widget.contentengine.PropertiesTabItem">
+                <property name="dataType">
+                    <list>
+                        <value>metadata</value>
+                    </list>
+                </property>
+                <property name="excludedTypes">
+                    <list>
+                        <value>jmix:categorized</value>
+                        <value>jmix:tagged</value>
+                    </list>
+                </property>
+            </bean>
+        </property>
+    </bean>
+
+    <bean id="Engine.Tab.Options" class="org.jahia.services.uicomponents.bean.editmode.EngineTab">
+        <property name="id" value="options"/>
+        <property name="titleKey" value="label.engineTab.options"/>
+        <property name="requiredPermission" value="viewOptionsTab"/>
+        <property name="tabItem">
+            <bean class="org.jahia.ajax.gwt.client.widget.contentengine.PropertiesTabItem">
+                <property name="dataType">
+                    <list>
+                        <value>options</value>
+                    </list>
+                </property>
+            </bean>
+        </property>
+    </bean>
+
+    <bean id="Engine.Tab.Tags" class="org.jahia.services.uicomponents.bean.editmode.EngineTab">
+        <property name="id" value="tags"/>
+        <property name="titleKey" value="label.engineTab.tags"/>
+        <property name="requiredPermission" value="viewTagsTab"/>
+        <property name="tabItem">
+            <bean class="org.jahia.ajax.gwt.client.widget.contentengine.TagsTabItem">
+                <property name="hideForTypes">
+                    <list>
+                        <value>jnt:category</value>
+                        <value>jnt:tag</value>
+                    </list>
+                </property>
+                <property name="tagAreI15d" value="false"/>
+            </bean>
+        </property>
+    </bean>
+
+    <bean id="Engine.Tab.Categories" class="org.jahia.services.uicomponents.bean.editmode.EngineTab">
+        <property name="id" value="categories"/>
+        <property name="titleKey" value="label.engineTab.categories"/>
+        <property name="requiredPermission" value="viewCategoriesTab"/>
+        <property name="tabItem">
+            <bean class="org.jahia.ajax.gwt.client.widget.contentengine.CategoriesTabItem">
+                <property name="hideForTypes">
+                    <list>
+                        <value>jnt:category</value>
+                        <value>jnt:tag</value>
+                    </list>
+                </property>
+            </bean>
+        </property>
+    </bean>
+
+    <bean id="Engine.Tab.Versioning" class="org.jahia.services.uicomponents.bean.editmode.EngineTab">
+        <property name="id" value="versioning"/>
+        <property name="titleKey" value="label.engineTab.versioning"/>
+        <property name="requiredPermission" value="viewVersioningTab"/>
+        <property name="tabItem">
+            <bean class="org.jahia.ajax.gwt.client.widget.contentengine.VersioningTabItem">
+                <property name="showForTypes">
+                    <list value-type="java.lang.String">
+                        <value>jmix:editorialContent</value>
+                        <value>nt:file</value>
+                    </list>
+                </property>
+            </bean>
+        </property>
+    </bean>
+
+    <bean id="Engine.Tab.Visibility" class="org.jahia.services.uicomponents.bean.editmode.EngineTab">
+        <property name="id" value="visibility"/>
+        <property name="titleKey" value="label.engineTab.visibility"/>
+        <property name="requiredPermission" value="viewVisibilityTab"/>
+        <property name="tabItem">
+            <bean class="org.jahia.ajax.gwt.client.widget.contentengine.VisibilityTabItem">
+                <property name="hideForTypes">
+                    <list>
+                        <value>jnt:category</value>
+                        <value>jnt:component</value>
+                        <value>jnt:componentFolder</value>
+                        <value>jnt:group</value>
+                        <value>jnt:groupsFolder</value>
+                        <value>jnt:tag</value>
+                        <value>jnt:template</value>
+                        <value>jnt:user</value>
+                        <value>jnt:usersFolder</value>
+                        <value>jnt:virtualsitesFolder</value>
+                        <value>jnt:virtualsite</value>
+                        <value>rep:root</value>
+                        <value>jnt:templateSets</value>
+                    </list>
+                </property>
+            </bean>
+        </property>
+    </bean>
+
+    <bean id="Engine.Tab.History" class="org.jahia.services.uicomponents.bean.editmode.EngineTab">
+        <property name="id" value="history"/>
+        <property name="titleKey" value="label.engineTab.history"/>
+        <property name="requiredPermission" value="viewHistoryTab"/>
+        <property name="tabItem">
+            <bean class="org.jahia.ajax.gwt.client.widget.contentengine.HistoryTabItem"/>
+        </property>
+    </bean>
+
+    <bean id="Engine.Tab.Usages" class="org.jahia.services.uicomponents.bean.editmode.EngineTab">
+        <property name="id" value="usages"/>
+        <property name="titleKey" value="label.engineTab.usages"/>
+        <property name="requiredPermission" value="viewUsagesTab"/>
+        <property name="tabItem">
+            <bean class="org.jahia.ajax.gwt.client.widget.contentengine.UsagesTabItem"/>
+        </property>
+    </bean>
+
+    <bean id="Engine.Tab.Seo" class="org.jahia.services.uicomponents.bean.editmode.EngineTab">
+        <property name="id" value="seo"/>
+        <property name="titleKey" value="label.engineTab.seo"/>
+        <property name="requiredPermission" value="viewSeoTab"/>
+        <property name="tabItem">
+            <bean class="org.jahia.ajax.gwt.client.widget.contentengine.SeoTabItem"/>
+        </property>
+    </bean>
+
+    <bean id="Engine.Tab.Portlets" class="org.jahia.services.uicomponents.bean.editmode.EngineTab">
+        <property name="id" value="portlets"/>
+        <property name="titleKey" value="label.engineTab.portlets"/>
+        <property name="tabItem">
+            <bean class="org.jahia.ajax.gwt.client.widget.contentengine.PortletsTabItem"/>
+        </property>
+    </bean>
+
+    <bean id="Engine.Tab.Info" class="org.jahia.services.uicomponents.bean.editmode.EngineTab">
+        <property name="id" value="info"/>
+        <property name="titleKey" value="label.engineTab.info"/>
+        <property name="tabItem">
+            <bean class="org.jahia.ajax.gwt.client.widget.content.InfoTabItem"/>
+        </property>
+    </bean>
+
+    <bean id="Engine.Tab.Roles" class="org.jahia.services.uicomponents.bean.editmode.EngineTab">
+        <property name="id" value="roles"/>
+        <property name="titleKey" value="label.engineTab.roles"/>
+        <property name="requiredPermission" value="viewRolesTab"/>
+        <property name="tabItem">
+            <bean class="org.jahia.ajax.gwt.client.widget.contentengine.RolesTabItem"/>
+        </property>
+    </bean>
+
+    <bean id="Engine.Tab.LiveRoles" class="org.jahia.services.uicomponents.bean.editmode.EngineTab">
+        <property name="id" value="liveroles"/>
+        <property name="titleKey" value="label.engineTab.liveroles"/>
+        <property name="requiredPermission" value="viewLiveRolesTab"/>
+        <property name="tabItem">
+            <bean class="org.jahia.ajax.gwt.client.widget.contentengine.RolesTabItem">
+                <property name="roleGroups">
+                    <set>
+                        <value>live-role</value>
+                    </set>
+                </property>
+                <property name="canBreakInheritance"><value>false</value></property>
+            </bean>
+        </property>
+    </bean>
+
+    <bean id="Engine.Tab.EditRoles" class="org.jahia.services.uicomponents.bean.editmode.EngineTab">
+        <property name="id" value="editroles"/>
+        <property name="titleKey" value="label.engineTab.editroles"/>
+        <property name="requiredPermission" value="viewEditRolesTab"/>
+        <property name="tabItem">
+            <bean class="org.jahia.ajax.gwt.client.widget.contentengine.RolesTabItem">
+                <property name="roleGroups">
+                    <set>
+                        <value>edit-role</value>
+                    </set>
+                </property>
+                <property name="canBreakInheritance"><value>true</value></property>
+            </bean>
+        </property>
+    </bean>
+
+    <bean id="Engine.Tab.ComponentRights" class="org.jahia.services.uicomponents.bean.editmode.EngineTab">
+        <property name="id" value="roles"/>
+        <property name="titleKey" value="label.engineTab.componentRights"/>
+        <property name="requiredPermission" value="viewComponentRightsTab"/>
+        <property name="tabItem">
+            <bean class="org.jahia.ajax.gwt.client.widget.contentengine.RolesTabItem">
+                <property name="roles">
+                    <set>
+                        <value>privileged</value>
+                    </set>
+                </property>
+                <property name="canBreakInheritance"><value>true</value></property>
+                <property name="showForTypes">
+                    <list value-type="java.lang.String">
+                        <value>jnt:component</value>
+                        <value>jnt:componentFolder</value>
+                    </list>
+                </property>
+            </bean>
+        </property>
+    </bean>
+
+    <bean id="Engine.Tab.RequiredPermissions" class="org.jahia.services.uicomponents.bean.editmode.EngineTab">
+        <property name="id" value="permissions"/>
+        <property name="titleKey" value="label.engineTab.permissions"/>
+        <property name="tabItem">
+            <bean class="org.jahia.ajax.gwt.client.widget.contentengine.PropertiesTabItem">
+                <property name="dataType">
+                    <list>
+                        <value>permissions</value>
+                    </list>
+                </property>
+            </bean>
+        </property>
+    </bean>
+
+    <bean id="Engine.Tab.RolePermissions" class="org.jahia.services.uicomponents.bean.editmode.EngineTab">
+        <property name="id" value="rolePrincipals"/>
+        <property name="titleKey" value="label.engineTab.rolePermissions"/>
+        <property name="requiredPermission" value="viewRolesTab"/>
+        <property name="tabItem">
+            <bean class="org.jahia.ajax.gwt.client.widget.contentengine.RolePermissionsTabItem"/>
+        </property>
+    </bean>
+</beans>

@@ -1,0 +1,137 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/jahia/!svn/ver/40409/trunk/core/src/main/java/org/jahia/services/content/nodetypes
+END
+ExtendedNodeDefinition.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/nodetypes/ExtendedNodeDefinition.java
+END
+Lexer.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/jahia/!svn/ver/40316/trunk/core/src/main/java/org/jahia/services/content/nodetypes/Lexer.java
+END
+JahiaGroupingFileReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/nodetypes/JahiaGroupingFileReader.java
+END
+Name.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/nodetypes/Name.java
+END
+NodeTypeIteratorImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/nodetypes/NodeTypeIteratorImpl.java
+END
+ExtendedPropertyType.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/nodetypes/ExtendedPropertyType.java
+END
+OnConflictAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/nodetypes/OnConflictAction.java
+END
+ConstraintsHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/jahia/!svn/ver/40409/trunk/core/src/main/java/org/jahia/services/content/nodetypes/ConstraintsHelper.java
+END
+JRCndWriter.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/nodetypes/JRCndWriter.java
+END
+JahiaCndWriter.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/nodetypes/JahiaCndWriter.java
+END
+SelectorTypeLegacy.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/nodetypes/SelectorTypeLegacy.java
+END
+ExtendedPropertyDefinition.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/jahia/!svn/ver/40316/trunk/core/src/main/java/org/jahia/services/content/nodetypes/ExtendedPropertyDefinition.java
+END
+ExtendedItemDefinition.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/nodetypes/ExtendedItemDefinition.java
+END
+JahiaCndReaderLegacy.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/nodetypes/JahiaCndReaderLegacy.java
+END
+ParseException.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/nodetypes/ParseException.java
+END
+NodeTypeRegistry.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/nodetypes/NodeTypeRegistry.java
+END
+SelectorType.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/nodetypes/SelectorType.java
+END
+LexerLegacy.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/nodetypes/LexerLegacy.java
+END
+ExtendedNodeType.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/nodetypes/ExtendedNodeType.java
+END
+JahiaCndReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/jahia/!svn/ver/40316/trunk/core/src/main/java/org/jahia/services/content/nodetypes/JahiaCndReader.java
+END
+DynamicValueImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/nodetypes/DynamicValueImpl.java
+END
+ValueImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/content/nodetypes/ValueImpl.java
+END

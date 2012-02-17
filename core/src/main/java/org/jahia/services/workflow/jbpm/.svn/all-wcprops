@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/jahia/!svn/ver/40424/trunk/core/src/main/java/org/jahia/services/workflow/jbpm
+END
+JBPMSpringHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/workflow/jbpm/JBPMSpringHelper.java
+END
+JahiaProcessDefinitionQueryImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/workflow/jbpm/JahiaProcessDefinitionQueryImpl.java
+END
+JBPMMailProducer.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/jahia/!svn/ver/40230/trunk/core/src/main/java/org/jahia/services/workflow/jbpm/JBPMMailProducer.java
+END
+JBPMEventGeneratorInterceptorBinding.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/workflow/jbpm/JBPMEventGeneratorInterceptorBinding.java
+END
+JBPMTaskAssignmentListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/workflow/jbpm/JBPMTaskAssignmentListener.java
+END
+JBPMMailSession.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/workflow/jbpm/JBPMMailSession.java
+END
+JBPMListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/workflow/jbpm/JBPMListener.java
+END
+JBPMEventGeneratorInterceptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/workflow/jbpm/JBPMEventGeneratorInterceptor.java
+END
+JahiaBusinessCalendar.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/workflow/jbpm/JahiaBusinessCalendar.java
+END
+JBPMProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/workflow/jbpm/JBPMProvider.java
+END
+HistoryProcessInstanceByVariableQuery.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/workflow/jbpm/HistoryProcessInstanceByVariableQuery.java
+END
+JahiaRepositorySessionImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/jahia/!svn/ver/40181/trunk/core/src/main/java/org/jahia/services/workflow/jbpm/JahiaRepositorySessionImpl.java
+END
+JBPMIdentitySession.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/jahia/!svn/ver/40424/trunk/core/src/main/java/org/jahia/services/workflow/jbpm/JBPMIdentitySession.java
+END
